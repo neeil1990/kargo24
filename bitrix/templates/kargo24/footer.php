@@ -108,6 +108,72 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 </div>
 <!-- END GLOBAL-WRAPPER -->
 
+	<div id="input-form-popup" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<form action="#" class="unified-pop-up-form login-form">
+				<h3 class="form-title">
+					Данная информация доступна <span class="max">только участникам сервиса</span>
+				</h3>
+				<div class="row form-field">
+					<div class="col-sm-6">
+						<div class="form-group">
+							<input type="text" name="login" class="text-input" placeholder="Логин" required/>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="form-group">
+							<input type="pasword" name="pasword" class="text-input" placeholder="Пароль" />
+						</div>
+					</div>
+				</div>
+				<div class="wrapper-form-btn limed-spruce-btn">
+					<span class="arrow"></span>
+					<input type="submit" value="Войти" class="submit-btn" />
+				</div>
+				<div class="form-footer">
+					<div class="wrapper-text-account">
+						<span class="text-account">У Вас нет своего аккаунта?</span>
+					</div>
+					<a href="" class="register-btn">Зарегистрироваться!</a>
+				</div>
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					<span class="icon-close"></span>
+				</button>
+			</form>
+		</div>
+	</div>
+	<!-- end input-form-popup -->
+	<div id="form-complain-popup" class="modal fade in" role="dialog">
+		<div class="modal-dialog">
+			<form action="#" class="unified-pop-up-form form-complain">
+				<h3 class="form-title">
+					Пожаловаться
+				</h3>
+				<div class="form-group">
+					<input type="text" name="name" class="text-input" placeholder="ФИО" required="">
+				</div>
+				<div class="form-group">
+					<input type="tel" name="phone" class="text-input" placeholder="Телефон" required="">
+				</div>
+				<div class="form-group">
+					<input type="email" name="email" class="text-input" placeholder="E-mail" required="">
+				</div>
+				<div class="form-group">
+					<textarea class="text-area" placeholder="Причина жалобы" reguired=""></textarea>
+				</div>
+				<div class="wrapper-form-btn limed-spruce-btn">
+					<span class="arrow"></span>
+					<input type="submit" value="Отправить" class="submit-btn">
+				</div>
+
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					<span class="icon-close"></span>
+				</button>
+			</form>
+		</div>
+	</div>
+	<!-- end form-complain-popup -->
+
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script>
 		window.jQuery || document.write('<script src="<?=SITE_TEMPLATE_PATH?>/js/jquery.min.js"><\/script>')
@@ -118,6 +184,7 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 	<script src="<?=SITE_TEMPLATE_PATH?>/js/jquery.maskedinput.min.js"></script>
 	<script src="<?=SITE_TEMPLATE_PATH?>/js/jquery.selectric.min.js"></script>
 	<script src="<?=SITE_TEMPLATE_PATH?>/js/slick.js"></script>
+	<script src="<?=SITE_TEMPLATE_PATH?>/js/easySearch/dist/jquery.easysearch.js"></script>
 	<script src="<?=SITE_TEMPLATE_PATH?>/js/main.js"></script>
 
 </body>

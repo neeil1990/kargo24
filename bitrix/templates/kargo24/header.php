@@ -226,6 +226,14 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 	</header>
 	<!-- END HEADER -->
 
+	<div class="breadcrumbs">
+		<div class="container">
+			<ul class="breadcrumbs-list">
+				<li><a href="">Главная</a></li>
+				<li> Грузовые перевозки по России</li>
+			</ul>
+		</div>
+	</div>
 
 
 

@@ -1,0 +1,374 @@
+/*********MODALWINDOW***********/
+
+.modal
+	position: fixed
+	display: none
+	width: 100%
+	height: 100%
+	background-color: rgba(0, 0, 0, 0.3)
+	top: 0
+	left: 0
+	overflow: auto
+	padding: 20px 0
+	text-align: center
+	z-index: 10000
+	&:before
+		content: ""
+		display: inline-block
+		height: 100%
+		margin-left: -5px
+		vertical-align: middle
+
+/******FORM-CALLBACK*******/
+.unified-pop-up-form
+	background-color: #fff
+	display: block
+	padding: 35px
+	position: relative
+	width: 437px
+	vertical-align: middle
+	z-index: 1
+	&.form-add-phone
+		padding-left: 40px
+		padding-right: 40px
+		.text
+			font-size: 15px
+			line-height: 20px
+			margin-bottom: 15px
+			text-align: left
+		.wrapper-form-btn
+			margin-top: 20px
+		.form-title
+			margin-bottom: 30px
+	&.form-request-document
+		padding-left: 40px
+		padding-right: 40px
+		.wrapper-form-btn
+			margin-top: 20px
+	&.form-complain
+		padding: 25px 65px
+		.form-title
+			margin-bottom: 25px
+		.wrapper-form-btn
+			margin-top: 5px
+	&.login-form
+		.form-footer
+			padding-top: 29px
+			text-align: center
+		.wrapper-text-account
+			position: relative
+			&:after
+				content: ''
+				display: block
+				width: 100%
+				height: 2px 
+				background: #e6e6e6
+				position: absolute
+				top: 0
+				bottom: 0
+				left: 0
+				margin: auto
+		.text-account
+			position: relative
+			display: inline-block
+			padding: 0 10px
+			font-size: 12px
+			background: #fff
+			z-index: 2
+		.register-btn
+			display: inline-block
+			color: #ea3232
+			border-bottom: 1px solid #ea3232
+			font-size: 14px
+			transition: border-bottom-color .3s
+			&:hover
+				border-bottom-color: transparent
+	.selection-documents
+		margin-bottom: 35px
+		text-align: left
+		li
+			margin-bottom: 10px
+			&:last-child
+				margin-bottom: 0
+	.wrapper-radio
+		display: block
+		width: 100%
+		position: relative
+		margin-bottom: 0
+		font-weight: 400
+		padding-left: 25px
+		cursor: pointer
+		input[type="radio"]
+			position: absolute
+			margin-left: -20px
+			display: none
+			&:checked + .radio-text:before
+				content: ""
+				display: block
+				width: 6px
+				height: 6px
+				background-color: #bbc7cd
+				position: absolute
+				top: 0
+				left: 4px
+				bottom: 0
+				margin: auto
+			&:checked + .radio-text:after
+				content: ""
+				display: block
+				width: 14px
+				height: 14px
+				background-color: transparent
+				border: 2px solid #bbc7cd
+				position: absolute
+				top: 0
+				bottom: 0
+				left: 0
+				margin: auto
+			+ .radio-text:after
+				content: ""
+				display: block
+				width: 14px
+				height: 14px
+				background-color: #bbc7cd
+				position: absolute
+				top: 0
+				bottom: 0
+				left: 0
+				margin: auto
+	.radio-text
+		font-size: 15px
+	.subtitle
+		font-size: 15px
+		margin: 0 0 19px
+		text-align: left
+	.input-title
+		display: table-cell
+		height: 40px
+		font-size: 15px
+		color: #808080
+		vertical-align: middle
+	.form-title
+		font-size: 16px
+		line-height: 24px
+		margin-bottom: 33px
+		text-align: center
+	.max
+		display: block
+	.form-group
+		margin-bottom: 20px
+	.form-field
+		margin-bottom: 12px
+	.text-input
+		height: 40px
+		background-color: #f2f2f2
+		width: 100%
+		font-size: 12px
+		border: none
+		padding: 0 10px 0 10px
+		&::input-placeholder
+			font-size: 12px
+			color: #808080
+		&::-webkit-input-placeholder
+			font-size: 12px
+			color: #808080
+		&::-moz-input-placeholder
+			font-size: 12px
+			color: #808080
+		&::-ms-input-placeholder
+			font-size: 12px
+			color: #808080
+	.text-area
+		height: 117px
+		background-color: #f2f2f2
+		width: 100%
+		color: #808080
+		font-size: 12px
+		resize: none
+		border: none
+		padding: 12px 10px 0 10px
+		&:focus
+			outline: none
+		&::input-placeholder
+			font-size: 12px
+			color: #808080
+		&::-webkit-input-placeholder
+			font-size: 12px
+			color: #808080
+		&::-moz-input-placeholder
+			font-size: 12px
+			color: #808080
+		&::-ms-input-placeholder
+			font-size: 12px
+			color: #808080
+	.wrapper-submit-btn
+		margin-top: 2em
+		&.mod
+			min-width: 250px
+	.submit-btn
+		display: inline-block
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+		font-size: 18px
+		padding-right: 48px
+		font-family: 'OpenSans-Semibold'
+		text-align: center
+		text-transform: uppercase
+		z-index: 2
+	.close
+		position: absolute
+		right: 10px
+		top: 10px
+		background-color: transparent!important
+		cursor: pointer
+		opacity: 1
+		border: none
+		text-align: center
+		z-index: 11
+		&:hover
+			opacity: 1 !important
+			.icon-close
+				color: darken(#37474f,10%)
+	.icon-close
+		font-size: 18px
+		color: #37474f
+.order-info-content
+	background-color: #fff
+	display: block
+	padding: 35px 40px
+	position: relative
+	vertical-align: middle
+	width: 670px
+	z-index: 1
+	.title
+		font-size: 16px
+		margin-bottom: 30px
+	.back-btn
+		padding-left: 0
+		padding-right: 48px
+	.close
+		position: absolute
+		right: 10px
+		top: 10px
+		background-color: transparent!important
+		cursor: pointer
+		opacity: 1
+		border: none
+		text-align: center
+		z-index: 11
+		&:hover
+			opacity: 1 !important
+			.icon-close
+				color: darken(#37474f,10%)
+	.icon-close
+		font-size: 18px
+		color: #37474f
+.order-info-table
+	margin-bottom: 30px
+	text-align: left
+	td
+		padding: 4px 1px
+		font-size: 15px
+		vertical-align: top
+		&:first-child
+			color: #808080
+			font-size: 14px
+			padding-right: 15px
+			white-space: nowrap
+
+.modal-dialog
+	width: auto!important
+	display: inline-block!important
+	vertical-align: middle!important
+
+@media only screen and (max-width: 992px)
+	.unified-pop-up-form
+		width: 414px
+		&.form-complain
+			padding-left: 55px
+			padding-right: 55px
+		&.form-request-document
+			padding-left: 30px
+			padding-right: 30px
+		&.form-add-phone
+			padding-left: 30px
+			padding-right: 30px
+	.order-info-content
+		width: 610px
+		padding: 27px 30px
+		.title
+			margin-bottom: 20px
+	.order-info-table
+		margin-bottom: 22px
+@media only screen and (max-width: 630px)
+	.order-info-content
+		width: 100%
+@media only screen and (max-width: 480px)
+	.unified-pop-up-form
+		padding: 23px
+		width: 100%
+		.text-input
+			padding: 0 20px
+		.text-area
+			padding-left: 20px
+			padding-right: 20px
+		.form-title
+			margin-bottom: 15px
+		.form-group
+			margin-bottom: 20px
+		.form-field
+			margin-bottom: 0
+		&.login-form
+			.form-footer
+				padding-top: 20px
+		&.form-complain
+			padding-left: 20px
+			padding-right: 20px
+		&.form-request-document
+			padding-left: 20px
+			padding-right: 20px
+			.form-title
+				line-height: 20px
+				margin-bottom: 23px
+			.selection-documents
+				margin-bottom: 16px
+			.form-group
+				margin-bottom: 15px
+			.wrapper-form-btn
+				margin-top: 4px
+		.subtitle
+			font-size: 13px
+			margin-bottom: 14px
+		.input-title
+			font-size: 13px
+			display: block
+			margin-bottom: 6px
+			height: auto
+			text-align: left
+		.max
+			display: inline
+		.icon-close
+			font-size: 15px
+		&.form-add-phone
+			.form-title
+				line-height: 22px
+				margin-bottom: 20px
+			.text
+				font-size: 13px
+			.wrapper-form-btn
+				margin-top: 10px
+	.order-info-content
+		padding-left: 20px
+		padding-right: 20px
+		.icon-close
+			font-size: 15px
+	.order-info-table
+		td
+			font-size: 13px
+			&:first-child
+				white-space: normal
+	.modal-dialog
+		width: 90%!important

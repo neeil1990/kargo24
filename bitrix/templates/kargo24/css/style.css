@@ -4696,8 +4696,6 @@ h3 {
   clear: both;
 }
 .category-section-search-region .text-input {
-  float: left;
-  max-width: 270px;
   width: 100%;
   height: 40px;
   font-size: 12px;
@@ -4705,9 +4703,6 @@ h3 {
   padding: 0 10px;
   background-color: white;
   vertical-align: middle;
-}
-.category-section-search-region .text-input:last-child {
-  float: right;
 }
 .category-section-search-region .text-input::input-placeholder {
   font-size: 12px;

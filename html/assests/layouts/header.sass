@@ -1,0 +1,1139 @@
+body
+	background: #fff
+	font-family:  'OpenSans', Arial, Verdana, Tahoma, sans-serif
+	font-size: 16px
+	line-height: 1.2em
+	color: #262b2e
+.global-wrapper
+	min-width: 320px
+ol, ul
+	list-style: none
+	margin-bottom: 0
+.clearfix:after
+	content: " "
+	display: table
+	height: 0
+	clear: both
+.clear
+	clear: both
+	height: 0
+.scr-mobile
+	overflow: hidden
+input
+	background: none
+	border: 0
+	margin: 0
+	padding: 0
+	outline: none !important
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+p
+	line-height: 1.2em
+	margin-bottom: 1em
+a
+	text-decoration: none
+::-webkit-contacts-auto-fill-button 
+	visibility: hidden
+	pointer-events: none
+	position: absolute
+	right: 0
+
+
+body a
+	&:hover, &:active, &:focus
+		text-decoration: none
+		outline: 0
+
+input:focus
+	border: none
+	outline: none
+button
+	&:focus
+		// border: none
+		outline: none
+	-webkit-appearance: button
+	cursor: pointer
+html input[type="button"]
+	-webkit-appearance: button
+	cursor: pointer
+input
+	&[type="reset"], &[type="submit"]
+		-webkit-appearance: button
+		cursor: pointer
+	&[type="hidden"]
+		display: none
+	font-family: inherit
+	font-size: inherit
+	line-height: inherit
+button, select, textarea
+	font-family: inherit
+	font-size: inherit
+	line-height: inherit
+.min
+	display: block
+.limed-spruce-btn
+	display: inline-block
+	min-width: 204px
+	height: 48px
+	background-color: #f7f7f7
+	border: 2px solid #37474f
+	border-radius: 3px
+	font-size: 18px
+	font-family: 'OpenSans-Semibold'
+	color: #37474f
+	line-height: 46px
+	padding-left: 1.2em
+	position: relative
+	transition: background .3s
+	text-transform: uppercase
+	&.white
+		border-color: #fff
+		background: #6d96ab
+		color: #fff
+		&:hover
+			background: #fff
+			color: #6d96ab
+			.arrow
+				background: #6d96ab
+				&:after
+					border-top-color: #fff
+					border-right-color: #fff
+		.arrow
+			background: #fff
+			&:after
+				border-top-color: #759cb0
+				border-right-color: #759cb0
+	.arrow
+		display: inline-block
+		height: 100%
+		width: 46px
+		background: #37474f
+		position: absolute
+		top: 0
+		right: 0px
+		transition: background .3s
+		&:after
+			content: ''
+			display: inline-block
+			width: 13px
+			height: 13px
+			border-top: 2.5px solid #fff
+			border-right: 2.5px solid #fff
+			transform: rotate(45deg)
+			position: absolute
+			top: 2px
+			bottom: 0
+			right: 0
+			left: -6px
+			margin: auto
+			transition: border-color .3s
+	&:hover
+		color: #fff
+		background: #37474f
+		.arrow
+			background: #f7f7f7
+			&:after
+				border-top-color: #37474f
+				border-right-color: #37474f
+	&:active
+		color: #fff
+		background: darken(#37474f,10%)
+	&:focus
+		color: #fff
+	
+
+// .sprite-icon
+// 	display: inline-block
+// 	background-image: url(../img/icons/sprite.png)
+// 	background-repeat: no-repeat
+
+@font-face
+	font-family: 'icomoon'
+	src: url('../fonts/icon/icomoon.eot?70435w')
+	src: url('../fonts/icon/icomoon.eot?70435w#iefix') format("embedded-opentype"), url('../fonts/icon/icomoon.ttf?70435w') format("truetype"), url('../fonts/icon/icomoon.woff?70435w') format("woff"), url('../fonts/icon/icomoon.svg?70435w#icomoon') format("svg")
+	font-weight: normal
+	font-style: normal
+
+
+[class^="icon-"], [class*=" icon-"]
+	font-family: 'icomoon' !important
+	speak: none
+	font-style: normal
+	font-weight: normal
+	font-variant: normal
+	text-transform: none
+	line-height: 1
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+.icon-check
+	.path1:before
+		content: "\e939"
+		color: rgb(109, 150, 171)
+	.path2:before
+		content: "\e93a"
+		margin-left: -1.3203125em
+		color: rgb(38, 198, 218)
+
+.icon-prohibited:before
+	content: "\e93b"
+	color: #ea3232
+
+.icon-list:before
+	content: "\e938"
+
+.icon-adv-1:before
+	content: "\e900"
+
+.icon-adv-2:before
+	content: "\e901"
+
+.icon-adv-3:before
+	content: "\e902"
+
+.icon-adv-4:before
+	content: "\e903"
+
+.icon-adv-5:before
+	content: "\e904"
+
+.icon-adv-6:before
+	content: "\e905"
+
+.icon-attention
+	.path1:before
+		content: "\e906"
+		color: rgb(241, 174, 25)
+	.path2:before
+		content: "\e907"
+		margin-left: -1em
+		color: rgb(55, 71, 79)
+	.path3:before
+		content: "\e908"
+		margin-left: -1em
+		color: rgb(109, 150, 171)
+
+.icon-builder
+	.path1:before
+		content: "\e909"
+		color: rgb(109, 150, 171)
+	.path2:before
+		content: "\e90a"
+		margin-left: -0.779296875em
+		color: rgb(55, 71, 79)
+	.path3:before
+		content: "\e90b"
+		margin-left: -0.779296875em
+		color: rgb(241, 174, 25)
+
+.icon-calendar:before
+	content: "\e90c"
+
+.icon-car-1
+	.path1:before
+		content: "\e90d"
+		color: rgb(109, 150, 171)
+	.path2:before
+		content: "\e90e"
+		margin-left: -3.0732421875em
+		color: rgb(55, 71, 79)
+
+.icon-car-2
+	.path1:before
+		content: "\e90f"
+		color: rgb(109, 150, 171)
+	.path2:before
+		content: "\e910"
+		margin-left: -2.2412109375em
+		color: rgb(55, 71, 79)
+
+.icon-close:before
+	content: "\e911"
+
+.icon-coins:before
+	content: "\e912"
+
+.icon-danger:before
+	content: "\e913"
+
+.icon-fb:before
+	content: "\e914"
+	color: #3b5998
+
+.icon-google:before
+	content: "\e915"
+	color: #dc4e41
+
+.icon-guarantee
+	.path1:before
+		content: "\e916"
+		color: rgb(109, 150, 171)
+	.path2:before
+		content: "\e917"
+		margin-left: -1.1708984375em
+		color: rgb(241, 174, 25)
+	.path3:before
+		content: "\e918"
+		margin-left: -1.1708984375em
+		color: rgb(55, 71, 79)
+
+.icon-hands
+	.path1:before
+		content: "\e919"
+		color: rgb(109, 150, 171)
+	.path2:before
+		content: "\e91a"
+		margin-left: -1.517578125em
+		color: rgb(55, 71, 79)
+	.path3:before
+		content: "\e91b"
+		margin-left: -1.517578125em
+		color: rgb(241, 174, 25)
+
+.icon-list-check
+	.path1:before
+		content: "\e91c"
+		color: rgb(55, 71, 79)
+	.path2:before
+		content: "\e91d"
+		margin-left: -0.802734375em
+		color: rgb(109, 150, 171)
+	.path3:before
+		content: "\e91e"
+		margin-left: -0.802734375em
+		color: rgb(241, 174, 25)
+
+.icon-mail:before
+	content: "\e91f"
+
+.icon-mailru:before
+	content: "\e920"
+	color: #3d6cb0
+
+.icon-man-user:before
+	content: "\e921"
+
+.icon-odn:before
+	content: "\e922"
+	color: #eb722e
+
+.icon-old-phone:before
+	content: "\e923"
+
+.icon-phone:before
+	content: "\e924"
+
+.icon-pin:before
+	content: "\e925"
+
+.icon-plus:before
+	content: "\e926"
+
+.icon-search:before
+	content: "\e927"
+
+.icon-shopping-list:before
+	content: "\e928"
+
+.icon-simple-calculator:before
+	content: "\e929"
+
+.icon-skype:before
+	content: "\e92a"
+	color: #00aff0
+
+.icon-star:before
+	content: "\e92b"
+	color: #fff
+
+.icon-truck-1
+	.path1:before
+		content: "\e92c"
+		color: rgb(55, 71, 79)
+	.path2:before
+		content: "\e92d"
+		margin-left: -1.9794921875em
+		color: rgb(109, 150, 171)
+
+.icon-truck-2
+	.path1:before
+		content: "\e92e"
+		color: rgb(55, 71, 79)
+	.path2:before
+		content: "\e92f"
+		margin-left: -1.7841796875em
+		color: rgb(109, 150, 171)
+
+.icon-truck-3
+	.path1:before
+		content: "\e930"
+		color: rgb(109, 150, 171)
+	.path2:before
+		content: "\e931"
+		margin-left: -2.1328125em
+		color: rgb(55, 71, 79)
+
+.icon-truck:before
+	content: "\e932"
+
+.icon-tvitter:before
+	content: "\e933"
+	color: #00aced
+
+.icon-user:before
+	content: "\e934"
+
+.icon-viber:before
+	content: "\e935"
+	color: #7b519d
+
+.icon-wk:before
+	content: "\e936"
+	color: #48729e
+
+.icon-ws:before
+	content: "\e937"
+	color: #65bc54
+
+h1
+	font-size: 26px
+	font-family: 'OpenSans-Bold'
+	line-height: 1.2em
+	background: #fff
+	display: inline-block
+	padding: .6em 0.7em
+	margin-left: 15px
+	margin-bottom: 1.7em
+	position: relative
+	text-transform: uppercase
+	z-index: 1
+	&:before
+		content: ''
+		display: block
+		width: 100px
+		height: calc(100% + 25px)
+		background-color: transparent
+		border: 8px solid #fff
+		position: absolute
+		top: -12px
+		left: -15px
+		z-index: -1
+h2
+	font-size: 16px
+	font-family: 'OpenSans-Bold'
+	margin: 0 0 1.2em 0
+	text-transform: uppercase
+h3
+	font-size: 13px
+	font-family: 'OpenSans-Bold'
+	margin: 0 0 1.2em 0
+	text-transform: uppercase
+
+
+.col-mod-left
+	padding-left: 0
+.col-mod-right
+	padding-right: 0
+
+
+/*****head-toggle-menu********/
+.head-toggle-menu
+	display: none
+	background: transparent
+	height: 22px
+	border: none
+	width: 22px
+	margin-right: 10px
+	position: relative
+	z-index: 10
+	-webkit-transition: -webkit-transform 0.4s
+	transition: transform 0.4s, border-color ,.3s
+	vertical-align: middle
+	&:active
+		border: none
+		outline: none !important
+		-webkit-appearance: button !important
+		box-shadow: none
+	&:focus
+		outline: none !important
+		-webkit-appearance: button !important
+		box-shadow: none
+	&:hover
+		cursor: pointer
+
+
+/*******HEADER***********/
+
+.main-head
+	padding: 1em 0
+	background: #fff
+	border-bottom: 1px solid #37474f
+.head-logo
+	padding-top: .2em
+	text-align: center
+	img
+		max-width: 100%
+		height: auto
+.head-switch-lang
+	margin-top: 15px
+	&.mobile
+		display: none
+	li
+		display: inline-block
+		margin-right: 6px
+		max-width: 50px
+		height: 20px
+		vertical-align: top
+		&:last-child
+			margin-right: 0
+		&.active
+			a
+				&:after
+					opacity: 0
+		&:hover
+			a
+				&:after
+					opacity: 0
+	a
+		position: relative
+		display: block
+		&:after
+			content: ''
+			display: block
+			width: 100%
+			height: 100%
+			background: #fff
+			opacity: .4
+			position: absolute
+			top: 0
+			left: 0
+			transition: opacity .3s
+	img
+		max-width: 100%
+		height: auto
+
+.head-personal-account
+	padding: 18px 0 0
+	float: right
+	.account-head
+		display: inline-block
+		font-size: 14px
+		color: #262b2e
+		padding-left: 2.7em
+		padding-right: 2em
+		cursor: pointer
+		padding-bottom: 14px
+		position: relative
+		&.mod
+			padding-right: 0
+			&:after
+				display: none
+			.icon-user
+				color: #6d96aa
+		&:after
+			content: ''
+			display: block
+			width: 8px
+			height: 8px
+			border-bottom: 2px solid #000
+			border-right: 2px solid #000
+			transform: rotate(45deg)
+			position: absolute
+			right: 0
+			top: 4px
+			transition: transform .1s
+		.up
+			&:after
+				transform: rotate(45deg)
+	.name
+		display: inline-block
+		vertical-align: middle
+		font-size: 14px
+		padding-right: 1.2em
+		margin-right: 1em
+		position: relative
+		&:after
+			content: ''
+			display: block
+			width: 8px
+			height: 8px
+			border-bottom: 2px solid #000
+			border-right: 2px solid #000
+			transform: rotate(45deg)
+			position: absolute
+			right: 0
+			top: 4px
+	.balance
+		display: inline-block
+		vertical-align: middle
+		font-size: 14px
+	a
+		font-size: 14px
+		color: #262b2e
+		transition: color .3s
+		&:hover
+			color: #6d96ab
+	.icon
+		position: absolute
+		top: -4px
+		left: 0
+		font-size: 27px
+	.log-register
+		position: absolute
+		top: 100%
+		right: 0
+		width: 181px
+		background-color: white
+		border-radius: 3px
+		box-shadow: 0 0 15px rgba(37, 37, 37, 0.15)
+		padding: 0 1em
+		visibility: hidden
+		opacity: 0
+		transition: visibility .4s, opacity .4s
+		text-align: left
+		z-index: 50
+		li
+			padding: 1em 0
+			&:first-child
+				border-bottom: 1px solid #b3b3b3
+	.open-block
+		display: block
+
+.head-catalog-menu
+	.catalog-menu-text
+		display: block
+		background: #37474f
+		color: #fff
+		transition: background .3s
+		height: 50px
+		line-height: 50px
+		padding-left: 1em
+		position: relative
+		cursor: pointer
+		text-align: center
+		text-transform: uppercase
+	.icon
+		display: inline-block
+		margin-right: .5em
+		position: absolute
+		top: 12px
+		font-size: 28px
+		left: 16%
+	.fa
+		display: inline-block
+		color: #fff
+		font-size: 18px
+		position: absolute
+		top: 16px
+		right: 3em
+.head-nav
+	padding-left: 0.3em
+	width: 100%
+.head-nav-menu
+	display: table
+	width: 100%
+	li
+		display: table-cell
+		height: 50px
+		padding: 3px 0
+		vertical-align: middle
+		&.close-menu
+			display: none
+		&:nth-child(2)
+			a
+				white-space: nowrap
+		&:last-child
+			a
+				&:after
+					content: ''
+					display: block
+					height: 20px
+					width: 1px
+					opacity: 0.5
+					background-color: #78909c
+					position: absolute
+					top: 0
+					right: 0
+					bottom: 0
+					margin: auto
+	a
+		display: table-cell
+		padding: 2px 1.1em
+		color: #263238
+		position: relative
+		text-transform: uppercase
+		vertical-align: middle
+		text-align: center
+		transition: color .3s
+		&:before
+			content: ''
+			display: block
+			height: 20px
+			width: 1px
+			opacity: 0.5
+			background-color: #78909c
+			position: absolute
+			top: 0
+			left: 0
+			bottom: 0
+			margin: auto
+		&:hover
+			color: #6d96ab
+		&.active
+			color: #6d96ab
+.fixed-menu
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	background: #fff
+	transform: translate3d(0, -100px ,0)
+	box-shadow: 0 1px 0 rgba(0,0,0,.1)
+	z-index: 500
+.global-pad
+	padding-top: 50px
+.ui-head-transform
+	transform: translate3d(0, 0 ,0)!important
+	transition: transform .4s
+.drop-down-menu
+	position: absolute
+	top: 98%
+	left: 15px
+	background-color: white
+	border: 1px solid #f0f0f0
+	width: 1370px
+	padding: 1.5em 0
+	box-shadow: 0 5px 10px rgba(37, 37, 37, 0.1)
+	visibility: collapse
+	opacity: 0
+	transform: rotateX(-90deg)
+	transform-origin: top center
+	z-index: 100
+	&:after
+		content: ''
+		display: table
+		height: 0
+		clear: both
+.drop-down-menu-column
+	float: left
+	width: 16.66667%
+	padding: 0 .7em
+.drop-down-menu-list
+	margin-bottom: 1.6em
+	&.list-title-link
+		li
+			margin-bottom: 1.9em
+			font-family: 'OpenSans-Semibold'
+			padding-left: 0
+			&:before
+				display: none
+		a
+			color: #263238
+			text-transform: uppercase
+			&:hover
+				border-bottom-color: #263238
+	&.mod
+		margin-bottom: 0
+	.title-list-menu
+		color: #263238
+		padding-left: 0
+		font-family: 'OpenSans-Semibold'
+		text-transform: uppercase
+		&:before
+			display: none
+	li
+		font-size: 14px
+		position: relative
+		padding-left: 12px
+		margin-bottom: .5em
+		&:before
+			content: ''
+			display: inline-block
+			width: 3px
+			height: 3px
+			background-color: #607d8b
+			position: absolute
+			top: 9px
+			left: 0
+		&:last-child
+			margin-bottom: 0
+	a
+		color: #546e7a
+		border-bottom: 1px solid transparent
+		transition: border-bottom-color .3s
+		&:hover
+			border-bottom-color: #546e7a
+
+.sort
+	display: inline-block
+	margin-right: 1em
+	vertical-align: middle
+	.current-sort
+		height: 28px
+		position: relative
+		background-color: #fff
+		border-radius: 14px
+		list-style-type: none
+		&.mod
+			border-radius: 14px 14px 0 0
+		&.open
+			.current-list
+				display: block
+	.line
+		display: inline-block
+		height: 100%
+		width: 100%
+		padding: 0 30px 0 12px
+		color: #000
+		font-size: 14px
+		line-height: 27px
+		position: relative
+		// white-space: nowrap
+		overflow: hidden
+		text-transform: uppercase
+		cursor: pointer
+		z-index: 1
+	.icon
+		position: absolute
+		top: -2px
+		bottom: 0
+		right: 15px
+		margin: auto
+		width: 8px
+		height: 8px
+		border-bottom: 2px solid #000
+		border-right: 2px solid #000
+		transform: rotate(45deg)
+	.icon-up
+		transform: rotate(-135deg)
+		top: 5px
+	.current-list
+		display: none
+		position: absolute
+		min-width: 100%
+		left: 0
+		margin-top: -3px
+		// border: 1px solid #d5dbe0
+		display: none
+		background-color: #fff
+		border-radius: 3px
+		box-shadow: 0 0 15px rgba(37, 37, 37, 0.15)
+		padding: 10px
+		width: 157px
+		// box-shadow: 0 0 5px rgba(0,0,0,.2)
+		z-index: 200
+		li
+			display: block
+			cursor: pointer
+			width: 100%
+			white-space: nowrap
+			text-align: left
+			padding: 3px 5px 3px 12px
+			transition: background .3s
+			&:hover
+				background: darken(#fff, 10%)
+	
+@media only screen and (min-width: 992px)
+	.head-catalog-menu
+		&:hover
+			.fa
+				transform: rotate(-180deg)
+			.drop-down-menu
+				visibility: visible
+				transform: rotateX(0)
+				opacity: 1
+				transition: visibility .3s, opacity .3s,transform .3s
+	.head-personal-account
+		&:hover
+			.log-register
+				visibility: visible
+				opacity: 1
+	.head-catalog-menu
+		.catalog-menu-text
+			&:hover
+				background: #0097a7
+@media only screen and (max-width: 1440px)
+	.drop-down-menu
+		width: 1140px
+	.head-catalog-menu .fa
+		right: 2em
+@media only screen and (max-width: 1200px)
+	.drop-down-menu
+		width: 940px
+	.head-nav-menu a
+		padding-left: .5em
+		padding-right: .5em
+	.head-catalog-menu
+		.fa
+			right: 1em
+		.icon
+			left: 7%
+	.head-personal-account
+		padding-top: 13px
+
+
+@media only screen and (max-width: 992px)
+	.main-head
+		padding: 0.7em 0
+	.head-nav
+		padding-left: 0
+	.head-switch-lang li
+		max-width: 33px
+		height: 22px
+	.head-nav-menu a
+		font-size: 13px
+	.drop-down-menu
+		width: 720px
+	.head-personal-account > a
+		padding-bottom: 4px
+	.head-switch-lang
+		margin-top: 7px
+		li
+			margin-right: 4px
+			font-size: 14px
+			white-space: nowrap
+			text-transform: uppercase
+	.head-personal-account
+		padding-top: 10px
+		.icon
+			font-size: 19px
+			top: 0
+		.balance
+			display: none
+
+	.head-catalog-menu 
+		.catalog-menu-text
+			font-size: 14px
+			padding-left: 0
+		.icon
+			font-size: 21px
+			left: 3%
+			top: 15px
+	.head-catalog-menu
+		.fa
+			right: 7px
+	.drop-down-menu-column
+		width: 32.5%
+		display: inline-block
+		float: none
+		vertical-align: top
+	.drop-down-menu-list.list-title-link li
+		margin-bottom: 1.6em
+	.drop-down-menu
+		visibility: visible
+		transform: rotateX(0)
+		opacity: 1
+		display: none
+		max-height: 100vh
+		overflow: auto
+	.drop-down-menu-visible
+		display: block
+	.head-personal-account 
+		.log-register
+			visibility: visible
+			opacity: 1
+			display: none
+		.log-register-visible
+			display: block
+
+@media only screen and (max-width: 767px)
+	.global-pad
+		padding-top: 40px
+	.head-personal-account
+		.account-head
+			&.mod
+				padding-right: 1.6em
+				&:after
+					display: block
+	.drop-down-menu
+		padding-top: 10px
+	.head-switch-lang
+		&.mobile
+			display: block
+		&.desktop
+			display: none
+		img
+			max-width: 33px
+			height: 22px
+			margin-right: 10px
+			display: inline-block
+			position: relative
+			top: -2px
+			vertical-align: middle
+		.line
+			padding-left: 0
+			width: 65px
+		.sort
+			li
+				padding: 0
+				margin-right: 0
+				max-width: 100%
+				margin-bottom: 5px
+	.head-nav
+		display: none
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		width: 100vw
+		height: 100vh
+		background: rgba(0,0,0,.5)
+		overflow: auto
+		text-align: center
+		z-index: 200
+		&:before
+			content: ''
+			display: inline-block
+			height: 100%
+			margin-left: -5px
+			vertical-align: middle
+	.head-nav-menu
+		display: inline-block
+		background: #fff
+		max-width: 300px
+		border-radius: 3px
+		padding: 2em
+		position: relative
+		box-shadow: 0 0 15px rgba(37, 37, 37, 0.15)
+		vertical-align: middle
+		li
+			display: block
+			height: auto
+			padding: 0
+			border-bottom: 1px solid #d4d6d7
+			&:nth-last-child(2)
+				border-bottom: none
+			&.close-menu
+				display: block
+				position: absolute
+				top: 10px
+				right: 10px
+				border-bottom: none
+				cursor: pointer
+				font-size: 35px
+				color: #37474f
+		a
+			display: inline-block
+			font-size: 16px
+			padding: 1em 0
+			font-family: 'OpenSans-Semibold'
+			&:after
+				display: none !important
+			&:before
+				display: none
+	.drop-down-menu
+		width: 127%
+		padding-bottom: 2.5em
+	.drop-down-menu-column
+		width: 49%
+	.head-toggle-menu
+		display: block
+		height: 40px
+		width: 40px
+		.icon-list
+			display: inline-block
+			font-size: 17px
+			color: #6d96ab
+			&:before
+				line-height: 40px
+	.head-catalog-menu
+		.fa
+			top: 9px
+		.catalog-menu-text
+			height: 40px
+			line-height: 40px
+		.icon
+			top: 10px
+			left: 12%
+	.head-personal-account
+		.text
+			display: none
+		.name,.balance
+			display: none
+		.account-head
+			padding-left: 1.2em
+	.head-logo
+		width: 154px
+		margin: 0 auto
+	.head-switch-lang
+		margin-top: 0
+	.head-personal-account
+		padding: 5px 0 0
+		.account-head
+			&:after
+				right: 4px
+		.log-register
+			right: 10px
+@media only screen and (max-width: 480px)
+	.head-logo
+		position: relative
+		left: -15px
+	.head-catalog-menu .catalog-menu-text
+		padding-left: 9px
+	.drop-down-menu
+		width: 122%
+	.head-catalog-menu .fa
+		right: 24px
+		top: 10px
+	.head-toggle-menu .icon-list
+		position: relative
+		left: -7px
+		top: -1px
+	.head-catalog-menu .catalog-menu-text
+		width: 95%
+	.drop-down-menu-column
+		width: 100%
+		&.mod
+			>.drop-down-menu-list
+				padding-top: 0
+	.drop-down-menu-list
+		margin-bottom: 0
+		padding: 0.5em 0 0
+		border-bottom: 1px solid #d9d9d9
+		&.hide-mobile
+			padding-top: 0
+			position: relative
+			top: -1px
+		&.mod
+			border-bottom: none
+		li:last-child
+			margin-bottom: .5em
+		&.list-title-link
+			padding-top: 0
+			li
+				margin: 0
+				padding: .5em 0
+				border-bottom: 1px solid #d9d9d9
+		li
+			display: none
+			&.title-list-menu
+				display: block
+				padding-right: 3.2em
+				position: relative
+				&:after
+					content: ''
+					display: block
+					width: 10px
+					height: 10px
+					border-bottom: 2px solid #526067
+					border-right: 2px solid #526067
+					transform: rotate(45deg)
+					position: absolute
+					top: 0
+					bottom: 0
+					right: 2em
+					margin: auto
+			&.up-caret
+				&:after
+					transform: rotate(-135deg)
+					border-color: #6d96ab
+					top: 5px
+		&.list-title-link
+			li
+				display: block
+		.visible-block
+			display: block
+	

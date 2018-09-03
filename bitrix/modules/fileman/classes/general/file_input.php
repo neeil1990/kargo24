@@ -417,16 +417,8 @@ class CFileInput
 					self::DisplayFile($arFile, $ind);
 		?>
 		<script type="text/javascript">
-		if (typeof(window.BX) !== 'undefined')
-		{
-			new BX.file_input(<?= CUtil::PhpToJSObject($arConfig)?>);
-		}
-		else
-		{
-			new top.BX.file_input(<?= CUtil::PhpToJSObject($arConfig)?>);
-		}
+			(top.BX.file_input) ? new top.BX.file_input(<?= CUtil::PHPToJSObject($arConfig)?>) : new BX.file_input(<?= CUtil::PHPToJSObject($arConfig)?>)
 		</script>
-		<script type="text/javascript">(top.BX.file_input) ? new top.BX.file_input(<?= CUtil::PHPToJSObject($arConfig)?>) : new BX.file_input(<?= CUtil::PHPToJSObject($arConfig)?>)</script>
 		</div>
 		<?/* Used to refresh form content - workaround for IE bug (mantis:37969) */?>
 	<div id="<?= self::$jsId.'_ie_bogus_container'?>"><input type="hidden" value="" /></div>

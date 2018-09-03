@@ -1,0 +1,280 @@
+/*********NEWS**********/
+.title-section
+	height: 170px
+	&.news
+		background: url(../img/bg/news-bg.jpg) no-repeat center top
+		background-size: cover
+	&.company
+		background: url(../img/bg/company-bg.jpg) no-repeat center top
+		background-size: cover
+	&.rate
+		background: url(../img/bg/company-bg.jpg) no-repeat center top
+		background-size: cover
+	&.adversting
+		background: url(../img/bg/adversting-bg.jpg) no-repeat center top
+		background-size: cover
+	&.category
+		background: url(../img/bg/category-bg.jpg) no-repeat center top
+		background-size: cover
+	&.order
+		background: url(../img/bg/order-bg.jpg) no-repeat center top
+		background-size: cover
+	&.transport
+		background: url(../img/bg/transport-bg.jpg) no-repeat center top
+		background-size: cover
+	.container
+		position: relative
+		height: 100%
+		&:before
+			display: inline-block
+			margin-left: -5px
+			vertical-align: middle
+			height: 100%
+	.title
+		display: inline-block
+		margin: 1em 0 1em 20px
+		vertical-align: middle
+
+/********pagination************/
+.main-pagination
+	li
+		display: inline-block
+		margin-right: 6px
+		background: url(../img/bg/gray-bg-2.jpg) repeat left top
+		vertical-align: top
+		&:last-child
+			margin-right: 0
+		&:hover
+			background: none
+		&.active
+			color: #fff
+			font-family: 'OpenSans-Extrabold'
+			background: none
+			a
+				color: #fff
+				font-family: 'OpenSans-Extrabold'
+				background-color: transparent
+				&:before
+					opacity: 1
+	a
+		width: 40px
+		height: 40px
+		display: block
+		font-size: 30px
+		position: relative
+		font-family: 'OpenSans-Semibold'
+		background-color: transparent
+		line-height: 40px
+		color: #262b2e
+		text-align: center
+		transition: color .3s
+		&:before
+			content: ''
+			display: block
+			width: 100%
+			height: 100%
+			position: absolute
+			top: 0
+			left: 0
+			background: repeating-linear-gradient(-45deg, #454545 0, #454545 5px, #6d96ab 5px, #6d96ab 10px)
+			opacity: 0
+			transition: opacity .3s
+			z-index: -1
+		&:hover
+			color: #fff
+			font-family: 'OpenSans-Extrabold'
+			background-color: transparent
+			&:before
+				opacity: 1
+			
+.breadcrumbs
+	padding: 19px 0
+	background: url(../img/bg/breadcrums-bg.jpg) no-repeat center top
+	background-size: cover
+.breadcrumbs-list
+	li
+		display: inline-block
+		color: #fff
+		font-size: 12px
+		margin-right: 13px
+		position: relative
+		font-family: 'OpenSans-Semibold'
+		&:after
+			content: ''
+			display: inline-block
+			width: 4px
+			height: 1px
+			background: #fff
+			position: absolute
+			top: 0
+			bottom: 0
+			right: -10px
+			margin: auto
+		&:last-child
+			margin-right: 0
+			border-bottom: 1px solid #fff
+			&:after
+				display: none
+		a
+			color: #fff
+			transition: color .3s,border-bottom-color .3s
+			&:hover
+				color: #37474f
+
+.news-section-mod
+	padding: 2.5em 0 2.4em
+	.column
+		margin-bottom: .5em
+.news-item-detailed
+	background: url(../img/bg/gray-bg.jpg) repeat left top
+	padding: 0 1.9em 1.8em
+	.top-panel
+		padding: 1.8em 0 1.55em
+		&:after
+			content: ''
+			display: table
+			height: 0
+			clear: both
+	.title
+		float: left
+		font-size: 16px
+		margin-bottom: 0
+		font-family: 'OpenSans-Bold'
+		text-transform: uppercase
+		width: 80%
+	.date
+		float: right
+		width: 20%
+		color: #808080
+		font-size: 12px
+		font-family: 'OpenSans-Semibold'
+		text-align: right
+	.item-img
+		margin: 0
+		margin-bottom: 1.7em
+		img
+			max-width: 100%
+			height: auto
+	.text
+		font-size: 15px
+		line-height: 1.35em
+		margin-bottom: 1em
+		&.last
+			margin-bottom: 1.75em
+	.all-news-btn
+		margin-top: 25px
+		a
+			padding-left: .6em
+
+.news-section-detailed
+	padding: 2.5em 0
+.sidebar-news
+	h2
+		position: relative
+		top: -5px
+		margin-bottom: 2em
+	.news-item
+		margin-bottom: .7em
+
+@media only screen and (max-width: 992px)
+	h1
+		font-size: 20px
+	.title-section
+		height: 104px
+	.breadcrumbs
+		padding: 10px 0
+	.main-pagination a
+		width: 30px
+		height: 30px
+		line-height: 30px
+		font-size: 24px
+	.news-section-mod
+		padding: 1.8em 0
+	.news-item
+		.text
+			margin-bottom: 10px
+	.news-section-detailed
+		padding-top: 1.9em
+		padding-bottom: 1.9em
+		.top-panel
+			padding: 1em 0 1.25em
+	.news-item-detailed
+		padding-left: .6em
+		padding-right: .6em
+		.item-img
+			margin-bottom: 1em
+		.text
+			font-size: 13px
+			line-height: 16px
+			margin-bottom: .6em
+			&.last
+				margin-bottom: 18px
+	.sidebar-news h2
+		margin-bottom: 23px
+
+
+@media only screen and (max-width: 767px)
+	.main-pagination
+		margin-bottom: 1.35em
+	.news-item-detailed
+		padding: 0 0 1.35em
+		.title
+			width: auto
+		.date
+			width: auto
+		.item-img
+			margin-bottom: 1em
+		.text
+			font-size: 13px
+		.all-news-btn
+			margin-top: 16px
+	.sidebar-news
+		margin-top: 1.35em
+		h2
+			margin-bottom: .8em
+	.news-section-detailed
+		padding: 1.35em 0 .1em
+		.title
+			line-height: 20px
+		.top-panel
+			padding-bottom: 1em
+	.breadcrumbs
+		padding: 9px 0
+	.breadcrumbs-list
+		font-size: 0
+		line-height: 0
+		li
+			line-height: 1.2em
+			a
+				display: block
+				line-height: 1.1em
+
+@media only screen and (max-width: 630px)
+	.news-section-mod
+		padding: 1.35em 0
+		.column
+			margin-bottom: 0
+	h1
+		font-size: 18px
+	// .main-pagination a
+	// 	width: 40px
+	// 	height: 40px
+	// 	line-height: 40px
+	// 	font-size: 30px
+	.news-item
+		.text
+			margin-bottom: 0
+	.sidebar-product-item
+		margin-bottom: 20px
+	.sidebar-social-network
+		margin-top: 0
+
+@media only screen and (max-width: 420px)
+	.news-section-detailed
+		.all-news-btn
+			a
+				width: 100%
+				padding-left: 0
+				padding-right: 2em
+				text-align: center
+	

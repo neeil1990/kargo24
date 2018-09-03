@@ -1,0 +1,1058 @@
+/*********MAIN-SECTION**********/
+.main-section
+	background: url(../img/bg/main-section-bg.jpg) no-repeat center top
+	padding: 5.5em 0 5.8em
+	.title
+		font-size: 30px
+		font-family: 'OpenSans-Bold'
+		line-height: 1.2em
+		padding: 0
+		color: #37474f
+		background-color: transparent
+		margin: 0 0 0.9em
+		text-transform: uppercase
+		&:before
+			display: none
+	.bold
+		font-family: 'OpenSans-Bold'
+		text-transform: uppercase
+	.text
+		color: #37474f
+		margin-bottom: 2em
+	.service-btn
+		a
+			background-color: #e5e5e5
+			.arrow
+				&:after
+					border-top-color: #e5e5e5
+					border-right-color: #e5e5e5
+			&:hover
+				background: #37474f
+				.arrow
+					background-color: #e5e5e5
+					&:after
+						border-top-color: #37474f
+						border-right-color: #37474f
+
+.section-title
+	font-size: 26px
+	font-family: 'OpenSans-Bold'
+	line-height: 1.2em
+	background: #f2f2f2
+	display: inline-block
+	padding: .45em 0.65em
+	margin-left: 15px
+	margin-bottom: 2em
+	position: relative
+	text-transform: uppercase
+	z-index: 1
+	&:before
+		content: ''
+		display: block
+		width: 100px
+		height: calc(100% + 25px)
+		background-color: transparent
+		border: 8px solid #f2f2f2
+		position: absolute
+		top: -12.5px
+		left: -15px
+		z-index: -1
+	&.white
+		background: #fff
+		&:before
+			border-color: #fff
+
+/*********TRANSPORTATIONS-SECTION*************/
+.transportations-section
+	padding: 2.5em 0
+	.section-title
+		max-width: 685px
+		font-size: 24px
+		padding: 1px 1em
+		margin-top: 13px
+		margin-bottom: 1.9em
+.unified-ad-unit
+	padding: 20px
+	margin-top: 3px
+	background: repeating-linear-gradient(-45deg,#454545 0, #454545 5px,#6d96ab 5px,#6d96ab 10px)
+	position: relative
+	z-index: 1
+	&.mobile
+		display: none
+	&:hover
+		&:after
+			opacity: 1
+		.ad-unit-head
+			background: #6d96ab
+		.ad-init-footer
+			background: #37474f
+		.more-info-btn
+			background: #37474f
+			.arrow
+				&:after
+					border-top-color: #37474f
+					border-right-color: #37474f
+	&:after
+		content: ''
+		display: block
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+		background: repeating-linear-gradient(-45deg,#444444 0, #444444 5px,#f7b029 5px,#f7b029 10px)
+		opacity: 0
+		margin-bottom: 2px
+		transition: opacity .3s
+		z-index: -1
+	.logo-text
+		font-size: 14px
+		color: #fff
+	.ad-unit-img
+		img
+			width: 100%
+			height: auto
+	.ad-init-footer
+		padding: .55em .5em .9em
+		background: #6d96ab
+		text-align: center
+		.title
+			font-size: 13px
+			font-family: 'OpenSans-Bold'
+			color: #fff
+			display: block
+			margin-bottom: 8px
+			text-transform: uppercase
+	.more-info-btn
+		text-align: left
+		max-width: 184px
+		min-width: auto
+		width: 100%
+		font-size: 16px
+		height: 38px
+		line-height: 34px
+		.arrow
+			width: 38px
+			height: 101%
+		&:hover
+			background: #fff!important
+			color: #37474f
+			.arrow
+				background: #37474f
+				&:after
+					border-top-color: #fff!important
+					border-right-color: #fff!important
+	.ad-unit-head
+		padding: .62em
+		background: #37474f
+		text-align: center
+		transition: background .3s
+		.logo
+			margin-bottom: 4px
+		img
+			max-width: 100%
+			height: auto
+.wrapper-unified-column
+	margin: 0 -2.5px
+	font-size: 0
+	&.white
+		.unified-unit-service
+			background: #fff
+			border-color: #fff
+			&:hover
+				background: #6d96ab
+				border-color: #6d96ab
+.unified-column
+	display: inline-block
+	width: 16.6667%
+	padding: 2.5px
+	font-size: 1rem
+	vertical-align: top
+
+.unified-unit-service
+	background-color: #f2f2f2
+	border: 4.5px solid #f2f2f2
+	border-bottom: none
+	transition: background .3s, box-shadow .3s,border-color .3s
+	&:hover
+		background: #6d96ab
+		border-color: #6d96ab
+		box-shadow: 2.8px 2.8px 0 #37474f
+		.title
+			color: #fff
+	>a
+		display: block
+		width: 100%
+		height: 100%
+	.item-img
+		height: 137px
+		line-height: 137px
+		text-align: center
+		img
+			width: 100%
+			height: auto
+			max-height: 100%
+	.item-desc
+		min-height: 50px
+		display: table
+		width: 100%
+	.title
+		display: table-cell
+		color: #263238
+		font-size: 13px
+		line-height: 1.3em
+		padding: 9px 2px
+		font-family: 'OpenSans-Bold'
+		text-transform: uppercase
+		vertical-align: middle
+		transition: color .3s
+
+/*********SPECIAL-EQUIPMENT-SECTION************/
+.special-equipment-section
+	padding: .8em 0 0
+	.section-title
+		margin-bottom: 1.4em
+.special-equipment-content
+	font-size: 0
+	line-height: 0
+	margin: 0 -2px
+	text-align: center
+.special-equipment-item
+	padding: 2px
+	font-size: 13px
+	line-height: 1.2em
+	display: inline-block
+	width: 12.5%
+	border: 1px solid transparent
+	margin-bottom: 10px
+	text-align: left
+	vertical-align: top
+	transition: box-shadow .3s, border .3s
+	&:hover
+		border: 1px solid #b6cad5
+		box-shadow: 2.8px 2.8px 0 rgba(109, 150, 171, 0.5)
+		.item-img
+			&:after
+				width: 200%
+				left: auto
+				right: 2px
+				animation: slide 5s linear infinite
+				background: repeating-linear-gradient(-45deg,#444444 0, #444444 7px,#f1ae19 7px,#f1ae19 14px)
+			img
+				transform: translate3d(30px, 0, 0)
+	.item-img
+		position: relative
+		height: 90px
+		font-size: 0
+		line-height: 85px
+		overflow: hidden
+		&:after
+			content: ''
+			display: block
+			width: calc(100% - 4px)
+			height: 2px
+			background: repeating-linear-gradient(-45deg,#444444 0, #444444 7px,#6d96ab 7px,#6d96ab 14px)
+			position: absolute
+			bottom: 0
+			left: 2px
+		img
+			max-width: 100%
+			height: auto
+			max-height: 100%
+			display: inline-block
+			font-size: 16px
+			vertical-align: bottom
+			transition: transform 1s ease-out .2s
+	.item-desc
+		min-height: 45px
+		padding: 0 5px
+		display: table
+		width: 100%
+	.title
+		display: table-cell
+		color: #262b2e
+		font-size: 13px
+		font-family: 'OpenSans-Bold'
+		text-transform: uppercase
+		vertical-align: middle
+		transition: color .3s
+
+
+@keyframes slide
+	0%
+		margin-right: 0
+		margin-left: auto
+
+	100%
+		margin-right: -100%
+		margin-left: auto
+
+/*********EQUIPMENT-RENT-SECTION*************/
+.equipment-rent-section
+	padding: 1.45em 0 0.1em
+	.section-title
+		margin-top: .5em
+		margin-bottom: 1.54em
+.sidebar-product-item
+	padding: 10px
+	background: repeating-linear-gradient(-45deg,#454545 0, #454545 5px,#6d96ab 5px,#6d96ab 10px)
+	position: relative
+	margin-bottom: 2.4em
+	z-index: 1
+	&.mobile
+		display: none
+	&:hover
+		&:after
+			opacity: 1
+		.logo
+			background: #6d96ab
+	&:after
+		content: ''
+		display: block
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+		background: repeating-linear-gradient(-45deg,#444444 0, #444444 5px,#f7b029 5px,#f7b029 10px)
+		opacity: 0
+		margin-bottom: 2px
+		transition: opacity .3s
+		z-index: -1
+	.product-img
+		overflow: hidden
+		img
+			width: 100%
+			height: auto
+			transition: transform .3s
+	.logo
+		background: #37474f
+		padding: 5.5px
+		text-align: center
+		transition: background .3s
+		img
+			max-width: 100%
+			height: auto
+	.product-desc
+		background: #fff
+		padding: 1em 1em .4em
+	.title
+		margin-bottom: 0.9em
+	.desc-info
+		td
+			padding: 1px 4px
+			font-size: 13px
+			font-family: 'OpenSans-Semibold'
+			color: #808080
+			&:last-child
+				color: #262b2e
+
+.accompanyin-passenger-services-section
+	background: url(../img/bg/gray-bg.jpg) repeat left top
+	padding: 3.3em 0 2.3em
+.accompanying-services-content
+	.unified-column
+		width: 30.4%
+.passenger-transportation-content
+	.unified-column
+		width: 25%
+.construction-materials-content
+	.unified-column
+		width: 12.5%
+.construction-materials-section
+	padding: 3.4em 0 2.3em
+
+/*********ADVANTAGES-SECTION*********/
+.advantages-section
+	background: url(../img/bg/gray-bg.jpg) repeat left top
+	padding: 3.3em 0 0.2em
+	.section-title
+		margin-bottom: 1.2em
+.advantages-content-list
+	font-size: 0
+	line-height: 0
+	margin: 0 -15px
+.advantages-item
+	display: inline-block
+	width: 33.3336%
+	padding: 0 15px
+	margin: 20px 0
+	line-height: 0
+	vertical-align: top
+	.item-icon
+		display: inline-block
+		font-size: 60px
+		color: #6d96ab
+		width: 65px
+		margin-right: 10px
+		vertical-align: top
+		text-align: center
+	.item-desc
+		display: inline-block
+		width: calc(100% - 75px)
+		vertical-align: top
+	.title
+		margin-bottom: .5em
+		font-size: 16px
+	.text
+		font-size: 15px
+		line-height: 1.2em
+
+/********SERVICE-SECTION*********/
+.service-section
+	padding: 2.4em 0 1.2em
+	.section-title
+		margin-top: .5em
+	.container-img
+		margin-bottom: 1.5em
+		img
+			width: 100%
+			height: auto
+	.service-list
+		li
+			position: relative
+			font-size: 15px
+			margin-bottom: 5px
+			padding-left: 27px
+	.icon-check
+		position: absolute
+		top: 1px
+		left: 0
+.service-text-item
+	margin-bottom: 1.2em
+	.title
+		font-size: 16px
+		margin-bottom: 0.4em
+	.text
+		font-size: 15px
+		line-height: 1.35em
+		margin-bottom: 1em
+.sidebar-social-network
+	background: #f2f2f2
+	padding: 1em 1em .4em
+	text-align: center
+	.title
+		margin-bottom: 1.3em
+		line-height: 1.3em
+	.social-network
+		text-align: left
+		font-size: 0
+		line-height: 0
+		li
+			display: inline-block
+			padding: 0 3.5px
+			margin-bottom: 4px
+		a
+			display: block
+			transition: transform .3s
+			&:hover
+				transform: scale(1.1)
+		.icon
+			font-size: 25px
+
+/********TOP-COMPANIES-SECTION***********/
+.top-companies-section
+	padding: 3.3em 0 2.5em
+	background: url(../img/bg/gray-bg.jpg) repeat left top
+	.rate-btn
+		margin-top: -4px
+		text-align: center
+		a
+			padding-left: 2em
+			text-align: left
+.top-companies-content
+	font-size: 0
+	text-align: center
+	.column
+		display: inline-block
+		float: none
+		vertical-align: top
+.top-companie-item
+	font-size: 16px
+	text-align: left
+	margin-bottom: .35em
+	&:hover
+		.title
+			color: #6d96ab
+	.item-img
+		overflow: hidden
+		img
+			width: 100%
+			height: auto
+			transition: transform .3s
+	.item-desc
+		padding: 1.1em 0
+	.title
+		font-size: 16px
+		margin-bottom: .3em
+		color: #262b2e
+		transition: color .3s
+	.text
+		font-size: 13px
+		line-height: 1.4em
+		color: #808080
+		.color
+			display: block
+			color: #262b2e
+
+/*********NEWS-SECTION********/
+.news-section
+	padding: 3.3em 0 .65em
+.news-item
+	.item-img
+		overflow: hidden
+		position: relative
+		&:hover
+			>a
+				&:before
+					opacity: 1
+			// img
+			// 	transform: scale(1.2)
+		img
+			width: 100%
+			height: auto
+			transition: transform .3s
+		>a
+			display: block
+			position: relative
+			&:before
+				content: ''
+				display: block
+				width: 100%
+				height: 100%
+				position: absolute
+				top: 0
+				left: 0
+				background: rgba(0,0,0,.3)
+				opacity: 0
+				transition: opacity .3s
+	.item-desc
+		padding: .7em 0
+	.title
+		font-size: 16px
+		line-height: 1.3em
+		margin-bottom: .4em
+		color: #262b2e
+		a
+			color: #262b2e
+			transition: color .3s
+			&:hover
+				color: #37474f
+	.text
+		font-size: 15px
+		line-height: 1.35em
+	.date
+		display: block
+		font-size: 12px
+		font-family: 'OpenSans-Semibold'
+		color: #808080
+		margin-bottom: .4em
+.news-section-content
+	font-size: 0
+	.column
+		display: inline-block
+		float: none
+		font-size: 16px
+		vertical-align: top
+
+
+
+
+
+@media only screen and (min-width: 1440px)
+	.main-section
+		background-size: cover
+@media only screen and (max-width: 1440px)
+	.main-section
+		padding: 3em 0
+		background-position: 40% top
+	.special-equipment-item
+		width: 16.6667%
+	.unified-column
+		width: 20%
+	.accompanying-services-content
+		.unified-column
+			width: 50%
+	.passenger-transportation-content
+		.unified-column
+			width: 33.3336%
+	.construction-materials-content
+		.unified-column
+			width: 16.66667%
+@media only screen and (max-width: 1200px)
+	.main-section
+		background-position: 25% center
+		.text
+			display: none
+	.unified-column
+		width: 25%
+	.transportations-section
+		.more-info-btn
+			padding-left: 5px
+	.unified-ad-unit .more-info-btn
+		padding-left: 10px
+	.accompanying-services-content
+		.unified-column
+			width: 33.3336%
+	.construction-materials-content
+		.unified-column
+			width: 20%
+@media screen and (min-device-width: 767px) and (max-device-width: 992px)
+	.sidebar-product-item
+		margin-bottom: 1.9em
+		.product-desc
+			padding: .4em
+		.desc-info
+			display: block
+			tr
+				display: block
+				margin-bottom: 5px
+			td
+				display: block
+				padding: 0
+				line-height: 1.15em
+		.title
+			margin-bottom: .4em
+		.product-desc
+			padding-bottom: 0
+	.equipment-rent-item 
+		.item-img
+			height: 105px
+			line-height: 105px
+	.sidebar-social-network
+		padding: .4em
+		position: relative
+		top: 5px
+		.title
+			margin-bottom: .2em
+		.social-network li
+			padding: 2.3px
+			margin-bottom: 2px
+
+
+@media only screen and (max-width: 992px)
+	.main-section
+		padding: 2em 0 2.3em
+		background-position: top center
+		background-size: cover
+		.title
+			font-size: 24px
+			line-height: 1.3em
+	.section-title
+		font-size: 20px
+		padding: .3em 1em
+	.unified-unit-service
+		.item-img
+			height: 105px
+			line-height: 105px
+		.title
+			font-size: 11px
+			padding: 7px 2px
+			line-height: 1.2em
+		.item-desc
+			min-height: 40px
+	.special-equipment-content
+		padding-right: 65px
+		text-align: left
+	.special-equipment-section
+		padding-bottom: 0
+		.section-title
+			margin-bottom: 3.1em
+	.special-equipment-item
+		width: 20%
+		margin-bottom: 1.75em
+		.item-img
+			height: 55px
+			line-height: 50px
+			padding-bottom: 5px
+			img
+				max-width: 90%
+		.item-desc
+			min-height: 40px
+		&:hover 
+			.item-img
+				&:after
+					animation: none
+				img
+					transform: translate3d(0,0,0)
+					max-height: 100%
+		.title
+			font-size: 11px
+	.equipment-rent-section
+		padding-top: .3em
+		padding-bottom: 1.6em
+		.section-title
+			margin-top: .6em
+			margin-bottom: 2em
+	.equipment-rent-item
+		.item-desc
+			padding: 2px
+		.title
+			font-size: 11px
+	.accompanyin-passenger-services-section
+		padding-top: 2.6em
+		padding-bottom: 1.6em
+		.right-block
+			padding-top: 42px
+	.accompanying-services-content
+		margin-bottom: 2em
+		// padding-right: 9%
+		.unified-column
+			width: 20%
+	.transportations-section .section-title
+		margin-top: 0
+	.construction-materials-section
+		padding: 2.7em 0 1.7em
+	.advantages-section
+		padding: 2.6em 0 0
+		.section-title
+			margin-bottom: 2.15em
+	.advantages-item
+		margin: 0 0 11px
+	.passenger-transportation-content
+		.unified-column
+			width: 20%
+	.advantages-item
+		width: 50%
+	.news-item
+		.item-desc
+			padding: .3em 0
+		.date
+			margin-bottom: .3em
+		.title
+			font-size: 13px
+			line-height: 1.25em
+			margin-bottom: .3em
+		.text
+			font-size: 13px
+			line-height: 1.25em
+	.top-companie-item
+		margin-bottom: 15px
+		.title
+			font-size: 14px
+			line-height: 1.2em
+		.text
+			font-size: 13px
+			margin-bottom: 10px
+			line-height: 1.35em
+		.item-desc
+			padding: 1.3em 0 0
+	.transportations-section
+		padding: 2.6em 0 1.2em
+		.section-title
+			font-size: 20px
+			padding: 6px 1em
+	.service-section
+		padding-top: 2.2em
+		.service-list
+			li
+				font-size: 13px
+				line-height: 1.25em
+	.service-text-item
+		margin-bottom: 3px
+		.title
+			font-size: 14px
+			margin-bottom: .3em
+		.text
+			font-size: 13px
+			line-height: 1.25em
+			margin-bottom: 9px
+	.top-companies-section
+		padding-top: 2.7em
+		padding-bottom: 1.9em
+		.rate-btn
+			margin-top: 10px
+	.news-section
+		padding: 2.7em 0 .7em
+		.section-title
+			margin-bottom: 2.15em
+	.special-equipment-section
+		padding-top: 1.35em 
+@media screen and (min-device-width: 767px) and (max-device-width: 992px)
+	.unified-ad-unit
+		padding: 10px
+		.ad-unit-head
+			.logo-text
+				display: none
+			img
+				max-width: 100%
+				height: auto
+		.ad-init-footer
+			text-align: left
+			padding: .27em .1em .3em .5em
+			.title
+				display: inline-block
+				width: calc(100% - 46px)
+				font-size: 11px
+				line-height: 12px
+				margin-bottom: 0
+				vertical-align: middle
+		.more-info-btn
+			display: inline-block
+			width: 38px
+			height: 38px
+			border-radius: 3px
+			vertical-align: middle
+			.arrow
+				width: 36px
+				&:after
+					top: 1px
+					left: -5px
+			.text
+				display: none
+	.unified-ad-unit
+		margin-top: -15px
+		.ad-unit-head
+			padding: .27em
+		.title
+			line-height: 1.2em
+@media only screen and (max-width: 767px)
+	.main-section
+		background-position: 35% center
+		.title
+			font-size: 14px
+	.unified-unit-service
+		.item-img
+			height: auto
+			line-height: 100%
+	.section-title
+		font-size: 18px
+	.unified-ad-unit
+		margin-top: .7em
+		padding: 20px
+		.ad-unit-head
+			.logo-text
+				display: block
+		.ad-init-footer
+			text-align: center
+			.title
+				display: block
+				font-size: 13px
+				width: 100%
+				margin-bottom: 10px
+		.more-info-btn
+			width: 184px
+			height: 38px
+			padding-left: 1em
+			.text
+				display: block
+	.special-equipment-item
+		width: 25%
+	.sidebar-product-item
+		&.desktop
+			display: none
+		&.mobile
+			display: block
+			margin-top: 1.2em
+	.accompanying-services-content
+		.unified-column
+			width: 25%
+	.passenger-transportation-content
+		.unified-column
+			width: 25%
+	.construction-materials-content
+		.unified-column
+			width: 25%
+	.service-section
+		padding: 1.5em 0
+	.sidebar-social-network
+		padding: .6em
+		.social-network
+			display: inline-block
+			li
+				padding: 0 2px
+	.special-equipment-content
+		padding-right: 0
+	.unified-ad-unit
+		&.desktop
+			display: none
+		&.mobile
+			display: block
+@media only screen and (max-width: 630px)
+	.special-equipment-item
+		width: 50%
+	.accompanying-services-content
+		.unified-column
+			width: 33.33336%
+	.passenger-transportation-content
+		.unified-column
+			width: 33.33336%
+	.unified-column
+		width: 33.33336%
+	.construction-materials-content
+		.unified-column
+			width: 33.33336%
+	.advantages-item
+		width: 100%
+		margin: 10px 0
+		.title
+			font-size: 14px
+			margin-bottom: 10px
+	.top-companie-item
+		.item-desc
+			padding: .5em 0
+	.special-equipment-section
+		.section-title
+			margin-bottom: 2.9em
+	.special-equipment-item
+		margin-bottom: 2.16em
+		&:last-child
+			margin-bottom: 0
+	.equipment-rent-section
+		padding-top: 1.25em
+		padding-bottom: .5em
+	.sidebar-product-item
+		.product-desc
+			padding: .5em .4em 0.4em
+		.desc-info td
+			padding: 0 4px
+	.equipment-rent-section
+		padding-bottom: 0
+		.section-title
+			margin-top: 12px
+			margin-bottom: 1.7em
+	.sidebar-product-item.mobile
+		margin-top: .7em
+	.section-title
+		margin-bottom: 1.7em
+
+@media only screen and (max-width: 480px)
+	.main-section .title
+		margin-bottom: 1.1em
+	.unified-ad-unit .ad-unit-head
+		padding: .45em .45em .25em
+	.head-switch-lang.mobile
+		padding-top: 3px
+	.main-head
+		padding-bottom: .6em
+	.sort .icon
+		right: 19px
+		top: -6px
+	.unified-ad-unit .ad-init-footer
+		padding-top: .6em
+	.unified-column
+		width: 50%
+	.unified-unit-service
+		.title
+			padding-left: 0
+			padding-right: 0
+			letter-spacing: -.3px
+	.passenger-transportation-content
+		.unified-column
+			width: 50%
+	.accompanying-services-content
+		.unified-column
+			width: 50%
+	.construction-materials-content
+		.unified-column
+			width: 50%
+	// .transportations-section
+	// 	.section-title
+	// 		&:before
+	// 			height: 140%
+	.transportations-section
+		padding-top: 2em
+		padding-bottom: 20px
+		.section-title
+			font-size: 18px
+			margin-left: 15px
+			line-height: 1.15em
+			margin-bottom: 1.8em
+	.accompanyin-passenger-services-section
+		.right-block
+			padding-top: 25px
+	.unified-column
+		padding: 0 15px
+	.unified-unit-service
+		margin-bottom: 8.5px
+	.wrapper-unified-column
+		margin: 0 -15px
+	.accompanyin-passenger-services-section
+		padding: 2em 0 11.5px
+	.construction-materials-section
+		padding-top: 2em
+		padding-bottom: 10px
+	.advantages-section
+		padding: 2em 0 1px
+		.section-title
+			margin-bottom: 1.7em
+	.advantages-item
+		margin-bottom: 15px
+		margin-top: 0
+		.item-icon
+			width: 50px
+			font-size: 45px
+			vertical-align: middle
+		.title
+			margin-bottom: 5px
+			line-height: 1.15em
+			letter-spacing: -.1px
+		.text
+			font-size: 13px
+			margin-bottom: 0
+		.item-desc
+			vertical-align: middle
+	.news-section-content
+		.column
+			width: 100%
+	.news-section
+		padding: 2.1em 0 1px
+	.news-item
+		margin-bottom: 12px
+		.title
+			line-height: 1.25em
+		.text
+			margin-bottom: 0
+	.main-section
+		padding: 1em 0 1.4em
+		.title
+			line-height: 1.15em
+	.unified-ad-unit 
+		.ad-init-footer
+			padding-left: 0
+			padding-right: 0
+			padding-bottom: .5em
+			.title
+				margin-bottom: 8px
+	.special-equipment-section
+		padding-top: .6em
+	.section-title
+		line-height: 1.2em
+	.service-section
+		padding: .6em 0 1.2em
+		.section-title
+			font-size: 20px
+			margin-top: 12px
+			margin-bottom: 30px
+	.service-text-item
+		&:last-child
+			margin-bottom: 20px
+	.news-section
+		.section-title
+			margin-bottom: 32.5px
+	.sidebar-social-network
+		padding: .9em .9em 1.2em
+	.top-companies-section
+		padding-top: 2.1em
+		padding-bottom: 1.1em
+	.news-item .date
+		margin-bottom: .2em
+	.top-companie-item
+		margin-bottom: 10px
+		.title
+			line-height: 1.25em
+		.text
+			letter-spacing: -.1px
+			margin-bottom: 0
+	.top-companies-section 
+		.rate-btn
+			margin-top: 0
+			a
+				width: 100%
+				padding-left: 0
+				padding-right: 15%
+				text-align: center
+	.special-equipment-item
+		.title
+			line-height: 14px
+	

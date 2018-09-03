@@ -1,0 +1,1780 @@
+/**********PERSONAL-АREA-SECTION***********/
+.personal-area-section
+	padding: 2.5em 0
+	.pad-title
+		margin: 0
+	.add-advert-btn
+		a
+			width: 320px
+			padding-left: 0
+			padding-right: 48px
+			text-align: center
+			&:hover
+				.arrow
+					&:before
+						background: #37474f
+					&:after
+						background: #37474f
+		.arrow
+			&:after
+				width: 19px
+				height: 2.5px
+				background: #fff
+				top: 0
+				bottom: 0
+				right: 0
+				left: 0
+				margin: auto
+				transform: rotate(0)
+				transition: background .3s
+			&:before
+				content: ''
+				display: block
+				width: 2.5px
+				height: 19px
+				background: #fff
+				position: absolute
+				top: 0
+				bottom: 0
+				right: 0
+				left: 0
+				margin: auto
+				transition: background .3s
+	.limed-spruce-btn
+		background: #fff
+		.arrow
+			&:after
+				border-top-color: #fff
+				border-right-color: #fff
+		&:hover
+			background: #37474f
+			.arrow
+				&:after
+					border-top-color: #37474f
+					border-right-color: #37474f
+	.more-info-btn
+		background-color: transparent
+		.arrow
+			&:after
+				border-top-color: #759cb0
+				border-right-color: #759cb0
+.unified-form
+	.form-title
+		font-size: 16px
+		margin-bottom: 1.2em
+		text-transform: uppercase
+	.price
+		color: #6d96ab
+	.form-group
+		margin-bottom: 20px
+	sup
+		color: #ea3232
+	.text-input
+		height: 40px
+		background-color: #f2f2f2
+		width: 100%
+		color: #262b2e
+		font-size: 12px
+		padding: 0 20px 0 10px
+		&::input-placeholder
+			font-size: 12px
+			color: #808080
+		&::-webkit-input-placeholder
+			font-size: 12px
+			color: #808080
+		&::-moz-input-placeholder
+			font-size: 12px
+			color: #808080
+		&::-ms-input-placeholder
+			font-size: 12px
+			color: #808080
+	.placeholder-text
+		position: absolute
+		top: 10px
+		right: 10px
+		color: #808080
+		font-size: 12px
+	.selectricWrapper
+		width: 100%
+		margin-bottom: 0
+	.file-input-text
+		margin-top: -8px
+		color: #808080
+	.input-file
+		margin-bottom: 40px
+	.input-title
+		color: #808080
+		display: table-cell
+		height: 40px
+		font-size: 15px
+		vertical-align: middle
+		&.mod
+			font-size: 16px
+			font-family: 'OpenSans-Bold'
+			color: #262b2e
+			text-transform: uppercase
+	.form-box
+		margin-bottom: 20px
+		&.mod
+			padding-bottom: 20px
+			border-bottom: 2px solid #e0e0e0
+	.form-box-pad
+		padding-top: 20px
+	.selectric .label
+		padding-left: 15px
+		font-weight: 400
+	.wrapper-input
+		position: relative
+		background-color: #f2f2f2
+		.text-input
+			background-color: transparent
+			position: relative
+			z-index: 1
+		.icon
+			position: absolute
+			top: 11px
+			right: 15px
+			background:  #f2f2f2
+	.text-area
+		background-color: #f2f2f2
+		width: 100%
+		margin-bottom: 40px
+		padding: 10px 15px
+		border: none
+		font-size: 12px
+		height: 170px
+		resize: none
+		&:focus
+			outline: none
+		&::input-placeholder
+			font-size: 12px
+			color: #808080
+		&::-webkit-input-placeholder
+			font-size: 12px
+			color: #808080
+		&::-moz-input-placeholder
+			font-size: 12px
+			color: #808080
+		&::-ms-input-placeholder
+			font-size: 12px
+			color: #808080
+	
+	.wrapper-submit-btn
+		&.mod
+			margin-top: -3px
+			margin-bottom: -3px
+	.submit-btn
+		display: inline-block
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+		font-size: 18px
+		padding-right: 48px
+		font-family: 'OpenSans-Semibold'
+		text-align: center
+		text-transform: uppercase
+		z-index: 2
+
+.authorization-form
+	padding: 2.4em 5em 2.4em 0
+	.text
+		color: #808080
+		font-size: 15px
+		margin-top: 25px
+		margin-bottom: 25px
+
+.registration-form
+	background: url(../img/bg/gray-bg.jpg) repeat center top
+	padding: 2.4em 7.4em
+	.text-input
+		background: #fff
+	.wrapper-checkbox
+		display: block
+		width: 100%
+		position: relative
+		margin-top: -5px
+		margin-bottom: 1em
+		font-weight: 400
+		padding-left: 25px
+		cursor: pointer
+		input[type="checkbox"]
+			position: absolute
+			margin-left: -20px
+			display: none
+			&:checked + .text:before
+				content: ""
+				display: block
+				width: 6px
+				height: 6px
+				background-color: #bbc7cd
+				position: absolute
+				top: 9px
+				left: 4px
+				margin: auto
+			&:checked + .text:after
+				content: ""
+				display: block
+				width: 14px
+				height: 14px
+				background-color: transparent
+				border: 2px solid #bbc7cd
+				position: absolute
+				top: 5px
+				left: 0
+				margin: auto
+			+ .text:after
+				content: ""
+				display: block
+				width: 14px
+				height: 14px
+				background-color: #bbc7cd
+				position: absolute
+				top: 5px
+				left: 0
+				margin: auto
+	.text
+		font-size: 15px
+		line-height: 20px
+		color: #808080
+.add-balance-form
+	.form-title
+		margin-bottom: 40px
+		margin-top: -3px
+.personal-area-sidebar-menu
+	margin-bottom: 40px
+	li
+		margin-bottom: 10px
+		&.third
+			margin-bottom: 30px
+	a
+		display: table
+		background-color: #f2f2f2
+		min-height: 40px
+		font-size: 14px
+		padding: 4px 20px
+		color: #262b2e
+		width: 100%
+		transition: background .3s, color .3s
+		&:hover
+			color: #fff
+			background: #6d96ab
+		&.active
+			color: #fff
+			background: #6d96ab
+	.menu-text
+		display: table-cell
+		vertical-align: middle
+
+.personal-area-text-item
+	padding: 2.35em 0
+	border-bottom: 2px solid #e1e1e1
+	&.first
+		padding-top: 0
+	&.last
+		margin-bottom: 2.6em
+	.title
+		font-size: 16px
+		margin-bottom: 2em
+	.text-item-list
+		li
+			padding-left: 25px
+			font-size: 15px
+			line-height: 18px
+			margin-bottom: 19px
+			position: relative
+			&:last-child
+				margin-bottom: 0
+		.icon-check
+			position: absolute
+			top: 1px
+			left: 0
+		a
+			color: #6d96ab
+			font-size: 15px
+			font-family: 'OpenSans-Semibold'
+			border-bottom: 1px solid #6d96ab
+			text-transform: uppercase
+			transition: border-bottom-color .3s
+			&:hover
+				border-bottom-color: transparent
+.category-section-search-region
+	&.second
+		margin-top: 2.5em
+.personal-area-search-form
+	.wrapper-submit-btn
+		margin-top: 2.5em
+		padding-left: 0
+		padding-right: 48px
+		text-align: center
+	.submit-btn
+		text-transform: uppercase
+
+.personal-area-section
+	.unified-column
+		width: 12.5%
+	.unified-service-block
+		margin-bottom: 50px
+		&.last
+			margin-bottom: 0
+		&.first
+			margin-top: 12.5px
+		&.mod
+			margin-bottom: 42px
+		.section-title
+			line-height: 28px
+			margin-bottom: 50px
+			&.mod
+				padding: 0 20px
+				font-size: 24px
+
+.ready-made-ads-item
+	border-bottom: 2px solid #e1e1e1
+	margin-bottom: 40px
+	.unified-transport-unit
+		margin-bottom: 0
+		.no-photo
+			background: #fff
+			height: 100%
+			vertical-align: middle
+		.no-photo-text
+			display: inline-block
+			font-size: 13px
+			padding: 0 1em
+			vertical-align: middle
+			text-align: center
+	.top-panel
+		margin-bottom: 35px
+	.status-and-date
+		display: table
+		width: 100%
+		.cell
+			display: table-cell
+			padding-right: 2%
+			vertical-align: middle
+			width: 33.3336%
+		.title
+			font-size: 16px
+			font-family: 'OpenSans-Bold'
+			margin-top: 0
+			margin-bottom: .7em
+			text-transform: uppercase
+	.published
+		position: relative
+		color: #6d96ab
+		font-size: 15px
+		font-family: 'OpenSans-Semibold'
+		padding-left: 27px
+	.icon-check
+		position: absolute
+		top: 1px
+		left: 0
+	.not-published
+		position: relative
+		color: #ea3232
+		font-size: 15px
+		font-family: 'OpenSans-Semibold'
+		padding-left: 27px
+	.icon-prohibited
+		position: absolute
+		top: 2px
+		left: 0
+	.date
+		font-size: 15px
+		font-family: 'OpenSans-Semibold'
+	.color
+		color: #808080
+	.ads-btn
+		padding-top: 30px
+		font-size: 0
+		text-align: right
+	.edit-btn
+		display: inline-block
+		color: #6d96ab
+		font-size: 15px
+		margin-right: 2em
+		font-family: 'OpenSans-Semibold'
+		border-bottom: 1px solid #6d96ab
+		transition: border-bottom-color .3s
+		vertical-align: middle
+		&:hover
+			border-bottom-color: transparent
+	.pay-add-btn
+		color: #6d96ab
+		font-size: 15px
+		font-family: 'OpenSans-Semibold'
+		border-bottom: 1px solid #6d96ab
+		transition: border-bottom-color .3s
+		vertical-align: middle
+		&:hover
+			border-bottom-color: transparent
+	.delete-btn
+		display: inline-block
+		font-size: 15px
+		font-family: 'OpenSans-Semibold'
+		color: #ea3232
+		border-bottom: 1px solid #ea3232
+		transition: border-bottom-color .3s
+		vertical-align: middle
+		&:hover
+			border-bottom-color: transparent
+	.item-footer
+		padding: 20px 0
+	.add-announcement-btn
+		display: inline-block
+		font-family: 'OpenSans-Bold'
+		color: #262b2e
+		margin-right: 2.8em
+		transition: color .3s
+		vertical-align: middle
+		text-transform: uppercase
+		&:hover
+			color: #6d96ab
+	.go-over-btn
+		padding-left: 0
+		padding-right: 48px
+		display: inline-block
+		vertical-align: middle
+		text-align: center
+
+.select-payment-method-content
+	&.mod
+		li
+			width: 25%
+.ad-publish-time 
+	&.mod
+		padding-bottom: 2.2em
+
+.my-company-content
+	.top-panel
+		margin-bottom: 15px
+		margin-top: 35px
+	.number-and-date
+		display: table
+		width: 100%
+		.cell
+			display: table-cell
+			vertical-align: middle
+			&:first-child
+				padding-right: 1%
+		.title
+			font-size: 16px
+			font-family: 'OpenSans-Bold'
+			margin-top: 0
+			margin-bottom: .7em
+			text-transform: uppercase
+	.date
+		font-size: 15px
+		font-family: 'OpenSans-Semibold'
+	.number
+		font-size: 15px
+		font-family: 'OpenSans-Semibold'
+	.ads-btn
+		padding-top: 30px
+		font-size: 0
+		text-align: right
+	.edit-btn
+		display: inline-block
+		color: #6d96ab
+		font-size: 15px
+		margin-right: 2em
+		font-family: 'OpenSans-Semibold'
+		border-bottom: 1px solid #6d96ab
+		transition: border-bottom-color .3s
+		vertical-align: middle
+		&:hover
+			border-bottom-color: transparent
+	.delete-btn
+		display: inline-block
+		font-size: 15px
+		font-family: 'OpenSans-Semibold'
+		color: #ea3232
+		border-bottom: 1px solid #ea3232
+		transition: border-bottom-color .3s
+		vertical-align: middle
+		&:hover
+			border-bottom-color: transparent
+.my-company-item
+	background: #f2f2f2
+	padding: 15px 30px
+	margin-bottom: 40px
+	.item-img
+		img
+			width: 100%
+			height: auto
+	.title-and-rate
+		margin-bottom: 17px
+		&:after
+			content: ''
+			display: table
+			height: 0
+			clear: both
+	.title
+		font-size: 20px
+		margin: 10px 0 0
+		float: left
+	.subtitle
+		font-size: 16px
+		font-family: 'OpenSans-Bold'
+		margin-top: 18px
+		margin-bottom: 7px
+		text-transform: uppercase
+	.rate-panel
+		float: right
+		display: table
+		font-size: 0
+		min-height: 40px
+		max-width: 320px
+		width: 100%
+		.text
+			display: table-cell
+			color: #fff
+			background-color: #37474f
+			font-size: 14px
+			width: 50%
+			text-align: center
+			vertical-align: middle
+		strong
+			font-size: 18px
+			font-family: 'OpenSans-Bold'
+	.item-desc
+		padding-top: 20px
+	.rate
+		display: table-cell
+		background-color: #6d96ab
+		font-size: 14px
+		width: 50%
+		text-align: center
+		vertical-align: middle
+	.icon-star
+		display: inline-block
+		font-size: 20px
+		vertical-align: top
+	.table-info
+		width: 100%
+		td
+			padding: 7px 4px
+			font-size: 15px
+			color: #808080
+			line-height: 1.1em
+			vertical-align: bottom
+			&:last-child
+				font-family: 'OpenSans-Semibold'
+				color: #262b2e
+	.contact-list
+		margin-top: 7px
+		li
+			padding-left: 25px
+			font-size: 15px
+			margin-bottom: 11px
+			color: #262b2e
+			position: relative
+		.icon
+			position: absolute
+			top: 0
+			left: 0
+			color: #37474f
+			font-size: 18px
+		.icon-mail
+			font-size: 12px
+			top: 5px
+		a
+			color: #262b2e
+	.text
+		font-size: 14px
+		margin-bottom: 1em
+	.item-list
+		li
+			position: relative
+			margin-bottom: 6px
+			font-size: 14px
+			padding-left: 27px
+			text-transform: uppercase
+		.icon-check
+			position: absolute
+			top: 1px
+			left: 0
+
+.my-banners-item
+	background: #f2f2f2
+	padding: 20px 30px 35px
+	margin-bottom: 40px
+	.sidebar-product-item
+		margin-top: 10px
+		margin-bottom: 0
+	.sidebar-container-ad-img
+		margin-top: 10px
+		margin-bottom: 0
+	.top-panel
+		padding-bottom: 15px
+		border-bottom: 2px solid #fff
+		&:after
+			content: ''
+			display: table
+			height: 0
+			clear: both
+		h3.title
+			float: left
+			font-size: 16px
+			margin-bottom: 0
+	.status-and-date
+		padding: 25px 0 35px
+	.delete-btn
+		display: inline-block
+		float: right
+		font-size: 15px
+		font-family: 'OpenSans-Semibold'
+		color: #ea3232
+		border-bottom: 1px solid #ea3232
+		transition: border-bottom-color .3s
+		&:hover
+			border-bottom-color: transparent
+	.column
+		display: inline-block
+		vertical-align: middle
+		&:first-child
+			margin-right: 3%
+	h4.title
+		font-size: 16px
+		font-family: 'OpenSans-Bold'
+		margin-top: 0
+		margin-bottom: .7em
+		text-transform: uppercase
+	.published
+		position: relative
+		color: #6d96ab
+		font-size: 15px
+		font-family: 'OpenSans-Semibold'
+		padding-left: 27px
+	.icon-check
+		position: absolute
+		top: 1px
+		left: 0
+	.not-published
+		position: relative
+		color: #ea3232
+		font-size: 15px
+		font-family: 'OpenSans-Semibold'
+		padding-left: 27px
+	.icon-prohibited
+		position: absolute
+		top: 2px
+		left: 0
+	.date
+		font-size: 15px
+		font-family: 'OpenSans-Semibold'
+	.color
+		color: #808080
+	.ads-btn
+		padding-top: 30px
+		font-size: 0
+		text-align: right
+	.edit-btn
+		color: #6d96ab
+		font-size: 15px
+		margin-right: 2em
+		font-family: 'OpenSans-Semibold'
+		border-bottom: 1px solid #6d96ab
+		transition: border-bottom-color .3s
+		vertical-align: middle
+		&:hover
+			border-bottom-color: transparent
+	.pay-add-btn
+		color: #6d96ab
+		font-size: 15px
+		font-family: 'OpenSans-Semibold'
+		border-bottom: 1px solid #6d96ab
+		transition: border-bottom-color .3s
+		vertical-align: middle
+		&:hover
+			border-bottom-color: transparent
+	.item-body
+		padding-bottom: 55px
+	.item-footer
+		display: table
+		position: absolute
+		bottom: 30px
+		left: 0
+		font-size: 0
+		padding-right: 30px
+		width: 100%
+		&.mobile
+			display: none
+	.exten-publication-btn,.pay-publication-btn
+		display: table-cell
+		font-size: 16px
+		font-family: 'OpenSans-Bold'
+		color: #262b2e
+		padding-right: 2.8em
+		transition: color .3s
+		vertical-align: middle
+		text-transform: uppercase
+		&:hover
+			color: #6d96ab
+	.go-over-btn
+		padding-left: 0
+		padding-right: 48px
+		display: table-cell
+		vertical-align: middle
+		text-align: center
+.my-banners-item-content
+	display: table
+	width: 100%
+	.item-column
+		display: table-cell
+		float: none
+		width: 33%
+		vertical-align: top
+		&:first-child
+			padding-right: 30px
+			position: relative
+			width: 67%
+.add-banner-form
+	.show-ads-cities
+		.text
+			font-size: 12px
+	.hidden-form-block
+		display: none
+	.wrapper-submit-btn
+		min-width: 250px
+	.wrapper-checkbox
+		position: relative
+		cursor: pointer
+		font-weight: 400
+		margin-bottom: 0
+		padding-left: 17px
+		display: inline-block
+		min-height: auto
+		vertical-align: middle
+	input[type="checkbox"]
+		position: absolute
+		margin-left: -20px
+		display: none
+		&:checked + .text:before
+			content: ""
+			display: block
+			width: 4px
+			height: 4px
+			background-color: #bbc7cd
+			position: absolute
+			top: 7px
+			left: 3px
+		&:checked + .text:after
+			content: ""
+			display: block
+			width: 10px
+			height: 10px
+			background-color: transparent
+			border: 1px solid #bbc7cd
+			position: absolute
+			top: 4px
+			left: 0
+			margin: auto
+		+ .text:after
+			content: ""
+			display: block
+			width: 10px
+			height: 10px
+			background-color: #bbc7cd
+			position: absolute
+			top: 4px
+			left: 0
+			z-index: 1
+	.text
+		font-size: 15px
+	.text-city
+		margin-top: -8px
+		margin-bottom: 12px
+		color: #808080
+	.input-file-mod
+		margin-bottom: 20px
+.add-banner-form-head
+	&.form-box
+		margin-bottom: 15px
+
+.buy-banner-item
+	padding: 33px 0 40px
+	border-bottom: 2px solid #e1e1e1
+	&.last
+		border-bottom: none
+		padding-bottom: 0
+	h3.title
+		font-size: 16px
+		line-height: 1.25em
+		margin-bottom: 16px
+	h4.title
+		font-size: 13px
+		font-family: "OpenSans-Bold"
+		margin-top: 4px
+		margin-bottom: 2.1em
+		text-transform: uppercase
+	.item-list
+		margin-bottom: 37px
+		li
+			padding-left: 25px
+			font-size: 15px
+			line-height: 18px
+			margin-bottom: 19px
+			position: relative
+		.icon-check
+			position: absolute
+			top: 0
+			left: 0
+		a
+			color: #6d96ab
+			border-bottom: 1px solid #6d96ab
+			font-family: 'OpenSans-Semibold'
+			text-transform: uppercase
+			transition: border-bottom-color .3s
+			&:hover
+				border-bottom-color: transparent
+	.go-over-btn
+		&.mobile
+			display: none
+
+.my-payments-table
+	li
+		display: table
+		width: 100%
+		font-size: 0
+		background: url(../img/bg/gray-bg.jpg) repeat left top
+		margin-bottom: 30px
+		&:last-child
+			margin-bottom: 0
+	a
+		font-size: 13px
+		color: #6d96ab
+		border-bottom: 1px solid #6d96ab
+		transition: border-bottom-color .3s
+		&:hover
+			border-bottom-color: transparent
+	.table-cell
+		display: inline-block
+		font-size: 15px
+		padding: 8px 2.1%
+		vertical-align: middle
+		&:first-child
+			color: #fff
+			position: relative
+			font-family: 'OpenSans-Semibold'
+			height: 60px
+			padding-left: 1%
+			padding-right: 1%
+			text-align: center
+			width: 10%
+			z-index: 1
+			&:before
+				content: ''
+				display: inline-block
+				width: 100%
+				height: 100%
+				position: absolute
+				top: 0
+				left: 0
+				background-color: rgba(109,150,171,.9)
+				z-index: -1
+		&:nth-child(2)
+			width: 50%
+			padding-left: 3%
+		&:nth-child(3)
+			width: 20%
+			padding: 0 5% 0 0
+			.table-cell-row
+				float: right
+		&:nth-child(4)
+			padding-right: 5%
+			width: 20%
+	.table-cell-content
+		display: table
+		.bold
+			display: table-cell
+	.number
+		display: block
+		font-size: 30px
+		margin-top: 4px
+		font-family: 'OpenSans-Bold'
+	.text
+		display: table-cell
+		padding-left: 5px
+		vertical-align: middle
+	.bold
+		display: table-cell
+		font-size: 16px
+		font-family: 'OpenSans-Bold'
+		text-transform: uppercase
+		vertical-align: middle
+	.payment-method
+		display: table
+		margin-left: 18px
+	.payment-method-title
+		display: table-cell
+		padding-left: 10px
+		vertical-align: middle
+	.payment-method-icon
+		display: table-cell
+		width: 24px
+		height: 24px
+		vertical-align: middle
+		img
+			max-width: 100%
+			height: auto
+	.table-cell-row
+		display: table
+		margin-bottom: 3px
+		&:last-child
+			margin-bottom: 0
+.personal-area-settings-form
+	.form-box
+		padding-bottom: 40px
+		margin-bottom: 38px
+		border-bottom: 2px solid #e1e1e1
+	.form-group
+		&.last
+			margin-bottom: 0
+	.wrapper-submit-btn
+		.arrow
+			&:after
+				-webkit-transform: rotate(135deg)
+				-ms-transform: rotate(135deg)
+				transform: rotate(135deg)
+				width: 16px
+				height: 8px
+				left: 2px
+				top: -3px
+				border-width: 3px
+	.phone-number
+		display: inline-block
+		margin-top: 9px
+		font-size: 15px
+	.remove-btn
+		color: #ea3232
+		border-bottom: 1px solid #ea3232
+		margin-left: 1em
+		transition: border-bottom-color .3s
+		&:hover
+			border-bottom-color: transparent
+	.add-btn
+		color: #6d96ab
+		border-bottom: 1px solid #6d96ab
+		margin-left: 1em
+		font-size: 15px
+		display: inline-block
+		margin-top: 6px
+		transition: border-bottom-color .3s
+		&:hover
+			border-bottom-color: transparent
+	.wrapper-checkbox
+		display: block
+		width: 100%
+		position: relative
+		margin: 2em 0  0
+		font-weight: 400
+		padding-left: 25px
+		cursor: pointer
+		.text
+			font-size: 15px
+			line-height: 20px
+			color: #808080
+		input[type="checkbox"]
+			position: absolute
+			margin-left: -20px
+			display: none
+			&:checked + .text:before
+				content: ""
+				display: block
+				width: 6px
+				height: 6px
+				background-color: #bbc7cd
+				position: absolute
+				top: 8px
+				left: 4px
+				margin: auto
+			&:checked + .text:after
+				content: ""
+				display: block
+				width: 14px
+				height: 14px
+				background-color: transparent
+				border: 2px solid #bbc7cd
+				position: absolute
+				top: 4px
+				left: 0
+				margin: auto
+			+ .text:after
+				content: ""
+				display: block
+				width: 14px
+				height: 14px
+				background-color: #bbc7cd
+				position: absolute
+				top: 4px
+				left: 0
+				margin: auto
+.communication-administration-form
+	padding-bottom: 40px
+	border-bottom: 2px solid #e1e1e1
+	.text-area
+		margin-bottom: 18px
+	.wrapper-submit
+		padding-left: 0
+		padding-right: 40px
+		text-align: center
+
+.frequently-asked-questions
+	padding-top: 37px
+	padding-bottom: 22px
+	border-bottom: 2px solid #e1e1e1
+	margin-bottom: 42px
+	.title
+		margin-bottom: 34px
+.frequently-asked-questions-item
+	margin-bottom: 14px
+	.item-title
+		font-size: 16px
+		margin-bottom: 10px
+		text-transform: uppercase
+	.text
+		font-size: 15px
+		line-height: 20px
+		margin-bottom: 10px
+
+@media only screen and (max-width: 1440px)
+	.authorization-form
+		.text
+			margin: 15px 0
+	.personal-area-section
+		.unified-column
+			width: 14.2%
+
+@media only screen and (max-width: 1200px)
+	.registration-form
+		padding-left: 3em
+		padding-right: 3em
+	.personal-area-section
+		.unified-column
+			width: 16.6667%
+	.ready-made-ads-item .ads-btn
+		padding-top: 15px
+		text-align: left
+	.ready-made-ads-item
+		margin-bottom: 30px
+		.unified-transport-unit
+			.no-photo
+				vertical-align: top
+				background-color: transparent
+			.no-photo-text
+				background: #fff
+				line-height: 14px
+				padding: 1em
+		.status-and-date
+			.title
+				font-size: 14px
+		.edit-btn
+			font-size: 13px
+		.delete-btn
+			font-size: 13px
+		.published
+			font-size: 13px
+		.not-published
+			font-size: 13px
+		.date
+			font-size: 13px
+		.top-panel
+			margin-bottom: 25px
+	.my-company-content
+		h2
+			font-size: 14px
+			margin-top: -1px
+		.top-panel
+			margin-top: 25px
+			margin-bottom: 25px
+		.number-and-date
+			.title
+				font-size: 14px
+				margin-bottom: .2em
+		.date,.number,.edit-btn,.delete-btn
+			font-size: 13px
+		.edit-btn.mod
+			margin-left: 10px
+		.ads-btn
+			padding-top: 5px
+			text-align: left
+	.my-company-item
+		padding: 10px 10px 2px
+		margin-bottom: 30px
+		.title
+			font-size: 14px
+			margin-top: 13px
+		.title-and-rate
+			margin-bottom: 10px
+		.item-desc
+			padding-top: 10px
+		.table-info
+			td
+				font-size: 13px
+				line-height: 16px
+				padding: 4px
+				vertical-align: top
+		.contact-list
+			li
+				font-size: 13px
+				line-height: 16px
+		.subtitle
+			font-size: 14px
+			margin-top: 10px
+		.text
+			font-size: 13px
+			line-height: 16px
+		.item-list
+			li
+				font-size: 13px
+				margin-bottom: 7px
+	.my-payments-table
+		li
+			margin-bottom: 30px
+		.table-cell
+			font-size: 13px
+			&:first-child
+				width: 13%
+			&:nth-child(2)
+				padding-left: 1%
+				width: 37%
+				.table-cell-content
+					display: block
+				.bold
+					display: block
+					.text
+						display: block
+			&:nth-child(3)
+				width: 22%
+				.table-cell-row
+					display: block
+					float: none
+					padding-left: 2%
+				.bold
+					display: block
+				.text
+					display: block
+					padding-left: 0
+			&:nth-child(4)
+				width: 28%
+				padding-right: 2%
+		.payment-method
+			margin-left: 0
+		.payment-method-icon
+			width: 20px
+			height: 20px
+		.text
+			font-size: 13px
+		.number
+			font-size: 24px
+		.bold
+			font-size: 14px
+
+
+@media only screen and (max-width: 992px)
+	.personal-area-section
+		padding: 1.9em 0
+	.unified-form
+		.form-title
+			font-size: 14px
+			margin-bottom: 20px
+			margin-top: -3px
+			&.mod
+				margin-bottom: 10px
+		.form-title-mod
+			margin-bottom: 30px
+		.text-area
+			margin-bottom: 30px
+		.input-file
+			margin-bottom: 30px
+		.input-file-mod
+			margin-bottom: 20px
+		.wrapper-checkbox
+			margin-top: 0
+			.text
+				font-size: 13px
+				display: inline-block
+				line-height: 16px
+		.text-city
+			font-size: 13px
+			line-height: 16px
+			margin-top: -7px
+		.input-title
+			font-size: 13px
+			line-height: 16px
+			&.mod
+				font-size: 14px
+		.form-box
+			margin-bottom: 10px
+			&.mod
+				margin-bottom: 10px
+				padding-bottom: 10px
+		.file-input-text
+			font-size: 13px
+			margin-top: -7px
+			margin-bottom: 7px
+			line-height: 16px
+	.authorization-form
+		padding: 1.4em 0 0
+		.form-title
+			margin-bottom: .8em
+		.text
+			font-size: 13px
+			line-height: 16px
+		.form-group
+			margin-bottom: 10px
+		.wrapper-submit-btn
+			margin-top: .6em
+	.registration-form
+		padding: 1em .6em
+	.personal-area-text-item
+		padding: 1.7em 0
+		&.last
+			margin-bottom: 2.3em
+		.title
+			font-size: 14px
+			margin-top: -3px
+			margin-bottom: 1em
+		.text-item-list
+			li
+				font-size: 14px
+				line-height: 20px
+				margin-bottom: 6px
+				&:before
+					top: 8px
+			a
+				font-size: 13px
+	.personal-area-sidebar-menu a
+		padding: 3px 7px
+		font-size: 13px
+		line-height: 18px
+	.personal-area-section
+		.unified-ad-unit
+			margin-top: 0
+	.personal-area-sidebar-menu
+		margin-bottom: 30px
+	.personal-area-section
+		.technical-support-service
+			padding: .8em .6em
+			.title
+				margin-bottom: 1em
+			.contact-list
+				li
+					margin-bottom: 9px
+	.category-section-search-region
+		&.second
+			margin-top: 1.9em
+	.personal-area-search-form
+		.wrapper-submit-btn
+			margin-top: 1.9em
+	.personal-area-section
+		.unified-column
+			width: 20%
+		.unified-service-block
+			margin-bottom: 42px
+			&.mod
+				margin-bottom: 10px
+			.section-title
+				margin-bottom: 42px
+				font-size: 20px
+				&.mod
+					font-size: 20px
+		.special-equipment-content
+			padding-right: 0
+	.ad-publish-time.mod
+		padding-bottom: 1.6em
+		.title
+			font-size: 14px
+	.select-payment-method.mod
+		.title
+			font-size: 14px
+	.select-payment-method-content.mod
+		li
+			width: 33.33336%
+		.select-payment-method-item
+			min-height: 54px
+			margin-bottom: 20px
+	.registration-form,.authorization-form
+		.form-title
+			margin-bottom: 1.2em
+	.my-banners-item
+		padding: 15px 20px 10px
+		margin-bottom: 30px
+		.top-panel
+			h3.title
+				font-size: 14px
+		.item-footer
+			padding: 10px 0
+			width: 325px
+		.exten-publication-btn,.pay-publication-btn
+			font-size: 14px
+			padding-right: 5px
+		.delete-btn
+			font-size: 13px
+		h4.title
+			font-size: 14px
+			margin-bottom: 2px
+		.edit-btn
+			font-size: 13px
+		.date
+			font-size: 13px
+		.published
+			font-size: 13px
+		.not-published
+			font-size: 13px
+		.column
+			margin-bottom: 15px
+			display: block
+			&:last-child
+				margin-bottom: 0
+		.status-and-date
+			padding: 17px 0 10px
+		.item-footer
+			bottom: -5px
+	.my-banners-item-content
+		.item-column:first-child
+			padding-right: 15px
+	.add-banner-form
+		.form-box
+			margin-bottom: 15px
+		.file-input-text
+			margin-top: -5px
+			margin-bottom: 15px
+	.personal-area-section 
+		.pad-title
+			margin-top: -3px
+			font-size: 14px
+	.buy-banner-item
+		padding: 23px 0 30px
+		h3.title
+			font-size: 14px
+			margin-bottom: 8px
+		h4.title
+			margin-bottom: 17px
+		.item-list
+			margin-bottom: 26px
+			li
+				font-size: 13px
+				margin-bottom: 6px
+		.go-over-btn
+			margin-top: 30px
+			&.mobile
+				display: inline-block
+			&.desktop
+				display: none
+	.add-banner-form
+		.show-ads-cities
+			.text
+				font-size: 12px
+		.text-city
+			margin-bottom: 15px
+	.add-balance-form
+		.form-title
+			margin-bottom: 30px
+	.personal-area-settings-form
+		.form-title
+			margin-bottom: 30px
+		.wrapper-submit-btn.mod
+			margin-top: 10px
+		.form-box
+			padding-bottom: 30px
+			margin-bottom: 30px
+		.phone-number
+			font-size: 13px
+		.add-btn
+			font-size: 13px
+		.remove-btn
+			font-size: 13px
+		.col-sm-mod
+			padding-left: 0
+	.communication-administration-form
+		padding-bottom: 29px
+		.form-title
+			margin-bottom: 30px
+	.frequently-asked-questions
+		padding-top: 27px
+		padding-bottom: 17px
+		margin-bottom: 32px
+		.title
+			font-size: 14px
+			margin-bottom: 25px
+	.frequently-asked-questions-item
+		margin-bottom: 10px
+		.item-title
+			font-size: 14px
+			margin-bottom: 5px
+		.text
+			font-size: 13px
+			line-height: 16px
+			margin-bottom: 5px
+@media only screen and (max-width: 767px)
+	.authorization-form
+		padding-top: 0
+	.personal-area-section
+		padding: 1.1em 0 1.25em
+	.unified-form
+		.form-title
+			margin-bottom: .8em
+			margin-top: 0
+		.input-title
+			margin: 0 0 8px
+			display: block
+			height: auto
+		.wrapper-checkbox
+			.text
+				font-size: 13px
+				display: inline-block
+				line-height: 16px
+		.file-input-text
+			margin-top: 1px
+			margin-bottom: 7px
+			line-height: 18px
+		.input-file
+			margin-bottom: 20px
+			.button
+				width: 71px
+		.text-area
+			margin-bottom: 20px
+	.add-banner-form 
+		.form-box
+			margin-bottom: 0
+	.registration-form,.authorization-form
+		.form-title
+			margin-bottom: 1.3em
+	.registration-form
+		.wrapper-checkbox
+			margin-top: 18px
+	.authorization-form
+		margin-bottom: 15px
+		.text
+			margin-top: 0
+			margin-bottom: 18px
+		.form-title
+			margin-bottom: .8em
+	.personal-area-sidebar-menu
+		padding: 2px
+		margin-bottom: 20px
+		li
+			margin-bottom: 5px
+			&.third
+				margin-bottom: 15px
+			&:last-child
+				margin-bottom: 0
+		a
+			min-height: 25px
+	.personal-area-text-item
+		padding: 1.2em 0
+		&.last
+			margin-bottom: 20px
+		.text-item-list
+			li
+				margin-bottom: 13px
+				line-height: 16px
+				&:last-child
+					margin-bottom: 0
+	.personal-area-section .technical-support-service
+		padding-top: 1.2em
+	.category-section-search-region
+		&.second
+			margin-top: 1.25em
+	.personal-area-search-form
+		.wrapper-submit-btn
+			margin-top: 1.25em
+	.personal-area-section
+		.unified-column
+			width: 25%
+		.unified-service-block
+			margin-bottom: 20px
+			.section-title
+				font-size: 18px
+				line-height: 20px
+				&.mod
+					font-size: 18px
+	.ad-publish-time.mod
+		padding-bottom: 2px
+	.select-payment-method-content.mod
+		margin-bottom: 10px
+	.ad-publish-time.mod
+		padding-top: 0
+		margin-top: -3px
+	.my-company-item
+		padding-top: 5px
+		margin-bottom: 20px
+		.title-and-rate
+			margin-bottom: 0
+		.title
+			float: none
+			margin-bottom: 15px
+		.rate-panel
+			float: none
+			max-width: 100%
+		.item-desc
+			padding-top: 15px
+		.contact-list
+			margin-top: 15px
+	.my-banners-item-content
+		display: block
+		.item-column
+			width: 100%
+			display: block
+			&:first-child
+				width: 100%
+				padding-right: 0
+				display: block
+	.my-banners-item
+		padding: 10px 10px 20px
+		margin-bottom: 20px
+		.top-panel
+			padding-bottom: 3px
+		.status-and-date
+			padding: 8px 0
+		.item-footer
+			position: relative
+			left: auto
+			bottom: auto
+			display: block
+			padding: 15px 0 0
+			font-size: 16px
+			width: auto
+			text-align: center
+			&.desktop
+				display: none
+			&.mobile
+				display: block
+		.go-over-btn
+			margin-top: 15px
+			display: inline-block
+		.item-body
+			padding-bottom: 0
+		.exten-publication-btn,.pay-publication-btn
+			display: inline-block
+		.delete-btn
+			position: relative
+			top: -3px
+	.personal-area-settings-form 
+		.col-sm-mod
+			padding-left: 15px
+	.my-payments-table li:last-child
+		margin-bottom: 20px
+@media only screen and (max-width: 600px)
+	.my-payments-table
+		li
+			margin-bottom: 20px
+		.table-cell
+			&:first-child
+				padding: 0
+				line-height: 30px
+			&:nth-child(2),&:nth-child(3),&:nth-child(4)
+				padding: 0 0 0 20px
+			&:first-child,&:nth-child(2),&:nth-child(3),&:nth-child(4)
+				display: block
+				width: 100%
+			&:first-child
+				height: 30px
+				margin-bottom: 5px
+			.number
+				margin-top: 0
+		.table-cell-row
+			padding-left: 0!important
+		.number
+			display: inline-block
+		.bold
+			display: inline-block !important
+			line-height: 16px
+			width: 70px
+		.payment-method
+			display: inline-block
+			vertical-align: middle
+		.text
+			display: inline-block !important
+
+@media only screen and (max-width: 480px)
+	.unified-form
+		.wrapper-submit-btn
+			&.pad-mobile
+				margin-top: 4px
+		.form-group
+			margin-bottom: 13.5px
+		.wrapper-submit-btn
+			width: 100%
+		.form-box.mod
+			margin-bottom: 0
+			padding-bottom: 4px
+		.form-box-pad
+			padding-top: 16px
+		.text-city
+			margin-top: 1px
+		.form-title
+			margin-bottom: 1em
+		.input-file 
+			margin-bottom: 15px
+			&.pad-mobile
+				margin-bottom: 20px
+	.personal-area-company-form.form-margin
+		.form-group
+			margin-bottom: 16px
+		.form-box
+			margin-bottom: 0
+		.file-input-text
+			margin-top: -4px
+			line-height: 17px
+	.registration-form,.authorization-form
+		.form-group
+			margin-bottom: 10px
+	.personal-area-section
+		.unified-column
+			width: 50%
+		.unified-unit-service
+			margin-bottom: 0
+			margin-top: 20px
+		.unified-service-block
+			margin-bottom: 32.5px
+			&.first
+				margin-top: 16px
+			&.mod
+				margin-bottom: 22px
+				.section-title
+					margin-bottom: 32px	
+			.section-title
+				margin-bottom: 12px
+	.personal-area-section
+		.add-advert-btn
+			a
+				width: 100%
+				padding-left: 0
+				padding-right: 48px
+				text-align: center
+	.ready-made-ads-item
+		margin-bottom: 15px
+		.unified-transport-unit 
+			.no-photo
+				height: 220px
+				background: #fff
+				display: table
+				width: 100%
+			.no-photo-text
+				display: table-cell
+				background-color: transparent
+				vertical-align: middle
+		.status-and-date
+			display: block
+			.cell
+				display: block
+				margin-bottom: 15px
+				width: 100%
+			.title
+				margin-bottom: 0
+		.ads-btn
+			padding-top: 0
+		.add-announcement-btn
+			margin-bottom: 10px
+		.top-panel
+			margin-bottom: 15px
+		.item-footer
+			padding-top: 15px
+	.select-payment-method-content.mod li
+		width: 50%
+	.select-payment-method-content.mod
+		.select-payment-method-item
+			margin-bottom: 10px
+	.my-payments-table
+		.payment-method
+			max-width: 190px
+	.my-company-content
+		.top-panel
+			margin-top: 0
+			margin-bottom: 15px
+		.number-and-date
+			display: block
+			.cell
+				display: block
+				margin-bottom: 13px
+				width: 100%
+			.title
+				margin-bottom: 0
+		.ads-btn
+			padding-top: 0
+			margin-top: -3px
+	.my-company-content 
+		h2
+			margin-bottom: 15px
+	.my-banners-item
+		.sidebar-product-item,.sidebar-container-ad-img
+			margin-left: -10px
+			margin-right: -10px
+		.go-over-btn
+			width: 100%
+	.add-banner-form
+		margin-bottom: 20px
+		.form-group
+			margin-bottom: 16px
+		.text-city
+			margin-bottom: 12px
+	.personal-area-section
+		.sidebar-helpful-information
+			margin-bottom: 0
+	.buy-banner-item
+		padding: 16px 0 20px
+		h3.title
+			margin-bottom: 12px
+		.item-list
+			margin-bottom: 13px
+			li
+				margin-bottom: 14px
+				line-height: 16px
+		.go-over-btn
+			margin-top: 20px
+			padding-left: 0
+			padding-right: 48px
+			text-align: center
+			width: 100%
+	.buy-banner-item.last
+		padding-bottom: 20px
+	.add-banner-form .show-ads-cities .text
+		font-size: 12px
+	.personal-area-settings-form 
+		.wrapper-submit-btn.mod
+			margin-top: 7px
+			padding-left: 0
+			padding-right: 58px
+			text-align: center
+		.form-box
+			padding-bottom: 20px
+			margin-bottom: 18px
+		.phone-number
+			margin-top: 3px
+		.add-btn
+			margin: 15px 0 -4px
+		.wrapper-checkbox
+			margin-bottom: 20px
+	.communication-administration-form
+		padding-bottom: 19px
+		.form-title
+			margin-bottom: 20px
+	.frequently-asked-questions
+		padding-top: 18px
+		padding-bottom: 7px
+		margin-bottom: 22px
+		.title
+			margin-bottom: 15px
+
+
+@media only screen and (max-width: 450px)
+	.ready-made-ads-item
+		.unified-transport-unit
+			.characteristics-table
+				display: table
+				width: 100%
+				tbody
+					display: table-row-group
+				tr
+					display: table-row
+					margin-bottom: 0
+				td
+					display: table-cell
+					padding: 1px 4px
+					width: 50%
+					vertical-align: middle
+	

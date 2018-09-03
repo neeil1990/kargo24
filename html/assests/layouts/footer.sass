@@ -1,0 +1,272 @@
+/***********MAIN-FOOTER***************/
+.main-footer
+	background: #37474f
+	padding: 1.7em 0 1.2em
+.main-footer-content
+	font-size: 0
+	line-height: 0
+	margin: 0 -15px
+	.top-panel
+		font-size: 0
+		line-height: 0
+		&.mobile
+			display: none
+		.footer-title
+			margin-bottom: .8em
+	.top-panel-column
+		display: inline-block
+		font-size: 16px
+		line-height: 1.2em
+		width: 57%
+		vertical-align: top
+		&:last-child
+			width: 43%
+	.footer-title
+		font-size: 14px
+		line-height: 1.2em
+		font-family: 'OpenSans-Bold'
+		margin-bottom: 1em
+		color: #879195
+	.footer-menu
+		display: inline-block
+		text-align: left
+		li
+			margin-bottom: 12px
+			line-height: 1.3em
+		a
+			color: #fff
+			font-size: 14px
+			font-family: 'OpenSans-Semibold'
+			transition: color .3s
+			&:hover
+				color: #6d96ab
+.content-footer-left
+	display: inline-block
+	vertical-align: top
+	margin: 0 -15px
+	padding: 0 15px
+	width: 69%
+	.footer-inner-column
+		display: inline-block
+		font-size: 14px
+		line-height: 1.2em
+		padding: 0 15px
+		vertical-align: top
+		width: 50%
+		&:nth-child(2)
+			vertical-align: bottom
+			position: relative
+			top: 7px
+	.footer-column
+		width: 53%
+		padding: 0 15px
+		display: inline-block
+		vertical-align: top
+		&:first-child
+			font-size: 0
+			margin: 0 -15px
+		&:last-child
+			width: 47%
+			font-size: 14px
+			padding-left: 9em
+.content-footer-right
+	display: inline-block
+	vertical-align: top
+	padding: 0 15px
+	width: 31%
+	.footer-menu
+		a
+			border-bottom: 1px solid #fff
+			transition: border-bottom-color .3s
+			&:hover
+				border-bottom-color: transparent
+				color: #fff
+	
+
+.footer-counter
+	margin-top: .7em
+	font-size: 16px
+	line-height: 1.2em
+	li
+		display: inline-block
+		vertical-align: middle
+		&:first-child
+			margin-right: 1.3em
+		img
+			max-width: 100%
+			height: auto
+.footer-bottom-info
+	padding-top: 1.1em
+	margin-top: 1.4em
+	font-size: 14px
+	line-height: 1.2em
+	border-top: 1px solid #5b686f
+	.copyright
+		color: #fff
+		font-size: 14px
+	.text
+		font-size: 14px
+		color: #879195
+		margin-bottom: .4em
+		&:last-child
+			margin-bottom: 0
+
+
+.scroll-to-top
+	display: block
+	width: 50px
+	height: 50px
+	border-radius: 50%
+	background-color: #6d96ab
+	cursor: pointer
+	position: fixed
+	right: 10px
+	bottom: 20px
+	transition: opacity 0.3s
+	// transform: translate3d(0, 90px, 0)
+	transition: transform 0.4s, opacity 0.6s
+	z-index: 100
+	&:after
+		content: ""
+		display: block
+		width: 20%
+		height: 20%
+		border-top: 3px solid #fff
+		border-right: 3px solid #fff
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		margin: auto
+		transform: rotate(-45deg)
+	&:before
+		content: ''
+		display: block
+		width: 120%
+		height: 120%
+		border: 2px solid #6d96ab
+		border-radius: 50%
+		position: absolute
+		top: -5px
+		left: -5px
+	&:hover
+		opacity: 0.7
+
+.scroll-to-top-visible
+	-webkit-transform: translate3d(0, 0, 0)
+	transform: translate3d(0, 0, 0)
+	opacity: 1
+
+
+
+@media only screen and (max-width: 1440px)
+	.main-footer-content
+		.top-panel-column
+			width: 50%
+			&:last-child
+				width: 50%
+	.content-footer-left
+		.footer-column
+			&:first-child
+				width: 67%
+			&:last-child
+				width: 33%
+				padding-left: 15px
+	.scroll-to-top
+		width: 35px
+		height: 35px
+		&:before
+			top: -4px
+			left: -4px
+			width: 122%
+			height: 122%
+		&:after
+			border-width: 2px
+@media only screen and (max-width: 1200px)
+
+@media only screen and (max-width: 992px)
+	.content-footer-left
+		width: 100%
+	.content-footer-right
+		width: 100%
+		.footer-title
+			margin-bottom: 10px
+	.content-footer-left 
+		.footer-column
+			&:last-child
+				width: 28%
+			&:first-child
+				width: 72%
+	.content-footer-left .footer-inner-column:nth-child(2)
+		top: 4px
+	.main-footer-content
+		.top-panel-column
+			margin-top: 29px
+			width: 100%
+			&:last-child
+				width: 100%
+		.top-panel
+			display: inline-block
+			width: 33.5%
+			vertical-align: top
+	.footer-counter-and-info
+		display: inline-block
+		vertical-align: top
+		width: 65%
+@media only screen and (max-width: 767px)
+	.content-footer-left
+		margin: 0
+@media only screen and (max-width: 630px)
+	.content-footer-left
+		padding: 0
+		.footer-inner-column
+			width: 100%
+			padding: 0
+		.footer-column
+			width: 50% !important
+			margin: 0 !important
+	.main-footer-content
+		.top-panel
+			width: 100%
+			&.desktop
+				display: none
+			&.mobile
+				display: block
+		.footer-title
+			font-size: 12px
+		.footer-menu
+			a
+				font-size: 12px
+	.footer-counter-and-info
+		width: 100%
+	.footer-bottom-info 
+		.copyright
+			font-size: 12px
+		.text
+			font-size: 12px
+	.scroll-to-top
+		width: 30px
+		height: 30px
+		&:before
+			width: 127%
+			height: 127%
+			top: -4px
+			left: -4px
+		&:after
+			width: 30%
+			height: 30%
+			top: 3px
+	.main-footer
+		padding: 1em 0
+	.main-footer-content
+		.footer-menu
+			li
+				margin-bottom: 6px
+				line-height: 16px
+	.main-footer-content 
+		.top-panel-column
+			margin-top: 34px
+		.footer-title
+			line-height: 1.35em
+			margin-bottom: .7em

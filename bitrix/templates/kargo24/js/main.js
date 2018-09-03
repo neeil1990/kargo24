@@ -195,4 +195,18 @@ $(function() {
   $('input[type=tel]').inputmask("+7 (999) 999 99 99", {
     "clearIncomplete": true
   });
+
+
+  $('.category-section-search-region .text-input').jSearch({
+    selector  : '.category-section-search-content ul.category-unified-list',
+    child : 'li > a',
+    minValLength: 0,
+    Found : function(elem){
+      $(elem).parent().show();
+    },
+    NotFound : function(elem){
+      $(elem).parent().hide();
+    }
+  });
+
 });
