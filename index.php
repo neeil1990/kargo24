@@ -193,284 +193,33 @@ $APPLICATION->SetTitle('CarGo24');
             </div>
         </section>
         <!-- end transportations-section -->
-        <section class="special-equipment-section">
-            <div class="container">
-                <div class="section-title">Аренда спецтехники, продажа спецтехники, запчасти и ремонт</div>
-                <div class="special-equipment-content">
-                    <div class="special-equipment-item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="img/static/special-equipment/car-1.png" alt="alt">
-                            </div>
-                            <div class="item-desc">
-                                <h3 class="title">Аренда спецтехники</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="special-equipment-item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="img/static/special-equipment/car-2.png" alt="alt">
-                            </div>
-                            <div class="item-desc">
-                                <h3 class="title">Продажа спецтехники</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="special-equipment-item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="img/static/special-equipment/car-3.png" alt="alt">
-                            </div>
-                            <div class="item-desc">
-                                <h3 class="title">Запчасти и ремонт</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="special-equipment-item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="img/static/special-equipment/car-4.png" alt="alt">
-                            </div>
-                            <div class="item-desc">
-                                <h3 class="title">Автовышки</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="special-equipment-item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="img/static/special-equipment/car-5.png" alt="alt">
-                            </div>
-                            <div class="item-desc">
-                                <h3 class="title">Дорожные катки</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="special-equipment-item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="img/static/special-equipment/car-6.png" alt="alt">
-                            </div>
-                            <div class="item-desc">
-                                <h3 class="title">Самосвалы и тонары</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="special-equipment-item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="img/static/special-equipment/car-7.png" alt="alt">
-                            </div>
-                            <div class="item-desc">
-                                <h3 class="title">Бетоновозы</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="special-equipment-item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="img/static/special-equipment/car-8.png" alt="alt">
-                            </div>
-                            <div class="item-desc">
-                                <h3 class="title">Грейдеры</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="special-equipment-item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="img/static/special-equipment/car-9.png" alt="alt">
-                            </div>
-                            <div class="item-desc">
-                                <h3 class="title">Грейферы</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="special-equipment-item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="img/static/special-equipment/car-10.png" alt="alt">
-                            </div>
-                            <div class="item-desc">
-                                <h3 class="title">Автобетоно-насосы</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="special-equipment-item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="img/static/special-equipment/car-11.png" alt="alt">
-                            </div>
-                            <div class="item-desc">
-                                <h3 class="title">Автокраны</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="special-equipment-item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="img/static/special-equipment/car-12.png" alt="alt">
-                            </div>
-                            <div class="item-desc">
-                                <h3 class="title">Бензовозы</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="special-equipment-item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="img/static/special-equipment/car-13.png" alt="alt">
-                            </div>
-                            <div class="item-desc">
-                                <h3 class="title">Низкорамные тралы</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="special-equipment-item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="img/static/special-equipment/car-14.png" alt="alt">
-                            </div>
-                            <div class="item-desc">
-                                <h3 class="title">Бульдозеры</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="special-equipment-item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="img/static/special-equipment/car-15.png" alt="alt">
-                            </div>
-                            <div class="item-desc">
-                                <h3 class="title">Гидромолоты</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="special-equipment-item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="img/static/special-equipment/car-16.png" alt="alt">
-                            </div>
-                            <div class="item-desc">
-                                <h3 class="title">Мини-погрузчики</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="special-equipment-item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="img/static/special-equipment/car-17.png" alt="alt">
-                            </div>
-                            <div class="item-desc">
-                                <h3 class="title">Мини-экскаваторы</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="special-equipment-item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="img/static/special-equipment/car-18.png" alt="alt">
-                            </div>
-                            <div class="item-desc">
-                                <h3 class="title">Поливомоечные машины</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="special-equipment-item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="img/static/special-equipment/car-19.png" alt="alt">
-                            </div>
-                            <div class="item-desc">
-                                <h3 class="title">Манипуляторы</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="special-equipment-item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="img/static/special-equipment/car-20.png" alt="alt">
-                            </div>
-                            <div class="item-desc">
-                                <h3 class="title">Тракторы</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="special-equipment-item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="img/static/special-equipment/car-21.png" alt="alt">
-                            </div>
-                            <div class="item-desc">
-                                <h3 class="title">Фронтальные погрузчики</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="special-equipment-item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="img/static/special-equipment/car-22.png" alt="alt">
-                            </div>
-                            <div class="item-desc">
-                                <h3 class="title">Ассенизаторы и илососы</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="special-equipment-item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="img/static/special-equipment/car-23.png" alt="alt">
-                            </div>
-                            <div class="item-desc">
-                                <h3 class="title">Экскаваторы</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="special-equipment-item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="img/static/special-equipment/car-24.png" alt="alt">
-                            </div>
-                            <div class="item-desc">
-                                <h3 class="title">Экскаваторы-погрузчики</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="special-equipment-item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="img/static/special-equipment/car-25.png" alt="alt">
-                            </div>
-                            <div class="item-desc">
-                                <h3 class="title">Эвакуаторы</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="special-equipment-item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="img/static/special-equipment/car-26.png" alt="alt">
-                            </div>
-                            <div class="item-desc">
-                                <h3 class="title">Ямобуры и сваебои</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="special-equipment-item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="img/static/special-equipment/car-27.png" alt="alt">
-                            </div>
-                            <div class="item-desc">
-                                <h3 class="title">Мусоровозы и бункеровозы</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end special-equipment-section -->
+
+        <?$APPLICATION->IncludeComponent("bitrix:catalog.section.list", "home.equipment", Array(
+            "ADD_SECTIONS_CHAIN" => "Y",
+            "CACHE_GROUPS" => "Y",
+            "CACHE_TIME" => "36000000",
+            "CACHE_TYPE" => "A",
+            "COUNT_ELEMENTS" => "N",
+            "IBLOCK_ID" => "1",
+            "IBLOCK_TYPE" => "content",
+            "SECTION_CODE" => $_REQUEST["SECTION_CODE"],
+            "SECTION_FIELDS" => array(
+                0 => "",
+                1 => "",
+            ),
+            "SECTION_ID" => $_REQUEST["SECTION_ID"],
+            "SECTION_URL" => "",
+            "SECTION_USER_FIELDS" => array(
+                0 => "",
+                1 => "",
+            ),
+            "SHOW_PARENT_NAME" => "Y",
+            "TOP_DEPTH" => "1",
+            "VIEW_MODE" => "LINE",
+        ),
+            false
+        );?>
+
         <section class="equipment-rent-section">
             <div class="container">
                 <div class="row">

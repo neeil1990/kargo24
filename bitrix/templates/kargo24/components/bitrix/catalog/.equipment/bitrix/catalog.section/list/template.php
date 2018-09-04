@@ -16,7 +16,7 @@ $this->setFrameMode(true);
 if($arResult['ITEMS']):?>
 	<div class="freight-transportation-item">
 		<div class="section-title">ГРУЗОПЕРЕВОЗКИ ДО <?=$arParams['PROPERTY_TON_VALUE']?> ТОНН</div>
-		<? foreach($arResult['ITEMS'] as $arItem):?>
+		<? foreach($arResult['ITEMS'] as $key => $arItem):?>
 			<div class="unified-transport-unit">
 				<div class="item-img">
 					<img src="<?=$arItem['PREVIEW_PICTURE']['SRC']?>" alt="alt">
@@ -63,9 +63,11 @@ if($arResult['ITEMS']):?>
 				</div>
 			</div>
 			<!-- end unified-transport-unit -->
-		<? endforeach; ?>
+		<?
+		$ton[] = $arItem['PROPERTIES']['TON']['VALUE'];
+		endforeach; ?>
 		<div class="all-transportations-link">
-			<a href="<?=$arResult['SECTION_PAGE_URL'].'filter/ton-from-0-to-'.$arParams['PROPERTY_TON_VALUE'].'/apply/'?>">Все перевозки до <?=$arParams['PROPERTY_TON_VALUE']?> т в г. <?=$arResult['NAME']?></a>
+			<a href="<?=$arResult['SECTION_PAGE_URL'].'filter/ton-from-0-to-'.min($ton).'/apply/'?>">Все перевозки до <?=$arParams['PROPERTY_TON_VALUE']?> т в г. <?=$arResult['NAME']?></a>
 		</div>
 	</div>
 <? endif;?>
