@@ -14,7 +14,7 @@ use Bitrix\Main\Loader;
 use Bitrix\Main\ModuleManager;
 
 $this->setFrameMode(true);
-
+global $APPLICATION;
 ?>
 
 <div class="col-sm-9">
@@ -157,15 +157,16 @@ $this->setFrameMode(true);
 	){
 
 		global $arrFilter;
-		$arFilterValue = array(20,10,5,3.5,2,1);
-		foreach($arFilterValue as $filter)
-		{
-			$arrFilter = array(">=PROPERTY_TON" => $filter);
+		$property_enums = CIBlockPropertyEnum::GetList(Array("SORT"=>"ASC","VALUE" => "ASC"), Array("IBLOCK_ID" => $arParams["IBLOCK_ID"], "CODE" => "SPECIAL_CAR"));
+		while($enum_fields = $property_enums->GetNext()){
+			$arrFilter = array("=PROPERTY_SPECIAL_CAR_VALUE" => $enum_fields['VALUE']);
+			$filterUrl = 'filter/'.mb_strtolower($enum_fields['PROPERTY_CODE']).'-is-'.$enum_fields['XML_ID'].'/apply/';
 			$APPLICATION->IncludeComponent(
 				"bitrix:catalog.section",
 				"list",
 				array(
-					"PROPERTY_TON_VALUE" => $filter,
+					"PROPERTY_SPECIAL_CAR_VALUE" => $enum_fields['VALUE'],
+					"FILTER_URL" => $filterUrl,
 					"IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
 					"IBLOCK_ID" => $arParams["IBLOCK_ID"],
 					"ELEMENT_SORT_FIELD" => $arParams["ELEMENT_SORT_FIELD"],
@@ -256,7 +257,8 @@ $this->setFrameMode(true);
 					"ADD_SECTIONS_CHAIN" => "N",
 					'ADD_TO_BASKET_ACTION' => $basketAction,
 					'SHOW_CLOSE_POPUP' => isset($arParams['COMMON_SHOW_CLOSE_POPUP']) ? $arParams['COMMON_SHOW_CLOSE_POPUP'] : '',
-					'COMPARE_PATH' => $arResult['FOLDER'].$arResult['URL_TEMPLATES']['compare']
+					'COMPARE_PATH' => $arResult['FOLDER'].$arResult['URL_TEMPLATES']['compare'],
+					"SMART_FILTER_PATH" => $arResult["VARIABLES"]["SMART_FILTER_PATH"],
 				),
 				$component
 			);
@@ -272,6 +274,7 @@ $this->setFrameMode(true);
 		<?
 
 	}else{
+
 		$intSectionID = $APPLICATION->IncludeComponent(
 			"bitrix:catalog.section",
 			"",
@@ -366,12 +369,27 @@ $this->setFrameMode(true);
 				"ADD_SECTIONS_CHAIN" => "N",
 				'ADD_TO_BASKET_ACTION' => $basketAction,
 				'SHOW_CLOSE_POPUP' => isset($arParams['COMMON_SHOW_CLOSE_POPUP']) ? $arParams['COMMON_SHOW_CLOSE_POPUP'] : '',
-				'COMPARE_PATH' => $arResult['FOLDER'].$arResult['URL_TEMPLATES']['compare']
+				'COMPARE_PATH' => $arResult['FOLDER'].$arResult['URL_TEMPLATES']['compare'],
 			),
 			$component
 		);
-
 	}
+	?>
+	<div class="unified-text-block-category">
+		<?$APPLICATION->ShowViewContent('sotbit_seometa_bottom_desc');?>
+	</div>
+	<!-- end unified-text-block-category -->
+	<?
+	$APPLICATION->IncludeComponent(
+		"sotbit:seo.meta",
+		".default",
+		Array(
+			"FILTER_NAME" => $arParams["FILTER_NAME"],
+			"SECTION_ID" => $arCurSection['ID'],
+			"CACHE_TYPE" => $arParams["CACHE_TYPE"],
+			"CACHE_TIME" => $arParams["CACHE_TIME"],
+		)
+	);
 	?>
 
 	<?

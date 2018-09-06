@@ -68,9 +68,10 @@ if($arResult['ITEMS']):?>
 <? endif;?>
 
 
-<? if($arResult["DESCRIPTION"]): ?>
+<?
+if($arParams['SMART_FILTER_PATH'] == "clear" && !$arParams['SMART_FILTER_PATH']): ?>
 	<div class="unified-text-block-category">
 		<?=$arResult["DESCRIPTION"]?>
 	</div>
 	<!-- end unified-text-block-category -->
-<? endif;?>
+<?endif;?>

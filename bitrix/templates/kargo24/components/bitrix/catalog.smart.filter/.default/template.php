@@ -36,12 +36,10 @@ $this->setFrameMode(true);
 					?>
 							<?
 							$arCur = current($arItem["VALUES"]);
+
 							switch ($arItem["DISPLAY_TYPE"])
 							{
-								case "B":
-									break;
-
-								default://CHECKBOXES
+								case "F":
 									?>
 									<ul class="categori-list-menu">
 										<li>
@@ -56,20 +54,20 @@ $this->setFrameMode(true);
 											<a href="javascript:void(0)" onclick="$('#del_filter').click()" class="<?=($arParams['SMART_FILTER_PATH'] == 'clear' || !$arParams['SMART_FILTER_PATH'])?'active':'';?>">Все</a>
 										</li>
 										<?foreach($arItem["VALUES"] as $val => $ar):?>
-										<li>
-											<input
-												type="checkbox"
-												value="<? echo $ar["HTML_VALUE"] ?>"
-												name="<? echo $ar["CONTROL_NAME"] ?>"
-												id="<? echo $ar["CONTROL_ID"] ?>"
-												<? echo $ar["CHECKED"]? 'checked="checked"': '' ?>
-												onclick="smartFilter.click(this)"
-												hidden
-												/>
-											<a href="javascript:void(0)" onclick="$('#<? echo $ar["CONTROL_ID"] ?>').click();$(this).toggleClass('active')" class="<? echo $ar["CHECKED"] ? 'active': '' ?>">
-												<?=$ar["VALUE"];?>
-											</a>
-										</li>
+											<li>
+												<input
+													type="checkbox"
+													value="<? echo $ar["HTML_VALUE"] ?>"
+													name="<? echo $ar["CONTROL_NAME"] ?>"
+													id="<? echo $ar["CONTROL_ID"] ?>"
+													<? echo $ar["CHECKED"]? 'checked="checked"': '' ?>
+													onclick="smartFilter.click(this)"
+													hidden
+													/>
+												<a href="javascript:void(0)" onclick="$('#<? echo $ar["CONTROL_ID"] ?>').click();$(this).toggleClass('active')" class="<? echo $ar["CHECKED"] ? 'active': '' ?>">
+													<?=$ar["VALUE"];?>
+												</a>
+											</li>
 										<?endforeach;?>
 
 										<li>
@@ -92,6 +90,10 @@ $this->setFrameMode(true);
 										</li>
 
 									</ul>
+									<?
+									break;
+									?>
+
 							<?
 							}
 							?>
