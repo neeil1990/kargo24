@@ -25,8 +25,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && strlen($Update.$Apply.$RestoreDefault
 	}
 }
 
-if($b = $_GET['iblock'] && $s = $_GET['iSection'])
-CAdminMessage::ShowMessage(array("MESSAGE" => "Добавлены города в ИБ $b раздел $s", "TYPE"=>"OK"));
+if($_GET['iblock'] && $_GET['iSection'])
+CAdminMessage::ShowMessage(array("MESSAGE" => "Добавлены города в ИБ $_GET[iblock] раздел $_GET[iSection]", "TYPE"=>"OK"));
 
 $tabControl->Begin();
 ?>
