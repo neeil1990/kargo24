@@ -41,24 +41,44 @@ class CreateSection
         return $this->section;
     }
 
-    public function getCity(){
+    public function getCity($district = array()){
         $arCity = array();
-        $CitiesFile = $_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/'.$this->MODULE_ID.'/db/cities.txt';
-        $this->fhandleCities = fopen($CitiesFile, 'r') or die("Cannot open $CitiesFile");
-
-        rewind($this->fhandleCities);
+        $this->getLocation();
         while(!feof($this->fhandleCities))
         {
             $str = fgets($this->fhandleCities);
             $arRecord = explode("\t", trim($str));
-            $arCity[$arRecord[2]][] = $arRecord[1];
+            if(in_array($arRecord[3],$district))
+                $arCity[$arRecord[2]][] = $arRecord[1];
         }
         return $arCity;
     }
 
-    public function setSection($idBlock = 0,$idSection = 0){
+    public function getDistrict(){
+        $arDistrict = array();
+
+        $this->getLocation();
+        while(!feof($this->fhandleCities))
+        {
+            $str = fgets($this->fhandleCities);
+            $arRecord = explode("\t", trim($str));
+            if(in_array($arRecord[3], $arDistrict))
+                continue;
+            else
+            $arDistrict[] =  $arRecord[3];
+        }
+        return $arDistrict;
+    }
+
+    private function getLocation(){
+        $CitiesFile = $_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/'.$this->MODULE_ID.'/db/cities.txt';
+        $this->fhandleCities = fopen($CitiesFile, 'r') or die("Cannot open $CitiesFile");
+        rewind($this->fhandleCities);
+    }
+
+    public function setSection($idBlock = 0,$idSection = 0,$district = array()){
         $Section = new CIBlockSection;
-        foreach($this->getCity() as $region => $city){
+        foreach($this->getCity($district) as $region => $city){
 
             $regionCode = CUtil::translit($region, "ru", false);
             $arFields = Array(

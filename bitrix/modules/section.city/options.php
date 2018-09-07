@@ -19,7 +19,7 @@ $tabControl = new CAdminTabControl("tabControl", $aTabs);
 if($_SERVER["REQUEST_METHOD"] == "POST" && strlen($Update.$Apply.$RestoreDefaults)>0 && check_bitrix_sessid())
 {
 	if($iblock = $_REQUEST['IBlock'] && $iblockSection = $_REQUEST['IBlockSection']){
-		$res = $main->setSection($iblock,$iblockSection);
+		$res = $main->setSection($iblock,$iblockSection,$_REQUEST['district']);
 		if($res)
 		LocalRedirect($APPLICATION->GetCurPage()."?mid=".urlencode($mid)."&lang=".LANGUAGE_ID."&iblock=$iblock&iSection=$iblockSection");
 	}
@@ -38,6 +38,23 @@ $tabControl->Begin();
 
 <form method="post" action="<?echo $APPLICATION->GetCurPage()?>?mid=<?=urlencode($mid)?>&amp;lang=<?echo LANGUAGE_ID?>">
 	<?$tabControl->BeginNextTab();?>
+
+	<tr>
+		<td width="40%" nowrap>
+			<label for="">Федеральный округ</label>
+		</td>
+
+		<td width="60%">
+			<select name="district[]" multiple="multiple">
+				<option value="">Не выбрано</option>
+				<? foreach($main->getDistrict() as $district): ?>
+					<? if($district): ?>
+					<option value="<?=$district?>"><?=$district?></option>
+					<? endif; ?>
+				<?endforeach;?>
+			</select>
+		</td>
+	</tr>
 
 	<tr>
 		<td width="40%" nowrap>

@@ -3,7 +3,7 @@ $arUrlRewrite=array (
   1 => 
   array (
     'CONDITION' => '#^/equipment/#',
-    'RULE' => '',
+    'RULE' => 'SECTION_CODE=$1',
     'ID' => 'bitrix:catalog',
     'PATH' => '/equipment/index.php',
     'SORT' => 100,
