@@ -18,10 +18,10 @@ $tabControl = new CAdminTabControl("tabControl", $aTabs);
 
 if($_SERVER["REQUEST_METHOD"] == "POST" && strlen($Update.$Apply.$RestoreDefaults)>0 && check_bitrix_sessid())
 {
-	if($iblock = $_REQUEST['IBlock'] && $iblockSection = $_REQUEST['IBlockSection']){
-		$res = $main->setSection($iblock,$iblockSection,$_REQUEST['district']);
+	if($_REQUEST['IBlock'] && $_REQUEST['IBlockSection']){
+		$res = $main->setSection($_REQUEST['IBlock'],$_REQUEST['IBlockSection'],$_REQUEST['district']);
 		if($res)
-		LocalRedirect($APPLICATION->GetCurPage()."?mid=".urlencode($mid)."&lang=".LANGUAGE_ID."&iblock=$iblock&iSection=$iblockSection");
+		LocalRedirect($APPLICATION->GetCurPage()."?mid=".urlencode($mid)."&lang=".LANGUAGE_ID."&iblock=$_REQUEST[IBlock]&iSection=$_REQUEST[IBlockSection]");
 	}
 }
 

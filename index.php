@@ -21,178 +21,33 @@ $APPLICATION->SetTitle('CarGo24');
             </div>
         </section>
         <!-- end main-section -->
-        <section class="transportations-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-9">
-                        <div class="section-title">
-                            Грузовые перевозки, попутный транспорт,
-                            поиск грузов, расчёт пути
-                        </div>
-                        <div class="wrapper-unified-column">
-                            <div class="unified-column">
-                                <div class="unified-unit-service">
-                                    <a href="">
-                                        <div class="item-img">
-                                            <img src="img/static/transportations/01.png" alt="alt">
-                                        </div>
-                                        <div class="item-desc">
-                                            <h3 class="title">
-                                                Попутный <br>транспорт
-                                            </h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="unified-column">
-                                <div class="unified-unit-service">
-                                    <a href="">
-                                        <div class="item-img">
-                                            <img src="img/static/transportations/02.png" alt="alt">
-                                        </div>
-                                        <div class="item-desc">
-                                            <h3 class="title">
-                                                Грузовые <br> перевозки
-                                            </h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="unified-column">
-                                <div class="unified-unit-service">
-                                    <a href="">
-                                        <div class="item-img">
-                                            <img src="img/static/transportations/03.png" alt="alt">
-                                        </div>
-                                        <div class="item-desc">
-                                            <h3 class="title">
-                                                Поиск грузов
-                                            </h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="unified-column">
-                                <div class="unified-unit-service">
-                                    <a href="">
-                                        <div class="item-img">
-                                            <img src="img/static/transportations/04.png" alt="alt">
-                                        </div>
-                                        <div class="item-desc">
-                                            <h3 class="title">
-                                                Расчет пути
-                                            </h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="unified-column">
-                                <div class="unified-unit-service">
-                                    <a href="">
-                                        <div class="item-img">
-                                            <img src="img/static/transportations/05.png" alt="alt">
-                                        </div>
-                                        <div class="item-desc">
-                                            <h3 class="title">
-                                                Грузы до 1 т
-                                            </h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="unified-column">
-                                <div class="unified-unit-service">
-                                    <a href="">
-                                        <div class="item-img">
-                                            <img src="img/static/transportations/06.png" alt="alt">
-                                        </div>
-                                        <div class="item-desc">
-                                            <h3 class="title">
-                                                Грузы до 2 т
-                                            </h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="unified-column">
-                                <div class="unified-unit-service">
-                                    <a href="">
-                                        <div class="item-img">
-                                            <img src="img/static/transportations/07.png" alt="alt">
-                                        </div>
-                                        <div class="item-desc">
-                                            <h3 class="title">
-                                                Грузы до 3,5 т
-                                            </h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="unified-column">
-                                <div class="unified-unit-service">
-                                    <a href="">
-                                        <div class="item-img">
-                                            <img src="img/static/transportations/08.png" alt="alt">
-                                        </div>
-                                        <div class="item-desc">
-                                            <h3 class="title">
-                                                Грузы до 5 т
-                                            </h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="unified-column">
-                                <div class="unified-unit-service">
-                                    <a href="">
-                                        <div class="item-img">
-                                            <img src="img/static/transportations/09.png" alt="alt">
-                                        </div>
-                                        <div class="item-desc">
-                                            <h3 class="title">
-                                                Грузы до 10 т
-                                            </h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="unified-column">
-                                <div class="unified-unit-service">
-                                    <a href="">
-                                        <div class="item-img">
-                                            <img src="img/static/transportations/10.png" alt="alt">
-                                        </div>
-                                        <div class="item-desc">
-                                            <h3 class="title">
-                                                Грузы до 20 т
-                                            </h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="unified-ad-unit">
-                            <div class="ad-unit-head">
-                                <div class="logo">
-                                    <img src="img/static/ad-unit-logo.png" alt="alt">
-                                </div>
-                                <span class="logo-text">Диспетчерский интернет-сервис</span>
-                            </div>
-                            <div class="ad-unit-img">
-                                <img src="img/static/ad.png" alt="alt">
-                            </div>
-                            <div class="ad-init-footer">
-                                <span class="title">Узнайте как разместить рекламу</span>
-                                <a href="" class="limed-spruce-btn white more-info-btn"><span class="text">подробнее</span><span class="arrow"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end transportations-section -->
+
+        <?$APPLICATION->IncludeComponent("bitrix:catalog.section.list", "home.transportation", Array(
+            "ADD_SECTIONS_CHAIN" => "Y",
+            "CACHE_GROUPS" => "Y",
+            "CACHE_TIME" => "36000000",
+            "CACHE_TYPE" => "A",
+            "COUNT_ELEMENTS" => "N",
+            "IBLOCK_ID" => "2",
+            "IBLOCK_TYPE" => "content",
+            "SECTION_CODE" => $_REQUEST["SECTION_CODE"],
+            "SECTION_FIELDS" => array(
+                0 => "",
+                1 => "",
+            ),
+            "SECTION_ID" => $_REQUEST["SECTION_ID"],
+            "SECTION_URL" => "",
+            "SECTION_USER_FIELDS" => array(
+                0 => "",
+                1 => "",
+            ),
+            "SHOW_PARENT_NAME" => "Y",
+            "TOP_DEPTH" => "1",
+            "VIEW_MODE" => "LINE",
+        ),
+            false
+        );?>
+
 
         <?$APPLICATION->IncludeComponent("bitrix:catalog.section.list", "home.equipment", Array(
             "ADD_SECTIONS_CHAIN" => "Y",
@@ -220,265 +75,32 @@ $APPLICATION->SetTitle('CarGo24');
             false
         );?>
 
-        <section class="equipment-rent-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-3">
-                        <div class="sidebar-product-item">
-                            <div class="logo">
-                                <img src="img/static/ad-unit-logo.png" alt="alt">
-                            </div>
-                            <div class="product-img">
-                                <a href=""><img src="img/static/construction-machinery/01.png" alt="alt"></a>
-                            </div>
-                            <div class="product-desc">
-                                <h3 class="title">Бульдозер</h3>
-                                <table class="desc-info">
-                                    <tr>
-                                        <td>Город:</td>
-                                        <td>Москва</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Цена:</td>
-                                        <td>720 000 руб.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Контакты: </td>
-                                        <td>7 950 111 11 11 (Алексей)</td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="sidebar-product-item desktop">
-                            <div class="logo">
-                                <img src="img/static/ad-unit-logo.png" alt="alt">
-                            </div>
-                            <div class="product-img">
-                                <a href=""><img src="img/static/construction-machinery/02.png" alt="alt"></a>
-                            </div>
-                            <div class="product-desc">
-                                <h3 class="title">Автогрейдер</h3>
-                                <table class="desc-info">
-                                    <tr>
-                                        <td>Город:</td>
-                                        <td>Челябинск</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Цена:</td>
-                                        <td>2 300 000 руб.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Контакты: </td>
-                                        <td>89080660033 (Руслан)</td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-9">
-                        <div class="section-title">
-                            Аренда строительного оборудования
-                        </div>
-                        <div class="wrapper-unified-column">
-                            <div class="unified-column">
-                                <div class="unified-unit-service">
-                                    <a href="">
-                                        <div class="item-img">
-                                            <img src="img/static/equipment-rent/01.png" alt="alt">
-                                        </div>
-                                        <div class="item-desc">
-                                            <h3 class="title">Мачтовые подъёмники</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="unified-column">
-                                <div class="unified-unit-service">
-                                    <a href="">
-                                        <div class="item-img">
-                                            <img src="img/static/equipment-rent/02.png" alt="alt">
-                                        </div>
-                                        <div class="item-desc">
-                                            <h3 class="title">Бытовки и блок-контейнеры</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="unified-column">
-                                <div class="unified-unit-service">
-                                    <a href="">
-                                        <div class="item-img">
-                                            <img src="img/static/equipment-rent/03.png" alt="alt">
-                                        </div>
-                                        <div class="item-desc">
-                                            <h3 class="title">Компресоры</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="unified-column">
-                                <div class="unified-unit-service">
-                                    <a href="">
-                                        <div class="item-img">
-                                            <img src="img/static/equipment-rent/04.png" alt="alt">
-                                        </div>
-                                        <div class="item-desc">
-                                            <h3 class="title">Аренда стройобо- <br>рудования</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="unified-column">
-                                <div class="unified-unit-service">
-                                    <a href="">
-                                        <div class="item-img">
-                                            <img src="img/static/equipment-rent/05.png" alt="alt">
-                                        </div>
-                                        <div class="item-desc">
-                                            <h3 class="title">Бетономешалки</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="unified-column">
-                                <div class="unified-unit-service">
-                                    <a href="">
-                                        <div class="item-img">
-                                            <img src="img/static/equipment-rent/06.png" alt="alt">
-                                        </div>
-                                        <div class="item-desc">
-                                            <h3 class="title">Генераторы</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="unified-column">
-                                <div class="unified-unit-service">
-                                    <a href="">
-                                        <div class="item-img">
-                                            <img src="img/static/equipment-rent/07.png" alt="alt">
-                                        </div>
-                                        <div class="item-desc">
-                                            <h3 class="title">Насосы и мотопомпы</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="unified-column">
-                                <div class="unified-unit-service">
-                                    <a href="">
-                                        <div class="item-img">
-                                            <img src="img/static/equipment-rent/08.png" alt="alt">
-                                        </div>
-                                        <div class="item-desc">
-                                            <h3 class="title">Опалубка</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="unified-column">
-                                <div class="unified-unit-service">
-                                    <a href="">
-                                        <div class="item-img">
-                                            <img src="img/static/equipment-rent/09.png" alt="alt">
-                                        </div>
-                                        <div class="item-desc">
-                                            <h3 class="title">Подъёмные башенные краны</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="unified-column">
-                                <div class="unified-unit-service">
-                                    <a href="">
-                                        <div class="item-img">
-                                            <img src="img/static/equipment-rent/10.png" alt="alt">
-                                        </div>
-                                        <div class="item-desc">
-                                            <h3 class="title">Сварочные аппараты</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="unified-column">
-                                <div class="unified-unit-service">
-                                    <a href="">
-                                        <div class="item-img">
-                                            <img src="img/static/equipment-rent/11.png" alt="alt">
-                                        </div>
-                                        <div class="item-desc">
-                                            <h3 class="title">Строительные люльки</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="unified-column">
-                                <div class="unified-unit-service">
-                                    <a href="">
-                                        <div class="item-img">
-                                            <img src="img/static/equipment-rent/12.png" alt="alt">
-                                        </div>
-                                        <div class="item-desc">
-                                            <h3 class="title">Фасадные леса и вышки тура</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="unified-column">
-                                <div class="unified-unit-service">
-                                    <a href="">
-                                        <div class="item-img">
-                                            <img src="img/static/equipment-rent/13.png" alt="alt">
-                                        </div>
-                                        <div class="item-desc">
-                                            <h3 class="title">Электростанции и подстанции</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="unified-column">
-                                <div class="unified-unit-service">
-                                    <a href="">
-                                        <div class="item-img">
-                                            <img src="img/static/equipment-rent/14.png" alt="alt">
-                                        </div>
-                                        <div class="item-desc">
-                                            <h3 class="title">Вывоз мусора и бытовых отходов</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="sidebar-product-item mobile">
-                            <div class="logo">
-                                <img src="img/static/ad-unit-logo.png" alt="alt">
-                            </div>
-                            <div class="product-img">
-                                <a href=""><img src="img/static/construction-machinery/02.png" alt="alt"></a>
-                            </div>
-                            <div class="product-desc">
-                                <h3 class="title">Автогрейдер</h3>
-                                <table class="desc-info">
-                                    <tr>
-                                        <td>Город:</td>
-                                        <td>Челябинск</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Цена:</td>
-                                        <td>2 300 000 руб.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Контакты: </td>
-                                        <td>89080660033 (Руслан)</td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end equipment-rent-section -->
+        <?$APPLICATION->IncludeComponent("bitrix:catalog.section.list", "home.equipment-rent", Array(
+            "ADD_SECTIONS_CHAIN" => "Y",
+            "CACHE_GROUPS" => "Y",
+            "CACHE_TIME" => "36000000",
+            "CACHE_TYPE" => "A",
+            "COUNT_ELEMENTS" => "N",
+            "IBLOCK_ID" => "3",
+            "IBLOCK_TYPE" => "content",
+            "SECTION_CODE" => $_REQUEST["SECTION_CODE"],
+            "SECTION_FIELDS" => array(
+                0 => "",
+                1 => "",
+            ),
+            "SECTION_ID" => $_REQUEST["SECTION_ID"],
+            "SECTION_URL" => "",
+            "SECTION_USER_FIELDS" => array(
+                0 => "",
+                1 => "",
+            ),
+            "SHOW_PARENT_NAME" => "Y",
+            "TOP_DEPTH" => "1",
+            "VIEW_MODE" => "LINE",
+        ),
+            false
+        );?>
+
         <section class="accompanyin-passenger-services-section">
             <div class="container">
                 <div class="row">

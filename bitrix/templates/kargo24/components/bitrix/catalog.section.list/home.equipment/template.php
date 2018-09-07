@@ -16,7 +16,13 @@ if (0 < $arResult["SECTIONS_COUNT"]):
 ?>
 <section class="special-equipment-section">
 	<div class="container">
-		<div class="section-title">Аренда спецтехники, продажа спецтехники, запчасти и ремонт</div>
+		<div class="section-title">
+			<?
+			$res = CIBlock::GetByID($arParams["IBLOCK_ID"]);
+			if($ar_res = $res->GetNext())
+				echo $ar_res['NAME'];
+			?>
+		</div>
 		<div class="special-equipment-content">
 		<? foreach ($arResult['SECTIONS'] as &$arSection):
 			$this->AddEditAction($arSection['ID'], $arSection['EDIT_LINK'], $strSectionEdit);
