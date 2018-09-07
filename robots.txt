@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: /
+
+Host: https://kargo24.su
+Sitemap: https://kargo24.su/sitemap.xml

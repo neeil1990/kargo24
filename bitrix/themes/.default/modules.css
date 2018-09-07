@@ -415,6 +415,9 @@ img.linked
 .perfmon_code {color:navy;}
 .perfmon_number {white-space:nowrap;}
 .perfmon_number span {width:4px;display:inline-block;}
+.seometa_menu_icon{
+    background: url("icons/sotbit.seometa/icon.png") no-repeat center;
+}
 /*Menu icon*/
 #translate_menu_icon {background-image:url(icons/translate/mnu_translate.gif);}
 #translate_page_icon {background-image:url(icons/translate/title.gif);}
