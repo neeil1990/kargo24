@@ -11,3 +11,18 @@ ls
 git status
 git pull
 git status
+git pull
+git status
+git checkout bitrix/modules/updater_partner.log
+git checkout -- bitrix/modules/updater_partner.log
+git add .
+git commit -a -m 'srv'
+git pull
+git push
+git status
+git pull
+ls
+git status
+git pull
+git pull
+git pull

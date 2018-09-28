@@ -1,0 +1,36 @@
+2018-09-25 15:23:51 -  - exec CUpdateClient::GetUpdatesList
+2018-09-25 15:23:51 -  - exec CUpdateClient::CollectRequestData
+2018-09-25 15:23:51 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.0.3&VERSION=18.0.4&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&CHHB=kargo24.su&CSAB=5.101.152.72&SUID=faf49868ad1bfc653676b849c2cf6f05&CANGZIP=Y&CLIENT_PHPVER=7.1.11&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.0.4&bitm_messageservice=18.0.0&bitm_search=17.6.0&bitm_compression=16.0.0&bitm_clouds=18.0.0&bitm_rest=18.0.4&bitm_bitrixcloud=17.5.0&bitm_seo=18.1.0&bitm_landing=18.4.21&bitm_iblock=17.6.8&bitm_highloadblock=17.5.1&bitm_b24connector=18.0.0&bitm_fileman=18.0.2&bitm_translate=16.0.0&bitm_ui=17.6.4&bitm_socialservices=18.0.0&bitm_perfmon=17.0.1&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_3_sign-Y
+2018-09-25 15:23:51 -  - exec CUpdateClient::GetHTTPPage
+2018-09-25 15:23:52 -  - TIME GetUpdatesList(request) 0.616 sec
+2018-09-25 15:23:52 -  - exec CUpdateClient::ParseServerData
+2018-09-25 15:29:24 -  - exec CUpdateClient::GetUpdatesList
+2018-09-25 15:29:24 -  - exec CUpdateClient::CollectRequestData
+2018-09-25 15:29:24 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.0.3&VERSION=18.0.4&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&CHHB=kargo24.su&CSAB=5.101.152.72&SUID=faf49868ad1bfc653676b849c2cf6f05&CANGZIP=Y&CLIENT_PHPVER=7.1.11&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.0.4&bitm_messageservice=18.0.0&bitm_search=17.6.0&bitm_compression=16.0.0&bitm_clouds=18.0.0&bitm_rest=18.0.4&bitm_bitrixcloud=17.5.0&bitm_seo=18.1.0&bitm_landing=18.4.21&bitm_iblock=17.6.8&bitm_highloadblock=17.5.1&bitm_b24connector=18.0.0&bitm_fileman=18.0.2&bitm_translate=16.0.0&bitm_ui=17.6.4&bitm_socialservices=18.0.0&bitm_perfmon=17.0.1&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_3_sign-Y
+2018-09-25 15:29:24 -  - exec CUpdateClient::GetHTTPPage
+2018-09-25 15:29:25 -  - TIME GetUpdatesList(request) 0.956 sec
+2018-09-25 15:29:25 -  - exec CUpdateClient::ParseServerData
+2018-09-25 15:30:45 -  - exec CUpdateClient::ActivateLicenseKey
+2018-09-25 15:30:45 -  - exec CUpdateClient::CollectRequestData
+2018-09-25 15:30:45 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.0.3&VERSION=18.0.4&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&CHHB=kargo24.su&CSAB=5.101.152.72&SUID=faf49868ad1bfc653676b849c2cf6f05&CANGZIP=Y&CLIENT_PHPVER=7.1.11&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.0.4&bitm_messageservice=18.0.0&bitm_search=17.6.0&bitm_compression=16.0.0&bitm_clouds=18.0.0&bitm_rest=18.0.4&bitm_bitrixcloud=17.5.0&bitm_seo=18.1.0&bitm_landing=18.4.21&bitm_iblock=17.6.8&bitm_highloadblock=17.5.1&bitm_b24connector=18.0.0&bitm_fileman=18.0.2&bitm_translate=16.0.0&bitm_ui=17.6.4&bitm_socialservices=18.0.0&bitm_perfmon=17.0.1&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_3_sign-Y&query_type=activate
+2018-09-25 15:30:45 -  - exec CUpdateClient::GetHTTPPage
+2018-09-25 15:30:46 -  - TIME ActivateLicenseKey(request) 0.383 sec
+2018-09-25 15:30:46 -  - exec CUpdateClient::ParseServerData
+2018-09-25 15:30:46 - CUALK - License key activated successfully!
+2018-09-25 15:30:46 - UPD_SUCCESS - Licence activated
+2018-09-25 15:30:46 -  - exec CUpdateClient::GetUpdatesList
+2018-09-25 15:30:46 -  - exec CUpdateClient::CollectRequestData
+2018-09-25 15:30:46 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.0.3&VERSION=18.0.4&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&CHHB=kargo24.su&CSAB=5.101.152.72&SUID=faf49868ad1bfc653676b849c2cf6f05&CANGZIP=Y&CLIENT_PHPVER=7.1.11&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.0.4&bitm_messageservice=18.0.0&bitm_search=17.6.0&bitm_compression=16.0.0&bitm_clouds=18.0.0&bitm_rest=18.0.4&bitm_bitrixcloud=17.5.0&bitm_seo=18.1.0&bitm_landing=18.4.21&bitm_iblock=17.6.8&bitm_highloadblock=17.5.1&bitm_b24connector=18.0.0&bitm_fileman=18.0.2&bitm_translate=16.0.0&bitm_ui=17.6.4&bitm_socialservices=18.0.0&bitm_perfmon=17.0.1&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_3_sign-Y
+2018-09-25 15:30:46 -  - exec CUpdateClient::GetHTTPPage
+2018-09-25 15:30:46 -  - TIME GetUpdatesList(request) 0.26 sec
+2018-09-25 15:30:46 -  - exec CUpdateClient::ParseServerData
+2018-09-25 15:30:49 -  - exec CUpdateClient::RegisterVersion
+2018-09-25 15:30:49 -  - exec CUpdateClient::CollectRequestData
+2018-09-25 15:30:49 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.0.3&VERSION=18.0.4&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&CHHB=kargo24.su&CSAB=5.101.152.72&SUID=faf49868ad1bfc653676b849c2cf6f05&CANGZIP=Y&CLIENT_PHPVER=7.1.11&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.0.4&bitm_messageservice=18.0.0&bitm_search=17.6.0&bitm_compression=16.0.0&bitm_clouds=18.0.0&bitm_rest=18.0.4&bitm_bitrixcloud=17.5.0&bitm_seo=18.1.0&bitm_landing=18.4.21&bitm_iblock=17.6.8&bitm_highloadblock=17.5.1&bitm_b24connector=18.0.0&bitm_fileman=18.0.2&bitm_translate=16.0.0&bitm_ui=17.6.4&bitm_socialservices=18.0.0&bitm_perfmon=17.0.1&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_3_sign-Y&query_type=register
+2018-09-25 15:30:49 -  - exec CUpdateClient::GetHTTPPage
+2018-09-25 15:30:49 -  - TIME RegisterVersion(request) 0.185 sec
+2018-09-25 15:30:49 -  - exec CUpdateClient::UnGzipArchive
+2018-09-25 15:30:49 -  - TIME UnGzipArchive 0.002 sec
+2018-09-25 15:30:49 -  - exec CUpdateClient::ParseServerData
+2018-09-25 15:30:49 - CURV - Product registered successfully!
+2018-09-25 15:30:49 - UPD_SUCCESS - Registered
