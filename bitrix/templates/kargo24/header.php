@@ -11,11 +11,9 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 <html class="no-js" lang="ru">
 <!--<![endif]-->
 <head>
+	<title><?$APPLICATION->ShowTitle(false);?></title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<title><?$APPLICATION->ShowTitle();?></title>
-
 	<?
 	$APPLICATION->ShowHead();
 
@@ -64,7 +62,7 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 					</div>
 					<div class="col-sm-4 col-xs-6">
 						<div class="head-logo">
-							<a href="">
+							<a href="/">
 								<img src="<?=SITE_TEMPLATE_PATH?>/img/static/logo.png" alt="alt">
 							</a>
 						</div>
@@ -205,20 +203,22 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 						</div>
 					</div>
 					<div class="col-sm-9 col-xs-3">
-						<nav class="head-nav">
-							<ul class="head-nav-menu">
-								<li><a href="">Главная</a></li>
-								<li><a href="">О сервисе</a></li>
-								<li><a href="">новости</a></li>
-								<li><a href="">заказы от клиентов</a></li>
-								<li><a href="">Предоставить услугу</a></li>
-								<li><a href="">получить услугу</a></li>
-								<li class="close-menu js-close-menu">&#215;</li>
-							</ul>
-						</nav>
-						<button class="head-toggle-menu mobile">
-							<span class="icon icon-list"></span>
-						</button>
+						<?$APPLICATION->IncludeComponent("bitrix:menu", "top.menu", Array(
+							"ALLOW_MULTI_SELECT" => "N",	// Разрешить несколько активных пунктов одновременно
+							"CHILD_MENU_TYPE" => "",	// Тип меню для остальных уровней
+							"DELAY" => "N",	// Откладывать выполнение шаблона меню
+							"MAX_LEVEL" => "1",	// Уровень вложенности меню
+							"MENU_CACHE_GET_VARS" => array(	// Значимые переменные запроса
+								0 => "",
+							),
+							"MENU_CACHE_TIME" => "3600",	// Время кеширования (сек.)
+							"MENU_CACHE_TYPE" => "N",	// Тип кеширования
+							"MENU_CACHE_USE_GROUPS" => "Y",	// Учитывать права доступа
+							"ROOT_MENU_TYPE" => "top",	// Тип меню для первого уровня
+							"USE_EXT" => "N",	// Подключать файлы с именами вида .тип_меню.menu_ext.php
+						),
+							false
+						);?>
 					</div>
 				</div>
 			</div>
@@ -226,14 +226,15 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 	</header>
 	<!-- END HEADER -->
 
-	<div class="breadcrumbs">
-		<div class="container">
-			<ul class="breadcrumbs-list">
-				<li><a href="">Главная</a></li>
-				<li> Грузовые перевозки по России</li>
-			</ul>
-		</div>
-	</div>
+	<?$APPLICATION->IncludeComponent("bitrix:breadcrumb", "breadcrumb", Array(
+		"PATH" => "",	// Путь, для которого будет построена навигационная цепочка (по умолчанию, текущий путь)
+		"SITE_ID" => "s1",	// Cайт (устанавливается в случае многосайтовой версии, когда DOCUMENT_ROOT у сайтов разный)
+		"START_FROM" => "0",	// Номер пункта, начиная с которого будет построена навигационная цепочка
+	),
+		false
+	);?>
+
+
 
 
 

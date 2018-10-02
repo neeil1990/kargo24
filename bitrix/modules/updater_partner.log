@@ -842,3 +842,51 @@
 2018-09-28 10:03:22 -  - exec CUpdateClientPartner::__CollectRequestData
 2018-09-28 10:03:22 -  - exec CUpdateClientPartner::GetHTTPPage
 2018-09-28 10:03:22 -  - exec CUpdateClientPartner::ParseServerData
+2018-09-28 10:22:49 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-09-28 10:22:49 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-09-28 10:22:50 -  - exec CUpdateClientPartner::ParseServerData
+2018-09-28 10:22:50 -  - exec CUpdateClientPartner::GetUpdatesList
+2018-09-28 10:22:50 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-09-28 10:22:50 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=E&CLIENT_PHPVER=7.1.12&NGINX=Y&dbv=5.6.38&instm=main%2C18.0.4%2CN%3Bb24connector%2C18.0.0%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bclouds%2C18.0.0%2CN%3Bcompression%2C16.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Bhighloadblock%2C17.5.1%2CN%3Biblock%2C17.6.8%2CN%3Blanding%2C18.4.21%2CN%3Bmessageservice%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN%3Brest%2C18.0.4%2CN%3Bsearch%2C17.6.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bseo%2C18.1.0%2CN%3Bsocialservices%2C18.0.0%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN&reqm=section.city%2Csotbit.seometa%2Cthebrainstech.copyiblock&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2018-09-28 10:22:50 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-09-28 10:22:50 -  - TIME GetUpdatesList(request) 0.379 sec
+2018-09-28 10:22:50 -  - exec CUpdateClientPartner::ParseServerData
+2018-09-28 10:22:50 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-09-28 10:22:50 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-09-28 10:22:50 -  - exec CUpdateClientPartner::ParseServerData
+2018-10-01 12:14:19 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-10-01 12:14:19 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-10-01 12:14:19 -  - exec CUpdateClientPartner::ParseServerData
+2018-10-01 12:14:19 -  - exec CUpdateClientPartner::GetUpdatesList
+2018-10-01 12:14:19 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-10-01 12:14:19 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=E&CLIENT_PHPVER=7.1.12&NGINX=Y&dbv=5.6.38&instm=main%2C18.0.4%2CN%3Bb24connector%2C18.0.0%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bclouds%2C18.0.0%2CN%3Bcompression%2C16.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Bhighloadblock%2C17.5.1%2CN%3Biblock%2C17.6.8%2CN%3Blanding%2C18.4.21%2CN%3Bmessageservice%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN%3Brest%2C18.0.4%2CN%3Bsearch%2C17.6.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bseo%2C18.1.0%2CN%3Bsocialservices%2C18.0.0%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN&reqm=section.city%2Csotbit.seometa%2Cthebrainstech.copyiblock&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2018-10-01 12:14:19 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-10-01 12:14:20 -  - TIME GetUpdatesList(request) 0.33 sec
+2018-10-01 12:14:20 -  - exec CUpdateClientPartner::ParseServerData
+2018-10-01 12:14:20 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-10-01 12:14:20 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-10-01 12:14:20 -  - exec CUpdateClientPartner::ParseServerData
+2018-10-02 14:22:31 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-10-02 14:22:31 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-10-02 14:22:31 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-10-02 14:22:31 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-10-02 14:22:31 -  - exec CUpdateClientPartner::ParseServerData
+2018-10-02 14:22:31 -  - exec CUpdateClientPartner::GetUpdatesList
+2018-10-02 14:22:31 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-10-02 14:22:31 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=E&CLIENT_PHPVER=7.1.12&NGINX=Y&dbv=5.6.38&instm=main%2C18.0.4%2CN%3Bb24connector%2C18.0.0%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bclouds%2C18.0.0%2CN%3Bcompression%2C16.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Bhighloadblock%2C17.5.1%2CN%3Biblock%2C17.6.8%2CN%3Blanding%2C18.4.21%2CN%3Bmessageservice%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN%3Brest%2C18.0.4%2CN%3Bsearch%2C17.6.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bseo%2C18.1.0%2CN%3Bsocialservices%2C18.0.0%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN&reqm=section.city%2Csotbit.seometa%2Cthebrainstech.copyiblock&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2018-10-02 14:22:31 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-10-02 14:22:31 -  - exec CUpdateClientPartner::ParseServerData
+2018-10-02 14:22:31 -  - exec CUpdateClientPartner::GetUpdatesList
+2018-10-02 14:22:31 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-10-02 14:22:31 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=E&CLIENT_PHPVER=7.1.12&NGINX=Y&dbv=5.6.38&instm=main%2C18.0.4%2CN%3Bb24connector%2C18.0.0%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bclouds%2C18.0.0%2CN%3Bcompression%2C16.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Bhighloadblock%2C17.5.1%2CN%3Biblock%2C17.6.8%2CN%3Blanding%2C18.4.21%2CN%3Bmessageservice%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN%3Brest%2C18.0.4%2CN%3Bsearch%2C17.6.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bseo%2C18.1.0%2CN%3Bsocialservices%2C18.0.0%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN&reqm=section.city%2Csotbit.seometa%2Cthebrainstech.copyiblock&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2018-10-02 14:22:31 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-10-02 14:22:32 -  - TIME GetUpdatesList(request) 0.367 sec
+2018-10-02 14:22:32 -  - exec CUpdateClientPartner::ParseServerData
+2018-10-02 14:22:32 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-10-02 14:22:32 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-10-02 14:22:32 -  - TIME GetUpdatesList(request) 0.294 sec
+2018-10-02 14:22:32 -  - exec CUpdateClientPartner::ParseServerData
+2018-10-02 14:22:32 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-10-02 14:22:32 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-10-02 14:22:32 -  - exec CUpdateClientPartner::ParseServerData
+2018-10-02 14:22:32 -  - exec CUpdateClientPartner::ParseServerData
