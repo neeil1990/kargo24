@@ -104,343 +104,87 @@ $APPLICATION->SetTitle('CarGo24');
         <section class="accompanyin-passenger-services-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-5 col-md-6 col-sm-12">
-                        <div class="section-title white">Сопутствующие услуги</div>
-                        <div class="accompanying-services-content wrapper-unified-column white">
-                            <div class="unified-column">
-                                <div class="unified-unit-service">
-                                    <a href="">
-                                        <div class="item-img">
-                                            <img src="img/static/accompanying-services/01.png" alt="alt">
-                                        </div>
-                                        <div class="item-desc">
-                                            <h3 class="title">Сопутствующие услуги</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="unified-column">
-                                <div class="unified-unit-service">
-                                    <a href="">
-                                        <div class="item-img">
-                                            <img src="img/static/accompanying-services/02.png" alt="alt">
-                                        </div>
-                                        <div class="item-desc">
-                                            <h3 class="title">Услуги грузчиков и разноробочие</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="unified-column">
-                                <div class="unified-unit-service">
-                                    <a href="">
-                                        <div class="item-img">
-                                            <img src="img/static/accompanying-services/03.png" alt="alt">
-                                        </div>
-                                        <div class="item-desc">
-                                            <h3 class="title">Асфальтирование и благоустройство</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="unified-column">
-                                <div class="unified-unit-service">
-                                    <a href="">
-                                        <div class="item-img">
-                                            <img src="img/static/accompanying-services/04.png" alt="alt">
-                                        </div>
-                                        <div class="item-desc">
-                                            <h3 class="title">Убока и вывоз снега</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="unified-column">
-                                <div class="unified-unit-service">
-                                    <a href="">
-                                        <div class="item-img">
-                                            <img src="img/static/accompanying-services/05.png" alt="alt">
-                                        </div>
-                                        <div class="item-desc">
-                                            <h3 class="title">Строительные бригады</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="unified-column">
-                                <div class="unified-unit-service">
-                                    <a href="">
-                                        <div class="item-img">
-                                            <img src="img/static/accompanying-services/06.png" alt="alt">
-                                        </div>
-                                        <div class="item-desc">
-                                            <h3 class="title">Демонтажные работы по сносу</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 right-block">
-                        <div class="section-title white">
-                            Пассажирские перевозки
-                        </div>
-                        <div class="passenger-transportation-content wrapper-unified-column white">
-                            <div class="unified-column">
-                                <div class="unified-unit-service">
-                                    <a href="">
-                                        <div class="item-img">
-                                            <img src="img/static/passenger-transportation/01.png" alt="alt">
-                                        </div>
-                                        <div class="item-desc">
-                                            <h3 class="title">Лимузины</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="unified-column">
-                                <div class="unified-unit-service">
-                                    <a href="">
-                                        <div class="item-img">
-                                            <img src="img/static/passenger-transportation/02.png" alt="alt">
-                                        </div>
-                                        <div class="item-desc">
-                                            <h3 class="title">Вахтовки</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="unified-column">
-                                <div class="unified-unit-service">
-                                    <a href="">
-                                        <div class="item-img">
-                                            <img src="img/static/passenger-transportation/03.png" alt="alt">
-                                        </div>
-                                        <div class="item-desc">
-                                            <h3 class="title">Теплоходы, яхты и катера</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="unified-column">
-                                <div class="unified-unit-service">
-                                    <a href="">
-                                        <div class="item-img">
-                                            <img src="img/static/passenger-transportation/04.png" alt="alt">
-                                        </div>
-                                        <div class="item-desc">
-                                            <h3 class="title">Пассажирские перевозки</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="unified-column">
-                                <div class="unified-unit-service">
-                                    <a href="">
-                                        <div class="item-img">
-                                            <img src="img/static/passenger-transportation/05.png" alt="alt">
-                                        </div>
-                                        <div class="item-desc">
-                                            <h3 class="title">Автобусы</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="unified-column">
-                                <div class="unified-unit-service">
-                                    <a href="">
-                                        <div class="item-img">
-                                            <img src="img/static/passenger-transportation/06.png" alt="alt">
-                                        </div>
-                                        <div class="item-desc">
-                                            <h3 class="title">Микроавтобусы</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="unified-column">
-                                <div class="unified-unit-service">
-                                    <a href="">
-                                        <div class="item-img">
-                                            <img src="img/static/passenger-transportation/07.png" alt="alt">
-                                        </div>
-                                        <div class="item-desc">
-                                            <h3 class="title">Услуги такси и частные таксисты</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <?$APPLICATION->IncludeComponent("bitrix:catalog.section.list", "home.services", Array(
+                        "ADD_SECTIONS_CHAIN" => "Y",
+                        "CACHE_GROUPS" => "Y",
+                        "CACHE_TIME" => "36000000",
+                        "CACHE_TYPE" => "A",
+                        "COUNT_ELEMENTS" => "N",
+                        "IBLOCK_ID" => "6",
+                        "IBLOCK_TYPE" => "content",
+                        "SECTION_CODE" => $_REQUEST["SECTION_CODE"],
+                        "SECTION_FIELDS" => array(
+                            0 => "",
+                            1 => "",
+                        ),
+                        "SECTION_ID" => $_REQUEST["SECTION_ID"],
+                        "SECTION_URL" => "",
+                        "SECTION_USER_FIELDS" => array(
+                            0 => "",
+                            1 => "",
+                        ),
+                        "SHOW_PARENT_NAME" => "Y",
+                        "TOP_DEPTH" => "1",
+                        "VIEW_MODE" => "LINE",
+                    ),
+                        false
+                    );?>
+
+                    <?$APPLICATION->IncludeComponent("bitrix:catalog.section.list", "home.passenger", Array(
+                        "ADD_SECTIONS_CHAIN" => "Y",
+                        "CACHE_GROUPS" => "Y",
+                        "CACHE_TIME" => "36000000",
+                        "CACHE_TYPE" => "A",
+                        "COUNT_ELEMENTS" => "N",
+                        "IBLOCK_ID" => "7",
+                        "IBLOCK_TYPE" => "content",
+                        "SECTION_CODE" => $_REQUEST["SECTION_CODE"],
+                        "SECTION_FIELDS" => array(
+                            0 => "",
+                            1 => "",
+                        ),
+                        "SECTION_ID" => $_REQUEST["SECTION_ID"],
+                        "SECTION_URL" => "",
+                        "SECTION_USER_FIELDS" => array(
+                            0 => "",
+                            1 => "",
+                        ),
+                        "SHOW_PARENT_NAME" => "Y",
+                        "TOP_DEPTH" => "1",
+                        "VIEW_MODE" => "LINE",
+                    ),
+                        false
+                    );?>
                 </div>
             </div>
         </section>
         <!-- end accompanyin-passenger-services-section -->
-        <section class="construction-materials-section">
-            <div class="container">
-                <div class="section-title">
-                    Строительные материалы с доставкой
-                </div>
-                <div class="construction-materials-content wrapper-unified-column">
-                    <div class="unified-column">
-                        <div class="unified-unit-service">
-                            <a href="">
-                                <div class="item-img">
-                                    <img src="img/static/construction-materials/01.png" alt="alt">
-                                </div>
-                                <div class="item-desc">
-                                    <h3 class="title">Грунт</h3>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="unified-column">
-                        <div class="unified-unit-service">
-                            <a href="">
-                                <div class="item-img">
-                                    <img src="img/static/construction-materials/02.png" alt="alt">
-                                </div>
-                                <div class="item-desc">
-                                    <h3 class="title">Арматура и металопрокат</h3>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="unified-column">
-                        <div class="unified-unit-service">
-                            <a href="">
-                                <div class="item-img">
-                                    <img src="img/static/construction-materials/03.png" alt="alt">
-                                </div>
-                                <div class="item-desc">
-                                    <h3 class="title">Вода</h3>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="unified-column">
-                        <div class="unified-unit-service">
-                            <a href="">
-                                <div class="item-img">
-                                    <img src="img/static/construction-materials/04.png" alt="alt">
-                                </div>
-                                <div class="item-desc">
-                                    <h3 class="title">Стройматериалы с доставкой</h3>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="unified-column">
-                        <div class="unified-unit-service">
-                            <a href="">
-                                <div class="item-img">
-                                    <img src="img/static/construction-materials/05.png" alt="alt">
-                                </div>
-                                <div class="item-desc">
-                                    <h3 class="title">Кирпич</h3>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="unified-column">
-                        <div class="unified-unit-service">
-                            <a href="">
-                                <div class="item-img">
-                                    <img src="img/static/construction-materials/06.png" alt="alt">
-                                </div>
-                                <div class="item-desc">
-                                    <h3 class="title">Бетон</h3>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="unified-column">
-                        <div class="unified-unit-service">
-                            <a href="">
-                                <div class="item-img">
-                                    <img src="img/static/construction-materials/07.png" alt="alt">
-                                </div>
-                                <div class="item-desc">
-                                    <h3 class="title">Керамзит</h3>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="unified-column">
-                        <div class="unified-unit-service">
-                            <a href="">
-                                <div class="item-img">
-                                    <img src="img/static/construction-materials/08.png" alt="alt">
-                                </div>
-                                <div class="item-desc">
-                                    <h3 class="title">Цемент и сухие смеси</h3>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="unified-column">
-                        <div class="unified-unit-service">
-                            <a href="">
-                                <div class="item-img">
-                                    <img src="img/static/construction-materials/09.png" alt="alt">
-                                </div>
-                                <div class="item-desc">
-                                    <h3 class="title">Пеноблоки</h3>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="unified-column">
-                        <div class="unified-unit-service">
-                            <a href="">
-                                <div class="item-img">
-                                    <img src="img/static/construction-materials/10.png" alt="alt">
-                                </div>
-                                <div class="item-desc">
-                                    <h3 class="title">Пиломатериалы</h3>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="unified-column">
-                        <div class="unified-unit-service">
-                            <a href="">
-                                <div class="item-img">
-                                    <img src="img/static/construction-materials/11.png" alt="alt">
-                                </div>
-                                <div class="item-desc">
-                                    <h3 class="title">Песок</h3>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="unified-column">
-                        <div class="unified-unit-service">
-                            <a href="">
-                                <div class="item-img">
-                                    <img src="img/static/construction-materials/12.png" alt="alt">
-                                </div>
-                                <div class="item-desc">
-                                    <h3 class="title">Торф и чернозём</h3>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="unified-column">
-                        <div class="unified-unit-service">
-                            <a href="">
-                                <div class="item-img">
-                                    <img src="img/static/construction-materials/13.png" alt="alt">
-                                </div>
-                                <div class="item-desc">
-                                    <h3 class="title">Щебень и гравий</h3>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+
+        <?$APPLICATION->IncludeComponent("bitrix:catalog.section.list", "home.materials", Array(
+            "ADD_SECTIONS_CHAIN" => "Y",
+            "CACHE_GROUPS" => "Y",
+            "CACHE_TIME" => "36000000",
+            "CACHE_TYPE" => "A",
+            "COUNT_ELEMENTS" => "N",
+            "IBLOCK_ID" => "8",
+            "IBLOCK_TYPE" => "content",
+            "SECTION_CODE" => $_REQUEST["SECTION_CODE"],
+            "SECTION_FIELDS" => array(
+                0 => "",
+                1 => "",
+            ),
+            "SECTION_ID" => $_REQUEST["SECTION_ID"],
+            "SECTION_URL" => "",
+            "SECTION_USER_FIELDS" => array(
+                0 => "",
+                1 => "",
+            ),
+            "SHOW_PARENT_NAME" => "Y",
+            "TOP_DEPTH" => "1",
+            "VIEW_MODE" => "LINE",
+        ),
+            false
+        );?>
         <!-- end construction-materials-section -->
 
         <?$APPLICATION->IncludeComponent("bitrix:news.list", "advantage.list.home", Array(

@@ -155,7 +155,6 @@ global $APPLICATION;
 		&& ($arResult['VARIABLES']['SMART_FILTER_PATH'] == "clear"
 		|| !$arResult['VARIABLES']['SMART_FILTER_PATH'])
 	){
-
 		global $arrFilter;
 		$property_enums = CIBlockPropertyEnum::GetList(Array("SORT"=>"ASC","VALUE" => "ASC"), Array("IBLOCK_ID" => $arParams["IBLOCK_ID"], "CODE" => "SPECIAL_CAR"));
 		while($enum_fields = $property_enums->GetNext()){

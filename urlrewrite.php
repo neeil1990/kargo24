@@ -24,6 +24,30 @@ $arUrlRewrite=array (
     'PATH' => '/equipment/index.php',
     'SORT' => 100,
   ),
+  6 => 
+  array (
+    'CONDITION' => '#^/passenger/#',
+    'RULE' => 'SECTION_CODE=$1',
+    'ID' => 'bitrix:catalog',
+    'PATH' => '/passenger/index.php',
+    'SORT' => 100,
+  ),
+  7 =>
+  array (
+    'CONDITION' => '#^/materials/#',
+    'RULE' => 'SECTION_CODE=$1',
+    'ID' => 'bitrix:catalog',
+    'PATH' => '/materials/index.php',
+    'SORT' => 100,
+  ),
+  5 => 
+  array (
+    'CONDITION' => '#^/services/#',
+    'RULE' => 'SECTION_CODE=$1',
+    'ID' => 'bitrix:catalog',
+    'PATH' => '/services/index.php',
+    'SORT' => 100,
+  ),
   0 => 
   array (
     'CONDITION' => '#^/rest/#',

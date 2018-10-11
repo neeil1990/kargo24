@@ -1,5 +1,5 @@
 <?
-$sSectionName = "equipment-rent";
+$sSectionName = "АРЕНДА СТРОИТЕЛЬНОГО ОБОРУДОВАНИЯ";
 $arDirProperties = Array(
 
 );

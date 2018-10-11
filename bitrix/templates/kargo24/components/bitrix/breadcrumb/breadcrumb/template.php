@@ -23,11 +23,11 @@ for($index = 0; $index < $itemSize; $index++)
 
 	if($arResult[$index]["LINK"] <> "" && $index != $itemSize-1)
 	{
-		$strReturn .= '<li><a href="'.$arResult[$index]["LINK"].'">'.$title.' </a></li>';
+		$strReturn .= '<li><a href="'.$arResult[$index]["LINK"].'">'.strtolower($title).' </a></li>';
 	}
 	else
 	{
-		$strReturn .= '<li>&nbsp;'.$title.'</li>';
+		$strReturn .= '<li>&nbsp;'.strtolower($title).'</li>';
 	}
 }
 
