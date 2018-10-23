@@ -12,8 +12,8 @@
 /** @var CBitrixComponent $component */
 
 $this->setFrameMode(true);
-
 ?>
+
 	<div class="col-sm-9">
 
 		<?$APPLICATION->IncludeComponent(
@@ -22,7 +22,7 @@ $this->setFrameMode(true);
 			array(
 				"IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
 				"IBLOCK_ID" => $arParams["IBLOCK_ID"],
-				"CACHE_TYPE" => $arParams["CACHE_TYPE"],
+				"CACHE_TYPE" => "N",
 				"CACHE_TIME" => $arParams["CACHE_TIME"],
 				"CACHE_GROUPS" => $arParams["CACHE_GROUPS"],
 				"COUNT_ELEMENTS" => $arParams["SECTION_COUNT_ELEMENTS"],
@@ -37,5 +37,14 @@ $this->setFrameMode(true);
 			array("HIDE_ICONS" => "Y")
 		);
 		?>
+
+		<?$APPLICATION->IncludeComponent("kargo:ads.type", "ads.type", Array(
+			"IBLOCK_ID" => "1",	// Инфоблок
+			"IBLOCK_TYPE" => "content",	// Тип инфоблока
+			"SORT" => "NAME",	// Порядок сортировки тегов
+			"TYPE" => $_REQUEST['TYPE']
+		),
+			false
+		);?>
 
 	</div>

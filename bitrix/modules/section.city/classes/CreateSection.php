@@ -76,14 +76,14 @@ class CreateSection
         rewind($this->fhandleCities);
     }
 
-    public function setSection($idBlock = 0,$idSection = 0,$district = array()){
+    public function setSection($idBlock = 0,$district = array()){
         $Section = new CIBlockSection;
         foreach($this->getCity($district) as $region => $city){
 
             $regionCode = CUtil::translit($region, "ru", false);
             $arFields = Array(
                 "ACTIVE" => "Y",
-                "IBLOCK_SECTION_ID" => $idSection,
+                "IBLOCK_SECTION_ID" => 0,
                 "IBLOCK_ID" => $idBlock,
                 "NAME" => $region,
                 "CODE" => $regionCode,

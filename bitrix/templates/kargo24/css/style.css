@@ -13378,3 +13378,37 @@ h3 {
 .selectricItems li:focus {
   outline: none;
 }
+
+.special-equipment-title{}
+.special-equipment-title .equipment-title-item{
+  display: inline-block;
+  width: 440px;
+  margin-bottom: 10px;
+}
+.special-equipment-title .equipment-title-item .equipment-title-img{
+  display: inline-block;
+  border: 8px solid #f2f2f2;
+}
+.special-equipment-title .equipment-title-item .equipment-title-img img{
+  max-width: 110px;
+  max-height: 60px;
+}
+.special-equipment-title .equipment-title-item .equipment-title-content{
+  display: inline-block;
+  background-color: #f2f2f2;
+  margin-left: -5px;
+  padding: 15px 10px;
+  width: 310px;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+
+.special-equipment-title a:first-child .equipment-title-item .equipment-title-content{
+  background-color: #6d96ab;
+  color: white;
+}
+.special-equipment-title a:first-child .equipment-title-item .equipment-title-img{
+  border-color: #6d96ab;
+}
+

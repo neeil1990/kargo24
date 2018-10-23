@@ -47,7 +47,7 @@ $arSectionDeleteParams = array("CONFIRM" => GetMessage('CT_BCSL_ELEMENT_DELETE_C
 ?>
 
 <?
-if ('Y' == $arParams['SHOW_PARENT_NAME'] && 0 < $arResult['SECTION']['ID'])
+if ('Y' == $arParams['SHOW_PARENT_NAME'])
 {
 	$this->AddEditAction($arResult['SECTION']['ID'], $arResult['SECTION']['EDIT_LINK'], $strSectionEdit);
 	$this->AddDeleteAction($arResult['SECTION']['ID'], $arResult['SECTION']['DELETE_LINK'], $strSectionDelete, $arSectionDeleteParams);
@@ -60,7 +60,7 @@ if ('Y' == $arParams['SHOW_PARENT_NAME'] && 0 < $arResult['SECTION']['ID'])
 				echo (
 				isset($arResult['SECTION']["IPROPERTY_VALUES"]["SECTION_PAGE_TITLE"]) && $arResult['SECTION']["IPROPERTY_VALUES"]["SECTION_PAGE_TITLE"] != ""
 					? $arResult['SECTION']["IPROPERTY_VALUES"]["SECTION_PAGE_TITLE"]
-					: $arResult['SECTION']['NAME']
+					: $APPLICATION->ShowTitle(false)
 				);
 				?>
 			</h1>

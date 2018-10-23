@@ -102,13 +102,20 @@ foreach ($arResult['SECTIONS'] as $key => $arSection){
 
 	switch((int)$arSection['DEPTH_LEVEL']){
 
-		case 2:
+		case 1:
+			if($_REQUEST['TYPE']){
+				$arSection['SECTION_PAGE_URL'] = $arSection['SECTION_PAGE_URL'].'?TYPE='.$_REQUEST['TYPE'];
+			}
 			$country = $region->getCityByRegion($arSection['NAME']);
 			$key_title = $country['district'];
 			$sort = "krsort";
 			break;
 
-		case 3:
+		case 2:
+			if($_REQUEST['TYPE']){
+				$FilterUrl = 'filter/type-is-' . $_REQUEST['TYPE'] . '/apply/';
+				$arSection['SECTION_PAGE_URL'] = $arSection['SECTION_PAGE_URL'].$FilterUrl;
+			}
 			$key_title = substr($arSection['NAME'],0,1);
 			$sort = "ksort";
 			break;

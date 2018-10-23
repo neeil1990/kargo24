@@ -15,7 +15,7 @@ $this->setFrameMode(true);
 <?
 if($arResult['ITEMS']):?>
 	<div class="freight-transportation">
-		<div class="section-title">Грузовые перевозки <?=$arResult['NAME']?></div>
+		<div class="section-title"><?=$arResult['NAME']?></div>
 		<? foreach($arResult['ITEMS'] as $arItem):?>
 			<div class="unified-transport-unit">
 				<div class="item-img">

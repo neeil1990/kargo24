@@ -15,7 +15,7 @@ $this->setFrameMode(true);
 <?
 if($arResult['ITEMS']):?>
 	<div class="freight-transportation-item">
-		<div class="section-title"><?=$arParams['PROPERTY_SPECIAL_CAR_VALUE']?></div>
+		<div class="section-title"><?=$arParams['PROPERTY_TYPE_VALUE']?> </div>
 		<? foreach($arResult['ITEMS'] as $key => $arItem):?>
 			<div class="unified-transport-unit">
 				<div class="item-img">
@@ -65,7 +65,7 @@ if($arResult['ITEMS']):?>
 			<!-- end unified-transport-unit -->
 		<? endforeach; ?>
 		<div class="all-transportations-link">
-			<a href="<?=$arResult['SECTION_PAGE_URL'].$arParams['FILTER_URL'];?>">Все <?=$arParams['PROPERTY_SPECIAL_CAR_VALUE']?> в г. <?=$arResult['NAME']?></a>
+			<a href="<?=$arResult['SECTION_PAGE_URL'].$arParams['FILTER_URL'];?>">Все <?=$arParams['PROPERTY_TYPE_VALUE']?> в г. <?=$arResult['NAME']?></a>
 		</div>
 	</div>
 <? endif;?>

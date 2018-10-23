@@ -48,32 +48,73 @@ $APPLICATION->SetTitle('CarGo24');
             false
         );?>
 
+    <section class="special-equipment-section">
+        <div class="container">
+            <div class="section-title">
+                <?
+                if(CModule::IncludeModule("iblock")):
+                    $res = CIBlock::GetByID(1);
+                    if($ar_res = $res->GetNext())
+                        echo $ar_res['NAME'];
+                endif;
+                ?>
+            </div>
 
-        <?$APPLICATION->IncludeComponent("bitrix:catalog.section.list", "home.equipment", Array(
-            "ADD_SECTIONS_CHAIN" => "Y",
-            "CACHE_GROUPS" => "Y",
-            "CACHE_TIME" => "36000000",
-            "CACHE_TYPE" => "A",
-            "COUNT_ELEMENTS" => "N",
-            "IBLOCK_ID" => "1",
-            "IBLOCK_TYPE" => "content",
-            "SECTION_CODE" => $_REQUEST["SECTION_CODE"],
-            "SECTION_FIELDS" => array(
-                0 => "",
-                1 => "",
+            <?$APPLICATION->IncludeComponent("bitrix:news.line", "Iblock.list", Array(
+                "ACTIVE_DATE_FORMAT" => "d.m.Y",	// Формат показа даты
+                "CACHE_GROUPS" => "N",	// Учитывать права доступа
+                "CACHE_TIME" => "300",	// Время кеширования (сек.)
+                "CACHE_TYPE" => "A",	// Тип кеширования
+                "DETAIL_URL" => "",	// URL, ведущий на страницу с содержимым элемента раздела
+                "FIELD_CODE" => array(	// Поля
+                    0 => "",
+                    1 => "",
+                ),
+                "IBLOCKS" => array(	// Код информационного блока
+                    0 => "1",
+                    1 => "9",
+                    2 => "10",
+                ),
+                "IBLOCK_TYPE" => "content",	// Тип информационного блока
+                "NEWS_COUNT" => "0",	// Количество новостей на странице
+                "SORT_BY1" => "ACTIVE_FROM",	// Поле для первой сортировки новостей
+                "SORT_BY2" => "SORT",	// Поле для второй сортировки новостей
+                "SORT_ORDER1" => "DESC",	// Направление для первой сортировки новостей
+                "SORT_ORDER2" => "ASC",	// Направление для второй сортировки новостей
             ),
-            "SECTION_ID" => $_REQUEST["SECTION_ID"],
-            "SECTION_URL" => "",
-            "SECTION_USER_FIELDS" => array(
-                0 => "",
-                1 => "",
+                false
+            );?>
+
+
+            <?$APPLICATION->IncludeComponent("bitrix:catalog.section.list", "home.equipment", Array(
+                "ADD_SECTIONS_CHAIN" => "Y",
+                "CACHE_GROUPS" => "Y",
+                "CACHE_TIME" => "36000000",
+                "CACHE_TYPE" => "A",
+                "COUNT_ELEMENTS" => "N",
+                "IBLOCK_ID" => "1",
+                "IBLOCK_TYPE" => "content",
+                "SECTION_CODE" => $_REQUEST["SECTION_CODE"],
+                "SECTION_FIELDS" => array(
+                    0 => "",
+                    1 => "",
+                ),
+                "SECTION_ID" => $_REQUEST["SECTION_ID"],
+                "SECTION_URL" => "",
+                "SECTION_USER_FIELDS" => array(
+                    0 => "",
+                    1 => "",
+                ),
+                "SHOW_PARENT_NAME" => "Y",
+                "TOP_DEPTH" => "1",
+                "VIEW_MODE" => "LINE",
             ),
-            "SHOW_PARENT_NAME" => "Y",
-            "TOP_DEPTH" => "1",
-            "VIEW_MODE" => "LINE",
-        ),
-            false
-        );?>
+                false
+            );?>
+
+        </div>
+    </section>
+    <!-- end special-equipment-section -->
 
         <?$APPLICATION->IncludeComponent("bitrix:catalog.section.list", "home.equipment-rent", Array(
             "ADD_SECTIONS_CHAIN" => "Y",
