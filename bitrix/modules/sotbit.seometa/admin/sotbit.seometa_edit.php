@@ -325,10 +325,11 @@ if(isset($condition['INFOBLOCK']) && !empty($condition['INFOBLOCK'])
 	&& isset($condition['SECTIONS']) && !empty($condition['SECTIONS'])
 	&& isset($condition['TYPE_OF_INFOBLOCK']) && !empty($condition['TYPE_OF_INFOBLOCK']))
 {
+	$cAdmin = new CAdminList(false,false);
 	$arrSubmenu[]=array(
 		"TEXT" => GetMessage( "SEO_META_EDIT_SECTION_BACK" ),
 		"TITLE" => GetMessage( "SEO_META_EDIT_SECTION_BACK_TITLE" ),
-	    "ACTION" => CAdminList::ActionRedirect("iblock_section_edit.php?IBLOCK_ID=".$condition['INFOBLOCK']."&type=".$condition['TYPE_OF_INFOBLOCK']."&ID=".$condition['SECTIONS'][0]."&find_section_section=0&lang=" . LANG),
+	    "ACTION" => $cAdmin->ActionRedirect("iblock_section_edit.php?IBLOCK_ID=".$condition['INFOBLOCK']."&type=".$condition['TYPE_OF_INFOBLOCK']."&ID=".$condition['SECTIONS'][0]."&find_section_section=0&lang=" . LANG),
 		//"ACTION" => CAdminList::ActionRedirect("iblock_section_edit.php?IBLOCK_ID=".$_GET['INFOBLOCK']."&type=".$_GET['TYPE_OF_INFOBLOCK']."&ID=".$_GET['FROM']."&find_section_section=".$_REQUEST['SECT_FROM']."&lang=" . LANG),
 	);
 }
