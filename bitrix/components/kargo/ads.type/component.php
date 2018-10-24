@@ -6,6 +6,10 @@ if($arParams['IBLOCK_ID'] && $arParams['IBLOCK_TYPE']){
 
         $ID = $arParams['IBLOCK_ID'];
 
+        $res = CIBlockProperty::GetByID("TYPE", $ID, $arParams['IBLOCK_TYPE']);
+        if($ar_res = $res->GetNext())
+            $arResult['IBLOCK'] = $ar_res;
+
         $hldata = Bitrix\Highloadblock\HighloadBlockTable::getById($ID)->fetch();
         $hlentity = Bitrix\Highloadblock\HighloadBlockTable::compileEntity($hldata);
         $hlDataClass = $hldata["NAME"] . "Table";

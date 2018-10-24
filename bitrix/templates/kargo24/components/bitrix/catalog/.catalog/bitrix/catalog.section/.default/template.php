@@ -64,14 +64,12 @@ if($arResult['ITEMS']):?>
 			</div>
 			<!-- end unified-transport-unit -->
 		<? endforeach; ?>
+		<?if (empty($arResult['ORIGINAL_PARAMETERS']['GLOBAL_FILTER'])): ?>
+			<p class="text">
+				<?=$arResult["DESCRIPTION"]?>
+			</p>
+		<? endif; ?>
 	</div>
 <? endif;?>
 
 
-<?
-if($arParams['SMART_FILTER_PATH'] == "clear" && !$arParams['SMART_FILTER_PATH']): ?>
-	<div class="unified-text-block-category">
-		<?=$arResult["DESCRIPTION"]?>
-	</div>
-	<!-- end unified-text-block-category -->
-<?endif;?>

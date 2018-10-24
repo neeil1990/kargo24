@@ -41,7 +41,6 @@ $this->setFrameMode(true);
     </div>
 
 </div>
-<!-- end category-section-search-region -->
-
 <? endif; ?>
+<!-- end category-section-search-region -->
 

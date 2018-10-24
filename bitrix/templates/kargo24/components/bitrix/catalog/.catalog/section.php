@@ -128,6 +128,8 @@ global $APPLICATION;
 			}
 		}
 
+
+
 		$APPLICATION->IncludeComponent(
 			"bitrix:catalog.section.list",
 			"",
@@ -164,19 +166,38 @@ global $APPLICATION;
 			$arSectionDepth = array();
 	}
 
-	if($arResult["VARIABLES"]["SECTION_ID"]){
+	switch((int)$arSectionDepth['DEPTH_LEVEL']){
+		case 1:
 
-		include('include/section.php');
+			include('include/ads.type.php');
+			include('include/flights.php');
+
+			if(!$SMART_FILTER_PATH)
+			include('include/calculation.php');
+
+			break;
 	}
+
+
+	if($arResult["VARIABLES"]["SECTION_ID"]){
+		include('include/section.php');
+	}else{
+		$type = getTypeAdsText($arParams["IBLOCK_ID"],$SMART_FILTER_PATH);
+		?>
+		<div class="unified-text-block-category">
+			<?=$type['UF_FULL_DESCRIPTION'];?>
+		</div>
+		<?
+	}
+
 
 	?>
 	<div class="unified-text-block-category">
 		<?$APPLICATION->ShowViewContent('sotbit_seometa_bottom_desc');?>
 	</div>
 	<!-- end unified-text-block-category -->
+
 	<?
-
-
 
 	$APPLICATION->IncludeComponent(
 		"sotbit:seo.meta",
@@ -188,9 +209,8 @@ global $APPLICATION;
 			"CACHE_TIME" => $arParams["CACHE_TIME"],
 		)
 	);
-
-
 	?>
+
 
 	<?
 	$GLOBALS['CATALOG_CURRENT_SECTION_ID'] = $intSectionID;

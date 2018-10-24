@@ -4,7 +4,7 @@
 <div class="special-equipment-content">
     <? foreach ($arResult['ITEMS'] as &$arSection): ?>
         <div class="special-equipment-item">
-            <a href="/<?=$arResult['IBLOCK']['CODE']?>/filter/type-is-<?=mb_strtolower($arSection['UF_XML_ID'])?>/apply/">
+            <a href="/<?=$arResult['IBLOCK_FOLDER']?>/filter/type-is-<?=mb_strtolower($arSection['UF_XML_ID'])?>/apply/">
                 <div class="item-img">
                     <img src="<?=$arSection['PICTURE'] ?>" alt="<?=$arSection['UF_NAME']?>">
                 </div>

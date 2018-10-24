@@ -141,7 +141,8 @@ if((int)$arSectionDepth['DEPTH_LEVEL'] == 2
 
     global $arrFilter;
     if(empty($arrFilter)){
-        $arrFilter = array("=PROPERTY_TYPE" => "clear");
+        $arParams["PAGE_ELEMENT_COUNT"] = 3;
+      //  $arrFilter = array("=PROPERTY_TYPE" => "clear");
     }
 
     $intSectionID = $APPLICATION->IncludeComponent(
