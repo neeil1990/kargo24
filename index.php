@@ -86,28 +86,10 @@ $APPLICATION->SetTitle('CarGo24');
             );?>
 
 
-            <?$APPLICATION->IncludeComponent("bitrix:catalog.section.list", "home.equipment", Array(
-                "ADD_SECTIONS_CHAIN" => "Y",
-                "CACHE_GROUPS" => "Y",
-                "CACHE_TIME" => "36000000",
-                "CACHE_TYPE" => "A",
-                "COUNT_ELEMENTS" => "N",
-                "IBLOCK_ID" => "1",
-                "IBLOCK_TYPE" => "content",
-                "SECTION_CODE" => $_REQUEST["SECTION_CODE"],
-                "SECTION_FIELDS" => array(
-                    0 => "",
-                    1 => "",
-                ),
-                "SECTION_ID" => $_REQUEST["SECTION_ID"],
-                "SECTION_URL" => "",
-                "SECTION_USER_FIELDS" => array(
-                    0 => "",
-                    1 => "",
-                ),
-                "SHOW_PARENT_NAME" => "Y",
-                "TOP_DEPTH" => "1",
-                "VIEW_MODE" => "LINE",
+            <?$APPLICATION->IncludeComponent("kargo:ads.type", "home.type", Array(
+                "IBLOCK_ID" => "1",	// Инфоблок
+                "IBLOCK_TYPE" => "content",	// Тип инфоблока
+                "SORT" => "NAME",	// Порядок сортировки тегов
             ),
                 false
             );?>
