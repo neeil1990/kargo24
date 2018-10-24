@@ -1,4 +1,6 @@
 <?
+
+
 if((int)$arSectionDepth['DEPTH_LEVEL'] == 2
     && ($arResult['VARIABLES']['SMART_FILTER_PATH'] == "clear"
         || !$arResult['VARIABLES']['SMART_FILTER_PATH'])
@@ -125,6 +127,7 @@ if((int)$arSectionDepth['DEPTH_LEVEL'] == 2
         );
 
     }
+    $arrFilter = array();
     ?>
     <? if($arSectionDepth["DESCRIPTION"]): ?>
         <div class="unified-text-block-category">
@@ -135,6 +138,12 @@ if((int)$arSectionDepth['DEPTH_LEVEL'] == 2
     <?
 
 }else{
+
+    global $arrFilter;
+    if(empty($arrFilter)){
+        $arrFilter = array("=PROPERTY_TYPE" => "clear");
+    }
+
     $intSectionID = $APPLICATION->IncludeComponent(
         "bitrix:catalog.section",
         "",

@@ -32,7 +32,7 @@ $this->setFrameMode(true);
             <h4 class="category-unified-title"><?=$country?></h4>
             <ul class="category-unified-list">
                 <? foreach($city as $value):?>
-                <li><a href="<?=$value['SECTION_PAGE_URL']?>"><?=$value['NAME']?> (<?=$value['ELEMENT_CNT']?>)</a> </li>
+                <li><a href="<?=$value['SECTION_PAGE_URL']?>"><?=$value['NAME']?></a> </li>
                 <? endforeach; ?>
             </ul>
             <? endforeach; ?>

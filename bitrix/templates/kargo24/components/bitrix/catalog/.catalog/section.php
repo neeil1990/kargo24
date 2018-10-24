@@ -116,10 +116,23 @@ global $APPLICATION;
 		?>
 
 
-		<?$APPLICATION->IncludeComponent(
+		<?
+		if($arResult["VARIABLES"]["SMART_FILTER_PATH"]){
+			$SMART_FILTER_PATH = $arResult["VARIABLES"]["SMART_FILTER_PATH"];
+		}else{
+			if(preg_match("/filter/",$arResult["VARIABLES"]["SECTION_CODE_PATH"])){
+				$variables = explode('/',$arResult["VARIABLES"]["SECTION_CODE_PATH"]);
+				$SMART_FILTER_PATH = $variables[1];
+			}else{
+				$SMART_FILTER_PATH = false;
+			}
+		}
+
+		$APPLICATION->IncludeComponent(
 			"bitrix:catalog.section.list",
 			"",
 			array(
+				"SMART_FILTER_PATH" => $SMART_FILTER_PATH,
 				"IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
 				"IBLOCK_ID" => $arParams["IBLOCK_ID"],
 				"SECTION_ID" => $arResult["VARIABLES"]["SECTION_ID"],
@@ -152,6 +165,7 @@ global $APPLICATION;
 	}
 
 	if($arResult["VARIABLES"]["SECTION_ID"]){
+
 		include('include/section.php');
 	}
 
