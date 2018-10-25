@@ -1,22 +1,18 @@
 <? if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die(); ?>
 
-
-<!-- end transportations-section -->
-<section class="special-equipment-section">
+<? if(count($arResult['ITEMS']) > 0): ?>
     <div class="special-equipment-content">
-        <? foreach($arResult['ITEMS'] as $arItem): ?>
+        <? foreach ($arResult['ITEMS'] as &$arSection): ?>
             <div class="special-equipment-item">
-                <a href="filter/type-is-<?=mb_strtolower($arItem['UF_XML_ID'])?>/apply/">
+                <a href="/<?=$arResult['IBLOCK_FOLDER']?>/filter/type-is-<?=mb_strtolower($arSection['UF_XML_ID'])?>/apply/">
                     <div class="item-img">
-                        <img src="<?=$arItem['PICTURE'] ?>" alt="alt">
+                        <img src="<?=$arSection['PICTURE'] ?>" alt="<?=$arSection['UF_NAME']?>">
                     </div>
                     <div class="item-desc">
-                        <h3 class="title"><?=$arItem['UF_NAME']?></h3>
+                        <h3 class="title"><?=$arSection['UF_NAME']?></h3>
                     </div>
                 </a>
             </div>
         <? endforeach; ?>
     </div>
-</section>
-<!-- end special-equipment-section -->
-
+<? endif; ?>

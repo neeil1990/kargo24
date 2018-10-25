@@ -2,7 +2,7 @@
 
 if($arParams['IBLOCK_ID'] && $arParams['IBLOCK_TYPE']){
 
-    if (CModule::IncludeModule('highloadblock')) {
+    if (CModule::IncludeModule('highloadblock') && CModule::IncludeModule('iblock')) {
 
         $ID = $arParams['IBLOCK_ID'];
 
@@ -10,7 +10,9 @@ if($arParams['IBLOCK_ID'] && $arParams['IBLOCK_TYPE']){
         if($ar_res = $res->GetNext())
             $arResult['IBLOCK'] = $ar_res;
 
-        $hldata = Bitrix\Highloadblock\HighloadBlockTable::getById($ID)->fetch();
+        $HighloadblockId = (int)str_replace("b_hlbd_h","",$ar_res['USER_TYPE_SETTINGS']['TABLE_NAME']);
+
+        $hldata = Bitrix\Highloadblock\HighloadBlockTable::getById($HighloadblockId)->fetch();
         $hlentity = Bitrix\Highloadblock\HighloadBlockTable::compileEntity($hldata);
         $hlDataClass = $hldata["NAME"] . "Table";
 

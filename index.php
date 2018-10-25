@@ -22,31 +22,41 @@ $APPLICATION->SetTitle('CarGo24');
         </section>
         <!-- end main-section -->
 
-        <?$APPLICATION->IncludeComponent("bitrix:catalog.section.list", "home.transportation", Array(
-            "ADD_SECTIONS_CHAIN" => "Y",
-            "CACHE_GROUPS" => "Y",
-            "CACHE_TIME" => "36000000",
-            "CACHE_TYPE" => "A",
-            "COUNT_ELEMENTS" => "N",
-            "IBLOCK_ID" => "2",
-            "IBLOCK_TYPE" => "content",
-            "SECTION_CODE" => $_REQUEST["SECTION_CODE"],
-            "SECTION_FIELDS" => array(
-                0 => "",
-                1 => "",
-            ),
-            "SECTION_ID" => $_REQUEST["SECTION_ID"],
-            "SECTION_URL" => "",
-            "SECTION_USER_FIELDS" => array(
-                0 => "",
-                1 => "",
-            ),
-            "SHOW_PARENT_NAME" => "Y",
-            "TOP_DEPTH" => "1",
-            "VIEW_MODE" => "LINE",
-        ),
-            false
-        );?>
+    <section class="transportations-section">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-9">
+                    <?$APPLICATION->IncludeComponent("kargo:ads.type", "home.type.cube", Array(
+                        "IBLOCK_ID" => "2",	// Инфоблок
+                        "IBLOCK_TYPE" => "content",	// Тип инфоблока
+                        "SORT" => "NAME",	// Порядок сортировки тегов
+                        ),
+                        false
+                    );?>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="unified-ad-unit">
+                        <div class="ad-unit-head">
+                            <div class="logo">
+                                <img src="img/static/ad-unit-logo.png" alt="alt">
+                            </div>
+                            <span class="logo-text">Диспетчерский интернет-сервис</span>
+                        </div>
+                        <div class="ad-unit-img">
+                            <img src="img/static/ad.png" alt="alt">
+                        </div>
+                        <div class="ad-init-footer">
+                            <span class="title">Узнайте как разместить рекламу</span>
+                            <a href="" class="limed-spruce-btn white more-info-btn"><span class="text">подробнее</span><span class="arrow"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end transportations-section -->
 
     <section class="special-equipment-section">
         <div class="container">
@@ -98,117 +108,122 @@ $APPLICATION->SetTitle('CarGo24');
     </section>
     <!-- end special-equipment-section -->
 
-        <?$APPLICATION->IncludeComponent("bitrix:catalog.section.list", "home.equipment-rent", Array(
-            "ADD_SECTIONS_CHAIN" => "Y",
-            "CACHE_GROUPS" => "Y",
-            "CACHE_TIME" => "36000000",
-            "CACHE_TYPE" => "A",
-            "COUNT_ELEMENTS" => "N",
-            "IBLOCK_ID" => "3",
-            "IBLOCK_TYPE" => "content",
-            "SECTION_CODE" => $_REQUEST["SECTION_CODE"],
-            "SECTION_FIELDS" => array(
-                0 => "",
-                1 => "",
-            ),
-            "SECTION_ID" => $_REQUEST["SECTION_ID"],
-            "SECTION_URL" => "",
-            "SECTION_USER_FIELDS" => array(
-                0 => "",
-                1 => "",
-            ),
-            "SHOW_PARENT_NAME" => "Y",
-            "TOP_DEPTH" => "1",
-            "VIEW_MODE" => "LINE",
-        ),
-            false
-        );?>
-
-        <section class="accompanyin-passenger-services-section">
-            <div class="container">
-                <div class="row">
-                    <?$APPLICATION->IncludeComponent("bitrix:catalog.section.list", "home.services", Array(
-                        "ADD_SECTIONS_CHAIN" => "Y",
-                        "CACHE_GROUPS" => "Y",
-                        "CACHE_TIME" => "36000000",
-                        "CACHE_TYPE" => "A",
-                        "COUNT_ELEMENTS" => "N",
-                        "IBLOCK_ID" => "6",
-                        "IBLOCK_TYPE" => "content",
-                        "SECTION_CODE" => $_REQUEST["SECTION_CODE"],
-                        "SECTION_FIELDS" => array(
-                            0 => "",
-                            1 => "",
-                        ),
-                        "SECTION_ID" => $_REQUEST["SECTION_ID"],
-                        "SECTION_URL" => "",
-                        "SECTION_USER_FIELDS" => array(
-                            0 => "",
-                            1 => "",
-                        ),
-                        "SHOW_PARENT_NAME" => "Y",
-                        "TOP_DEPTH" => "1",
-                        "VIEW_MODE" => "LINE",
-                    ),
-                        false
-                    );?>
-
-                    <?$APPLICATION->IncludeComponent("bitrix:catalog.section.list", "home.passenger", Array(
-                        "ADD_SECTIONS_CHAIN" => "Y",
-                        "CACHE_GROUPS" => "Y",
-                        "CACHE_TIME" => "36000000",
-                        "CACHE_TYPE" => "A",
-                        "COUNT_ELEMENTS" => "N",
-                        "IBLOCK_ID" => "7",
-                        "IBLOCK_TYPE" => "content",
-                        "SECTION_CODE" => $_REQUEST["SECTION_CODE"],
-                        "SECTION_FIELDS" => array(
-                            0 => "",
-                            1 => "",
-                        ),
-                        "SECTION_ID" => $_REQUEST["SECTION_ID"],
-                        "SECTION_URL" => "",
-                        "SECTION_USER_FIELDS" => array(
-                            0 => "",
-                            1 => "",
-                        ),
-                        "SHOW_PARENT_NAME" => "Y",
-                        "TOP_DEPTH" => "1",
-                        "VIEW_MODE" => "LINE",
+    <section class="equipment-rent-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="sidebar-product-item">
+                        <div class="logo">
+                            <img src="img/static/ad-unit-logo.png" alt="alt">
+                        </div>
+                        <div class="product-img">
+                            <a href=""><img src="img/static/construction-machinery/01.png" alt="alt"></a>
+                        </div>
+                        <div class="product-desc">
+                            <h3 class="title">Бульдозер</h3>
+                            <table class="desc-info">
+                                <tr>
+                                    <td>Город:</td>
+                                    <td>Москва</td>
+                                </tr>
+                                <tr>
+                                    <td>Цена:</td>
+                                    <td>720 000 руб.</td>
+                                </tr>
+                                <tr>
+                                    <td>Контакты: </td>
+                                    <td>7 950 111 11 11 (Алексей)</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="sidebar-product-item desktop">
+                        <div class="logo">
+                            <img src="img/static/ad-unit-logo.png" alt="alt">
+                        </div>
+                        <div class="product-img">
+                            <a href=""><img src="img/static/construction-machinery/02.png" alt="alt"></a>
+                        </div>
+                        <div class="product-desc">
+                            <h3 class="title">Автогрейдер</h3>
+                            <table class="desc-info">
+                                <tr>
+                                    <td>Город:</td>
+                                    <td>Челябинск</td>
+                                </tr>
+                                <tr>
+                                    <td>Цена:</td>
+                                    <td>2 300 000 руб.</td>
+                                </tr>
+                                <tr>
+                                    <td>Контакты: </td>
+                                    <td>89080660033 (Руслан)</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-9">
+                    <?$APPLICATION->IncludeComponent("kargo:ads.type", "home.type.cube", Array(
+                        "IBLOCK_ID" => "3",	// Инфоблок
+                        "IBLOCK_TYPE" => "content",	// Тип инфоблока
+                        "SORT" => "NAME",	// Порядок сортировки тегов
                     ),
                         false
                     );?>
                 </div>
             </div>
-        </section>
-        <!-- end accompanyin-passenger-services-section -->
+        </div>
+    </section>
+    <!-- end equipment-rent-section -->
 
-        <?$APPLICATION->IncludeComponent("bitrix:catalog.section.list", "home.materials", Array(
-            "ADD_SECTIONS_CHAIN" => "Y",
-            "CACHE_GROUPS" => "Y",
-            "CACHE_TIME" => "36000000",
-            "CACHE_TYPE" => "A",
-            "COUNT_ELEMENTS" => "N",
-            "IBLOCK_ID" => "8",
-            "IBLOCK_TYPE" => "content",
-            "SECTION_CODE" => $_REQUEST["SECTION_CODE"],
-            "SECTION_FIELDS" => array(
-                0 => "",
-                1 => "",
+
+    <section class="accompanyin-passenger-services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-6 col-sm-12">
+                    <?$APPLICATION->IncludeComponent("kargo:ads.type", "home.type.cube", Array(
+                        "IBLOCK_ID" => "6",	// Инфоблок
+                        "IBLOCK_TYPE" => "content",	// Тип инфоблока
+                        "SORT" => "NAME",	// Порядок сортировки тегов
+                        "CLASS_TITLE" => "white",
+                        "CLASS_BODY" => "accompanying-services-content",
+                    ),
+                        false
+                    );?>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 right-block">
+                    <?$APPLICATION->IncludeComponent("kargo:ads.type", "home.type.cube", Array(
+                        "IBLOCK_ID" => "7",	// Инфоблок
+                        "IBLOCK_TYPE" => "content",	// Тип инфоблока
+                        "SORT" => "NAME",	// Порядок сортировки тегов
+                        "CLASS_TITLE" => "white",
+                        "CLASS_BODY" => "passenger-transportation-content",
+                    ),
+                        false
+                    );?>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end accompanyin-passenger-services-section -->
+
+
+    <section class="construction-materials-section">
+        <div class="container">
+            <?$APPLICATION->IncludeComponent("kargo:ads.type", "home.type.cube", Array(
+                "IBLOCK_ID" => "8",	// Инфоблок
+                "IBLOCK_TYPE" => "content",	// Тип инфоблока
+                "SORT" => "NAME",	// Порядок сортировки тегов
+                "CLASS_TITLE" => "",
+                "CLASS_BODY" => "construction-materials-content",
             ),
-            "SECTION_ID" => $_REQUEST["SECTION_ID"],
-            "SECTION_URL" => "",
-            "SECTION_USER_FIELDS" => array(
-                0 => "",
-                1 => "",
-            ),
-            "SHOW_PARENT_NAME" => "Y",
-            "TOP_DEPTH" => "1",
-            "VIEW_MODE" => "LINE",
-        ),
-            false
-        );?>
-        <!-- end construction-materials-section -->
+                false
+            );?>
+        </div>
+    </section>
+    <!-- end construction-materials-section -->
+
 
         <?$APPLICATION->IncludeComponent("bitrix:news.list", "advantage.list.home", Array(
             "ACTIVE_DATE_FORMAT" => "d.m.Y",	// Формат показа даты

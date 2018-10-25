@@ -2,18 +2,34 @@
 $arUrlRewrite=array (
   3 => 
   array (
-    'CONDITION' => '#^/equipment-rent/#',
+    'CONDITION' => '#^/arenda-stroitelnogo-oborudovaniya/#',
     'RULE' => 'SECTION_CODE=$1',
     'ID' => 'bitrix:catalog',
-    'PATH' => '/equipment-rent/index.php',
+    'PATH' => '/arenda-stroitelnogo-oborudovaniya/index.php',
+    'SORT' => 100,
+  ),
+  9 => 
+  array (
+    'CONDITION' => '#^/prodazha-spetstekhniki/#',
+    'RULE' => '',
+    'ID' => 'bitrix:catalog',
+    'PATH' => '/prodazha-spetstekhniki/index.php',
+    'SORT' => 100,
+  ),
+  10 => 
+  array (
+    'CONDITION' => '#^/zapchasti-i-remont/#',
+    'RULE' => '',
+    'ID' => 'bitrix:catalog',
+    'PATH' => '/zapchasti-i-remont/index.php',
     'SORT' => 100,
   ),
   2 => 
   array (
-    'CONDITION' => '#^/transportation/#',
-    'RULE' => 'SECTION_CODE=$1',
+    'CONDITION' => '#^/gruzovye-perevozki/#',
+    'RULE' => '',
     'ID' => 'bitrix:catalog',
-    'PATH' => '/transportation/index.php',
+    'PATH' => '/gruzovye-perevozki/index.php',
     'SORT' => 100,
   ),
   6 => 
@@ -34,10 +50,10 @@ $arUrlRewrite=array (
   ),
   8 => 
   array (
-    'CONDITION' => '#^/equipment/#',
+    'CONDITION' => '#^/arenda-spetstekhniki/#',
     'RULE' => '',
     'ID' => 'bitrix:catalog',
-    'PATH' => '/equipment/index.php',
+    'PATH' => '/arenda-spetstekhniki/index.php',
     'SORT' => 100,
   ),
   5 => 

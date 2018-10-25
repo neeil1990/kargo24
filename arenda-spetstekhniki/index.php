@@ -1,33 +1,17 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("ГРУЗОВЫЕ ПЕРЕВОЗКИ, ПОПУТНЫЙ ТРАНСПОРТ, ПОИСК ГРУЗОВ, РАСЧЁТ ПУТИ");
-$section = explode("/",explode("?",$_REQUEST["SECTION_CODE"])[0])[0];
+$APPLICATION->SetTitle("АРЕНДА СПЕЦТЕХНИКИ, ПРОДАЖА СПЕЦТЕХНИКИ, ЗАПЧАСТИ И РЕМОНТ");
 ?>
-    <?$APPLICATION->IncludeComponent("bitrix:catalog.section.list", "equipment.top.section", Array(
-        "ADD_SECTIONS_CHAIN" => "N",	// Включать раздел в цепочку навигации
-        "CACHE_GROUPS" => "Y",	// Учитывать права доступа
-        "CACHE_TIME" => "36000000",	// Время кеширования (сек.)
-        "CACHE_TYPE" => "A",	// Тип кеширования
-        "COUNT_ELEMENTS" => "N",	// Показывать количество элементов в разделе
-        "IBLOCK_ID" => "2",	// Инфоблок
-        "IBLOCK_TYPE" => "content",	// Тип инфоблока
-        "SECTION_CODE" => ($section) ? $section : "",	// Код раздела
-        "SECTION_FIELDS" => array(	// Поля разделов
-            0 => "",
-            1 => "",
-        ),
-        "SECTION_ID" => $_REQUEST["SECTION_ID"],	// ID раздела
-        "SECTION_URL" => "",	// URL, ведущий на страницу с содержимым раздела
-        "SECTION_USER_FIELDS" => array(	// Свойства разделов
-            0 => "",
-            1 => "",
-        ),
-        "SHOW_PARENT_NAME" => "Y",	// Показывать название раздела
-        "TOP_DEPTH" => "1",	// Максимальная отображаемая глубина разделов
-        "VIEW_MODE" => "LINE",	// Вид списка подразделов
-    ),
-        false
-    );?>
+
+    <section class="title-section category">
+        <div class="container">
+            <h1 class="title">
+                <?=$APPLICATION->ShowTitle(false);?>
+            </h1>
+        </div>
+    </section>
+    <!-- end title-section -->
+
 
     <section class="category-section">
         <div class="container">
@@ -35,7 +19,7 @@ $section = explode("/",explode("?",$_REQUEST["SECTION_CODE"])[0])[0];
 
                 <?$APPLICATION->IncludeComponent(
                     "bitrix:catalog",
-                    ".equipment",
+                    ".catalog",
                     array(
                         "ACTION_VARIABLE" => "action",
                         "ADD_ELEMENT_CHAIN" => "Y",
@@ -87,7 +71,7 @@ $section = explode("/",explode("?",$_REQUEST["SECTION_CODE"])[0])[0];
                         "FILE_404" => "",
                         "FILTER_HIDE_ON_MOBILE" => "N",
                         "FILTER_VIEW_MODE" => "HORIZONTAL",
-                        "IBLOCK_ID" => "2",
+                        "IBLOCK_ID" => "1",
                         "IBLOCK_TYPE" => "content",
                         "INCLUDE_SUBSECTIONS" => "A",
                         "INSTANT_RELOAD" => "N",
@@ -143,12 +127,12 @@ $section = explode("/",explode("?",$_REQUEST["SECTION_CODE"])[0])[0];
                         "SECTION_COUNT_ELEMENTS" => "Y",
                         "SECTION_ID_VARIABLE" => "SECTION_ID",
                         "SECTION_TOP_DEPTH" => "1",
-                        "SEF_FOLDER" => "/transportation/",
+                        "SEF_FOLDER" => "/arenda-spetstekhniki/",
                         "SEF_MODE" => "Y",
                         "SET_LAST_MODIFIED" => "N",
-                        "SET_STATUS_404" => "Y",
+                        "SET_STATUS_404" => "N",
                         "SET_TITLE" => "Y",
-                        "SHOW_404" => "Y",
+                        "SHOW_404" => "N",
                         "SHOW_DEACTIVATED" => "N",
                         "SHOW_PRICE_COUNT" => "1",
                         "SHOW_TOP_ELEMENTS" => "N",
@@ -179,14 +163,14 @@ $section = explode("/",explode("?",$_REQUEST["SECTION_CODE"])[0])[0];
                         "USE_PRICE_COUNT" => "N",
                         "USE_PRODUCT_QUANTITY" => "N",
                         "USE_STORE" => "N",
-                        "COMPONENT_TEMPLATE" => ".equipment",
+                        "COMPONENT_TEMPLATE" => ".catalog",
                         "FILTER_NAME" => "",
                         "FILTER_FIELD_CODE" => array(
                             0 => "",
                             1 => "",
                         ),
                         "FILTER_PROPERTY_CODE" => array(
-                            0 => "TYPE_CAR",
+                            0 => "TYPE",
                             1 => "",
                         ),
                         "FILTER_PRICE_CODE" => array(

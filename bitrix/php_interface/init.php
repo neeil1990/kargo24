@@ -9,9 +9,14 @@ CModule::AddAutoloadClasses(
 
 
 function getTypeAdsText($ID,$type){
+    CModule::IncludeModule('iblock');
+
+    $res = CIBlockProperty::GetByID("TYPE", $ID, "content");
+    if($ar_res = $res->GetNext())
+    $HighloadblockId = (int)str_replace("b_hlbd_h","",$ar_res['USER_TYPE_SETTINGS']['TABLE_NAME']);
 
     $type = explode('-',$type);
-    $hldata = Bitrix\Highloadblock\HighloadBlockTable::getById($ID)->fetch();
+    $hldata = Bitrix\Highloadblock\HighloadBlockTable::getById($HighloadblockId)->fetch();
     $hlentity = Bitrix\Highloadblock\HighloadBlockTable::compileEntity($hldata);
     $hlDataClass = $hldata["NAME"] . "Table";
 
