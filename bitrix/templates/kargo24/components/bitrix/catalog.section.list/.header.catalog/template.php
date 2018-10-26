@@ -11,4 +11,13 @@
 /** @var string $componentPath */
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
+?>
 
+<section class="title-section category">
+	<div class="container">
+		<h1 class="title">
+			<?=($arResult['TITLE']) ? $arResult['TITLE'] : $APPLICATION->ShowTitle(false);?>
+		</h1>
+	</div>
+</section>
+<!-- end title-section -->

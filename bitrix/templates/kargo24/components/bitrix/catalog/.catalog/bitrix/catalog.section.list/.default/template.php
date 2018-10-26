@@ -12,7 +12,6 @@
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
 ?>
-
 <? if($arResult['ITEM_SECTION_COLS']): ?>
 
 <div class="category-section-search-region">

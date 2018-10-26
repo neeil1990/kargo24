@@ -3,7 +3,7 @@ $arUrlRewrite=array (
   3 => 
   array (
     'CONDITION' => '#^/arenda-stroitelnogo-oborudovaniya/#',
-    'RULE' => 'SECTION_CODE=$1',
+    'RULE' => '',
     'ID' => 'bitrix:catalog',
     'PATH' => '/arenda-stroitelnogo-oborudovaniya/index.php',
     'SORT' => 100,
@@ -14,6 +14,14 @@ $arUrlRewrite=array (
     'RULE' => '',
     'ID' => 'bitrix:catalog',
     'PATH' => '/prodazha-spetstekhniki/index.php',
+    'SORT' => 100,
+  ),
+  11 => 
+  array (
+    'CONDITION' => '#^/arenda-spetstekhniki/#',
+    'RULE' => '',
+    'ID' => 'bitrix:catalog',
+    'PATH' => '/arenda-spetstekhniki/index.php',
     'SORT' => 100,
   ),
   10 => 
@@ -35,7 +43,7 @@ $arUrlRewrite=array (
   6 => 
   array (
     'CONDITION' => '#^/passenger/#',
-    'RULE' => 'SECTION_CODE=$1',
+    'RULE' => '',
     'ID' => 'bitrix:catalog',
     'PATH' => '/passenger/index.php',
     'SORT' => 100,
@@ -43,23 +51,15 @@ $arUrlRewrite=array (
   7 => 
   array (
     'CONDITION' => '#^/materials/#',
-    'RULE' => 'SECTION_CODE=$1',
-    'ID' => 'bitrix:catalog',
-    'PATH' => '/materials/index.php',
-    'SORT' => 100,
-  ),
-  8 => 
-  array (
-    'CONDITION' => '#^/arenda-spetstekhniki/#',
     'RULE' => '',
     'ID' => 'bitrix:catalog',
-    'PATH' => '/arenda-spetstekhniki/index.php',
+    'PATH' => '/materials/index.php',
     'SORT' => 100,
   ),
   5 => 
   array (
     'CONDITION' => '#^/services/#',
-    'RULE' => 'SECTION_CODE=$1',
+    'RULE' => '',
     'ID' => 'bitrix:catalog',
     'PATH' => '/services/index.php',
     'SORT' => 100,

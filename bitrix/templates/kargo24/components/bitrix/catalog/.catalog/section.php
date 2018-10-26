@@ -16,7 +16,6 @@ use Bitrix\Main\ModuleManager;
 $this->setFrameMode(true);
 global $APPLICATION;
 ?>
-
 <div class="col-sm-9">
 
 
@@ -168,8 +167,6 @@ global $APPLICATION;
 
 	switch((int)$arSectionDepth['DEPTH_LEVEL']){
 		case 1:
-
-			include('include/ads.type.php');
 			include('include/flights.php');
 
 			if(!$SMART_FILTER_PATH)
@@ -177,6 +174,8 @@ global $APPLICATION;
 
 			break;
 	}
+
+
 
 
 	if($arResult["VARIABLES"]["SECTION_ID"]){
@@ -198,7 +197,6 @@ global $APPLICATION;
 	<!-- end unified-text-block-category -->
 
 	<?
-
 	$APPLICATION->IncludeComponent(
 		"sotbit:seo.meta",
 		".default",
