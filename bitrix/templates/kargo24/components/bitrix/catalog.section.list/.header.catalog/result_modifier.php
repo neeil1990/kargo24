@@ -98,11 +98,11 @@ if (0 < $arResult['SECTIONS_COUNT'])
 }
 if($arParams['FILTER']){
 	$filter = getTypeAdsText($arParams['IBLOCK_ID'],$arParams['FILTER']);
-	if($arResult['SECTION']['IPROPERTY_VALUES']['SECTION_META_TITLE'])
-		$city = $arResult['SECTION']['IPROPERTY_VALUES']['SECTION_META_TITLE'];
+	if($arResult['SECTION']['UF_FILTER_TITLE'])
+		$city = $arResult['SECTION']['UF_FILTER_TITLE'];
 	else
 		$city = $arResult['SECTION']['NAME'];
-	
+
 	$title = str_replace("#CITY#",mb_strtolower($city),$filter['UF_TITLE']);
 	$arResult['TITLE'] = $title;
 }else{

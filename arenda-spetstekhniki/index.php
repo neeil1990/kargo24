@@ -39,7 +39,7 @@ if(preg_match("/\\/(.*)\\/filter\\/(.*)\\/apply/",$url,$clear_property_type)){
         "SECTION_ID" => $_REQUEST["SECTION_ID"],	// ID раздела
         "SECTION_URL" => "",	// URL, ведущий на страницу с содержимым раздела
         "SECTION_USER_FIELDS" => array(	// Свойства разделов
-            0 => "",
+            0 => "UF_FILTER_TITLE",
             1 => "",
         ),
         "SHOW_PARENT_NAME" => "Y",	// Показывать название раздела
