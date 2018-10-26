@@ -1,10 +1,10 @@
 .unified-unit-service .item-img {
-    background-color: white;
-    padding: 5px;
+    background-color: white!important;
+    padding: 5px!important;
 }
 
 .unified-unit-service .item-img img {
-    margin-bottom: 40px;
-    vertical-align: bottom;
-    max-width: 150px;
+    margin-bottom: 40px!important;
+    vertical-align: bottom!important;
+    max-width: 150px!important;
 }
