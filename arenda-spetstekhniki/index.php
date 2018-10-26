@@ -24,7 +24,7 @@ if(preg_match("/\\/(.*)\\/filter\\/(.*)\\/apply/",$url,$clear_property_type)){
 
     <?$APPLICATION->IncludeComponent("bitrix:catalog.section.list", ".header.catalog", Array(
         "ADD_SECTIONS_CHAIN" => "N",	// Включать раздел в цепочку навигации
-        "CACHE_GROUPS" => "Y",	// Учитывать права доступа
+        "CACHE_GROUPS" => "N",	// Учитывать права доступа
         "CACHE_TIME" => "36000000",	// Время кеширования (сек.)
         "CACHE_TYPE" => "A",	// Тип кеширования
         "COUNT_ELEMENTS" => "Y",	// Показывать количество элементов в разделе
