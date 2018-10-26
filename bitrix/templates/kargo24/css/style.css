@@ -1705,6 +1705,7 @@ h3 {
   text-align: center;
 }
 .unified-unit-service .item-img img {
+  width: 100%;
   height: auto;
   max-height: 100%;
 }
