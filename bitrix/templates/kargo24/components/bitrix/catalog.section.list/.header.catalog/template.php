@@ -12,7 +12,6 @@
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
 ?>
-
 <section class="title-section category">
 	<div class="container">
 		<h1 class="title">
