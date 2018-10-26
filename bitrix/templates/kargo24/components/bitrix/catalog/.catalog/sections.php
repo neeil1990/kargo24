@@ -17,7 +17,7 @@ $this->setFrameMode(true);
 	<div class="col-sm-9">
 
 		<?$APPLICATION->IncludeComponent(
-			"bitrix:catalog.section.list",
+			"kargo:catalog.section.list",
 			"",
 			array(
 				"IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
