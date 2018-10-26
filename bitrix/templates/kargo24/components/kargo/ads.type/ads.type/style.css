@@ -2,3 +2,9 @@
     background-color: white;
     padding: 5px;
 }
+
+.unified-unit-service .item-img img {
+    margin-bottom: 40px;
+    vertical-align: bottom;
+    max-width: 150px;
+}
