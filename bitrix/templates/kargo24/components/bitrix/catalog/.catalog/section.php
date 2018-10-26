@@ -130,7 +130,7 @@ global $APPLICATION;
 
 
 		$APPLICATION->IncludeComponent(
-			"bitrix:catalog.section.list",
+			"kargo:catalog.section.list",
 			"",
 			array(
 				"SMART_FILTER_PATH" => $SMART_FILTER_PATH,
