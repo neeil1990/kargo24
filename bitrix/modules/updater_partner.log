@@ -890,3 +890,111 @@
 2018-10-02 14:22:32 -  - exec CUpdateClientPartner::GetHTTPPage
 2018-10-02 14:22:32 -  - exec CUpdateClientPartner::ParseServerData
 2018-10-02 14:22:32 -  - exec CUpdateClientPartner::ParseServerData
+2018-10-02 16:27:56 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-10-02 16:27:56 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-10-02 16:27:57 -  - exec CUpdateClientPartner::ParseServerData
+2018-10-02 16:27:57 -  - exec CUpdateClientPartner::GetUpdatesList
+2018-10-02 16:27:57 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-10-02 16:27:57 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=E&CLIENT_PHPVER=7.1.11&NGINX=Y&dbv=5.7.21&instm=main%2C18.0.4%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Bmessageservice%2C18.0.0%2CN%3Bsearch%2C17.6.0%2CN%3Bcompression%2C16.0.0%2CN%3Bclouds%2C18.0.0%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Brest%2C18.0.4%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bseo%2C18.1.0%2CN%3Blanding%2C18.4.21%2CN%3Biblock%2C17.6.8%2CN%3Bhighloadblock%2C17.5.1%2CN%3Bb24connector%2C18.0.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN%3Bsocialservices%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN&reqm=sotbit.seometa%2Cthebrainstech.copyiblock%2Csection.city&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2018-10-02 16:27:57 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-10-02 16:27:57 -  - TIME GetUpdatesList(request) 0.289 sec
+2018-10-02 16:27:57 -  - exec CUpdateClientPartner::ParseServerData
+2018-10-02 16:27:57 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-10-02 16:27:57 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-10-02 16:27:58 -  - exec CUpdateClientPartner::ParseServerData
+2018-10-08 15:58:03 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-10-08 15:58:03 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-10-08 15:58:04 -  - exec CUpdateClientPartner::ParseServerData
+2018-10-08 15:58:04 -  - exec CUpdateClientPartner::GetUpdatesList
+2018-10-08 15:58:04 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-10-08 15:58:04 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=E&CLIENT_PHPVER=7.1.11&NGINX=Y&dbv=5.7.21&instm=main%2C18.0.4%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Bmessageservice%2C18.0.0%2CN%3Bsearch%2C17.6.0%2CN%3Bcompression%2C16.0.0%2CN%3Bclouds%2C18.0.0%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Brest%2C18.0.4%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bseo%2C18.1.0%2CN%3Blanding%2C18.4.21%2CN%3Biblock%2C17.6.8%2CN%3Bhighloadblock%2C17.5.1%2CN%3Bb24connector%2C18.0.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN%3Bsocialservices%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN&reqm=sotbit.seometa%2Cthebrainstech.copyiblock%2Csection.city&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2018-10-08 15:58:04 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-10-08 15:58:04 -  - TIME GetUpdatesList(request) 0.346 sec
+2018-10-08 15:58:04 -  - exec CUpdateClientPartner::ParseServerData
+2018-10-08 15:58:04 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-10-08 15:58:04 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-10-08 15:58:05 -  - exec CUpdateClientPartner::ParseServerData
+2018-10-10 12:13:16 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-10-10 12:13:16 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-10-10 12:13:17 -  - exec CUpdateClientPartner::ParseServerData
+2018-10-10 12:13:17 -  - exec CUpdateClientPartner::GetUpdatesList
+2018-10-10 12:13:17 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-10-10 12:13:17 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=E&CLIENT_PHPVER=7.1.11&NGINX=Y&dbv=5.7.21&instm=main%2C18.0.4%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Bmessageservice%2C18.0.0%2CN%3Bsearch%2C17.6.0%2CN%3Bcompression%2C16.0.0%2CN%3Bclouds%2C18.0.0%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Brest%2C18.0.4%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bseo%2C18.1.0%2CN%3Blanding%2C18.4.21%2CN%3Biblock%2C17.6.8%2CN%3Bhighloadblock%2C17.5.1%2CN%3Bb24connector%2C18.0.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN%3Bsocialservices%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN&reqm=sotbit.seometa%2Cthebrainstech.copyiblock%2Csection.city&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2018-10-10 12:13:17 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-10-10 12:13:18 -  - TIME GetUpdatesList(request) 0.341 sec
+2018-10-10 12:13:18 -  - exec CUpdateClientPartner::ParseServerData
+2018-10-10 12:13:18 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-10-10 12:13:18 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-10-10 12:13:18 -  - exec CUpdateClientPartner::ParseServerData
+2018-10-11 12:22:32 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-10-11 12:22:32 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-10-11 12:22:32 -  - exec CUpdateClientPartner::ParseServerData
+2018-10-11 12:22:32 -  - exec CUpdateClientPartner::GetUpdatesList
+2018-10-11 12:22:32 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-10-11 12:22:32 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=E&CLIENT_PHPVER=7.1.11&NGINX=Y&dbv=5.7.21&instm=main%2C18.0.4%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Bmessageservice%2C18.0.0%2CN%3Bsearch%2C17.6.0%2CN%3Bcompression%2C16.0.0%2CN%3Bclouds%2C18.0.0%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Brest%2C18.0.4%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bseo%2C18.1.0%2CN%3Blanding%2C18.4.21%2CN%3Biblock%2C17.6.8%2CN%3Bhighloadblock%2C17.5.1%2CN%3Bb24connector%2C18.0.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN%3Bsocialservices%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN&reqm=sotbit.seometa%2Cthebrainstech.copyiblock%2Csection.city&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2018-10-11 12:22:32 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-10-11 12:22:33 -  - TIME GetUpdatesList(request) 0.366 sec
+2018-10-11 12:22:33 -  - exec CUpdateClientPartner::ParseServerData
+2018-10-11 12:22:33 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-10-11 12:22:33 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-10-11 12:22:33 -  - exec CUpdateClientPartner::ParseServerData
+2018-10-12 12:28:26 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-10-12 12:28:26 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-10-12 12:28:27 -  - exec CUpdateClientPartner::ParseServerData
+2018-10-12 12:28:27 -  - exec CUpdateClientPartner::GetUpdatesList
+2018-10-12 12:28:27 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-10-12 12:28:27 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=E&CLIENT_PHPVER=7.1.11&NGINX=Y&dbv=5.7.21&instm=main%2C18.0.4%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Bmessageservice%2C18.0.0%2CN%3Bsearch%2C17.6.0%2CN%3Bcompression%2C16.0.0%2CN%3Bclouds%2C18.0.0%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Brest%2C18.0.4%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bseo%2C18.1.0%2CN%3Blanding%2C18.4.21%2CN%3Biblock%2C17.6.8%2CN%3Bhighloadblock%2C17.5.1%2CN%3Bb24connector%2C18.0.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN%3Bsocialservices%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN&reqm=sotbit.seometa%2Cthebrainstech.copyiblock%2Csection.city&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2018-10-12 12:28:27 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-10-12 12:28:28 -  - TIME GetUpdatesList(request) 0.263 sec
+2018-10-12 12:28:28 -  - exec CUpdateClientPartner::ParseServerData
+2018-10-12 12:28:28 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-10-12 12:28:28 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-10-12 12:28:28 -  - exec CUpdateClientPartner::ParseServerData
+2018-10-24 10:19:59 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-10-24 10:19:59 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-10-24 10:20:00 -  - exec CUpdateClientPartner::ParseServerData
+2018-10-24 10:20:00 -  - exec CUpdateClientPartner::GetUpdatesList
+2018-10-24 10:20:00 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-10-24 10:20:00 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=E&CLIENT_PHPVER=7.1.11&NGINX=Y&dbv=5.7.21&instm=main%2C18.0.4%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Bmessageservice%2C18.0.0%2CN%3Bsearch%2C17.6.0%2CN%3Bcompression%2C16.0.0%2CN%3Bclouds%2C18.0.0%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Brest%2C18.0.4%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bseo%2C18.1.0%2CN%3Blanding%2C18.4.21%2CN%3Biblock%2C17.6.8%2CN%3Bhighloadblock%2C17.5.1%2CN%3Bb24connector%2C18.0.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN%3Bsocialservices%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN&reqm=sotbit.seometa%2Cthebrainstech.copyiblock%2Csection.city&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2018-10-24 10:20:00 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-10-24 10:20:00 -  - TIME GetUpdatesList(request) 0.391 sec
+2018-10-24 10:20:00 -  - exec CUpdateClientPartner::ParseServerData
+2018-10-24 10:20:00 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-10-24 10:20:00 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-10-24 10:20:00 -  - exec CUpdateClientPartner::ParseServerData
+2018-10-25 12:02:14 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-10-25 12:02:14 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-10-25 12:02:15 -  - exec CUpdateClientPartner::ParseServerData
+2018-10-25 12:02:15 -  - exec CUpdateClientPartner::GetUpdatesList
+2018-10-25 12:02:15 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-10-25 12:02:15 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=E&CLIENT_PHPVER=7.1.11&NGINX=Y&dbv=5.7.21&instm=main%2C18.0.4%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Bmessageservice%2C18.0.0%2CN%3Bsearch%2C17.6.0%2CN%3Bcompression%2C16.0.0%2CN%3Bclouds%2C18.0.0%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Brest%2C18.0.4%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bseo%2C18.1.0%2CN%3Blanding%2C18.4.21%2CN%3Biblock%2C17.6.8%2CN%3Bhighloadblock%2C17.5.1%2CN%3Bb24connector%2C18.0.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN%3Bsocialservices%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN&reqm=sotbit.seometa%2Cthebrainstech.copyiblock%2Csection.city&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2018-10-25 12:02:15 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-10-25 12:02:15 -  - TIME GetUpdatesList(request) 0.342 sec
+2018-10-25 12:02:15 -  - exec CUpdateClientPartner::ParseServerData
+2018-10-25 12:02:15 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-10-25 12:02:15 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-10-25 12:02:16 -  - exec CUpdateClientPartner::ParseServerData
+2018-10-26 15:22:04 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-10-26 15:22:04 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-10-26 15:22:05 -  - exec CUpdateClientPartner::ParseServerData
+2018-10-26 15:22:05 -  - exec CUpdateClientPartner::GetUpdatesList
+2018-10-26 15:22:05 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-10-26 15:22:05 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=E&CLIENT_PHPVER=7.1.11&NGINX=Y&dbv=5.7.21&instm=main%2C18.0.4%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Bmessageservice%2C18.0.0%2CN%3Bsearch%2C17.6.0%2CN%3Bcompression%2C16.0.0%2CN%3Bclouds%2C18.0.0%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Brest%2C18.0.4%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bseo%2C18.1.0%2CN%3Blanding%2C18.4.21%2CN%3Biblock%2C17.6.8%2CN%3Bhighloadblock%2C17.5.1%2CN%3Bb24connector%2C18.0.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN%3Bsocialservices%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN&reqm=sotbit.seometa%2Cthebrainstech.copyiblock%2Csection.city&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2018-10-26 15:22:05 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-10-26 15:22:05 -  - TIME GetUpdatesList(request) 0.356 sec
+2018-10-26 15:22:05 -  - exec CUpdateClientPartner::ParseServerData
+2018-10-26 15:22:05 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-10-26 15:22:05 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-10-26 15:22:06 -  - exec CUpdateClientPartner::ParseServerData
+2018-10-29 10:09:12 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-10-29 10:09:12 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-10-29 10:09:13 -  - exec CUpdateClientPartner::ParseServerData
+2018-10-29 10:09:13 -  - exec CUpdateClientPartner::GetUpdatesList
+2018-10-29 10:09:13 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-10-29 10:09:13 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=E&CLIENT_PHPVER=7.1.11&NGINX=Y&dbv=5.7.21&instm=main%2C18.0.4%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Bmessageservice%2C18.0.0%2CN%3Bsearch%2C17.6.0%2CN%3Bcompression%2C16.0.0%2CN%3Bclouds%2C18.0.0%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Brest%2C18.0.4%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bseo%2C18.1.0%2CN%3Blanding%2C18.4.21%2CN%3Biblock%2C17.6.8%2CN%3Bhighloadblock%2C17.5.1%2CN%3Bb24connector%2C18.0.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN%3Bsocialservices%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN&reqm=sotbit.seometa%2Cthebrainstech.copyiblock%2Csection.city&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2018-10-29 10:09:13 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-10-29 10:09:14 -  - TIME GetUpdatesList(request) 0.295 sec
+2018-10-29 10:09:14 -  - exec CUpdateClientPartner::ParseServerData
+2018-10-29 10:09:14 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-10-29 10:09:14 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-10-29 10:09:14 -  - exec CUpdateClientPartner::ParseServerData

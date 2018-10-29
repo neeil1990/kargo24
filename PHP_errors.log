@@ -1,0 +1,2 @@
+[24-Oct-2018 11:44:39 Europe/Moscow] PHP Fatal error:  Maximum execution time of 600 seconds exceeded in /home/b/bziksv/kargo24.su/public_html/bitrix/modules/main/tools.php on line 6355
+[24-Oct-2018 12:08:38 Europe/Moscow] PHP Notice:  Constant BX_PUBLIC_MODE already defined in /home/b/bziksv/kargo24.su/public_html/bitrix/modules/main/include/prolog_admin_before.php on line 20

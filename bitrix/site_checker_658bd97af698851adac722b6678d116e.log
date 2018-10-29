@@ -1,20 +1,20 @@
-2018-Sep-27 21:20:55 Наличие необходимых модулей php (check_php_modules): Ok
+2018-Oct-29 04:47:34 Наличие необходимых модулей php (check_php_modules): Ok
 Все необходимые модули установлены
-2018-Sep-27 21:20:55 Обязательные параметры PHP (check_php_settings): Ok
+2018-Oct-29 04:47:34 Обязательные параметры PHP (check_php_settings): Ok
 Настройки правильные
-2018-Sep-27 21:20:55 Модули веб-сервера (check_security): Ok
+2018-Oct-29 04:47:34 Модули веб-сервера (check_security): Ok
 Конфликтов не выявлено
-2018-Sep-27 21:20:55 Значения переменных сервера (check_server_vars): Ok
+2018-Oct-29 04:47:34 Значения переменных сервера (check_server_vars): Ok
 Корректные
-2018-Sep-27 21:20:55 Сохранение сессии (check_session): Ok
+2018-Oct-29 04:47:34 Сохранение сессии (check_session): Ok
 50% done
-2018-Sep-27 21:20:55 Параметры настройки UTF (mbstring и константа BX_UTF) (check_mbstring): Ok
+2018-Oct-29 04:47:34 Параметры настройки UTF (mbstring и константа BX_UTF) (check_mbstring): Ok
 Правильные. Сайт работает в UTF кодировке
-2018-Sep-27 21:20:55 Служебные скрипты в корне сайта (check_install_scripts): Ok
+2018-Oct-29 04:47:34 Служебные скрипты в корне сайта (check_install_scripts): Ok
 Отсутствуют
-2018-Sep-27 21:20:55 Работа с сокетами (check_socket): Ok
-Connection to kargo24.su:80	Success
+2018-Oct-29 04:47:34 Работа с сокетами (check_socket): Ok
+Connection to www.kargo24.su:80	Success
 
 Успешно
-2018-Sep-27 21:20:55 Выполнение агентов на cron (check_bx_crontab): Warning
+2018-Oct-29 04:47:34 Выполнение агентов на cron (check_bx_crontab): Warning
 Замечание. Агенты выполняются на хитах, рекомендуется перевести выполнение агентов на cron

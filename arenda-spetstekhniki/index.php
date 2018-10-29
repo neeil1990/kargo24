@@ -1,6 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("АРЕНДА СПЕЦТЕХНИКИ");
+$APPLICATION->SetPageProperty("title", "Title");
+$APPLICATION->SetTitle("АРЕНДА СПЕЦТЕХНИКИ1111");
 $url = $APPLICATION->GetCurPage();
 
 if(preg_match("/\\/(.*)\\/filter\\/(.*)\\/apply/",$url,$clear_property_type)){
