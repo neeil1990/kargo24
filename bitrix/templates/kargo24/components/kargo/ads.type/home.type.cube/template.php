@@ -1,14 +1,29 @@
 <? if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die(); ?>
 
 <? if(count($arResult['ITEMS']) > 0): ?>
-    <div class="section-title <?=$arParams['CLASS_TITLE']?>">
-        <?
-        $res = CIBlock::GetByID($arParams["IBLOCK_ID"]);
-        if($ar_res = $res->GetNext())
-            echo $ar_res['NAME'];
-        ?>
-    </div>
     <div class="<?=$arParams['CLASS_BODY']?> wrapper-unified-column <?=$arParams['CLASS_TITLE']?>">
+
+        <? if(count($arParams['ADDITIONAL_BLOCK']) > 0):?>
+
+            <? foreach ($arParams['ADDITIONAL_BLOCK'] as &$block): ?>
+                <div class="unified-column">
+                    <div class="unified-unit-service">
+                        <a href="<?=$block['LINK']?>">
+                            <div class="item-img">
+                                <img src="<?=$block['IMG']?>" alt="<?=$block['NAME']?>">
+                            </div>
+                            <div class="item-desc">
+                                <h3 class="title">
+                                    <?=$block['NAME']?>
+                                </h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            <? endforeach; ?>
+
+        <? endif; ?>
+
         <? foreach ($arResult['ITEMS'] as &$arSection): ?>
             <div class="unified-column">
                 <div class="unified-unit-service">

@@ -27,10 +27,16 @@ $APPLICATION->SetTitle('CarGo24');
             <div class="row">
 
                 <div class="col-sm-9">
+                    <div class="section-title">
+                        <?= tplvar('title_ib2', true);?>
+                    </div>
                     <?$APPLICATION->IncludeComponent("kargo:ads.type", "home.type.cube", Array(
                         "IBLOCK_ID" => "2",	// Инфоблок
                         "IBLOCK_TYPE" => "content",	// Тип инфоблока
                         "SORT" => "NAME",	// Порядок сортировки тегов
+                        "ADDITIONAL_BLOCK" => array(
+                            array("IMG" => "/upload/main_images/2/1.png","LINK" => "/gruzovye-perevozki/","NAME" => "ГРУЗОВЫЕ ПЕРЕВОЗКИ"),
+                        ),
                         ),
                         false
                     );?>
@@ -61,13 +67,7 @@ $APPLICATION->SetTitle('CarGo24');
     <section class="special-equipment-section">
         <div class="container">
             <div class="section-title">
-                <?
-                if(CModule::IncludeModule("iblock")):
-                    $res = CIBlock::GetByID(1);
-                    if($ar_res = $res->GetNext())
-                        echo $ar_res['NAME'];
-                endif;
-                ?>
+                <?= tplvar('title_ib1', true);?>
             </div>
 
             <?$APPLICATION->IncludeComponent("bitrix:news.line", "Iblock.list", Array(
@@ -164,10 +164,16 @@ $APPLICATION->SetTitle('CarGo24');
                     </div>
                 </div>
                 <div class="col-sm-9">
+                    <div class="section-title">
+                        <?= tplvar('title_ib3', true);?>
+                    </div>
                     <?$APPLICATION->IncludeComponent("kargo:ads.type", "home.type.cube", Array(
                         "IBLOCK_ID" => "3",	// Инфоблок
                         "IBLOCK_TYPE" => "content",	// Тип инфоблока
                         "SORT" => "NAME",	// Порядок сортировки тегов
+                        "ADDITIONAL_BLOCK" => array(
+                            array("IMG" => "/upload/main_images/3/1.png","LINK" => "/arenda-stroitelnogo-oborudovaniya/","NAME" => "Аренда строй-оборудования"),
+                        ),
                     ),
                         false
                     );?>
@@ -182,23 +188,33 @@ $APPLICATION->SetTitle('CarGo24');
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-md-6 col-sm-12">
+                    <div class="section-title white">
+                        <?= tplvar('title_ib6', true);?>
+                    </div>
                     <?$APPLICATION->IncludeComponent("kargo:ads.type", "home.type.cube", Array(
                         "IBLOCK_ID" => "6",	// Инфоблок
                         "IBLOCK_TYPE" => "content",	// Тип инфоблока
                         "SORT" => "NAME",	// Порядок сортировки тегов
-                        "CLASS_TITLE" => "white",
                         "CLASS_BODY" => "accompanying-services-content",
+                        "ADDITIONAL_BLOCK" => array(
+                            array("IMG" => "/upload/main_images/6/1.png","LINK" => "/services/","NAME" => "СОПУТСТВУЮЩИЕ УСЛУГИ"),
+                        ),
                     ),
                         false
                     );?>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 right-block">
+                    <div class="section-title white">
+                        <?= tplvar('title_ib7', true);?>
+                    </div>
                     <?$APPLICATION->IncludeComponent("kargo:ads.type", "home.type.cube", Array(
                         "IBLOCK_ID" => "7",	// Инфоблок
                         "IBLOCK_TYPE" => "content",	// Тип инфоблока
                         "SORT" => "NAME",	// Порядок сортировки тегов
-                        "CLASS_TITLE" => "white",
                         "CLASS_BODY" => "passenger-transportation-content",
+                        "ADDITIONAL_BLOCK" => array(
+                            array("IMG" => "/upload/main_images/7/1.png","LINK" => "/passenger/","NAME" => "ПАССАЖИРСКИЕ ПЕРЕВОЗКИ"),
+                        ),
                     ),
                         false
                     );?>
@@ -211,12 +227,17 @@ $APPLICATION->SetTitle('CarGo24');
 
     <section class="construction-materials-section">
         <div class="container">
+            <div class="section-title">
+                <?= tplvar('title_ib8', true);?>
+            </div>
             <?$APPLICATION->IncludeComponent("kargo:ads.type", "home.type.cube", Array(
                 "IBLOCK_ID" => "8",	// Инфоблок
                 "IBLOCK_TYPE" => "content",	// Тип инфоблока
                 "SORT" => "NAME",	// Порядок сортировки тегов
-                "CLASS_TITLE" => "",
                 "CLASS_BODY" => "construction-materials-content",
+                "ADDITIONAL_BLOCK" => array(
+                    array("IMG" => "/upload/main_images/8/1.png","LINK" => "/materials/","NAME" => "СТРОИТЕЛЬНЫЕ МАТЕРИАЛЫ"),
+                ),
             ),
                 false
             );?>
