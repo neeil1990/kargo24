@@ -13412,3 +13412,11 @@ h3 {
   border-color: #6d96ab;
 }
 
+.special-equipment-title a:hover .equipment-title-item .equipment-title-content{
+  background-color: #6d96ab;
+  color: white;
+}
+.special-equipment-title a:hover .equipment-title-item .equipment-title-img{
+  border-color: #6d96ab;
+}
+
