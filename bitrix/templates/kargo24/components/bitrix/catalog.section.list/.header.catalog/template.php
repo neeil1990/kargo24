@@ -15,7 +15,7 @@ $this->setFrameMode(true);
 <section class="title-section category">
 	<div class="container">
 		<h1 class="title">
-			<?=($arResult['TITLE']) ? $arResult['TITLE'] : $APPLICATION->ShowTitle(false);?>
+			<?=($arResult['TITLE']) ? $arResult['TITLE'] : $APPLICATION->GetProperty("title");?>
 		</h1>
 	</div>
 </section>
