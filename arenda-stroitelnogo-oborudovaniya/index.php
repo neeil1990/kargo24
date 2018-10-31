@@ -1,55 +1,9 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("АРЕНДА СПЕЦТЕХНИКИ, ПРОДАЖА СПЕЦТЕХНИКИ, ЗАПЧАСТИ И РЕМОНТ");
-$url = $APPLICATION->GetCurPage();
 
-if(preg_match("/\\/(.*)\\/filter\\/(.*)\\/apply/",$url,$clear_property_type)){
-
-    $codes = explode('/',$clear_property_type[1]);
-    if($codes){
-        $code = $codes[count($codes)-1];
-    }
-    $filter = $clear_property_type[2];
-
-}else{
-    if($url = substr($url, 1, -1)){
-        $codes = explode('/',$url);
-        if($codes){
-            $code = $codes[count($codes)-1];
-        }
-    }
-    $filter = false;
-}
+catalog_header(3);
 ?>
-
-<?$APPLICATION->IncludeComponent("bitrix:catalog.section.list", ".header.catalog", Array(
-    "ADD_SECTIONS_CHAIN" => "N",	// Включать раздел в цепочку навигации
-    "CACHE_GROUPS" => "Y",	// Учитывать права доступа
-    "CACHE_TIME" => "36000000",	// Время кеширования (сек.)
-    "CACHE_TYPE" => "N",	// Тип кеширования
-    "COUNT_ELEMENTS" => "Y",	// Показывать количество элементов в разделе
-    "IBLOCK_ID" => "3",	// Инфоблок
-    "IBLOCK_TYPE" => "content",	// Тип инфоблока
-    "SECTION_CODE" => $code,	// Код раздела
-    "FILTER" => $filter,	// Код раздела
-    "SECTION_FIELDS" => array(	// Поля разделов
-        0 => "",
-        1 => "",
-    ),
-    "SECTION_ID" => $_REQUEST["SECTION_ID"],	// ID раздела
-    "SECTION_URL" => "",	// URL, ведущий на страницу с содержимым раздела
-    "SECTION_USER_FIELDS" => array(	// Свойства разделов
-        0 => "UF_FILTER_TITLE",
-        1 => "",
-    ),
-    "SHOW_PARENT_NAME" => "Y",	// Показывать название раздела
-    "TOP_DEPTH" => "2",	// Максимальная отображаемая глубина разделов
-    "VIEW_MODE" => "LINE",	// Вид списка подразделов
-),
-    false
-);?>
-
-
     <section class="category-section">
         <div class="container">
             <div class="row">
