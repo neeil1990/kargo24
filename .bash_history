@@ -88,3 +88,17 @@ git pull
 git pull
 git pull
 git pull
+ls
+git status
+git add .
+git commit -a -m 'srv'
+git push
+git push
+git status
+git pull
+ды
+ls
+git status
+git pull
+zip -r upload.zip ./upload/
+git pull

@@ -1,6 +1,7 @@
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
-$APPLICATION->SetTitle('CarGo24');
+$APPLICATION->SetPageProperty("title", "Title");
+$APPLICATION->SetTitle("Kargo24.su - портал объявлений от частных лиц и компаний в сфере спецтехники и грузоперевозок");
 ?>
 
         <section class="main-section">

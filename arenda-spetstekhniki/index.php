@@ -1,7 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetPageProperty("title", "Title");
-$APPLICATION->SetTitle("АРЕНДА СПЕЦТЕХНИКИ1111");
+$APPLICATION->SetPageProperty("title", "Аренда спецтехники в РФ с экипажем или без, от частных лиц или компаний на портале kargo24.su");
+$APPLICATION->SetTitle("тут h1 - Аренда спецтехники в РФ с экипажем или без, от частных лиц или компаний на портале kargo24.su");
 $url = $APPLICATION->GetCurPage();
 
 if(preg_match("/\\/(.*)\\/filter\\/(.*)\\/apply/",$url,$clear_property_type)){
