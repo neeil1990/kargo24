@@ -40,6 +40,14 @@ $arUrlRewrite=array (
     'PATH' => '/gruzovye-perevozki/index.php',
     'SORT' => 100,
   ),
+  14 => 
+  array (
+    'CONDITION' => '#^/personal/(.*?)/#',
+    'RULE' => 'SECTION_CODE=$1',
+    'ID' => 'kargo:main.profile',
+    'PATH' => '/personal/index.php',
+    'SORT' => 100,
+  ),
   6 => 
   array (
     'CONDITION' => '#^/passenger/#',

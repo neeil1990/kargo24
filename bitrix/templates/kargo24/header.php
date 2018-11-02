@@ -71,8 +71,8 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 						<div class="head-personal-account">
 							<div class="account-head"><span class="icon icon-user"></span><span class="text">Личый кабинет</span></div>
 							<ul class="log-register">
-								<li><a href="">Вход</a></li>
-								<li><a href="">Регистрация</a></li>
+								<li><a href="/register/">Вход</a></li>
+								<li><a href="/register/">Регистрация</a></li>
 							</ul>
 						</div>
 					</div>
