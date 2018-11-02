@@ -1,5 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetPageProperty("description", "TITLE - на самом деле H1");
+$APPLICATION->SetPageProperty("keywords", "H1 - на самом деле Title");
 $APPLICATION->SetPageProperty("title", "Аренда спецтехники в РФ с экипажем или без, от частных лиц или компаний на портале kargo24.su");
 $APPLICATION->SetTitle("тут h1 - Аренда спецтехники в РФ с экипажем или без, от частных лиц или компаний на портале kargo24.su");
 catalog_header(1);

@@ -102,3 +102,20 @@ git status
 git pull
 zip -r upload.zip ./upload/
 git pull
+ls
+git status
+git add .
+git commit -a -m 'srv'
+git push
+git push
+git status
+git pull
+git pull
+git status
+git checkout arenda-spetstekhniki/index.php
+git status
+git pull
+git status
+git pull
+git status
+git pull
