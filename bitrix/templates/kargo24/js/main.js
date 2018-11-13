@@ -209,4 +209,33 @@ $(function() {
     }
   });
 
+
+
+  $('.form-group.options[data-option-id="'+ $('.js-select-ads').change().val() +'"]').show();
+  $('.form-group.type[data-type-id="'+ $('.js-select-ads').change().val() +'"]').show();
+  $('.js-select-ads').selectric({
+    maxHeight: 200,
+    disableOnMobile: false,
+    nativeOnMobile: false,
+    onChange: function(element) {
+      $('.form-group.options').hide();
+      $('.form-group.type').hide();
+      var id_iblock = $(element).change().val();
+      if(id_iblock > 0){
+        $('.form-group.options[data-option-id="'+id_iblock+'"]').show( "slow" );
+        $('.form-group.type[data-type-id="'+id_iblock+'"]').show( "slow" );
+      }
+    },
+  });
+
+  $( "#city_ads" ).autocomplete({
+    source: availableTags,
+    change: function( event, ui ) {
+      if(!ui.item){
+        $(this).val("");
+      }
+    }
+  });
+
+
 });

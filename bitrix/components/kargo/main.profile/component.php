@@ -50,21 +50,21 @@ if($_SERVER["REQUEST_METHOD"]=="POST" && ($_REQUEST["save"] <> '' || $_REQUEST["
 	{
 		$bOk = false;
 		$obUser = new CUser;
-	
+
 		$arPERSONAL_PHOTO = $_FILES["PERSONAL_PHOTO"];
 		$arWORK_LOGO = $_FILES["WORK_LOGO"];
-	
+
 		$rsUser = CUser::GetByID($arResult["ID"]);
 		$arUser = $rsUser->Fetch();
 		if($arUser)
 		{
 			$arPERSONAL_PHOTO["old_file"] = $arUser["PERSONAL_PHOTO"];
 			$arPERSONAL_PHOTO["del"] = $_REQUEST["PERSONAL_PHOTO_del"];
-	
+
 			$arWORK_LOGO["old_file"] = $arUser["WORK_LOGO"];
 			$arWORK_LOGO["del"] = $_REQUEST["WORK_LOGO_del"];
 		}
-	
+
 		$arEditFields = array(
 			"TITLE",
 			"NAME",
@@ -143,7 +143,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST" && ($_REQUEST["save"] <> '' || $_REQUEST["
 		}
 
 		$USER_FIELD_MANAGER->EditFormAddFields("USER", $arFields);
-	
+
 		if(!$obUser->Update($arResult["ID"], $arFields))
 			$strError .= $obUser->LAST_ERROR;
 	}
@@ -302,7 +302,7 @@ if (CModule::IncludeModule("blog"))
 			$arResult["arBlogUser"][$key] = htmlspecialcharsbx($val);
 		}
 	}
-	
+
 	if (!isset($arResult["arBlogUser"]["ALLOW_POST"]) || ($arResult["arBlogUser"]["ALLOW_POST"]!="Y" && $arResult["arBlogUser"]["ALLOW_POST"]!="N"))
 		$arResult["arBlogUser"]["ALLOW_POST"] = "Y";
 }
@@ -388,7 +388,7 @@ $arResult["BX_SESSION_CHECK"] = bitrix_sessid_post();
 $arResult["DATE_FORMAT"] = CLang::GetDateFormat("SHORT");
 
 $arResult["COOKIE_PREFIX"] = COption::GetOptionString("main", "cookie_name", "BITRIX_SM");
-if (strlen($arResult["COOKIE_PREFIX"]) <= 0) 
+if (strlen($arResult["COOKIE_PREFIX"]) <= 0)
 	$arResult["COOKIE_PREFIX"] = "BX";
 
 // ********************* User properties ***************************************************
@@ -417,7 +417,7 @@ if (!empty($arParams["USER_PROPERTY"]))
 if($arParams["SET_TITLE"] == "Y")
 	$APPLICATION->SetTitle(GetMessage("PROFILE_DEFAULT_TITLE"));
 
-if($bOk) 
+if($bOk)
 	$arResult['DATA_SAVED'] = 'Y';
 
 //time zones
@@ -427,10 +427,37 @@ if($arResult["TIME_ZONE_ENABLED"])
 
 $arResult["EMAIL_REQUIRED"] = (COption::GetOptionString("main", "new_user_email_required", "Y") <> "N");
 
-$arResult['SECTION_CODE'] = (preg_match("/\\?/",$_REQUEST['SECTION_CODE'])) ? stristr($_REQUEST['SECTION_CODE'], '?', true) : $_REQUEST['SECTION_CODE'];
+
+$arDefaultUrlTemplates404 = array(
+	"personal" => "",
+	"search" => "search/",
+	"rss" => "rss/",
+	"rss_section" => "#SECTION_ID#/rss/",
+	"detail" => "#ELEMENT_ID#/",
+	"section" => "",
+);
+
+$arVariables = array();
+$arUrlTemplates = CComponentEngine::makeComponentUrlTemplates($arDefaultUrlTemplates404, array(
+	"personal" => "",
+	"section" => "#SECTION_CODE#/",
+	"detail" => "#SECTION_CODE#/#ELEMENT_CODE#/",
+));
+
+$engine = new CComponentEngine($this);
+
+$componentPage = $engine->guessComponentPath(
+	'/personal/',
+	$arUrlTemplates,
+	$arVariables
+);
+
+$arResult['ELEMENT_CODE'] = $arVariables['ELEMENT_CODE'];
+$arResult['SECTION_CODE'] = $arVariables['SECTION_CODE'];
 if(empty($arResult['SECTION_CODE'])){
 	$arResult['SECTION_CODE'] = "main";
 }
+
 //secure authorization
 $arResult["SECURE_AUTH"] = false;
 if(!CMain::IsHTTPS() && COption::GetOptionString('main', 'use_encrypted_auth', 'N') == 'Y')

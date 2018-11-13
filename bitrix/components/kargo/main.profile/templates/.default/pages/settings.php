@@ -7,7 +7,11 @@
 if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
     die();
 ?>
-<input type="hidden" id="login" name="LOGIN" value="<? echo $arResult["arUser"]["LOGIN"]?>">
+<form method="post" class="personal-area-settings-form unified-form"  name="form1" action="<?=$arResult["FORM_TARGET"]?>" enctype="multipart/form-data">
+    <?=$arResult["BX_SESSION_CHECK"]?>
+    <input type="hidden" name="lang" value="<?=LANG?>" />
+    <input type="hidden" name="ID" value=<?=$arResult["ID"]?> />
+    <input type="hidden" id="login" name="LOGIN" value="<? echo $arResult["arUser"]["LOGIN"]?>">
 
 <h3 class="form-title">Изменение пароля</h3>
 <div class="form-box">
@@ -92,3 +96,6 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
         </label>
     </div>
 </div>
+
+</form>
+<!-- end uniefed-form -->

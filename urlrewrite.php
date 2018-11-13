@@ -42,8 +42,8 @@ $arUrlRewrite=array (
   ),
   14 => 
   array (
-    'CONDITION' => '#^/personal/(.*?)/#',
-    'RULE' => 'SECTION_CODE=$1',
+    'CONDITION' => '#^/personal/#',
+    'RULE' => '',
     'ID' => 'kargo:main.profile',
     'PATH' => '/personal/index.php',
     'SORT' => 100,

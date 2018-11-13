@@ -79,6 +79,30 @@ class IPGeoBase
 		return false;
 	}
 
+	public function getCity()
+	{
+		$arCity = array();
+		rewind($this->fhandleCities);
+		while(!feof($this->fhandleCities))
+		{
+			$str = fgets($this->fhandleCities);
+			$arRecord = explode("\t", trim($str));
+
+			if($arRecord[1])
+			$arCity[$arRecord[1]] = array(
+					'city' => $arRecord[1],
+					'region' => $arRecord[2],
+					'district' => $arRecord[3],
+					'lat' => $arRecord[4],
+					'lng' => $arRecord[5]);
+
+		}
+		if($arCity)
+			return $arCity;
+		else
+			return false;
+	}
+
     /*
      * @brief Получение гео-информации по IP
      * @param ip IPv4-адрес

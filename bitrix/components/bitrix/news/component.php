@@ -106,6 +106,7 @@ if($arParams["SEF_MODE"] == "Y")
 		$engine->addGreedyPart("#SECTION_CODE_PATH#");
 		$engine->setResolveCallback(array("CIBlockFindTools", "resolveComponentEngine"));
 	}
+
 	$componentPage = $engine->guessComponentPath(
 		$arParams["SEF_FOLDER"],
 		$arUrlTemplates,

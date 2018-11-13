@@ -76,11 +76,6 @@ else
 				</div>
 			</div>
 			<div class="col-sm-9">
-				<form method="post" class="personal-area-settings-form unified-form"  name="form1" action="<?=$arResult["FORM_TARGET"]?>" enctype="multipart/form-data">
-					<?=$arResult["BX_SESSION_CHECK"]?>
-					<input type="hidden" name="lang" value="<?=LANG?>" />
-					<input type="hidden" name="ID" value=<?=$arResult["ID"]?> />
-
 					<?
 					$filename = $_SERVER["DOCUMENT_ROOT"].$templateFolder."/pages/".$arResult['SECTION_CODE'].'.php';
 					if (file_exists($filename)) {
@@ -89,9 +84,6 @@ else
 						echo "Страница $arResult[SECTION_CODE] не существует";
 					}
 					?>
-
-				</form>
-				<!-- end uniefed-form -->
 				<div class="unified-ad-unit mobile">
 					<div class="ad-unit-head">
 						<div class="logo">
