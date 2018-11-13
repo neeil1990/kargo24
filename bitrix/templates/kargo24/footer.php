@@ -88,13 +88,13 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 						</div>
 						<div class="footer-bottom-info">
 							<div class="copyright">
-								&#169;Портал “KarGo24” 2007 г - 2017 г
+								&#169;Портал “KarGo24” 2018 г.
 							</div>
 							<p class="text">
 								Диспетчерский интернет сервис по поиску спецтехники и грузовиков.
 							</p>
 							<p class="text">
-								В базе сайта 196843 частных объявлений.
+								
 							</p>
 						</div>
 					</div>

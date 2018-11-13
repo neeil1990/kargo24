@@ -1,6 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("АРЕНДА СПЕЦТЕХНИКИ, ПРОДАЖА СПЕЦТЕХНИКИ, ЗАПЧАСТИ И РЕМОНТ");
+$APPLICATION->SetPageProperty("title", "Аренда строительного оборудования в России");
+$APPLICATION->SetTitle("Аренда строительного оборудования в России");
 
 catalog_header(3);
 ?>

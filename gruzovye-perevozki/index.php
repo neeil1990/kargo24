@@ -1,6 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("ГРУЗОВЫЕ ПЕРЕВОЗКИ, ПОПУТНЫЙ ТРАНСПОРТ, ПОИСК ГРУЗОВ, РАСЧЁТ ПУТИ");
+$APPLICATION->SetPageProperty("title", "Грузовые перевозки по России");
+$APPLICATION->SetTitle("Грузовые перевозки по России");
 catalog_header(2);
 ?>
     <section class="category-section">

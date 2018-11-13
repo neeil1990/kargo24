@@ -1,6 +1,6 @@
 <?php
 $arUrlRewrite=array (
-  3 => 
+  16 => 
   array (
     'CONDITION' => '#^/arenda-stroitelnogo-oborudovaniya/#',
     'RULE' => '',
@@ -32,7 +32,7 @@ $arUrlRewrite=array (
     'PATH' => '/zapchasti-i-remont/index.php',
     'SORT' => 100,
   ),
-  2 => 
+  15 => 
   array (
     'CONDITION' => '#^/gruzovye-perevozki/#',
     'RULE' => '',
