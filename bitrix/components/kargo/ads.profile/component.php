@@ -61,16 +61,28 @@ if($_SERVER["REQUEST_METHOD"]=="POST" && ($_REQUEST["ads_save"] <> '' || $_REQUE
 		}
 	}
 
-	if($city = trim(strip_tags($_REQUEST['city']))){
-		$arResult['IBLOCK_SECTION_NAME'] = $city;
-		$arResult['IBLOCK_SECTION_ID'] = $this->getSectionIDByName($arResult['IBLOCK_ID'],$arResult['IBLOCK_SECTION_NAME']);
+	if($region = trim(strip_tags($_REQUEST['region']))){
+		$arResult['REGION'] = $region;
+	}
+
+
+	if($arCity = $_REQUEST['city']){
+		$arCityId = array();
+		foreach($arCity as $city){
+			if($city){
+				$arCityId[] = $this->getSectionIDByName($arResult['IBLOCK_ID'],$city);
+			}
+		}
+		$arResult['IBLOCK_SECTION_NAME'] = implode(', ',$arCity);
+		$arResult['IBLOCK_SECTION_ID'] = $arCityId;
 	}
 
 	$arResult['RENTAL_INFO'] = array(
 		array("VALUE" => $arResult['PRICE'],"DESCRIPTION" => "coins"),
 		array("VALUE" => $arResult['PHONE'],"DESCRIPTION" => "phone"),
 		array("VALUE" => $arResult['FIO'],"DESCRIPTION" => "man-user"),
-		array("VALUE" => $arResult['IBLOCK_SECTION_NAME'],"DESCRIPTION" => "pin")
+		array("VALUE" => $arResult['IBLOCK_SECTION_NAME'],"DESCRIPTION" => "pin"),
+		array("VALUE" => $arResult['REGION'],"DESCRIPTION" => "location")
 	);
 
 	$arResult['CODE'] = md5($arResult['NAME'].$arResult['PHONE'].$USER->GetID());
@@ -85,7 +97,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST" && ($_REQUEST["ads_save"] <> '' || $_REQUE
 	$arLoadProductArray = Array(
 		"MODIFIED_BY" => $USER->GetID(), // элемент изменен текущим пользователем
 		"CODE" => $arResult['CODE'],
-		"IBLOCK_SECTION_ID" => $arResult['IBLOCK_SECTION_ID'],          // элемент лежит в корне раздела
+		"IBLOCK_SECTION" => $arResult['IBLOCK_SECTION_ID'],          // элемент лежит в корне раздела
 		"IBLOCK_ID"      => $arResult['IBLOCK_ID'],
 		"PROPERTY_VALUES" => $PROP,
 		"NAME"           => $arResult['NAME'],
@@ -100,7 +112,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST" && ($_REQUEST["ads_save"] <> '' || $_REQUE
 		if(!$res){
 			echo "Error: ".$el->LAST_ERROR;
 		}else{
-			LocalRedirect("/personal/");
+			//LocalRedirect("/personal/");
 		}
 	}else{
 		if(is_numeric($_REQUEST['ID']) && (int)$_REQUEST['ID'] > 0){
@@ -108,7 +120,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST" && ($_REQUEST["ads_save"] <> '' || $_REQUE
 		}
 
 		if($PRODUCT_ID = $el->Add($arLoadProductArray))
-			LocalRedirect("/personal/");
+			"";//LocalRedirect("/personal/");
 		else
 			echo "Error: ".$el->LAST_ERROR;
 	}
@@ -135,14 +147,8 @@ $location = new IPGeoBase();
 $city = $location->getCity();
 ksort($city);
 if($city){
-	$arCity = array();
-	foreach($city as $c){
-		$arCity[] = $c['city'];
-	}
 	$arResult['LOCATIONS'] = $city;
-	$arResult['LOCATIONS_JS'] = json_encode($arCity);
 }
-
 
 $arSelect = Array("ID", "IBLOCK_ID","ACTIVE", "NAME","PREVIEW_PICTURE","PREVIEW_TEXT", "TIMESTAMP_X","DATE_CREATE","PROPERTY_*");
 $arFilter = Array("IBLOCK_ID" => $iBlock_id,"IBLOCK_TYPE" => $iBlock_type,"MODIFIED_BY" => $USER->GetID());

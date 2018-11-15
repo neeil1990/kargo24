@@ -89,7 +89,7 @@ class IPGeoBase
 			$arRecord = explode("\t", trim($str));
 
 			if($arRecord[1])
-			$arCity[$arRecord[1]] = array(
+			$arCity[$arRecord[2]][$arRecord[1]] = array(
 					'city' => $arRecord[1],
 					'region' => $arRecord[2],
 					'district' => $arRecord[3],

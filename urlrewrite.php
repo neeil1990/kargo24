@@ -40,14 +40,6 @@ $arUrlRewrite=array (
     'PATH' => '/gruzovye-perevozki/index.php',
     'SORT' => 100,
   ),
-  14 => 
-  array (
-    'CONDITION' => '#^/personal/#',
-    'RULE' => '',
-    'ID' => 'kargo:main.profile',
-    'PATH' => '/personal/index.php',
-    'SORT' => 100,
-  ),
   6 => 
   array (
     'CONDITION' => '#^/passenger/#',
@@ -62,6 +54,14 @@ $arUrlRewrite=array (
     'RULE' => '',
     'ID' => 'bitrix:catalog',
     'PATH' => '/materials/index.php',
+    'SORT' => 100,
+  ),
+  14 => 
+  array (
+    'CONDITION' => '#^/personal/#',
+    'RULE' => '',
+    'ID' => 'kargo:main.profile',
+    'PATH' => '/personal/index.php',
     'SORT' => 100,
   ),
   5 => 

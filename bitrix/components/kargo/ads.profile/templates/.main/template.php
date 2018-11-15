@@ -41,7 +41,7 @@ if(count($arResult["ITEMS"]) > 0): ?>
             </div>
             <div class="col-lg-4">
                 <div class="ads-btn">
-                    <a href="/personal/edit-ads/<?=$arItem['ID']?>/" class="edit-btn">Редактировать</a>
+                    <a href="/personal/ads/<?=$arItem['ID']?>/" class="edit-btn">Редактировать</a>
                     <a href="" class="delete-btn">Удалить</a>
                 </div>
             </div>
@@ -102,7 +102,7 @@ if(count($arResult["ITEMS"]) > 0): ?>
     <!-- end ready-made-ads-item -->
     <? endforeach; ?>
     <div class="add-advert-btn">
-        <a href="/personal/add-ads/" class="limed-spruce-btn">Добавить объявление<span class="arrow"></span></a>
+        <a href="/personal/ads/" class="limed-spruce-btn">Добавить объявление<span class="arrow"></span></a>
     </div>
 
 
@@ -132,7 +132,7 @@ if(count($arResult["ITEMS"]) > 0): ?>
 										<span class="icon-check">
 											<span class="path1"></span><span class="path2"></span>
 										</span>
-            <a href="/personal/add-ads/">Добавьте объявление</a> и заказчики смогут связаться с Вами напрямую.
+            <a href="/personal/ads/">Добавьте объявление</a> и заказчики смогут связаться с Вами напрямую.
         </li>
         <li>
 										<span class="icon-check">
@@ -150,7 +150,7 @@ if(count($arResult["ITEMS"]) > 0): ?>
 										<span class="icon-check">
 											<span class="path1"></span><span class="path2"></span>
 										</span>
-            <a href="/personal/add-ads/">Добавте объявление</a> и заказчики смогут связаться с Вами напрямую.
+            <a href="/personal/ads/">Добавте объявление</a> и заказчики смогут связаться с Вами напрямую.
         </li>
         <li>
 										<span class="icon-check">
