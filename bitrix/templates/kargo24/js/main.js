@@ -203,6 +203,7 @@ $(function() {
 
 
   $('.form-group.type[data-type-id="'+ $('.js-select-ads').change().val() +'"]').show();
+  console.log($('.js-select-ads').change().val(),$('.js-select-type').change().val());
   $('.form-group.options[data-type="'+ $('.js-select-ads').change().val() +'_'+ $('.js-select-type').change().val() +'"]').show( "slow" );
   $('.js-select-ads').selectric({
     maxHeight: 200,
