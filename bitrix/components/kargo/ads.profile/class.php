@@ -61,9 +61,25 @@ class AdsProfileComponent extends CBitrixComponent
         ));
         $resultHighload = array();
         while($res = $result->fetch()) {
-            $resultHighload[] = $res;
+            $resultHighload[$res[ID]] = $res;
+            if($res['UF_OPTIONS']){
+                $resultHighload[$res[ID]]['UF_OPTIONS'] = $this->getElements(Array("SECTION_ID" => $res['UF_OPTIONS']));
+            }
         }
         return $resultHighload;
+    }
+
+    public function getElements($arFilter){
+        $arSelect = Array("ID", "IBLOCK_ID", "NAME","PROPERTY_*");
+        $res = CIBlockElement::GetList(Array(), $arFilter, false, false, $arSelect);
+        $arResult = array();
+        while($ob = $res->GetNextElement()){
+            $arFields = $ob->GetFields();
+            $arProps = $ob->GetProperties();
+            $arResult[$arFields[ID]] = $arFields;
+            $arResult[$arFields[ID]]['PROPERTIES'] = $arProps;
+        }
+        return $arResult;
     }
 
     public function getSectionIDByName($IBLOCK_ID,$name){

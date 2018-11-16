@@ -18,3 +18,5 @@ if($region = $arResult['ITEMS']['PROPERTIES']['RENTAL_INFO']['VALUE'][array_flip
 if($strCity = $arResult['ITEMS']['PROPERTIES']['RENTAL_INFO']['VALUE'][array_flip(($arResult['ITEMS']['PROPERTIES']['RENTAL_INFO']['DESCRIPTION']))['pin']]){
     $arResult['ITEMS']['CITY'] = $strCity;
 }
+
+$arResult['ITEMS']['PROPERTIES']['OPTIONS']['VALUE'] = array_combine($arResult['ITEMS']['PROPERTIES']['OPTIONS']['DESCRIPTION'], $arResult['ITEMS']['PROPERTIES']['OPTIONS']['VALUE']);

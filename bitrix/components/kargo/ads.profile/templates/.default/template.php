@@ -45,7 +45,7 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
             <div class="row form-group type" data-type-id="<?=$id;?>">
                 <div class="col-sm-5"><span class="input-title"></span></div>
                 <div class="col-sm-7">
-                    <select class="js-select" name="type[<?=$id?>]">
+                    <select class="js-select-type" name="type[<?=$id?>]">
                         <? foreach($h_iblock as $block): ?>
                         <option value="<?=$block['UF_XML_ID']?>" <?=($block['UF_XML_ID'] == $arResult['ITEMS']['PROPERTIES']['TYPE']['VALUE'])?"selected":""?>><?=$block['UF_NAME']?></option>
                         <? endforeach; ?>
@@ -56,17 +56,46 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
 
             <h3 class="form-title">Характеристики.</h3>
 
-            <? foreach($arParams['OPTIONS_IBLOCK_ID'] as $id => $array): ?>
-                <? foreach($array as $value_id => $option):?>
-                <div class="row form-group options" data-option-id="<?=$id;?>">
-                    <input type="hidden" name="options_name[<?=$id.'_'.$value_id;?>]" value="<?=$option?>">
-                    <div class="col-sm-5">
-                        <span class="input-title"><?=$option;?></span>
-                    </div>
-                    <div class="col-sm-7">
-                        <input type="text" name="options_value[<?=$id.'_'.$value_id;?>]" value="<?=$arResult['ITEMS']['PROPERTIES']['OPTIONS']['VALUE'][array_flip(($arResult['ITEMS']['PROPERTIES']['OPTIONS']['DESCRIPTION']))[$option]];?>" class="text-input">
-                    </div>
-                </div>
+            <? foreach($arResult['HIGHLOAD_IBLOCK'] as $id_iblock => $arOptions): ?>
+                <? foreach($arOptions as $arOption): ?>
+                    <?
+                    if($arOption['UF_OPTIONS']){
+                        foreach($arOption['UF_OPTIONS'] as $option){
+                            ?>
+                            <div class="row form-group options" data-type="<?=$id_iblock.'_'.$arOption['UF_XML_ID']?>">
+                                <div class="col-sm-5">
+                                    <span class="input-title"><?=$option['NAME']?></span>
+                                    <input type="hidden" name="options_name[<?=$id_iblock?>][<?=$arOption['UF_XML_ID']?>][]" value="<?=$option['NAME']?>">
+                                </div>
+                                <div class="col-sm-7">
+                                    <? switch($option['PROPERTIES']['FIELD_TYPE']['VALUE_XML_ID']){
+                                        case "string": ?>
+                                            <input type="text"
+                                                   class="text-input"
+                                                   name="options_value[<?=$id_iblock?>][<?=$arOption['UF_XML_ID']?>][]"
+                                                   value="<?=($arResult['ITEMS']['IBLOCK_ID'] == $id_iblock) ? $arResult['ITEMS']['PROPERTIES']['OPTIONS']['VALUE'][trim(strip_tags($option['NAME']))] : "";?>"
+                                                >
+                                            <?
+                                            break;
+                                        case "select":
+                                            ?>
+                                            <select class="js-select" name="options_value[<?=$id_iblock?>][<?=$arOption['UF_XML_ID']?>][]">
+                                                <? foreach($option['PROPERTIES']['SELECT']['VALUE'] as $select):?>
+                                                <option
+                                                    value="<?=$select?>"
+                                                    <?=($arResult['ITEMS']['IBLOCK_ID'] == $id_iblock && $arResult['ITEMS']['PROPERTIES']['OPTIONS']['VALUE'][trim(strip_tags($option['NAME']))] == $select) ? "selected" : "";?>
+                                                    ><?=$select?></option>
+                                                <? endforeach; ?>
+                                            </select>
+                                            <?
+                                            break;
+                                    }?>
+                                </div>
+                            </div>
+                            <?
+                        }
+                    }
+                    ?>
                 <? endforeach; ?>
             <? endforeach; ?>
 

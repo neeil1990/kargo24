@@ -50,20 +50,9 @@ $arComponentParameters = array(
             "SIZE" => 10,
             "DEFAULT" => '',
             "MULTIPLE" => "Y",
-            "REFRESH" => "Y",
         ),
     ),
 );
 
-foreach($arCurrentValues['IBLOCK_ID'] as $iblock){
-    $arComponentParameters["PARAMETERS"]["OPTIONS_IBLOCK_".$iblock] = array(
-        "PARENT" => "BASE",
-        "NAME" => "Характеристики для Инфо Блока ".$arIBlocks[$iblock],
-        "TYPE" => "STRING",
-        "DEFAULT" => "",
-        "MULTIPLE" => "Y",
-        "ADDITIONAL_VALUES" => "Y"
-    );
-}
 
 ?>

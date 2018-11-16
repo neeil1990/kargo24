@@ -53,11 +53,10 @@ if($_SERVER["REQUEST_METHOD"]=="POST" && ($_REQUEST["ads_save"] <> '' || $_REQUE
 		$arResult['IMAGES'] = $arFile;
 	}
 
-	foreach($_REQUEST['options_value'] as $key => $option){
-		$idIb = explode('_',$key);
-		if($option && $idIb[0] == $arResult['IBLOCK_ID']){
+	foreach($_REQUEST['options_value'][$arResult['IBLOCK_ID']][$arResult['TYPE']] as $key => $option){
+		if($option){
 			$arResult['OPTIONS'][$key]["VALUE"] = trim(strip_tags($option));
-			$arResult['OPTIONS'][$key]["DESCRIPTION"] = $_REQUEST['options_name'][$key];
+			$arResult['OPTIONS'][$key]["DESCRIPTION"] = trim(strip_tags($_REQUEST['options_name'][$arResult['IBLOCK_ID']][$arResult['TYPE']][$key]));
 		}
 	}
 
@@ -112,7 +111,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST" && ($_REQUEST["ads_save"] <> '' || $_REQUE
 		if(!$res){
 			echo "Error: ".$el->LAST_ERROR;
 		}else{
-			//LocalRedirect("/personal/");
+			LocalRedirect("/personal/");
 		}
 	}else{
 		if(is_numeric($_REQUEST['ID']) && (int)$_REQUEST['ID'] > 0){
@@ -120,7 +119,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST" && ($_REQUEST["ads_save"] <> '' || $_REQUE
 		}
 
 		if($PRODUCT_ID = $el->Add($arLoadProductArray))
-			"";//LocalRedirect("/personal/");
+			LocalRedirect("/personal/");
 		else
 			echo "Error: ".$el->LAST_ERROR;
 	}
@@ -141,7 +140,6 @@ if($iBlock){
 foreach($iBlock_id as $id){
 	$arResult['HIGHLOAD_IBLOCK'][$id] = $this->getHighloadblock($id);
 }
-
 //Получение городов
 $location = new IPGeoBase();
 $city = $location->getCity();

@@ -202,22 +202,40 @@ $(function() {
   });
 
 
-
-  $('.form-group.options[data-option-id="'+ $('.js-select-ads').change().val() +'"]').show();
   $('.form-group.type[data-type-id="'+ $('.js-select-ads').change().val() +'"]').show();
+  $('.form-group.options[data-type="'+ $('.js-select-ads').change().val() +'_'+ $('.js-select-type').change().val() +'"]').show( "slow" );
   $('.js-select-ads').selectric({
     maxHeight: 200,
     disableOnMobile: false,
     nativeOnMobile: false,
     onChange: function(element) {
-      $('.form-group.options').hide();
       $('.form-group.type').hide();
       var id_iblock = $(element).change().val();
       if(id_iblock > 0){
-        $('.form-group.options[data-option-id="'+id_iblock+'"]').show( "slow" );
         $('.form-group.type[data-type-id="'+id_iblock+'"]').show( "slow" );
+
+        var selectType = $('.form-group.type[data-type-id="'+id_iblock+'"] select').change().val();
+        if(selectType){
+          $('.form-group.options').hide();
+          $('.form-group.options[data-type="'+ id_iblock +'_'+ selectType +'"]').show( "slow" );
+        }
       }
     },
   });
+
+  $('.js-select-type').selectric({
+    maxHeight: 200,
+    disableOnMobile: false,
+    nativeOnMobile: false,
+    onChange: function(element) {
+      $('.form-group.options').hide();
+      var type = $(element).change().val();
+      var id = $(element).closest(".form-group.type").attr("data-type-id");
+      if(type.length > 0){
+        $('.form-group.options[data-type="'+ id +'_'+ type +'"]').show( "slow" );
+      }
+    },
+  });
+
 
 });
