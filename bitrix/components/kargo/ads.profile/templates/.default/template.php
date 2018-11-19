@@ -167,8 +167,11 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
     </div>
     <div class="form-box form-box-pad mod">
         <div class="row">
+
             <div class="col-md-12 col-sm-12">
                 <h3 class="form-title">Добавить фото<sup>*</sup></h3>
+                <img src="<?=CFile::GetPath($arResult['ITEMS']['PREVIEW_PICTURE']);?>" width="300">
+                <input type="hidden" name="image" value="<?=$arResult['ITEMS']['PREVIEW_PICTURE'];?>">
                 <p class="text file-input-text">
                     Поддерживаемые форматы: jpg, png. Размеры фото 300*175 px. Вес до 5 МБ.
                 </p>

@@ -240,4 +240,13 @@ $(function() {
   });
 
 
+  $('.show-ads-cities').on("change",".category-unified-list input[name^='city']",function(){
+    if($("input[name^='city']:checked").length >= 15){
+      $("input[name^='city']:not(:checked)").attr('disabled', "disabled");
+    }else{
+      $("input[name^='city']:disabled").removeAttr('disabled');
+    }
+  });
+
+
 });

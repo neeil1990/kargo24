@@ -6,6 +6,7 @@
  * @var array $arParams
  * @var CBitrixComponent $this
  */
+use Bitrix\Main\IO\File;
 if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
 	die();
 
@@ -51,6 +52,9 @@ if($_SERVER["REQUEST_METHOD"]=="POST" && ($_REQUEST["ads_save"] <> '' || $_REQUE
 	$is_image = CFile::IsImage($arFile['name'], $arFile["type"]);
 	if($is_image){
 		$arResult['IMAGES'] = $arFile;
+	}else{
+		$id_new_image = CFile::CopyFile((int)$_REQUEST['image'],false,'buffering/'.$_REQUEST['image'].'.jpg');
+		$arResult['IMAGES'] = CFile::MakeFileArray($id_new_image);
 	}
 
 	foreach($_REQUEST['options_value'][$arResult['IBLOCK_ID']][$arResult['TYPE']] as $key => $option){
@@ -119,8 +123,12 @@ if($_SERVER["REQUEST_METHOD"]=="POST" && ($_REQUEST["ads_save"] <> '' || $_REQUE
 			CIBlockElement::Delete((int)$_REQUEST['ID']);
 		}
 
-		if($PRODUCT_ID = $el->Add($arLoadProductArray))
+		if($PRODUCT_ID = $el->Add($arLoadProductArray)){
+			if(file_exists($_SERVER['DOCUMENT_ROOT'].$id_new_image)){
+				File::deleteFile($_SERVER['DOCUMENT_ROOT'].$id_new_image);
+			}
 			LocalRedirect("/personal/");
+		}
 		else
 			echo "Error: ".$el->LAST_ERROR;
 	}
