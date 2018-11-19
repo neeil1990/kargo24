@@ -9,13 +9,13 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
 
 ?>
 
-<form method="post" class="add-banner-form unified-form" action="<?=$arResult["FORM_TARGET"]?>" temp="<?=$templateFolder?>" enctype="multipart/form-data">
+<form method="post" class="order-form unified-form" action="<?=$arResult["FORM_TARGET"]?>" temp="<?=$templateFolder?>" enctype="multipart/form-data">
     <?=$arResult["BX_SESSION_CHECK"]?>
     <input type="hidden" name="lang" value="<?=LANG?>" />
     <input type="hidden" name="ID" value=<?=$arResult['ITEMS']["ID"]?> />
     <input type="hidden" name="IBLOCK_ID" value=<?=$arResult['ITEMS']["IBLOCK_ID"]?> />
 
-    <h3 class="form-title">ДАнные баннера</h3>
+    <h3 class="form-title">Данные объявления.</h3>
     <div class="row form-box">
         <div class="col-md-7 col-sm-9">
             <div class="row form-group">
@@ -60,26 +60,38 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
                 <? foreach($arOptions as $arOption): ?>
                     <?
                     if($arOption['UF_OPTIONS']){
-                        foreach($arOption['UF_OPTIONS'] as $option){
+                        foreach($arOption['UF_OPTIONS'] as $id => $option){
                             ?>
                             <div class="row form-group options" data-type="<?=$id_iblock.'_'.$arOption['UF_XML_ID']?>">
                                 <div class="col-sm-5">
                                     <span class="input-title"><?=$option['NAME']?></span>
-                                    <input type="hidden" name="options_name[<?=$id_iblock?>][<?=$arOption['UF_XML_ID']?>][]" value="<?=$option['NAME']?>">
+                                    <input type="hidden" name="options_name[<?=$id_iblock?>][<?=$arOption['UF_XML_ID']?>][<?=$id?>]" value="<?=$option['NAME']?>">
                                 </div>
                                 <div class="col-sm-7">
                                     <? switch($option['PROPERTIES']['FIELD_TYPE']['VALUE_XML_ID']){
-                                        case "string": ?>
-                                            <input type="text"
-                                                   class="text-input"
-                                                   name="options_value[<?=$id_iblock?>][<?=$arOption['UF_XML_ID']?>][]"
-                                                   value="<?=($arResult['ITEMS']['IBLOCK_ID'] == $id_iblock) ? $arResult['ITEMS']['PROPERTIES']['OPTIONS']['VALUE'][trim(strip_tags($option['NAME']))] : "";?>"
-                                                >
+                                        case "string":
+                                            $prefix = $option['PROPERTIES']['PREFIX']['VALUE'];
+                                            ?>
+                                            <? if($prefix):?>
+                                                <div class="wrapper-input">
+                                                    <span class="text-placeholder"><?=$prefix?></span>
+                                                    <input type="hidden" name="prefix[<?=$id_iblock?>][<?=$arOption['UF_XML_ID']?>][<?=$id?>]" value=" <?=$prefix?>">
+                                            <?endif;?>
+
+                                                    <input type="text"
+                                                           class="text-input"
+                                                           name="options_value[<?=$id_iblock?>][<?=$arOption['UF_XML_ID']?>][<?=$id?>]"
+                                                           value="<?=($arResult['ITEMS']['IBLOCK_ID'] == $id_iblock) ? str_replace($prefix,"",$arResult['ITEMS']['PROPERTIES']['OPTIONS']['VALUE'][trim(strip_tags($option['NAME']))]) : "";?>"
+                                                    >
+
+                                            <? if($prefix):?>
+                                                </div>
+                                            <?endif;?>
                                             <?
                                             break;
                                         case "select":
                                             ?>
-                                            <select class="js-select" name="options_value[<?=$id_iblock?>][<?=$arOption['UF_XML_ID']?>][]">
+                                            <select class="js-select" name="options_value[<?=$id_iblock?>][<?=$arOption['UF_XML_ID']?>][<?=$id?>]">
                                                 <? foreach($option['PROPERTIES']['SELECT']['VALUE'] as $select):?>
                                                 <option
                                                     value="<?=$select?>"

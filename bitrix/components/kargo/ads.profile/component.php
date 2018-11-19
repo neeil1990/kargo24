@@ -55,7 +55,8 @@ if($_SERVER["REQUEST_METHOD"]=="POST" && ($_REQUEST["ads_save"] <> '' || $_REQUE
 
 	foreach($_REQUEST['options_value'][$arResult['IBLOCK_ID']][$arResult['TYPE']] as $key => $option){
 		if($option){
-			$arResult['OPTIONS'][$key]["VALUE"] = trim(strip_tags($option));
+			$prefix = $_REQUEST['prefix'][$arResult['IBLOCK_ID']][$arResult['TYPE']][$key];
+			$arResult['OPTIONS'][$key]["VALUE"] = trim(strip_tags($option)).$prefix;
 			$arResult['OPTIONS'][$key]["DESCRIPTION"] = trim(strip_tags($_REQUEST['options_name'][$arResult['IBLOCK_ID']][$arResult['TYPE']][$key]));
 		}
 	}
