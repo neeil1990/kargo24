@@ -21,6 +21,8 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 	Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/css/font.css');
 	Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/css/font-awesome.css');
 	Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/css/jquery-ui.css');
+	Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/js/alertifyjs/css/alertify.css');
+	Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/js/alertifyjs/css/themes/default.css');
 	Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/css/reset.css');
 	Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/css/style.css');
 	?>

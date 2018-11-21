@@ -7,7 +7,7 @@
 if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
     die();
 ?>
-<form method="post" class="personal-area-settings-form unified-form"  name="form1" action="<?=$arResult["FORM_TARGET"]?>" enctype="multipart/form-data">
+<form method="post" class="personal-area-settings-form unified-form"  name="form1" action="<?=$arResult["FORM_TARGET"]?>" temp="<?=$templateFolder?>" enctype="multipart/form-data">
     <?=$arResult["BX_SESSION_CHECK"]?>
     <input type="hidden" name="lang" value="<?=LANG?>" />
     <input type="hidden" name="ID" value=<?=$arResult["ID"]?> />
@@ -44,7 +44,7 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
 </div>
 <div class="form-box">
     <div class="row">
-        <div class="col-md-7 col-sm-9">
+        <div class="col-md-7 col-sm-9" id="update-phone">
             <h3 class="form-title">Контактная информация</h3>
             <div class="row form-group">
                 <div class="col-sm-5">
@@ -62,24 +62,31 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
                     <input type="text" class="text-input" name="NAME" value="<?=$arResult["arUser"]["NAME"]?>">
                 </div>
             </div>
-            <div class="row form-group">
+
+            <? foreach($arResult["arUser"]["UF_PHONES"] as $phone): ?>
+            <div class="row form-group phone-item">
                 <div class="col-sm-5">
                     <span class="input-title"><?=GetMessage('USER_PHONE')?></span>
                 </div>
                 <div class="col-sm-7">
                     <div class="phone-text">
-                        <span class="phone-number"><?=$arResult["arUser"]["PERSONAL_PHONE"]?></span>
+                        <span class="phone-number"><?=$phone?></span>
+                        <a href="javascript:void(0)" class="remove-btn phone">Удалить</a>
                     </div>
                 </div>
             </div>
+            <? endforeach; ?>
         </div>
         <div class="col-md-12 col-sm-12">
-            <div class="row form-group last">
+            <div class="row form-group last phone-group">
                 <div class="col-md-3 col-sm-4">
                     <span class="input-title">Новый телефон:</span>
                 </div>
                 <div class="col-md-4 col-sm-5 col-sm-mod">
-                    <input type="tel" class="text-input" name="PERSONAL_PHONE">
+                    <input type="tel" class="text-input" name="tel">
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <a href="#add-phone-popup" data-toggle="modal" class="add-btn">Добавить</a>
                 </div>
             </div>
         </div>
@@ -90,9 +97,9 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
         <h3 class="form-title">Почтовые уведомления</h3>
         <label class="wrapper-checkbox">
             <input name="checkbox" value="" type="checkbox" checked>
-										<span class="text">
-											Присылать уведомления
-										</span>
+            <span class="text">
+                Присылать уведомления
+            </span>
         </label>
     </div>
 </div>

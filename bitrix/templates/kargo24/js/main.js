@@ -153,6 +153,7 @@ $(function() {
           $('.show-ads-cities').html(data);
     });
   });
+
   $(".js-select.location li.selected").trigger("click");
 
   $('.add-another-photo-btn').on('click', function() {
@@ -248,5 +249,91 @@ $(function() {
     }
   });
 
+
+  $('#add-phone-popup').on('show.bs.modal', function (e) {
+    var result = true;
+    $phone = $(e.relatedTarget).closest('.phone-group').find('.text-input[type="tel"]').val();
+    if($phone.length > 0){
+      $path = $(e.relatedTarget).closest('.personal-area-settings-form').attr('temp');
+      $.ajax({
+        url: $path + "/ajax.php",
+        type: 'POST',
+        async: false,
+        dataType: 'json',
+        data: {step : "send",phone : $phone},
+        success: function(data) {
+          if(data.messages[0].status !== "accepted"){
+            alert(data.messages[0].status);
+            result = false;
+          }
+        }
+      });
+    }else{
+      result = false;
+    }
+      return result;
+  });
+
+  $('form.form-add-phone').submit(function(){
+    $self = $(this);
+    $input = $(this).find('.text-input').val();
+    if($input.length > 0){
+      $path = $('form.personal-area-settings-form').attr('temp');
+      $.ajax({
+        url: $path + "/ajax.php",
+        type: 'POST',
+        dataType: 'json',
+        data: {step : "check",code : $input},
+        success: function(data) {
+          if(data.status == "ok"){
+            $('.phone-item').remove();
+            $.get("", function( data ) {
+              $( "#update-phone" ).append( $(data).find('.phone-item') );
+            });
+            $('#add-phone-popup').modal('hide');
+            alertify.success('Телефон добавлен!');
+          }else{
+            $self.find('.text-input').css("border","2px solid red");
+            alertify.error('Неправильный код!');
+          }
+        }
+      });
+    }
+    return false;
+  });
+
+  $("#update-phone").on("click",".remove-btn.phone",function(){
+    $phone = $(this).parent().find('.phone-number').text();
+    $path = $('form.personal-area-settings-form').attr('temp');
+    alertify.confirm(
+        "Удаление номера телефона",
+        "Вы уверены что хотите удалить " + $phone + " ?",
+        function(){
+          $.ajax({
+            url: $path + "/ajax.php",
+            type: 'POST',
+            dataType: 'json',
+            data: {step : "delete",phone_delete : $phone},
+            success: function(obj) {
+              if(obj.status){
+                $('.phone-item').remove();
+                $.get("", function( data ) {
+                  $( "#update-phone" ).append( $(data).find('.phone-item') );
+                });
+                alertify.success("Номер удален!");
+              }
+            }
+          });
+        },
+        function(){
+          alertify.success('Удаление отменено!');
+        }).set({
+          transition:'zoom',
+          labels:{
+            ok:'Да',
+            cancel:'Нет'
+          }
+        });
+  });
 
 });

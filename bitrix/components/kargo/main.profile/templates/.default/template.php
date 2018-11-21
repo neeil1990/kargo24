@@ -104,3 +104,32 @@ else
 	</div>
 </section>
 <!-- end personal-аrea-section-section -->
+
+
+<div id="add-phone-popup" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+		<form action="#" class="unified-pop-up-form form-add-phone">
+			<h3 class="form-title">
+				Подтвердить новый номер телефона
+			</h3>
+			<p class="text">
+				На ваш новый номер было отправлено
+				SMS-сообщение с кодом подтверждения.
+			</p>
+			<p class="text">
+				Введите его в поле ниже:
+			</p>
+			<div class="form-group">
+				<input type="text" name="" class="text-input"/>
+			</div>
+			<div class="wrapper-form-btn limed-spruce-btn">
+				<span class="arrow"></span>
+				<input type="submit" value="Подтвердить" class="submit-btn" />
+			</div>
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+				<span class="icon-close"></span>
+			</button>
+		</form>
+	</div>
+</div>
+<!-- end add-phone-popup-->
