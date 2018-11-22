@@ -6,7 +6,6 @@
  */
 if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
     die();
-
 ?>
 
 <form method="post" class="order-form unified-form" action="<?=$arResult["FORM_TARGET"]?>" temp="<?=$templateFolder?>" enctype="multipart/form-data">
@@ -150,10 +149,15 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
                     <span class="input-title">Ваш телефон<sup>*</sup></span>
                 </div>
                 <div class="col-sm-7">
-                    <input type="tel" class="text-input" name="phone" value="<?=$arResult['ITEMS']['PROPERTIES']['RENTAL_INFO']['VALUE'][array_flip(($arResult['ITEMS']['PROPERTIES']['RENTAL_INFO']['DESCRIPTION']))['phone']]?>" required>
+                    <select class="js-select ads" name="phone">
+                        <?
+                        $arParams["USER"]["UF_PHONES"] = array();
+                        foreach($arParams["USER"]["UF_PHONES"] as $phone):?>
+                            <option value="<?=$phone?>" <?=($phone == $arResult['ITEMS']['PROPERTIES']['RENTAL_INFO']['VALUE'][array_flip(($arResult['ITEMS']['PROPERTIES']['RENTAL_INFO']['DESCRIPTION']))['phone']])?"selected":""?>><?=$phone?></option>
+                        <? endforeach; ?>
+                    </select>
                 </div>
             </div>
-
 
             <div class="row form-group">
                 <div class="col-sm-5">

@@ -34,6 +34,12 @@ $arComponentParameters = array(
             "TYPE" => "STRING",
             "DEFAULT" => '={$arResult["ELEMENT_CODE"]}',
         ),
+        "USER" => array(
+            "PARENT" => "BASE",
+            "NAME" => "Пользователь (для редактирования не менять!)",
+            "TYPE" => "STRING",
+            "DEFAULT" => '={$arResult["arUser"]}',
+        ),
         "IBLOCK_TYPE"  =>  Array(
             "PARENT" => "BASE",
             "NAME" => GetMessage("T_IBLOCK_DESC_LIST_TYPE"),

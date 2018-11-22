@@ -4,6 +4,7 @@ $APPLICATION->IncludeComponent(
     "",
     Array(
         "ELEMENT_CODE" => $arResult["ELEMENT_CODE"],
+        "USER" => $arResult["arUser"],
         "IBLOCK_ID" => array("1","2","3","6","7","8","9","10"),
         "IBLOCK_TYPE" => "content",
         "OPTIONS_IBLOCK_1" => array("Аренда хар"),

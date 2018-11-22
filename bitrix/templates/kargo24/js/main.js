@@ -336,4 +336,22 @@ $(function() {
         });
   });
 
+  if($("select").is('.js-select.ads[name="phone"]') && $('.js-select.ads[name="phone"] option').size() < 1){
+    alertify.confirm(
+        "Важное сообщение!",
+        "Для добавления объявления необходимо заполнить и подтвердить номер телефона! Перейти в настройки добавления номера?",
+        function(){
+          window.location.href = "/personal/settings/";
+        },
+        function(){
+          window.location.href = "/personal/";
+        }).set({
+          transition:'zoom',
+          labels:{
+            ok:'Да',
+            cancel:'Нет'
+        }
+    });
+  }
+
 });

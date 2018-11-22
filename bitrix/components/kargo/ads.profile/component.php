@@ -157,6 +157,8 @@ if($city){
 	$arResult['LOCATIONS'] = $city;
 }
 
+
+
 $arSelect = Array("ID", "IBLOCK_ID","ACTIVE", "NAME","PREVIEW_PICTURE","PREVIEW_TEXT", "TIMESTAMP_X","DATE_CREATE","PROPERTY_*");
 $arFilter = Array("IBLOCK_ID" => $iBlock_id,"IBLOCK_TYPE" => $iBlock_type,"MODIFIED_BY" => $USER->GetID());
 if($arParams['ELEMENT_CODE']){
