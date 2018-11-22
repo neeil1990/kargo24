@@ -82,7 +82,7 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
                 <div class="col-md-3 col-sm-4">
                     <span class="input-title">Новый телефон:</span>
                 </div>
-                <div class="col-md-4 col-sm-5 col-sm-mod">
+                <div class="col-md-4 col-sm-5 col-sm-mod" style="padding-left: 10px;">
                     <input type="tel" class="text-input" name="tel">
                 </div>
                 <div class="col-md-3 col-sm-3">
