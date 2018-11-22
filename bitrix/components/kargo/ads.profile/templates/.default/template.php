@@ -150,9 +150,7 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
                 </div>
                 <div class="col-sm-7">
                     <select class="js-select ads" name="phone">
-                        <?
-                        $arParams["USER"]["UF_PHONES"] = array();
-                        foreach($arParams["USER"]["UF_PHONES"] as $phone):?>
+                        <? foreach($arParams["USER"]["UF_PHONES"] as $phone):?>
                             <option value="<?=$phone?>" <?=($phone == $arResult['ITEMS']['PROPERTIES']['RENTAL_INFO']['VALUE'][array_flip(($arResult['ITEMS']['PROPERTIES']['RENTAL_INFO']['DESCRIPTION']))['phone']])?"selected":""?>><?=$phone?></option>
                         <? endforeach; ?>
                     </select>

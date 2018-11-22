@@ -335,7 +335,7 @@ $(function() {
           }
         });
   });
-
+  
   if($("select").is('.js-select.ads[name="phone"]') && $('.js-select.ads[name="phone"] option').size() < 1){
     alertify.confirm(
         "Важное сообщение!",
