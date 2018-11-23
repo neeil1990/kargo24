@@ -8,7 +8,7 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
     die();
 ?>
 
-<form method="post" class="order-form unified-form" action="<?=$arResult["FORM_TARGET"]?>" temp="<?=$templateFolder?>" enctype="multipart/form-data">
+<form method="post" autocomplete="off" class="order-form unified-form" action="<?=$arResult["FORM_TARGET"]?>" temp="<?=$templateFolder?>" enctype="multipart/form-data">
     <?=$arResult["BX_SESSION_CHECK"]?>
     <input type="hidden" name="lang" value="<?=LANG?>" />
     <input type="hidden" name="ID" value=<?=$arResult['ITEMS']["ID"]?> />
@@ -169,10 +169,8 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
     </div>
     <div class="form-box form-box-pad mod">
         <div class="row">
-
             <div class="col-md-12 col-sm-12">
                 <h3 class="form-title">Добавить фото<sup>*</sup></h3>
-                <img src="<?=CFile::GetPath($arResult['ITEMS']['PREVIEW_PICTURE']);?>" width="300">
                 <input type="hidden" name="image" value="<?=$arResult['ITEMS']['PREVIEW_PICTURE'];?>">
                 <p class="text file-input-text">
                     Поддерживаемые форматы: jpg, png. Размеры фото 300*175 px. Вес до 5 МБ.
@@ -185,6 +183,12 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
                     </div>
                 </div>
             </div>
+            <?if($arResult['ITEMS']['PREVIEW_PICTURE']):?>
+            <div class="col-md-12 col-sm-12">
+                <h3 class="form-title">Фото объявления</h3>
+                <img src="<?=CFile::GetPath($arResult['ITEMS']['PREVIEW_PICTURE']);?>" width="300">
+            </div>
+            <?endif;?>
         </div>
     </div>
 
@@ -195,6 +199,7 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
             <div class="wrapper-submit-btn mod limed-spruce-btn">
                 <span class="arrow"></span>
                 <input type="submit" name="ads_save" class="submit-btn" value="Опубликовать">
+                <span class="loading" style="display: none">Загрузка...</span>
             </div>
         </div>
     </div>

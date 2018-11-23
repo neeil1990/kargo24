@@ -53,8 +53,21 @@ if($_SERVER["REQUEST_METHOD"]=="POST" && ($_REQUEST["ads_save"] <> '' || $_REQUE
 	if($is_image){
 		$arResult['IMAGES'] = $arFile;
 	}else{
-		$id_new_image = CFile::CopyFile((int)$_REQUEST['image'],false,'buffering/'.$_REQUEST['image'].'.jpg');
-		$arResult['IMAGES'] = CFile::MakeFileArray($id_new_image);
+		if($_REQUEST['image']){
+			$id_new_image = CFile::CopyFile((int)$_REQUEST['image'],false,'buffering/'.$_REQUEST['image'].'.jpg');
+			$arResult['IMAGES'] = CFile::MakeFileArray($id_new_image);
+		}else{
+			$photo_bank_path = "/upload/bank/$arResult[IBLOCK_ID]/$arResult[TYPE]/";
+			$photo_bank_name = rand(1,5).".jpg";
+			if(!file_exists($_SERVER['DOCUMENT_ROOT'].$photo_bank_path)){
+				mkdir($_SERVER['DOCUMENT_ROOT'].$photo_bank_path, 0755,true);
+			}
+			if(file_exists($_SERVER['DOCUMENT_ROOT'].$photo_bank_path.$photo_bank_name)){
+				$arResult['IMAGES'] = CFile::MakeFileArray($photo_bank_path.$photo_bank_name);
+			}
+		}
+
+
 	}
 
 	foreach($_REQUEST['options_value'][$arResult['IBLOCK_ID']][$arResult['TYPE']] as $key => $option){
@@ -112,7 +125,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST" && ($_REQUEST["ads_save"] <> '' || $_REQUE
 
 	if(is_numeric($_REQUEST['ID']) && ($_REQUEST['IBLOCK_ID'] == $arResult['IBLOCK_ID'])){
 		$id_element = (int)$_REQUEST['ID'];
-		$res = $el->Update($id_element, $arLoadProductArray);
+		$res = $el->Update($id_element, $arLoadProductArray, false, true, true, true);
 		if(!$res){
 			echo "Error: ".$el->LAST_ERROR;
 		}else{
@@ -123,7 +136,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST" && ($_REQUEST["ads_save"] <> '' || $_REQUE
 			CIBlockElement::Delete((int)$_REQUEST['ID']);
 		}
 
-		if($PRODUCT_ID = $el->Add($arLoadProductArray)){
+		if($PRODUCT_ID = $el->Add($arLoadProductArray, false, true, true)){
 			if(file_exists($_SERVER['DOCUMENT_ROOT'].$id_new_image)){
 				File::deleteFile($_SERVER['DOCUMENT_ROOT'].$id_new_image);
 			}

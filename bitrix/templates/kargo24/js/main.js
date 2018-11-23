@@ -396,4 +396,17 @@ $(function() {
     return false;
   });
 
+
+  $('input[name="ads_save"]').click(function(){
+    $(this).hide();
+    $(this).parent().find('.loading').show();
+    $(this).parent().css('cursor', 'wait');
+  });
+
+  $("form.order-form input").on("invalid", function(event) {
+    $('input[name="ads_save"]').parent().find('.loading').hide();
+    $('input[name="ads_save"]').show();
+    $('input[name="ads_save"]').parent().css('cursor', 'pointer');
+  });
+
 });
