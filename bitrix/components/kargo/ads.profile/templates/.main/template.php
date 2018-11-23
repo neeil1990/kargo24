@@ -42,7 +42,7 @@ if(count($arResult["ITEMS"]) > 0): ?>
             <div class="col-lg-4">
                 <div class="ads-btn">
                     <a href="/personal/ads/<?=$arItem['ID']?>/" class="edit-btn">Редактировать</a>
-                    <a href="" class="delete-btn">Удалить</a>
+                    <a href="" class="delete-btn delete-ads" data-id="<?=$arItem['ID']?>" temp-path="<?=$templateFolder?>">Удалить</a>
                 </div>
             </div>
         </div>

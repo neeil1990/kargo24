@@ -354,4 +354,46 @@ $(function() {
     });
   }
 
+
+  $('a.delete-ads').click(function(){
+    $self = $(this);
+    $id_ads = $self.attr('data-id');
+    $temp_path = $self.attr('temp-path');
+    $delete_path = $temp_path + "/ajax.php";
+
+      if($id_ads && $delete_path){
+
+        alertify.confirm(
+            "Удаление объявления!",
+            "Вы уверены что хотите удалить объявление № " + $id_ads,
+            function(){
+              $.ajax({
+                url: $delete_path,
+                type: 'POST',
+                dataType: 'json',
+                data: {id : $id_ads},
+                success: function(obj) {
+                  if(obj.status){
+                    $self.closest('.ready-made-ads-item').hide("slow");
+                    alertify.success("Объявление удалено!");
+                  }else{
+                    alertify.success("Ошибка удаления.");
+                  }
+                }
+              });
+            },
+            function(){
+              alertify.success('Удаление отменено!');
+            }).set({
+              transition:'zoom',
+              labels:{
+                ok:'Да',
+                cancel:'Нет'
+              }
+            });
+      }
+
+    return false;
+  });
+
 });
