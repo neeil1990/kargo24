@@ -481,7 +481,7 @@ $arResult['PASSWORD'] = "237e5aaddc582c6acfabca3d55372d23";
 
 CModule::IncludeModule("iblock");
 $arSelect = Array("ID", "IBLOCK_ID", "PROPERTY_*");
-$arFilter = Array("IBLOCK_ID" => IntVal(PAY_BLOCK), "ACTIVE"=>"N" ,"MODIFIED_BY" => $USER->GetID());
+$arFilter = Array("IBLOCK_ID" => IntVal(19), "ACTIVE"=>"N" ,"MODIFIED_BY" => $USER->GetID());
 $res = CIBlockElement::GetList(Array(), $arFilter, false, false, $arSelect);
 while($ob = $res->GetNextElement()){
 	$arFields = $ob->GetFields();
