@@ -4,7 +4,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_before.ph
 
 CModule::IncludeModule("iblock");
 global $USER;
-$IBLOCK_ID = PAY_BLOCK;
+$IBLOCK_ID = 19;
 $pay_number = strip_tags($_REQUEST['pay_number']);
 $arSelect = Array("ID", "NAME");
 $arFilter = Array("IBLOCK_ID" => IntVal($IBLOCK_ID),"MODIFIED_BY" => $USER->GetID(),"PROPERTY_PAY_NUMBER" => $pay_number);
