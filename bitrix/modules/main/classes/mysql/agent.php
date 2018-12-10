@@ -160,7 +160,7 @@ class CAgent extends CAllAgent
 			try
 			{
 				$eval_result = "";
-				$e = eval("\$eval_result=".$arAgent["NAME"]);
+				$e = eval("\$eval_result=".$arAgent[NAME]);
 			}
 			catch (Exception $e)
 			{

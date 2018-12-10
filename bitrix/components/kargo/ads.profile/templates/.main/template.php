@@ -15,12 +15,19 @@ if(count($arResult["ITEMS"]) > 0): ?>
                 <div class="status-and-date">
                     <div class="cell">
                         <h4 class="title">Статус:</h4>
-                        <? if($arItem["ACTIVE"] == "Y"): ?>
+                        <?if($arItem["ACTIVE"] == "Y"): ?>
                         <span class="published">
                             <span class="icon-check">
                                 <span class="path1"></span><span class="path2"></span>
                              </span>
                             Опубликовано
+                        </span>
+                        <? elseif($arItem['PROPERTIES']['TARIFF']['VALUE']): ?>
+                        <span class="published">
+                            <span class="icon-check">
+                                <span class="path1"></span><span class="path2"></span>
+                             </span>
+                            На модерации
                         </span>
                         <? else: ?>
                         <span class="not-published">
@@ -34,8 +41,17 @@ if(count($arResult["ITEMS"]) > 0): ?>
                         <span class="date"><?=$arItem["DATE_CREATE"]?> <span class="color">(создано)</span></span>
                     </div>
                     <div class="cell">
+                        <?if($arItem['PROPERTIES']['TARIFF']['VALUE']):?>
+                        <a class="pay-add-btn"><?=$arItem['PROPERTIES']['TARIFF']['VALUE']?></a>
+                        <?else:?>
                         <h4 class="title">Оплатить объявление:</h4>
-                        <a href="" class="pay-add-btn">Выбрать способ оплаты</a>
+                        <select class="js-select" name="pay_ads" data-id="<?=$arItem['ID']?>" temp-path="<?=$templateFolder?>">
+                                <option value="">Выберите тариф</option>
+                                <? foreach($arItem['PROPERTIES']['TARIFF']['ENUMS'] as $arEnum):?>
+                                <option value="<?=$arItem['PROPERTIES']['TARIFF']['IBLOCK_ID']?>;<?=$arEnum['ID']?>"><?=$arEnum['VALUE']?></option>
+                                <? endforeach; ?>
+                        </select>
+                        <? endif; ?>
                     </div>
                 </div>
             </div>

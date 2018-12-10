@@ -409,4 +409,62 @@ $(function() {
     $('input[name="ads_save"]').parent().css('cursor', 'pointer');
   });
 
+  $("#pmOpenAmount").inputmask("9{1,5}");
+
+  $(".pmwidget .pm-item").click(function(e){
+    $payNum = $(this).closest('.add-balance-form').attr('pay-number');
+    $url = $(this).closest('.add-balance-form').attr('temp');
+    $.ajax({
+      url: $url + "/ajax.php",
+      async: false,
+      type: 'POST',
+      data: {pay_number : $payNum},
+      success: function(obj) {
+        console.log(obj);
+      }
+    });
+  });
+
+  $("select[name='pay_ads']").change(function(){
+    $self = $(this);
+    $id_ads = $self.attr('data-id');
+    $temp_path = $self.attr('temp-path');
+    $path = $temp_path + "/pay.php";
+    $selected = $self.find("option:selected");
+
+    if($selected.val()){
+      alertify.confirm(
+          "Оплата объявления",
+          "Оплатить: " + $selected.text() + "?",
+          function(){
+            $.ajax({
+              url: $path,
+              type: 'POST',
+              dataType: 'json',
+              data: {id : $selected.val(), elem_id : $id_ads},
+              success: function(obj) {
+                if(obj.ERROR){
+                  alertify.error(obj.ERROR);
+                }else{
+                  $self.closest('.status-and-date').find('.cell:first-child span').remove();
+                  $self.closest('.status-and-date').find('.cell:first-child').append('<span class="published"><span class="icon-check"><span class="path1"></span><span class="path2"></span></span>На модерации</span>');
+                  $self.closest('.cell').html('<a class="pay-add-btn">' + $selected.text() + '</a>');
+                  alertify.success(obj.RESPONSE);
+                }
+              }
+            });
+          },
+          function(){
+            alertify.success("Оплата отменена");
+          }).set({
+            transition:'zoom',
+            labels:{
+              ok:'Да',
+              cancel:'Нет'
+            }
+          });
+    }
+
+  });
+
 });

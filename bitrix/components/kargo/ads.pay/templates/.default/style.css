@@ -1,0 +1,53 @@
+
+.pmwidget #pmOpenAmount {
+    height: 40px;
+    background-color: #f2f2f2;
+    color: #262b2e;
+    font-size: 12px;
+    padding: 0 20px 0 10px;
+    width: 40%;
+    min-width: 200px;
+    margin-right: 20px;
+}
+
+.pmwidget p strong {
+    font-size: 16px;
+    font-family: "OpenSans-Bold";
+    color: #262b2e;
+    text-transform: uppercase;
+    margin-right: 50px;
+}
+
+.pmwidget p{
+    border-bottom: 2px solid #e1e1e1;
+    padding-bottom: 40px;
+}
+
+.pmwidget .pmpaymenttype{
+    display: block;
+    font-size: 16px;
+    font-family: "OpenSans-Bold";
+    text-transform: uppercase;
+    margin-top: 2.3em;
+    margin-bottom: 1.2em;
+}
+
+.pmwidget .pm-item img{
+    height: 100%;
+}
+.pmwidget .pm-item {
+    outline: none;
+    color: #666;
+    float: left;
+    width: 230px;
+    height: 74px;
+    text-align: center;
+    padding: 0 0;
+    text-decoration: none;
+    border: 1px solid #d9d9d9;
+    border-radius: 3px;
+    background-color: #fff;
+    margin: 0 5px;
+    margin-bottom: 11px;
+    padding: 10px;
+}

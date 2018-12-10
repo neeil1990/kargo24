@@ -1,4 +1,7 @@
 <?php
+
+define("PAY_BLOCK", 19);
+
 session_start();
 CModule::AddAutoloadClasses(
     '',
@@ -6,6 +9,7 @@ CModule::AddAutoloadClasses(
         'IPGeoBase' => '/bitrix/templates/kargo24/vendor/ipgeobase/ipgeobase.php'
     )
 );
+
 
 
 function getTypeAdsText($ID,$type){
@@ -82,4 +86,13 @@ function catalog_header($ID){
         false
     );
 
+}
+
+
+
+function testAgent()
+{
+    //var_dump(123);
+    //mail('mail@gmail.com', 'Агент', 'Агент');
+    //return "testAgent();";
 }
