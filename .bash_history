@@ -127,3 +127,42 @@ git commit -a -m 'srv'
 git push
 git status
 git pull
+git status
+git add .
+git commit -a -m 'srv'
+git push
+git status
+git pull
+ls
+git status
+git pull
+git status
+git checkout bitrix/components/kargo/main.profile/templates/.default/pages/ads.php
+git status
+git pull
+git pull
+git pull
+git pull
+git pull
+ды
+ls
+git status
+git pull
+git pull
+ls
+git status
+git pull
+git pull
+git pull
+git pull
+git status
+git pull
+git pull
+ls
+git status
+git pull
+git pull
+ls
+git status
+git checkout bitrix/components/kargo/main.profile/component.php
+git status

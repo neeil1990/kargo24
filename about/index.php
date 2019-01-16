@@ -45,11 +45,12 @@ $APPLICATION->SetTitle("О СЕРВИСЕ");
 	<p class="text">
 		 Чтобы добавить технику, транспортную &nbsp;услугу или отставить свой заказ, сначала вам необходимо зарегистрироваться. Если у вас уже есть аккаунт, то просто выполните вход в систему. Далее заполняете форму добавления техники/заказа. После публикации ваше объявление появится на сайте и будет доступно для пользователей.<br>
 	</p><br>
-	<p>
-	<img style="width:45%; float: left; margin: 0px 40px 20px 10px;" src="/upload/medialibrary/bf6/bf6be3859f947bc8984f61d319f142eb.gif"></p><br>
-	<div class="service-text-item">
-		<h3 class="title">Наши реквизиты</h3>
+	<div style="float: left; margin: 0px -40px 10px 60px;">
+	<img style="width:80%;" src="/upload/medialibrary/bf6/bf6be3859f947bc8984f61d319f142eb.gif"><br>
 	</div>
+	<div class="service-text-item">
+    <br><br>
+		<h3 class="title">Наши реквизиты</h3>
 	<p>
  <b>Наименование организации:</b> ИП Виленская Юлия Андреевна<br>
  <b>ИНН:</b> 362903774541<br>
@@ -62,11 +63,9 @@ $APPLICATION->SetTitle("О СЕРВИСЕ");
  <b>Банк:</b> АО "ТИНЬКОФФ БАНК"<br>
  <b>БИК:</b> 044525974<br>
  <b>Kорр. счет:</b> 30101810145250000974
-	</p>
+	</p> 
 	<br>
-	<div class="service-text-item">
 		<h3 class="title">Контакты технической поддержки сайта</h3>
-	</div>
 	<p>
 		<b>Режим работы:</b> Пн- Пт. 9:30 -19:00<br>
  <b>Телефон:</b> +7-960-134-03-03<br>
