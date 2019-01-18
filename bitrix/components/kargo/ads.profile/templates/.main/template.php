@@ -8,7 +8,10 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
     die();
 if(count($arResult["ITEMS"]) > 0): ?>
 
-    <? foreach($arResult["ITEMS"] as $arItem):?>
+    <? foreach($arResult["ITEMS"] as $arItem):
+        if($arItem['PROPERTIES']['HIDDEN']['VALUE'] == "Y")
+            continue;
+        ?>
     <div class="ready-made-ads-item">
         <div class="row top-panel">
             <div class="col-lg-8">
