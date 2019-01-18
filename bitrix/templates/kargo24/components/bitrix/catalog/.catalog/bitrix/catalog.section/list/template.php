@@ -16,7 +16,10 @@ $this->setFrameMode(true);
 if($arResult['ITEMS']):?>
 	<div class="freight-transportation-item">
 		<div class="section-title"><?=$arParams['PROPERTY_TYPE_VALUE']?> </div>
-		<? foreach($arResult['ITEMS'] as $key => $arItem):?>
+		<? foreach($arResult['ITEMS'] as $key => $arItem):
+			if($arItem['PROPERTIES']['HIDDEN']['VALUE'] == "Y")
+				continue;
+			?>
 			<div class="unified-transport-unit">
 				<div class="item-img">
 					<img src="<?=$arItem['PREVIEW_PICTURE']['SRC']?>" alt="alt">

@@ -100,6 +100,20 @@ if (0 < $arResult['SECTIONS_COUNT'])
 $region = new IPGeoBase();
 foreach ($arResult['SECTIONS'] as $key => $arSection){
 
+	$arFilter = Array(
+		"IBLOCK_ID" => $arParams['IBLOCK_ID'],
+		"SECTION_ID" => $arSection['ID'],
+		"ACTIVE"=>"Y",
+		"INCLUDE_SUBSECTIONS" => "Y",
+		"!PROPERTY_HIDDEN_VALUE"=> "Y"
+	);
+	$res = CIBlockElement::GetList(false, $arFilter, array("PROPERTY_HIDDEN"));
+	if($ar_fields = $res->GetNext())
+	{
+		$arSection["ELEMENT_CNT"] = $ar_fields["CNT"];
+	}else
+		$arSection["ELEMENT_CNT"] = 0;
+
 	if($arParams['SMART_FILTER_PATH']){
 		$FilterUrl = 'filter/' . $arParams['SMART_FILTER_PATH'] . '/apply/';
 		$arSection['SECTION_PAGE_URL'] = $arSection['SECTION_PAGE_URL'].$FilterUrl;
