@@ -72,7 +72,7 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 					</div>
 					<div class="col-sm-4 col-xs-3">
 						<div class="head-personal-account">
-							<div class="account-head"><span class="icon icon-user"></span><span class="text">Личый кабинет</span></div>
+							<div class="account-head"><span class="icon icon-user"></span><span class="text">Личный кабинет</span></div>
 							<ul class="log-register">
 								<li><a href="/register/">Вход</a></li>
 								<li><a href="/register/">Регистрация</a></li>
