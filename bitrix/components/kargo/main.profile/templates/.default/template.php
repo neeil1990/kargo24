@@ -53,7 +53,7 @@ else
 					<li><a href="/personal/"><span class="menu-text">Заказы от клиентов</span></a></li>
 					<li class="third"><a href="/personal/"><span class="menu-text">Расчет расстояний</span></a></li>
 					<li><a href="/personal/add-balance/"><span class="menu-text">Пополнить баланс: <?=$arResult["BALANCE"]?> руб</span></a></li>
-					<li><a href="/personal/"><span class="menu-text">Мои платежи</span></a></li>
+					<li><a href="/personal/my-payments/"><span class="menu-text">Мои платежи</span></a></li>
 					<li><a href="/personal/settings/" class="active"><span class="menu-text">Настройки</span></a></li>
 					<li><a href="/personal/"><span class="menu-text">Техподдержка сайта</span></a></li>
 					<li><a href="/?logout=yes"><span class="menu-text">Выйти из личного кабинета</span></a></li>
