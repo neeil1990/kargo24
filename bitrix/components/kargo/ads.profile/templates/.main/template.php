@@ -12,7 +12,7 @@ if(count($arResult["ITEMS"]) > 0): ?>
         if($arItem['PROPERTIES']['HIDDEN']['VALUE'] == "Y")
             continue;
         ?>
-    <div class="ready-made-ads-item">
+    <div class="ready-made-ads-item <?=($arItem["ACTIVE"] == "Y") ? 'active' : '';?>">
         <div class="row top-panel">
             <div class="col-lg-8">
                 <div class="status-and-date">
@@ -41,28 +41,28 @@ if(count($arResult["ITEMS"]) > 0): ?>
                     </div>
                     <div class="cell">
                         <h4 class="title">Дата:</h4>
-                        <span class="date"><?=$arItem["DATE_CREATE"]?> <span class="color">(создано)</span></span>
+                        <span class="date">
+                            <? if($arItem["ACTIVE"] == "Y"):?>
+                                <?=strstr($arItem['DATE_ACTIVE_FROM']," ",true);?> - <?=strstr($arItem['DATE_ACTIVE_TO'], " ",true);?>
+                                <span class="color">(активно)</span>
+                            <? else: ?>
+                                <?=strstr($arItem["DATE_CREATE"]," ",true);?> <span class="color">(создано)</span>
+                            <?endif;?>
+                        </span>
                     </div>
-                    <div class="cell">
-                        <?if($arItem['PROPERTIES']['TARIFF']['VALUE']):?>
-                        <a class="pay-add-btn"><?=$arItem['PROPERTIES']['TARIFF']['VALUE']?></a>
-                        <?else:?>
-                        <h4 class="title">Оплатить объявление:</h4>
-                        <select class="js-select" name="pay_ads" data-id="<?=$arItem['ID']?>" temp-path="<?=$templateFolder?>">
-                                <option value="">Выберите тариф</option>
-                                <? foreach($arItem['PROPERTIES']['TARIFF']['ENUMS'] as $arEnum):?>
-                                <option value="<?=$arItem['PROPERTIES']['TARIFF']['IBLOCK_ID']?>;<?=$arEnum['ID']?>"><?=$arEnum['VALUE']?></option>
-                                <? endforeach; ?>
-                        </select>
-                        <? endif; ?>
-                    </div>
+                    <div class="cell"></div>
                 </div>
             </div>
             <div class="col-lg-4">
+                <? if(
+                    ($arItem['PROPERTIES']['TARIFF']['VALUE'] && $arItem["ACTIVE"] == "Y") ||
+                    (!$arItem['PROPERTIES']['TARIFF']['VALUE'] && $arItem["ACTIVE"] == "N")
+                ):?>
                 <div class="ads-btn">
                     <a href="/personal/ads/<?=$arItem['ID']?>/" class="edit-btn">Редактировать</a>
                     <a href="" class="delete-btn delete-ads" data-id="<?=$arItem['ID']?>" temp-path="<?=$templateFolder?>">Удалить</a>
                 </div>
+                <?endif;?>
             </div>
         </div>
         <!-- end top-panel -->
@@ -112,8 +112,35 @@ if(count($arResult["ITEMS"]) > 0): ?>
         <!-- end unified-transport-unit -->
         <div class="item-footer">
             <div class="footer-ads-btn">
-                <a href="" class="add-announcement-btn">поднять объявление</a>
-                <a href="" class="limed-spruce-btn go-over-btn">Перейти<span class="arrow"></span></a>
+                <div class="row">
+
+                    <div class="col-md-3">
+                        <a href="" class="add-announcement-btn">поднять объявление</a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="" class="limed-spruce-btn go-over-btn">Перейти<span class="arrow"></span></a>
+                    </div>
+
+
+                    <?if($arItem['PROPERTIES']['TARIFF']['VALUE']):?>
+                        <div class="col-md-6">
+                            <a class="add-announcement-btn">Оплачен: <?=$arItem['PROPERTIES']['TARIFF']['VALUE']?></a>
+                        </div>
+                    <?else:?>
+                        <div class="col-md-3 delete-pay">
+                            <a href="" class="add-announcement-btn">Оплатить объявление</a>
+                        </div>
+                        <div class="col-md-3">
+                            <select class="js-select pay-ads" name="pay_ads" data-id="<?=$arItem['ID']?>" temp-path="<?=$templateFolder?>">
+                                <option value="">Выберите тариф</option>
+                                <? foreach($arItem['PROPERTIES']['TARIFF']['ENUMS'] as $arEnum):?>
+                                    <option value="<?=$arItem['PROPERTIES']['TARIFF']['IBLOCK_ID']?>;<?=$arEnum['ID']?>"><?=$arEnum['VALUE']?></option>
+                                <? endforeach; ?>
+                            </select>
+                        </div>
+                    <? endif; ?>
+
+                </div>
             </div>
         </div>
         <!-- end item-footer -->

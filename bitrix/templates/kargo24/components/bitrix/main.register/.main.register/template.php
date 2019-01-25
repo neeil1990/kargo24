@@ -59,15 +59,15 @@ elseif($arResult["USE_EMAIL_CONFIRMATION"] === "Y"):
 		</div>
 		<div class="col-sm-6">
 			<div class="form-group">
-				<input type="password" name="REGISTER[PASSWORD]" class="text-input" placeholder="<?echo $arResult["GROUP_POLICY"]["PASSWORD_REQUIREMENTS"];?>" value="<?=$arResult["VALUES"]["PASSWORD"]?>" autocomplete="off">
+				<input type="password" name="REGISTER[PASSWORD]" class="text-input" placeholder="<?echo $arResult["GROUP_POLICY"]["PASSWORD_REQUIREMENTS"];?>" value="<?=$arResult["VALUES"]["PASSWORD"]?>" autocomplete="off" required>
 			</div>
 			<div class="form-group">
-				<input type="password" name="REGISTER[CONFIRM_PASSWORD]" class="text-input" placeholder="Повторите пароль еще раз" value="<?=$arResult["VALUES"]["CONFIRM_PASSWORD"]?>" autocomplete="off">
+				<input type="password" name="REGISTER[CONFIRM_PASSWORD]" class="text-input" placeholder="Повторите пароль еще раз" value="<?=$arResult["VALUES"]["CONFIRM_PASSWORD"]?>" autocomplete="off" required>
 			</div>
 		</div>
 		<div class="col-sm-12">
 			<label class="wrapper-checkbox">
-				<input name="checkbox" value="" type="checkbox">
+				<input name="RULE" value="Y" type="checkbox" required>
 					<span class="text">
 						Регистрируясь на сайте, я ознакомлен(а) и принимаю все условия договора-оферты по использованию сервиса.
 					</span>

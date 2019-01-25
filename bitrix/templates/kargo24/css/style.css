@@ -3413,6 +3413,7 @@ h3 {
 }
 
 .unified-transport-unit {
+  opacity: 0.5;
   display: table;
   background: #f2f2f2;
   padding: 1.875em 1.875em 1.55em;
@@ -3526,6 +3527,11 @@ h3 {
 .unified-transport-unit .characteristics-table:first-child {
   margin-right: 1em;
 }
+
+.ready-made-ads-item.active .unified-transport-unit{
+  opacity: 1;
+}
+
 
 /****RATE-SECTION************ */
 .rate-section {
@@ -8814,8 +8820,9 @@ h3 {
 }
 .registration-form .wrapper-checkbox input[type="checkbox"] {
   position: absolute;
-  margin-left: -20px;
-  display: none;
+  margin-left: -24px;
+  margin-top: 6px;
+  z-index: -1;
 }
 .registration-form .wrapper-checkbox input[type="checkbox"]:checked + .text:before {
   content: "";
@@ -9096,11 +9103,11 @@ h3 {
   display: inline-block;
   font-family: "OpenSans-Bold";
   color: #262b2e;
-  margin-right: 2.8em;
   -webkit-transition: color 0.3s;
           transition: color 0.3s;
   vertical-align: middle;
   text-transform: uppercase;
+  line-height: 46px;
 }
 .ready-made-ads-item .add-announcement-btn:hover {
   color: #6d96ab;
@@ -13175,8 +13182,39 @@ h3 {
 .selectricWrapper {
   position: relative;
   margin: 0 0 10px;
-  width: 300px;
   cursor: pointer;
+}
+
+.selectricWrapper.js-select.pay-ads {
+  border: 2px solid #ea3232;
+  border-radius: 3px;
+}
+
+.selectricWrapper.js-select.pay-ads .selectric{
+  background: white;
+}
+
+.selectricWrapper.js-select.pay-ads .selectric .label{
+  color: #37474f;
+  font-size: 18px;
+  font-family: "OpenSans-Semibold";
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 45px 0 0;
+}
+
+.selectricWrapper.js-select.pay-ads .selectric .button{
+  width: 46px;
+  background: #ea3232;
+}
+.selectricWrapper.js-select.pay-ads .selectric .button:after{
+  border: none;
+  width: 13px;
+  height: 13px;
+  border-top: 2.5px solid #ffffff;
+  border-right: 2.5px solid #ffffff;
+  transform: rotate(45deg);
+  top: 2px;
 }
 
 .selectricResponsive {

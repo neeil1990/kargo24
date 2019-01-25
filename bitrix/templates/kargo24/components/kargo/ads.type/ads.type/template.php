@@ -13,7 +13,7 @@
                     </div>
                     <div class="item-desc">
                         <h3 class="title">
-                            <?=$arItem['UF_NAME']?>
+                            <?=TruncateText($arItem['UF_NAME'], 25);?>
                         </h3>
                     </div>
                 </a>
