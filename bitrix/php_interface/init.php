@@ -90,9 +90,34 @@ function catalog_header($ID){
 
 
 
-function testAgent()
+function deactivationAgent()
 {
-    //var_dump(123);
-    //mail('mail@gmail.com', 'Агент', 'Агент');
-    //return "testAgent();";
+    CModule::IncludeModule("iblock");
+    $arSelect = Array("ID", "IBLOCK_ID", "NAME", "DATE_ACTIVE_FROM" ,"PROPERTY_*");
+    $arFilter = Array(
+        "IBLOCK_ID" => array(1,2,3,10,9,8,6,7),
+        "ACTIVE"=>"Y",
+        "<=DATE_ACTIVE_TO"   => array(false, ConvertTimeStamp(false, "FULL")),
+        "!=PROPERTY_HIDDEN_VALUE" => "Y",
+        "!=PROPERTY_TARIFF" => false
+    );
+    $res = CIBlockElement::GetList(Array(), $arFilter, false, false, $arSelect);
+
+    while($ob = $res->GetNextElement())
+    {
+        $arFields = $ob->GetFields();
+        if($arFields['ID']){
+            $el = new CIBlockElement;
+            $arLoadProductArray = Array(
+                "ACTIVE" => "N",
+                "DATE_ACTIVE_FROM" => false,
+                "DATE_ACTIVE_TO" => false
+            );
+            $PRODUCT_ID = $arFields['ID'];
+            CIBlockElement::SetPropertyValues($PRODUCT_ID, $arFields['IBLOCK_ID'], false, "TARIFF");
+            $el->Update($PRODUCT_ID, $arLoadProductArray);
+        }
+    }
+
+    return "deactivationAgent();";
 }
