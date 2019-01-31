@@ -156,15 +156,6 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
                     </select>
                 </div>
             </div>
-
-            <div class="row form-group">
-                <div class="col-sm-5">
-                    <span class="input-title">Цена<sup>*</sup></span>
-                </div>
-                <div class="col-sm-7">
-                    <input type="text" class="text-input" name="price" value="<?=$arResult['ITEMS']['PROPERTIES']['RENTAL_INFO']['VALUE'][array_flip(($arResult['ITEMS']['PROPERTIES']['RENTAL_INFO']['DESCRIPTION']))['coins']]?>" required>
-                </div>
-            </div>
         </div>
     </div>
     <div class="form-box form-box-pad mod">
@@ -195,7 +186,7 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
     <div class="row">
         <div class="col-md-12 col-sm-12">
             <h3 class="form-title mod">Дополнительная информация</h3>
-            <textarea class="text-area" placeholder="Дополнительна информация" name="description"><?=$arResult['ITEMS']['PREVIEW_TEXT'];?></textarea>
+            <textarea class="text-area" placeholder="Дополнительна информация" name="description" maxlength="255"><?=strip_tags($arResult['ITEMS']['PREVIEW_TEXT']);?></textarea>
             <div class="wrapper-submit-btn mod limed-spruce-btn">
                 <span class="arrow"></span>
                 <input type="submit" name="ads_save" class="submit-btn" value="Опубликовать">

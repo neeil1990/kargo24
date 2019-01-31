@@ -79,9 +79,7 @@ if(count($arResult["ITEMS"]) > 0): ?>
                     <span class="number">№ <?=$arItem['ID']?></span>
                     <h3 class="title"><?=$arItem['NAME']?></h3>
                 </div>
-                <p class="text">
-                    <?=$arItem['PREVIEW_TEXT']?>
-                </p>
+                <p class="text"><?=strip_tags($arItem['PREVIEW_TEXT'])?></p>
                 <ul class="rental-info">
                     <? foreach($arItem['PROPERTIES']['RENTAL_INFO']['VALUE'] as $desc => $value): ?>
                     <li>

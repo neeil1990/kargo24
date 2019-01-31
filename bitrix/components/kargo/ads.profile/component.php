@@ -41,9 +41,6 @@ if($_SERVER["REQUEST_METHOD"]=="POST" && ($_REQUEST["ads_save"] <> '' || $_REQUE
 	if($phone = trim(strip_tags($_REQUEST['phone']))){
 		$arResult['PHONE'] = $phone;
 	}
-	if($price = trim(strip_tags($_REQUEST['price']))){
-		$arResult['PRICE'] = $price;
-	}
 	if($description = trim(strip_tags($_REQUEST['description']))){
 		$arResult['PREVIEW_TEXT'] = $description;
 	}
@@ -75,6 +72,9 @@ if($_SERVER["REQUEST_METHOD"]=="POST" && ($_REQUEST["ads_save"] <> '' || $_REQUE
 			$prefix = $_REQUEST['prefix'][$arResult['IBLOCK_ID']][$arResult['TYPE']][$key];
 			$arResult['OPTIONS'][$key]["VALUE"] = trim(strip_tags($option)).$prefix;
 			$arResult['OPTIONS'][$key]["DESCRIPTION"] = trim(strip_tags($_REQUEST['options_name'][$arResult['IBLOCK_ID']][$arResult['TYPE']][$key]));
+			if(stripos($prefix, "руб") && $arResult['OPTIONS'][$key]["VALUE"]){
+				$arResult['PRICE'] = $arResult['OPTIONS'][$key]["VALUE"];
+			}
 		}
 	}
 
