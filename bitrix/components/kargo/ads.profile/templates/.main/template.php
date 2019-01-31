@@ -122,6 +122,11 @@ if(count($arResult["ITEMS"]) > 0): ?>
 
                     <?if($arItem['PROPERTIES']['TARIFF']['VALUE']):?>
                         <div class="col-md-6">
+                            <?
+                            $add_percent = addPrecent($arItem['IBLOCK_ID'],$arItem['ID'],(int)$arItem['PROPERTIES']['TARIFF']['VALUE_XML_ID']);
+                            $plus_percent = str_replace($arItem['PROPERTIES']['TARIFF']['VALUE_XML_ID'],$add_percent,$arItem['PROPERTIES']['TARIFF']['VALUE']);
+                            $arItem['PROPERTIES']['TARIFF']['VALUE'] = ($add_percent) ? $plus_percent : $arItem['PROPERTIES']['TARIFF']['VALUE'];
+                            ?>
                             <a class="add-announcement-btn">Оплачен: <?=$arItem['PROPERTIES']['TARIFF']['VALUE']?></a>
                         </div>
                     <?else:?>
@@ -131,7 +136,12 @@ if(count($arResult["ITEMS"]) > 0): ?>
                         <div class="col-md-3">
                             <select class="js-select pay-ads" name="pay_ads" data-id="<?=$arItem['ID']?>" temp-path="<?=$templateFolder?>">
                                 <option value="">Выберите тариф</option>
-                                <? foreach($arItem['PROPERTIES']['TARIFF']['ENUMS'] as $arEnum):?>
+                                <? foreach($arItem['PROPERTIES']['TARIFF']['ENUMS'] as $k => $arEnum):?>
+                                    <?
+                                    $add_percent = addPrecent($arItem['IBLOCK_ID'],$arItem['ID'],(int)$arItem['PROPERTIES']['TARIFF']['ENUMS'][$k]['XML_ID']);
+                                    $plus_percent = str_replace($arItem['PROPERTIES']['TARIFF']['ENUMS'][$k]['XML_ID'],$add_percent,$arEnum['VALUE']);
+                                    $arEnum['VALUE'] = ($add_percent) ? $plus_percent : $arEnum['VALUE'];
+                                    ?>
                                     <option value="<?=$arItem['PROPERTIES']['TARIFF']['IBLOCK_ID']?>;<?=$arEnum['ID']?>"><?=$arEnum['VALUE']?></option>
                                 <? endforeach; ?>
                             </select>

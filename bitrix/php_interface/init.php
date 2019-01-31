@@ -1,6 +1,11 @@
 <?php
-
 define("PAY_BLOCK", 19);
+
+/*Регионы и процент который на них распространяется*/
+define('AR_REGIONS', array("Московская область", "Ленинградская область"));
+define("REGIONS_PERCENT", 10);
+/*END Регионы и процент который на них распространяется END*/
+
 
 session_start();
 CModule::AddAutoloadClasses(
@@ -121,3 +126,23 @@ function deactivationAgent()
 
     return "deactivationAgent();";
 }
+
+
+function addPrecent($IBLOCK_ID,$ELEMENT_ID,$balance){
+
+    CModule::IncludeModule("iblock");
+    $res = CIBlockElement::GetByID($ELEMENT_ID);
+    if($ar_res = $res->GetNext()){
+        $nav = CIBlockSection::GetNavChain($IBLOCK_ID, $ar_res['IBLOCK_SECTION_ID']);
+        if($res_n = $nav->GetNext()){
+            if(in_array($res_n[NAME], AR_REGIONS) && $res_n[DEPTH_LEVEL] == "1"){
+                $percent = $balance/100*REGIONS_PERCENT;
+                $result = ceil($balance + $percent);
+                return $result;
+            }else
+                return 0;
+        }
+    }
+}
+
+
