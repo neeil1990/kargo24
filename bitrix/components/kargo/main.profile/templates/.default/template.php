@@ -41,21 +41,37 @@ else
 </section>
 <!-- end title-section -->
 
+<?
+$arResult[BALANCE] = ($arResult[BALANCE]) ? $arResult[BALANCE] : 0;
+$arMenu = array(
+	"main" => "Мои объявления",
+	"my-company" => "Мои компании",
+	"my-banners" => "Мои баннеры",
+	//"" => "Поиск грузов",
+	//"" => "Заказы от клиентов",
+	//"" => "Расчет расстояний",
+	"add-balance" => "Пополнить баланс: $arResult[BALANCE] руб",
+	"my-payments" => "Мои платежи",
+	"settings" => "Настройки",
+	//"" => "Техподдержка сайта",
+);
+?>
 <section class="personal-area-section">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-3">
 				<ul class="personal-area-sidebar-menu">
-					<li><a href="/personal/"><span class="menu-text">Мои объявления</span></a></li>
-					<li><a href="/personal/my-company/"><span class="menu-text">Мои компании</span></a></li>
-					<li class="third"><a href="/personal/my-banners/"><span class="menu-text">Мои баннеры</span></a></li>
-					<li><a href="/personal/"><span class="menu-text">Поиск грузов</span></a></li>
-					<li><a href="/personal/"><span class="menu-text">Заказы от клиентов</span></a></li>
-					<li class="third"><a href="/personal/"><span class="menu-text">Расчет расстояний</span></a></li>
-					<li><a href="/personal/add-balance/"><span class="menu-text">Пополнить баланс: <?=$arResult["BALANCE"]?> руб</span></a></li>
-					<li><a href="/personal/my-payments/"><span class="menu-text">Мои платежи</span></a></li>
-					<li><a href="/personal/settings/" class="active"><span class="menu-text">Настройки</span></a></li>
-					<li><a href="/personal/"><span class="menu-text">Техподдержка сайта</span></a></li>
+					<?
+					$inc = 0;
+					foreach($arMenu as $link => $value):?>
+					<li class="<?=($inc % 3 == 1) ? "third" : "";?>">
+						<a href="/personal/<?=$link?>/" class="<?=($link == $arResult['SECTION_CODE']) ? "active" : "";?>">
+							<span class="menu-text"><?=$value?></span>
+						</a>
+					</li>
+					<?
+					$inc++;
+					endforeach;?>
 					<li><a href="/?logout=yes"><span class="menu-text">Выйти из личного кабинета</span></a></li>
 				</ul>
 				<!-- end personal-area-sidebar-menu -->
