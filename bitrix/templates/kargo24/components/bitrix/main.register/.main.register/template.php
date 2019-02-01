@@ -38,7 +38,7 @@ elseif($arResult["USE_EMAIL_CONFIRMATION"] === "Y"):
 <?endif?>
 
 <form method="post" action="<?=POST_FORM_ACTION_URI?>" name="regform" enctype="multipart/form-data" class="registration-form unified-form">
-	<input type="hidden" id="login" name="REGISTER[LOGIN]">
+	<input type="hidden" id="login" name="REGISTER[LOGIN]" value="<?=$arResult["VALUES"]["EMAIL"]?>">
 	<?
 	if($arResult["BACKURL"] <> ''):
 		?>
