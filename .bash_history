@@ -166,3 +166,47 @@ ls
 git status
 git checkout bitrix/components/kargo/main.profile/component.php
 git status
+ды
+ls
+git status
+git status
+git status
+git add .
+git commit -a -m 'srv'
+git push
+git status
+git status
+git status
+ды
+ls
+git status
+git pull
+git pull
+git pull
+git pull
+ls
+git status
+git status
+zip -r upload.zip ./upload/
+git pull
+git pull
+ls
+git status
+ды
+ls
+git pull
+git pull
+ls
+git status
+git status
+git pull
+ls
+git status
+git pull
+git pull
+git pull
+ды
+ls
+git pull
+git status
+git pull

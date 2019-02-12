@@ -88,7 +88,7 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 						</div>
 						<div class="footer-bottom-info">
 							<div class="copyright">
-								&#169;Портал “KarGo24” 2018 г.
+								&#169;Портал “KarGo24” 2019 г.
 							</div>
 							<p class="text">
 								Диспетчерский интернет сервис по поиску спецтехники и грузовиков.

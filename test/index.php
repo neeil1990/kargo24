@@ -4,6 +4,11 @@ $APPLICATION->SetTitle("test");
 
 CModule::IncludeModule("iblock");
 
-?>
-
-<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+?><?$APPLICATION->IncludeComponent(
+	"bitrix:b24connector.openline.info",
+	"",
+	Array(
+		"DATA" => "",
+		"GA_MARK" => ""
+	)
+);?><br><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
