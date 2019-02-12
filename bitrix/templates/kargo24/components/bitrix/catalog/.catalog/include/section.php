@@ -149,7 +149,6 @@ if((int)$arSectionDepth['DEPTH_LEVEL'] == 2
         $arParams["PAGE_ELEMENT_COUNT"] = 3;
       //  $arrFilter = array("=PROPERTY_TYPE" => "clear");
     }
-
     $intSectionID = $APPLICATION->IncludeComponent(
         "bitrix:catalog.section",
         "",

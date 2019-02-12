@@ -469,4 +469,46 @@ $(function() {
 
   });
 
+
+  $('a.up-ads').click(function(){
+    $self = $(this);
+    $up_price = $self.attr('up-price');
+    $id_ads = $self.closest(".ready-made-ads-item").attr('data-id');
+    $data_iblock = $self.closest(".ready-made-ads-item").attr('data-iblock');
+    $temp_path = $self.closest(".ready-made-ads-item").attr('temp-path');
+    $up_path = $temp_path + "/up.php";
+
+    if($id_ads && $up_path){
+
+      alertify.confirm(
+          "Поднять объявление №"+ $id_ads,
+          "С вашего счета будет списано " + $up_price + " рублей. ",
+          function(){
+            $.ajax({
+              url: $up_path,
+              type: 'POST',
+              dataType: 'json',
+              data: {id : $id_ads, ib : $data_iblock},
+              success: function(obj) {
+                if(obj.status){
+                  alertify.success("Объявление обновлено!");
+                }else{
+                  alertify.success("Ошибка.");
+                }
+              }
+            });
+          },
+          function(){
+            alertify.success('Отменено!');
+          }).set({
+            transition:'zoom',
+            labels:{
+              ok:'Да',
+              cancel:'Нет'
+            }
+          });
+    }
+    return false;
+  });
+
 });

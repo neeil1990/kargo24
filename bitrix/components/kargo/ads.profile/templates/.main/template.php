@@ -12,7 +12,7 @@ if(count($arResult["ITEMS"]) > 0): ?>
         if($arItem['PROPERTIES']['HIDDEN']['VALUE'] == "Y")
             continue;
         ?>
-    <div class="ready-made-ads-item <?=($arItem["ACTIVE"] == "Y") ? 'active' : '';?>">
+    <div class="ready-made-ads-item <?=($arItem["ACTIVE"] == "Y") ? 'active' : '';?>" data-id="<?=$arItem['ID']?>" data-iblock="<?=$arItem['IBLOCK_ID']?>" temp-path="<?=$templateFolder?>">
         <div class="row top-panel">
             <div class="col-lg-8">
                 <div class="status-and-date">
@@ -113,7 +113,7 @@ if(count($arResult["ITEMS"]) > 0): ?>
                 <div class="row">
 
                     <div class="col-md-3">
-                        <a href="" class="add-announcement-btn">поднять объявление</a>
+                        <a href="" class="add-announcement-btn up-ads" up-price="<?=($up_percent = addPrecent($arItem['IBLOCK_ID'],$arItem['ID'],UP_ADS_PAY)) ? $up_percent : UP_ADS_PAY?>">поднять объявление</a>
                     </div>
                     <div class="col-md-3">
                         <a href="" class="limed-spruce-btn go-over-btn">Перейти<span class="arrow"></span></a>

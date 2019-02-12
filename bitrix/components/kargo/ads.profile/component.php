@@ -125,6 +125,10 @@ if($_SERVER["REQUEST_METHOD"]=="POST" && ($_REQUEST["ads_save"] <> '' || $_REQUE
 
 	if(is_numeric($_REQUEST['ID']) && ($_REQUEST['IBLOCK_ID'] == $arResult['IBLOCK_ID'])){
 		$id_element = (int)$_REQUEST['ID'];
+		$db_props = CIBlockElement::GetProperty($_REQUEST['IBLOCK_ID'], (int)$_REQUEST['ID'], array("sort" => "asc"), Array("CODE" => "DATE_SORT"));
+		if($ar_props = $db_props->Fetch()){
+			$arLoadProductArray["PROPERTY_VALUES"]["DATE_SORT"] = $ar_props["VALUE"];
+		}
 		$res = $el->Update($id_element, $arLoadProductArray, false, true, true, true);
 		if(!$res){
 			echo "Error: ".$el->LAST_ERROR;
@@ -132,7 +136,12 @@ if($_SERVER["REQUEST_METHOD"]=="POST" && ($_REQUEST["ads_save"] <> '' || $_REQUE
 			LocalRedirect("/personal/");
 		}
 	}else{
+		$arLoadProductArray["PROPERTY_VALUES"]["DATE_SORT"] = ConvertTimeStamp(false, "FULL");
 		if(is_numeric($_REQUEST['ID']) && (int)$_REQUEST['ID'] > 0){
+			$db_props = CIBlockElement::GetProperty($_REQUEST['IBLOCK_ID'], (int)$_REQUEST['ID'], array("sort" => "asc"), Array("CODE" => "DATE_SORT"));
+			if($ar_props = $db_props->Fetch()){
+				$arLoadProductArray["PROPERTY_VALUES"]["DATE_SORT"] = $ar_props["VALUE"];
+			}
 			CIBlockElement::Delete((int)$_REQUEST['ID']);
 		}
 
@@ -162,15 +171,14 @@ if($iBlock){
 foreach($iBlock_id as $id){
 	$arResult['HIGHLOAD_IBLOCK'][$id] = $this->getHighloadblock($id);
 }
+
+
 //Получение городов
-$location = new IPGeoBase();
-$city = $location->getCity();
-ksort($city);
-if($city){
-	$arResult['LOCATIONS'] = $city;
+$items = GetIBlockSectionList($iBlock_id[0], false, Array("name" => "asc"),false, array("DEPTH_LEVEL" => 1));
+while($arItem = $items->GetNext())
+{
+	$arResult['LOCATIONS'][] = $arItem['NAME'];
 }
-
-
 
 $arSelect = Array("ID", "IBLOCK_ID","ACTIVE", "NAME","PREVIEW_PICTURE","PREVIEW_TEXT", "TIMESTAMP_X","DATE_CREATE", "DATE_ACTIVE_FROM","DATE_ACTIVE_TO","PROPERTY_*");
 $arFilter = Array("IBLOCK_ID" => $iBlock_id,"IBLOCK_TYPE" => $iBlock_type,"CREATED_BY" => $USER->GetID());

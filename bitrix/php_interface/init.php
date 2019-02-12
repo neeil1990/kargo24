@@ -6,6 +6,10 @@ define('AR_REGIONS', array("Московская область", "Москва"
 define("REGIONS_PERCENT", 10);
 /*END Регионы и процент который на них распространяется END*/
 
+/*Цена поднятия объявления*/
+define("UP_ADS_PAY", 40);
+/*Цена поднятия объявления END*/
+
 
 session_start();
 CModule::AddAutoloadClasses(

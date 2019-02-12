@@ -128,7 +128,7 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
                 </div>
                 <div class="col-sm-7">
                     <select class="js-select location" name="region" required>
-                        <? foreach($arResult['LOCATIONS'] as $region => $array):?>
+                        <? foreach($arResult['LOCATIONS'] as $region):?>
                             <option value="<?=$region?>" <?=($arResult['ITEMS']['REGION'] == $region) ? "selected" : ""?>><?=$region?></option>
                         <? endforeach; ?>
                     </select>

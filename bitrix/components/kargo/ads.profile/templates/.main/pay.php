@@ -22,7 +22,9 @@ if($balance > 0){
         $property_enums = CIBlockPropertyEnum::GetList(false, Array("IBLOCK_ID" => $IBLOCK_ID, "CODE" => "TARIFF", "ID" => $PROP_VALUE_ID));
         if($enum_fields = $property_enums->GetNext())
         {
-            (int)$enum_fields['XML_ID'] = addPrecent($IBLOCK_ID,$elem_id,(int)$enum_fields['XML_ID']);
+            if($percent = addPrecent($IBLOCK_ID,$elem_id,(int)$enum_fields['XML_ID']))
+                (int)$enum_fields['XML_ID'] = $percent;
+
             if($balance >= (int)$enum_fields['XML_ID']){
                 $balance -= (int)$enum_fields['XML_ID'];
                 $user = new CUser;
