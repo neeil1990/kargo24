@@ -129,6 +129,14 @@ if($_SERVER["REQUEST_METHOD"]=="POST" && ($_REQUEST["ads_save"] <> '' || $_REQUE
 		if($ar_props = $db_props->Fetch()){
 			$arLoadProductArray["PROPERTY_VALUES"]["DATE_SORT"] = $ar_props["VALUE"];
 		}
+		$db_props_tarif = CIBlockElement::GetProperty($_REQUEST['IBLOCK_ID'], (int)$_REQUEST['ID'], array("sort" => "asc"), Array("CODE" => "TARIFF"));
+		if($ar_props_tarif = $db_props_tarif->Fetch()){
+			$arLoadProductArray["PROPERTY_VALUES"]["TARIFF"] = array("VALUE" => $ar_props_tarif['VALUE']);
+		}
+		$res_active = CIBlockElement::GetByID((int)$_REQUEST['ID']);
+		if($ar_res_active = $res_active->GetNext())
+			$arLoadProductArray['ACTIVE'] = $ar_res_active['ACTIVE'];
+
 		$res = $el->Update($id_element, $arLoadProductArray, false, true, true, true);
 		if(!$res){
 			echo "Error: ".$el->LAST_ERROR;
@@ -142,6 +150,14 @@ if($_SERVER["REQUEST_METHOD"]=="POST" && ($_REQUEST["ads_save"] <> '' || $_REQUE
 			if($ar_props = $db_props->Fetch()){
 				$arLoadProductArray["PROPERTY_VALUES"]["DATE_SORT"] = $ar_props["VALUE"];
 			}
+			$db_props_tarif = CIBlockElement::GetProperty($_REQUEST['IBLOCK_ID'], (int)$_REQUEST['ID'], array("sort" => "asc"), Array("CODE" => "TARIFF"));
+			if($ar_props_tarif = $db_props_tarif->Fetch()){
+				$arLoadProductArray["PROPERTY_VALUES"]["TARIFF"] = array("VALUE" => $ar_props_tarif['VALUE']);
+			}
+			$res_active = CIBlockElement::GetByID((int)$_REQUEST['ID']);
+			if($ar_res_active = $res_active->GetNext())
+				$arLoadProductArray['ACTIVE'] = $ar_res_active['ACTIVE'];
+
 			CIBlockElement::Delete((int)$_REQUEST['ID']);
 		}
 
