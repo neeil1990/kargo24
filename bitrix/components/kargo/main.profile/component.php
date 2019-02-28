@@ -27,9 +27,7 @@ if(!($arParams['CHECK_RIGHTS'] == 'N' || $USER->CanDoOperation('edit_own_profile
 
 $strError = '';
 
-
-
-if($_SERVER["REQUEST_METHOD"]=="POST" && ($_REQUEST["save"] <> '' || $_REQUEST["apply"] <> '') && check_bitrix_sessid())
+if($_SERVER["REQUEST_METHOD"]=="POST" && !$_REQUEST["support_edit"] && ($_REQUEST["save"] <> '' || $_REQUEST["apply"] <> '') && check_bitrix_sessid())
 {
 	if(COption::GetOptionString('main', 'use_encrypted_auth', 'N') == 'Y')
 	{
@@ -522,6 +520,7 @@ while($ob = $res->GetNextElement()){
 $rsUser = CUser::GetByID($USER->GetID());
 $arUser = $rsUser->Fetch();
 $arResult["BALANCE"] = $arUser["UF_BALANCE"];
+
 
 
 $this->IncludeComponentTemplate();
