@@ -209,4 +209,20 @@ while($ob = $res->GetNextElement()){
 	$arResult["ITEMS"][$arFields["ID"]]["PROPERTIES"] = $arProps;
 }
 
+CModule::IncludeModule('support');
+$by = "s_id";    // обязательно используем переменные,
+$order = "asc"; // т.к. константы в параметрах работать не будут
+
+$arFilter = array(
+	"CLOSE" => "N", // незакрытые обращения
+);
+$rs = CTicket::GetList($by, $order, $arFilter,$isFiltered);
+while($ar = $rs->GetNext())
+{
+	if($ar)
+		$arResult['TICKET'][$ar[ID]] = $ar;
+	else
+		$arResult['TICKET'] = false;
+}
+
 $this->IncludeComponentTemplate();

@@ -8,6 +8,19 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
     die();
 if(count($arResult["ITEMS"]) > 0): ?>
 
+    <? if($arResult['TICKET']): ?>
+        <div class="alert alert-success alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <strong>Внимание!</strong> У вас есть важные сообщения от модератора.
+            <ul style="list-style: disc;padding: 10px 25px;font-weight: 700;">
+                <? foreach($arResult['TICKET'] as $ticket):?>
+                    <li><a style="color: #3c763d" href="/personal/support/?ID=<?=$ticket['ID'];?>&edit=1"><?=$ticket['TITLE']?></a></li>
+                <? endforeach; ?>
+            </ul>
+        </div>
+    <? endif; ?>
+
+
     <? foreach($arResult["ITEMS"] as $arItem):
         if($arItem['PROPERTIES']['HIDDEN']['VALUE'] == "Y")
             continue;

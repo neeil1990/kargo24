@@ -106,12 +106,6 @@ $arResult["FILTER"] = array(
 
 $arParams["TICKETS_PER_PAGE"] = (intval($arParams["TICKETS_PER_PAGE"]) <= 0 ? 50 : intval($arParams["TICKETS_PER_PAGE"]));
 
-$grid_options = new CGridOptions($arResult["GRID_ID"]);
-$aSort = $grid_options->GetSorting(array("sort"=>array("id"=>"desc"), "vars"=>array("by"=>"by", "order"=>"order")));
-$aNav = $grid_options->GetNavParams(array("nPageSize"=>$arParams["TICKETS_PER_PAGE"]));
-$aSortArg = each($aSort["sort"]);
-
-$aFilter = $grid_options->GetFilter($arResult["FILTER"]);
 
 $aSortVal = $aSort['sort'];
 $sort_order = current($aSortVal);

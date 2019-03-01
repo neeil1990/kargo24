@@ -1,4 +1,4 @@
-<?$APPLICATION->IncludeComponent("bitrix:support.ticket", "support.ticket", Array(
+<?$APPLICATION->IncludeComponent("kargo:support.ticket", "support.ticket", Array(
     "MESSAGES_PER_PAGE" => "20",
     "MESSAGE_MAX_LENGTH" => "70",
     "MESSAGE_SORT_ORDER" => "asc",
