@@ -49,7 +49,6 @@ $bADS = $bDemo == 'Y' || $bAdmin == 'Y' || $bSupportTeam == 'Y';
 	</tbody>
 </table>
 <!-- end transport-search-table -->
-<br/>
 
 <p class="total_ticket">Всего обращений: <?=$arResult["ROWS_COUNT"]?></p>
 
