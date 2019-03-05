@@ -78,6 +78,27 @@ $APPLICATION->AddHeadScript($this->GetFolder() . '/ru/script.js');
 		</div>
 	<?endif?>
 
+	<div class="row form-box">
+		<div class="col-md-7 col-sm-9">
+			<div class="row">
+				<div class="col-md-12 col-sm-12">
+					<h3 class="form-title">Статус обращения</h3>
+					<?if (strlen($arResult["TICKET"]["DATE_CLOSE"])<=0):?>
+						<select name="CLOSE" class="js-select">
+							<option>Не изменять</option>
+							<option value="Y" <?if($arResult["TICKET"]["CLOSE"] == "Y"):?>selected<?endif?>><?=GetMessage("SUP_CLOSE_TICKET")?></option>
+						</select>
+					<?else:?>
+						<select name="OPEN" class="js-select">
+							<option>Не изменять</option>
+							<option value="Y" <?if($arResult["TICKET"]["OPEN"] == "Y"):?>selected<?endif?>><?=GetMessage("SUP_OPEN_TICKET")?></option>
+						</select>
+					<?endif;?>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<div class="wrapper-submit-btn limed-spruce-btn">
 		<span class="arrow"></span>
 		<input type="submit" name="save" class="submit-btn" value="<?=GetMessage("SUP_SAVE")?>">

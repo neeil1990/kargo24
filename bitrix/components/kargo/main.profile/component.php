@@ -521,6 +521,20 @@ $rsUser = CUser::GetByID($USER->GetID());
 $arUser = $rsUser->Fetch();
 $arResult["BALANCE"] = $arUser["UF_BALANCE"];
 
+CModule::IncludeModule('support');
+$by = "s_id";    // обязательно используем переменные,
+$order = "asc"; // т.к. константы в параметрах работать не будут
 
+$arFilter = array(
+	"CLOSE" => "N", // незакрытые обращения
+);
+$rs = CTicket::GetList($by, $order, $arFilter,$isFiltered);
+while($ar = $rs->GetNext())
+{
+	if($ar)
+		$arResult['TICKET'][$ar[ID]] = $ar;
+	else
+		$arResult['TICKET'] = false;
+}
 
 $this->IncludeComponentTemplate();

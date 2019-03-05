@@ -93,6 +93,23 @@ $arMenu = array(
 				</div>
 			</div>
 			<div class="col-sm-9">
+					<? if($arResult['TICKET']): ?>
+						<div class="alert alert-success alert-dismissible" role="alert">
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<strong>Внимание!</strong> У вас есть важные сообщения от модератора.
+							<ul style="list-style: disc;padding: 10px 25px;font-weight: 700;">
+								<? foreach($arResult['TICKET'] as $ticket):?>
+									<li>
+										<a style="color: #3c763d" href="/personal/support/?ID=<?=$ticket['ID'];?>&edit=1">
+											<?=$ticket['TITLE']?>
+											<?if($ticket['LAST_MESSAGE_USER_ID'] != $USER->GetID()):?>( У вас есть сообщения без ответа )<?endif;?>
+										</a>
+									</li>
+								<? endforeach; ?>
+							</ul>
+						</div>
+					<? endif; ?>
+
 					<?
 					$filename = $_SERVER["DOCUMENT_ROOT"].$templateFolder."/pages/".$arResult['SECTION_CODE'].'.php';
 					if (file_exists($filename)) {

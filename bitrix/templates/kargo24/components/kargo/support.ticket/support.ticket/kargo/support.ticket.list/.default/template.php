@@ -5,7 +5,6 @@ $bDemo = (CTicket::IsDemo()) ? "Y" : "N";
 $bAdmin = (CTicket::IsAdmin()) ? "Y" : "N";
 $bSupportTeam = (CTicket::IsSupportTeam()) ? "Y" : "N";
 $bADS = $bDemo == 'Y' || $bAdmin == 'Y' || $bSupportTeam == 'Y';
-
 ?>
 
 <form method="post" action="<?=$arResult["NEW_TICKET_PAGE"]?>">
@@ -18,54 +17,46 @@ $bADS = $bDemo == 'Y' || $bAdmin == 'Y' || $bSupportTeam == 'Y';
 
 <br />
 
-<?
-$APPLICATION->IncludeComponent(
-	"bitrix:main.interface.grid",
-	"",
-	array(
-		"GRID_ID"=>$arResult["GRID_ID"],
-		"HEADERS"=>array(
-			array("id"=>"LAMP", "name"=> GetMessage('SUP_LAMP'), "sort"=>"s_lamp", "default"=>true, "editable"=>false),
-			array("id"=>"ID", "name"=>GetMessage('SUP_ID'), "sort"=>"s_id", "default"=>true, "editable"=>false),
-			array("id"=>"TITLE", "name"=>GetMessage('SUP_TITLE'), "default"=>true, "editable"=>false),
-			array("id"=>"TIMESTAMP_X", "name"=>GetMessage('SUP_TIMESTAMP'), "sort"=>"s_timestamp_x", "default"=>true, "editable"=>false),
-			array("id"=>"MODIFIED_BY", "name"=>GetMessage('SUP_MODIFIED_BY'), "default"=>true, "editable"=>false),
-			array("id"=>"MESSAGES", "name"=>GetMessage('SUP_MESSAGES'),  "default"=>true, "editable"=>false),
-			//array("id"=>"STATUS_NAME", "name"=>GetMessage('SUP_STATUS'), "default"=>true, "editable"=>false)
-		),
-		"SORT"=>$arResult["SORT"],
-		"SORT_VARS"=>$arResult["SORT_VARS"],
-		"ROWS" => $arResult["ROWS"],
-		"FOOTER"=>array(array("title"=>GetMessage('SUP_TOTAL'), "value"=>$arResult["ROWS_COUNT"])),
-		"ACTION_ALL_ROWS" => false,
-		"EDITABLE"=>false,
-		"NAV_OBJECT"=>$arResult["NAV_OBJECT"],
-		//"AJAX_MODE"=>$arParams["AJAX_MODE"],
-		"AJAX_ID"=>$arParams["AJAX_ID"],
-		//"AJAX_OPTION_JUMP"=>"N",
-		//"AJAX_OPTION_STYLE"=>"Y",
-		"FILTER" => false,
-	),
-	$component
-);
-?>
 
-<br />
+<table class="transport-search-table">
+	<thead>
+	<tr>
+		<th>ID</th>
+		<th>Заглавие</th>
+		<th></th>
+		<th>Изменено</th>
+		<th>Кто изменял</th>
+		<th>Сообщений</th>
+		<th>Статус</th>
+	</tr>
+	</thead>
+	<tbody>
 
-<br />
-<table class="support-ticket-hint">
+	<? foreach($arResult["ROWS"] as $rows):
+		$arUser = (CUser::GetByID($rows['data']['LAST_MESSAGE_USER_ID'])->Fetch());
+		?>
 	<tr>
-		<td><div class="support-lamp-green"></div></td>
-		<td> - <?=GetMessage("SUP_GREEN_ALT")?></td>
+		<td><?=$rows['data']['ID']?></td>
+		<td><?=$rows['data']['TITLE']?></td>
+		<td><a href="<?=$rows['data']['TICKET_EDIT_URL']?>">Посмотреть</a></td>
+		<td><?=$rows['data']['TIMESTAMP_X']?></td>
+		<td><?=$arUser['NAME']?> <?=$arUser['LAST_NAME']?></td>
+		<td><?=$rows['data']['MESSAGES']?></td>
+		<td><?=$rows['columns']['LAMP']?></td>
 	</tr>
-	<?if ($bADS):?>
-	<tr>
-		<td><div class="support-lamp-green-s"></div></td>
-		<td> - <?=GetMessage("SUP_GREEN_S_ALT_SUP")?></td>
-	</tr>
-	<?endif;?>
-	<tr>
-		<td><div class="support-lamp-grey"></div></td>
-		<td> - <?=GetMessage("SUP_GREY_ALT")?></td>
-	</tr>
+	<?endforeach;?>
+
+	</tbody>
 </table>
+<!-- end transport-search-table -->
+<br/>
+
+<p class="total_ticket">Всего обращений: <?=$arResult["ROWS_COUNT"]?></p>
+
+<ul class="ticket-hint">
+	<li><div class="support-lamp-red"></div> - <?=$bADS ? GetMessage("SUP_RED_ALT_SUP") : GetMessage("SUP_RED_ALT_2")?></li>
+	<li><div class="support-lamp-yellow"></div> - <?=GetMessage("SUP_YELLOW_ALT_SUP")?></li>
+	<li><div class="support-lamp-green"></div> - <?=GetMessage("SUP_GREEN_ALT")?></li>
+	<li><div class="support-lamp-green-s"></div> - <?=GetMessage("SUP_GREEN_S_ALT_SUP")?></li>
+	<li><div class="support-lamp-grey"></div> - <?=GetMessage("SUP_GREY_ALT")?></li>
+</ul>
