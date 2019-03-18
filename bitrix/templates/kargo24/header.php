@@ -72,10 +72,25 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 					</div>
 					<div class="col-sm-4 col-xs-3">
 						<div class="head-personal-account">
-							<div class="account-head"><span class="icon icon-user"></span><span class="text">Личный кабинет</span></div>
+							<div class="account-head">
+								<a href="/personal/settings/">
+									<span class="icon icon-user"></span><span class="text">Личный кабинет</span>
+								</a>
+							</div>
 							<ul class="log-register">
-								<li><a href="/register/">Вход</a></li>
-								<li><a href="/register/">Регистрация</a></li>
+								<?
+								global $USER;
+								if ($USER->IsAuthorized()):
+									$arMenu = account_menu();
+									foreach($arMenu as $link => $name):
+								?>
+										<li><a href="/personal/<?=$link?>/"><?=$name?></a></li>
+									<?endforeach;?>
+									<li><a href="/?logout=yes">Выйти</a></li>
+								<? else:?>
+										<li><a href="/register/">Вход</a></li>
+										<li><a href="/register/">Регистрация</a></li>
+								<?endif;?>
 							</ul>
 						</div>
 					</div>

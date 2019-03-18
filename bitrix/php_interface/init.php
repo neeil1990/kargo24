@@ -150,3 +150,20 @@ function addPrecent($IBLOCK_ID,$ELEMENT_ID,$balance){
 }
 
 
+function account_menu($data = null){
+
+    $arMenu = array(
+        "main" => "Мои объявления",
+        "my-company" => "Мои компании",
+        "my-banners" => "Мои баннеры",
+        "add-balance" => "Пополнить баланс$data",
+        "my-payments" => "Мои платежи",
+        "support" => "Техподдержка",
+        "settings" => "Настройки",
+    );
+
+    return $arMenu;
+
+}
+
+

@@ -43,19 +43,8 @@ else
 
 <?
 $arResult[BALANCE] = ($arResult[BALANCE]) ? $arResult[BALANCE] : 0;
-$arMenu = array(
-	"main" => "Мои объявления",
-	"my-company" => "Мои компании",
-	"my-banners" => "Мои баннеры",
-	//"" => "Поиск грузов",
-	//"" => "Заказы от клиентов",
-	//"" => "Расчет расстояний",
-	"add-balance" => "Пополнить баланс: $arResult[BALANCE] руб",
-	"my-payments" => "Мои платежи",
-	"support" => "Техподдержка",
-	"settings" => "Настройки",
-	//"" => "Техподдержка сайта",
-);
+
+$arMenu = account_menu(": $arResult[BALANCE] руб");
 ?>
 <section class="personal-area-section">
 	<div class="container">

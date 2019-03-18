@@ -736,9 +736,7 @@ h3 {
 .head-personal-account .log-register li {
   padding: 1em 0;
 }
-.head-personal-account .log-register li:first-child {
-  border-bottom: 1px solid #b3b3b3;
-}
+
 .head-personal-account .open-block {
   display: block;
 }
