@@ -1070,3 +1070,366 @@
 2018-11-02 12:22:49 -  - exec CUpdateClientPartner::__CollectRequestData
 2018-11-02 12:22:49 -  - exec CUpdateClientPartner::GetHTTPPage
 2018-11-02 12:22:49 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 17:41:21 -  - exec CUpdateClientPartner::GetUpdatesList
+2019-03-23 17:41:21 -  - exec CUpdateClientPartner::__CollectRequestData
+2019-03-23 17:41:21 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=24&TYPENC=E&CLIENT_PHPVER=7.1.21&NGINX=Y&dbv=5.7.21&instm=main%2C18.0.4%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Basd.tplvars%2C1.5.1%2CN%3Bmessageservice%2C18.0.0%2CN%3Bsearch%2C17.6.0%2CN%3Bcompression%2C16.0.0%2CN%3Bclouds%2C18.0.0%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Brest%2C18.0.4%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bseo%2C18.1.0%2CN%3Blanding%2C18.4.21%2CN%3Biblock%2C17.6.8%2CN%3Bhighloadblock%2C17.5.1%2CN%3Bb24connector%2C18.0.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bsupport%2C16.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN%3Bsocialservices%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN&reqm=sotbit.seometa%2Casd.tplvars%2Cthebrainstech.copyiblock%2Csection.city&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=Y
+2019-03-23 17:41:21 -  - exec CUpdateClientPartner::GetHTTPPage
+2019-03-23 17:41:52 -  - TIME GetUpdatesList(request) 30.122 sec
+2019-03-23 17:41:52 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 17:42:05 -  - exec CUpdateClientPartner::GetUpdatesList
+2019-03-23 17:42:05 -  - exec CUpdateClientPartner::__CollectRequestData
+2019-03-23 17:42:05 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=24&TYPENC=E&CLIENT_PHPVER=7.1.21&NGINX=Y&dbv=5.7.21&instm=main%2C18.0.4%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Basd.tplvars%2C1.5.1%2CN%3Bmessageservice%2C18.0.0%2CN%3Bsearch%2C17.6.0%2CN%3Bcompression%2C16.0.0%2CN%3Bclouds%2C18.0.0%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Brest%2C18.0.4%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bseo%2C18.1.0%2CN%3Blanding%2C18.4.21%2CN%3Biblock%2C17.6.8%2CN%3Bhighloadblock%2C17.5.1%2CN%3Bb24connector%2C18.0.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bsupport%2C16.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN%3Bsocialservices%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN&reqm=sotbit.seometa%2Casd.tplvars%2Cthebrainstech.copyiblock%2Csection.city&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=Y
+2019-03-23 17:42:05 -  - exec CUpdateClientPartner::GetHTTPPage
+2019-03-23 17:42:06 -  - TIME GetUpdatesList(request) 0.296 sec
+2019-03-23 17:42:06 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:23:38 -  - exec CUpdateClientPartner::GetUpdatesList
+2019-03-23 20:23:38 -  - exec CUpdateClientPartner::__CollectRequestData
+2019-03-23 20:23:38 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=24&TYPENC=E&CLIENT_PHPVER=7.1.21&NGINX=Y&dbv=5.7.21&instm=main%2C18.0.4%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Basd.tplvars%2C1.5.1%2CN%3Bmessageservice%2C18.0.0%2CN%3Bsearch%2C17.6.0%2CN%3Bcompression%2C16.0.0%2CN%3Bclouds%2C18.0.0%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Bartrix.imageoptimizer%2C1.0.7%2CN%3Brest%2C18.0.4%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bseo%2C18.1.0%2CN%3Blanding%2C18.4.21%2CN%3Biblock%2C17.6.8%2CN%3Bhighloadblock%2C17.5.1%2CN%3Bb24connector%2C18.0.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bsupport%2C16.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN%3Bsocialservices%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN&reqm=sotbit.seometa%2Casd.tplvars%2Cthebrainstech.copyiblock%2Cartrix.imageoptimizer%2Csection.city&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=Y
+2019-03-23 20:23:38 -  - exec CUpdateClientPartner::GetHTTPPage
+2019-03-23 20:23:39 -  - TIME GetUpdatesList(request) 0.547 sec
+2019-03-23 20:23:39 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:23:43 -  - exec CUpdateClientPartner::GetUpdatesList
+2019-03-23 20:23:43 -  - exec CUpdateClientPartner::__CollectRequestData
+2019-03-23 20:23:43 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=24&TYPENC=E&CLIENT_PHPVER=7.1.21&NGINX=Y&dbv=5.7.21&instm=main%2C18.0.4%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Basd.tplvars%2C1.5.1%2CN%3Bmessageservice%2C18.0.0%2CN%3Bsearch%2C17.6.0%2CN%3Bcompression%2C16.0.0%2CN%3Bclouds%2C18.0.0%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Bartrix.imageoptimizer%2C1.0.7%2CN%3Brest%2C18.0.4%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bseo%2C18.1.0%2CN%3Blanding%2C18.4.21%2CN%3Biblock%2C17.6.8%2CN%3Bhighloadblock%2C17.5.1%2CN%3Bb24connector%2C18.0.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bsupport%2C16.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN%3Bsocialservices%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN&reqm=sotbit.seometa%2Casd.tplvars%2Cthebrainstech.copyiblock%2Cartrix.imageoptimizer%2Csection.city&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=Y
+2019-03-23 20:23:43 -  - exec CUpdateClientPartner::GetHTTPPage
+2019-03-23 20:23:43 -  - TIME GetUpdatesList(request) 0.294 sec
+2019-03-23 20:23:43 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:23:43 -  - exec CUpdateClientPartner::GetUpdatesList
+2019-03-23 20:23:43 -  - exec CUpdateClientPartner::__CollectRequestData
+2019-03-23 20:23:43 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=24&TYPENC=E&CLIENT_PHPVER=7.1.21&NGINX=Y&dbv=5.7.21&instm=main%2C18.0.4%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Basd.tplvars%2C1.5.1%2CN%3Bmessageservice%2C18.0.0%2CN%3Bsearch%2C17.6.0%2CN%3Bcompression%2C16.0.0%2CN%3Bclouds%2C18.0.0%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Bartrix.imageoptimizer%2C1.0.7%2CN%3Brest%2C18.0.4%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bseo%2C18.1.0%2CN%3Blanding%2C18.4.21%2CN%3Biblock%2C17.6.8%2CN%3Bhighloadblock%2C17.5.1%2CN%3Bb24connector%2C18.0.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bsupport%2C16.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN%3Bsocialservices%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN&reqm=sotbit.seometa%2Casd.tplvars%2Cthebrainstech.copyiblock%2Cartrix.imageoptimizer%2Csection.city&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=Y
+2019-03-23 20:23:43 -  - exec CUpdateClientPartner::GetHTTPPage
+2019-03-23 20:23:44 -  - TIME GetUpdatesList(request) 0.278 sec
+2019-03-23 20:23:44 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:24:03 -  - exec CUpdateClientPartner::GetUpdatesList
+2019-03-23 20:24:03 -  - exec CUpdateClientPartner::__CollectRequestData
+2019-03-23 20:24:03 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=24&TYPENC=E&CLIENT_PHPVER=7.1.21&NGINX=Y&dbv=5.7.21&instm=main%2C18.0.4%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Basd.tplvars%2C1.5.1%2CN%3Bmessageservice%2C18.0.0%2CN%3Bsearch%2C17.6.0%2CN%3Bcompression%2C16.0.0%2CN%3Bclouds%2C18.0.0%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Bartrix.imageoptimizer%2C1.0.7%2CN%3Brest%2C18.0.4%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bseo%2C18.1.0%2CN%3Blanding%2C18.4.21%2CN%3Biblock%2C17.6.8%2CN%3Bhighloadblock%2C17.5.1%2CN%3Bb24connector%2C18.0.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bsupport%2C16.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN%3Bsocialservices%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN&reqm=sotbit.seometa%2Casd.tplvars%2Cthebrainstech.copyiblock%2Cartrix.imageoptimizer%2Csection.city&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=Y
+2019-03-23 20:24:03 -  - exec CUpdateClientPartner::GetHTTPPage
+2019-03-23 20:24:03 -  - TIME GetUpdatesList(request) 0.285 sec
+2019-03-23 20:24:03 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:25:04 -  - exec CUpdateClientPartner::GetUpdatesList
+2019-03-23 20:25:04 -  - exec CUpdateClientPartner::__CollectRequestData
+2019-03-23 20:25:04 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=24&TYPENC=E&CLIENT_PHPVER=7.1.21&NGINX=Y&dbv=5.7.21&instm=main%2C18.0.4%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Basd.tplvars%2C1.5.1%2CN%3Bmessageservice%2C18.0.0%2CN%3Bsearch%2C17.6.0%2CN%3Bcompression%2C16.0.0%2CN%3Bclouds%2C18.0.0%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Bartrix.imageoptimizer%2C1.0.7%2CN%3Brest%2C18.0.4%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bseo%2C18.1.0%2CN%3Blanding%2C18.4.21%2CN%3Biblock%2C17.6.8%2CN%3Bhighloadblock%2C17.5.1%2CN%3Bb24connector%2C18.0.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bsupport%2C16.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN%3Bsocialservices%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN&reqm=sotbit.seometa%2Casd.tplvars%2Cthebrainstech.copyiblock%2Cartrix.imageoptimizer%2Csection.city&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=Y
+2019-03-23 20:25:04 -  - exec CUpdateClientPartner::GetHTTPPage
+2019-03-23 20:25:04 -  - TIME GetUpdatesList(request) 0.305 sec
+2019-03-23 20:25:04 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:25:08 -  - exec CUpdateClientPartner::GetUpdatesList
+2019-03-23 20:25:08 -  - exec CUpdateClientPartner::__CollectRequestData
+2019-03-23 20:25:08 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=24&TYPENC=E&CLIENT_PHPVER=7.1.21&NGINX=Y&dbv=5.7.21&instm=main%2C18.0.4%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Basd.tplvars%2C1.5.1%2CN%3Bmessageservice%2C18.0.0%2CN%3Bsearch%2C17.6.0%2CN%3Bcompression%2C16.0.0%2CN%3Bclouds%2C18.0.0%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Bartrix.imageoptimizer%2C1.0.7%2CN%3Brest%2C18.0.4%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bseo%2C18.1.0%2CN%3Blanding%2C18.4.21%2CN%3Biblock%2C17.6.8%2CN%3Bhighloadblock%2C17.5.1%2CN%3Bb24connector%2C18.0.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bsupport%2C16.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN%3Bsocialservices%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN&reqm=sotbit.seometa%2Casd.tplvars%2Cthebrainstech.copyiblock%2Cartrix.imageoptimizer%2Csection.city&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=Y
+2019-03-23 20:25:08 -  - exec CUpdateClientPartner::GetHTTPPage
+2019-03-23 20:25:08 -  - TIME GetUpdatesList(request) 0.277 sec
+2019-03-23 20:25:08 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:25:08 -  - exec CUpdateClientPartner::GetUpdatesList
+2019-03-23 20:25:08 -  - exec CUpdateClientPartner::__CollectRequestData
+2019-03-23 20:25:08 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=24&TYPENC=E&CLIENT_PHPVER=7.1.21&NGINX=Y&dbv=5.7.21&instm=main%2C18.0.4%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Basd.tplvars%2C1.5.1%2CN%3Bmessageservice%2C18.0.0%2CN%3Bsearch%2C17.6.0%2CN%3Bcompression%2C16.0.0%2CN%3Bclouds%2C18.0.0%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Bartrix.imageoptimizer%2C1.0.7%2CN%3Brest%2C18.0.4%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bseo%2C18.1.0%2CN%3Blanding%2C18.4.21%2CN%3Biblock%2C17.6.8%2CN%3Bhighloadblock%2C17.5.1%2CN%3Bb24connector%2C18.0.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bsupport%2C16.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN%3Bsocialservices%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN&reqm=sotbit.seometa%2Casd.tplvars%2Cthebrainstech.copyiblock%2Cartrix.imageoptimizer%2Csection.city&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=Y
+2019-03-23 20:25:08 -  - exec CUpdateClientPartner::GetHTTPPage
+2019-03-23 20:25:09 -  - TIME GetUpdatesList(request) 0.276 sec
+2019-03-23 20:25:09 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:25:13 -  - exec CUpdateClientPartner::GetUpdatesList
+2019-03-23 20:25:13 -  - exec CUpdateClientPartner::__CollectRequestData
+2019-03-23 20:25:13 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=24&TYPENC=E&CLIENT_PHPVER=7.1.21&NGINX=Y&dbv=5.7.21&instm=main%2C18.0.4%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Basd.tplvars%2C1.5.1%2CN%3Bmessageservice%2C18.0.0%2CN%3Bsearch%2C17.6.0%2CN%3Bcompression%2C16.0.0%2CN%3Bclouds%2C18.0.0%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Bartrix.imageoptimizer%2C1.0.7%2CN%3Brest%2C18.0.4%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bseo%2C18.1.0%2CN%3Blanding%2C18.4.21%2CN%3Biblock%2C17.6.8%2CN%3Bhighloadblock%2C17.5.1%2CN%3Bb24connector%2C18.0.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bsupport%2C16.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN%3Bsocialservices%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN&reqm=sotbit.seometa%2Casd.tplvars%2Cthebrainstech.copyiblock%2Cartrix.imageoptimizer%2Csection.city&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=Y
+2019-03-23 20:25:13 -  - exec CUpdateClientPartner::GetHTTPPage
+2019-03-23 20:25:13 -  - TIME GetUpdatesList(request) 0.305 sec
+2019-03-23 20:25:13 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:25:23 -  - exec CUpdateClientPartner::GetUpdatesList
+2019-03-23 20:25:23 -  - exec CUpdateClientPartner::__CollectRequestData
+2019-03-23 20:25:23 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=24&TYPENC=E&CLIENT_PHPVER=7.1.21&NGINX=Y&dbv=5.7.21&instm=main%2C18.0.4%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Basd.tplvars%2C1.5.1%2CN%3Bmessageservice%2C18.0.0%2CN%3Bsearch%2C17.6.0%2CN%3Bcompression%2C16.0.0%2CN%3Bclouds%2C18.0.0%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Bartrix.imageoptimizer%2C1.0.7%2CN%3Brest%2C18.0.4%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bseo%2C18.1.0%2CN%3Blanding%2C18.4.21%2CN%3Biblock%2C17.6.8%2CN%3Bhighloadblock%2C17.5.1%2CN%3Bb24connector%2C18.0.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bsupport%2C16.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN%3Bsocialservices%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN&reqm=sotbit.seometa%2Casd.tplvars%2Cthebrainstech.copyiblock%2Cartrix.imageoptimizer%2Csection.city%2Cdev2fun.imagecompress&SUPD_SRS=RU&SUPD_CMP=Y
+2019-03-23 20:25:23 -  - exec CUpdateClientPartner::GetHTTPPage
+2019-03-23 20:25:24 -  - TIME GetUpdatesList(request) 0.329 sec
+2019-03-23 20:25:24 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:25:29 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2019-03-23 20:25:29 -  - exec CUpdateClientPartner::__CollectRequestData
+2019-03-23 20:25:29 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=24&TYPENC=E&CLIENT_PHPVER=7.1.21&NGINX=Y&dbv=5.7.21&instm=main%2C18.0.4%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Basd.tplvars%2C1.5.1%2CN%3Bmessageservice%2C18.0.0%2CN%3Bsearch%2C17.6.0%2CN%3Bcompression%2C16.0.0%2CN%3Bclouds%2C18.0.0%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Bartrix.imageoptimizer%2C1.0.7%2CN%3Brest%2C18.0.4%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bseo%2C18.1.0%2CN%3Blanding%2C18.4.21%2CN%3Biblock%2C17.6.8%2CN%3Bhighloadblock%2C17.5.1%2CN%3Bb24connector%2C18.0.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bsupport%2C16.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN%3Bsocialservices%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN&reqm=dev2fun.imagecompress&lim=Y&SUPD_SRS=RU&SUPD_CMP=Y
+2019-03-23 20:25:29 -  - exec CUpdateClientPartner::GetHTTPPage
+2019-03-23 20:25:29 -  - TIME LoadModulesUpdates(request) 0.28 sec
+2019-03-23 20:25:29 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:25:29 - S - STEP
+2019-03-23 20:25:29 - LMU01 - LoadModulesUpdates-Step
+2019-03-23 20:25:30 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2019-03-23 20:25:30 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:25:30 -  - loadFile
+2019-03-23 20:25:30 - U - RETURN
+2019-03-23 20:25:30 -  - exec CUpdateClientPartner::UnGzipArchive
+2019-03-23 20:25:30 -  - TIME UnGzipArchive 0.008 sec
+2019-03-23 20:25:30 -  - TIME UpdateStepModules 0.012 sec
+2019-03-23 20:25:30 - UPD_SUCCESS - Updated: dev2fun.imagecompress
+2019-03-23 20:25:30 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2019-03-23 20:25:30 -  - exec CUpdateClientPartner::__CollectRequestData
+2019-03-23 20:25:30 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=24&TYPENC=E&CLIENT_PHPVER=7.1.21&NGINX=Y&dbv=5.7.21&instm=main%2C18.0.4%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Basd.tplvars%2C1.5.1%2CN%3Bmessageservice%2C18.0.0%2CN%3Bsearch%2C17.6.0%2CN%3Bcompression%2C16.0.0%2CN%3Bclouds%2C18.0.0%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Bartrix.imageoptimizer%2C1.0.7%2CN%3Brest%2C18.0.4%2CN%3Bdev2fun.imagecompress%2C0.1.1%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bseo%2C18.1.0%2CN%3Blanding%2C18.4.21%2CN%3Biblock%2C17.6.8%2CN%3Bhighloadblock%2C17.5.1%2CN%3Bb24connector%2C18.0.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bsupport%2C16.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN%3Bsocialservices%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN&reqm=dev2fun.imagecompress&lim=Y&SUPD_SRS=RU&SUPD_CMP=Y
+2019-03-23 20:25:30 -  - exec CUpdateClientPartner::GetHTTPPage
+2019-03-23 20:25:30 -  - TIME LoadModulesUpdates(request) 0.266 sec
+2019-03-23 20:25:30 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:25:30 - S - STEP
+2019-03-23 20:25:30 - LMU01 - LoadModulesUpdates-Step
+2019-03-23 20:25:30 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2019-03-23 20:25:30 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:25:30 -  - loadFile
+2019-03-23 20:25:30 - U - RETURN
+2019-03-23 20:25:30 -  - exec CUpdateClientPartner::UnGzipArchive
+2019-03-23 20:25:30 -  - TIME UnGzipArchive 0.002 sec
+2019-03-23 20:25:30 - CSURUS1 - Run updater '/bitrix/updates/update_m1553361930/dev2fun.imagecompress/updater0.1.2.php'
+2019-03-23 20:25:30 -  - TIME UpdateStepModules 0.004 sec
+2019-03-23 20:25:30 - UPD_SUCCESS - Updated: dev2fun.imagecompress (0.1.2)<br>- убрана поддержка Bitrix\\Main\\Text\\String<br> - улучшена поддержка php5.3
+2019-03-23 20:25:30 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2019-03-23 20:25:30 -  - exec CUpdateClientPartner::__CollectRequestData
+2019-03-23 20:25:30 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=24&TYPENC=E&CLIENT_PHPVER=7.1.21&NGINX=Y&dbv=5.7.21&instm=main%2C18.0.4%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Basd.tplvars%2C1.5.1%2CN%3Bmessageservice%2C18.0.0%2CN%3Bsearch%2C17.6.0%2CN%3Bcompression%2C16.0.0%2CN%3Bclouds%2C18.0.0%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Bartrix.imageoptimizer%2C1.0.7%2CN%3Brest%2C18.0.4%2CN%3Bdev2fun.imagecompress%2C0.1.2%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bseo%2C18.1.0%2CN%3Blanding%2C18.4.21%2CN%3Biblock%2C17.6.8%2CN%3Bhighloadblock%2C17.5.1%2CN%3Bb24connector%2C18.0.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bsupport%2C16.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN%3Bsocialservices%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN&reqm=dev2fun.imagecompress&lim=Y&SUPD_SRS=RU&SUPD_CMP=Y
+2019-03-23 20:25:30 -  - exec CUpdateClientPartner::GetHTTPPage
+2019-03-23 20:25:31 -  - TIME LoadModulesUpdates(request) 0.274 sec
+2019-03-23 20:25:31 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:25:31 - S - STEP
+2019-03-23 20:25:31 - LMU01 - LoadModulesUpdates-Step
+2019-03-23 20:25:31 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2019-03-23 20:25:31 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:25:31 -  - loadFile
+2019-03-23 20:25:31 - U - RETURN
+2019-03-23 20:25:31 -  - exec CUpdateClientPartner::UnGzipArchive
+2019-03-23 20:25:31 -  - TIME UnGzipArchive 0.002 sec
+2019-03-23 20:25:31 - CSURUS1 - Run updater '/bitrix/updates/update_m1553361931/dev2fun.imagecompress/updater0.1.3.php'
+2019-03-23 20:25:31 -  - TIME UpdateStepModules 0.004 sec
+2019-03-23 20:25:31 - UPD_SUCCESS - Updated: dev2fun.imagecompress (0.1.3)<br>- убрана константа ADMIN_MODULE_NAME
+2019-03-23 20:25:31 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2019-03-23 20:25:31 -  - exec CUpdateClientPartner::__CollectRequestData
+2019-03-23 20:25:31 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=24&TYPENC=E&CLIENT_PHPVER=7.1.21&NGINX=Y&dbv=5.7.21&instm=main%2C18.0.4%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Basd.tplvars%2C1.5.1%2CN%3Bmessageservice%2C18.0.0%2CN%3Bsearch%2C17.6.0%2CN%3Bcompression%2C16.0.0%2CN%3Bclouds%2C18.0.0%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Bartrix.imageoptimizer%2C1.0.7%2CN%3Brest%2C18.0.4%2CN%3Bdev2fun.imagecompress%2C0.1.3%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bseo%2C18.1.0%2CN%3Blanding%2C18.4.21%2CN%3Biblock%2C17.6.8%2CN%3Bhighloadblock%2C17.5.1%2CN%3Bb24connector%2C18.0.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bsupport%2C16.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN%3Bsocialservices%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN&reqm=dev2fun.imagecompress&lim=Y&SUPD_SRS=RU&SUPD_CMP=Y
+2019-03-23 20:25:31 -  - exec CUpdateClientPartner::GetHTTPPage
+2019-03-23 20:25:31 -  - TIME LoadModulesUpdates(request) 0.268 sec
+2019-03-23 20:25:31 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:25:31 - S - STEP
+2019-03-23 20:25:31 - LMU01 - LoadModulesUpdates-Step
+2019-03-23 20:25:31 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2019-03-23 20:25:31 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:25:31 -  - loadFile
+2019-03-23 20:25:31 - U - RETURN
+2019-03-23 20:25:31 -  - exec CUpdateClientPartner::UnGzipArchive
+2019-03-23 20:25:31 -  - TIME UnGzipArchive 0.001 sec
+2019-03-23 20:25:31 - CSURUS1 - Run updater '/bitrix/updates/update_m1553361931/dev2fun.imagecompress/updater0.1.4.php'
+2019-03-23 20:25:31 -  - TIME UpdateStepModules 0.003 sec
+2019-03-23 20:25:31 - UPD_SUCCESS - Updated: dev2fun.imagecompress (0.1.4)<br>- поправлен баг с правами на картинки после оптимизации<br> - поправлен баг с GetFields<br> - Администраторам: Убедитесь в наличии прав на редактирование и чтение у всех файлов /upload
+2019-03-23 20:25:31 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2019-03-23 20:25:31 -  - exec CUpdateClientPartner::__CollectRequestData
+2019-03-23 20:25:32 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=24&TYPENC=E&CLIENT_PHPVER=7.1.21&NGINX=Y&dbv=5.7.21&instm=main%2C18.0.4%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Basd.tplvars%2C1.5.1%2CN%3Bmessageservice%2C18.0.0%2CN%3Bsearch%2C17.6.0%2CN%3Bcompression%2C16.0.0%2CN%3Bclouds%2C18.0.0%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Bartrix.imageoptimizer%2C1.0.7%2CN%3Brest%2C18.0.4%2CN%3Bdev2fun.imagecompress%2C0.1.4%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bseo%2C18.1.0%2CN%3Blanding%2C18.4.21%2CN%3Biblock%2C17.6.8%2CN%3Bhighloadblock%2C17.5.1%2CN%3Bb24connector%2C18.0.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bsupport%2C16.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN%3Bsocialservices%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN&reqm=dev2fun.imagecompress&lim=Y&SUPD_SRS=RU&SUPD_CMP=Y
+2019-03-23 20:25:32 -  - exec CUpdateClientPartner::GetHTTPPage
+2019-03-23 20:25:32 -  - TIME LoadModulesUpdates(request) 0.272 sec
+2019-03-23 20:25:32 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:25:32 - S - STEP
+2019-03-23 20:25:32 - LMU01 - LoadModulesUpdates-Step
+2019-03-23 20:25:32 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2019-03-23 20:25:32 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:25:32 -  - loadFile
+2019-03-23 20:25:32 - U - RETURN
+2019-03-23 20:25:32 -  - exec CUpdateClientPartner::UnGzipArchive
+2019-03-23 20:25:32 -  - TIME UnGzipArchive 0.002 sec
+2019-03-23 20:25:32 - CSURUS1 - Run updater '/bitrix/updates/update_m1553361932/dev2fun.imagecompress/updater0.1.5.php'
+2019-03-23 20:25:32 -  - TIME UpdateStepModules 0.004 sec
+2019-03-23 20:25:32 - UPD_SUCCESS - Updated: dev2fun.imagecompress (0.1.5)<br>- улучшена поддержка старых версий php<br> - улучшена обработка файлов с не правильными названиями<br> - улучшена обработка уже оптимизированных картинок<br> - улучшена обработка списка картинок
+2019-03-23 20:25:32 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2019-03-23 20:25:32 -  - exec CUpdateClientPartner::__CollectRequestData
+2019-03-23 20:25:32 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=24&TYPENC=E&CLIENT_PHPVER=7.1.21&NGINX=Y&dbv=5.7.21&instm=main%2C18.0.4%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Basd.tplvars%2C1.5.1%2CN%3Bmessageservice%2C18.0.0%2CN%3Bsearch%2C17.6.0%2CN%3Bcompression%2C16.0.0%2CN%3Bclouds%2C18.0.0%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Bartrix.imageoptimizer%2C1.0.7%2CN%3Brest%2C18.0.4%2CN%3Bdev2fun.imagecompress%2C0.1.5%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bseo%2C18.1.0%2CN%3Blanding%2C18.4.21%2CN%3Biblock%2C17.6.8%2CN%3Bhighloadblock%2C17.5.1%2CN%3Bb24connector%2C18.0.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bsupport%2C16.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN%3Bsocialservices%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN&reqm=dev2fun.imagecompress&lim=Y&SUPD_SRS=RU&SUPD_CMP=Y
+2019-03-23 20:25:32 -  - exec CUpdateClientPartner::GetHTTPPage
+2019-03-23 20:25:32 -  - TIME LoadModulesUpdates(request) 0.267 sec
+2019-03-23 20:25:32 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:25:32 - S - STEP
+2019-03-23 20:25:32 - LMU01 - LoadModulesUpdates-Step
+2019-03-23 20:25:32 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2019-03-23 20:25:32 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:25:32 -  - loadFile
+2019-03-23 20:25:33 - U - RETURN
+2019-03-23 20:25:33 -  - exec CUpdateClientPartner::UnGzipArchive
+2019-03-23 20:25:33 -  - TIME UnGzipArchive 0.001 sec
+2019-03-23 20:25:33 - CSURUS1 - Run updater '/bitrix/updates/update_m1553361933/dev2fun.imagecompress/updater0.1.6.php'
+2019-03-23 20:25:33 -  - TIME UpdateStepModules 0.002 sec
+2019-03-23 20:25:33 - UPD_SUCCESS - Updated: dev2fun.imagecompress (0.1.6)<br>- улучшена поддержка php7
+2019-03-23 20:25:33 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2019-03-23 20:25:33 -  - exec CUpdateClientPartner::__CollectRequestData
+2019-03-23 20:25:33 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=24&TYPENC=E&CLIENT_PHPVER=7.1.21&NGINX=Y&dbv=5.7.21&instm=main%2C18.0.4%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Basd.tplvars%2C1.5.1%2CN%3Bmessageservice%2C18.0.0%2CN%3Bsearch%2C17.6.0%2CN%3Bcompression%2C16.0.0%2CN%3Bclouds%2C18.0.0%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Bartrix.imageoptimizer%2C1.0.7%2CN%3Brest%2C18.0.4%2CN%3Bdev2fun.imagecompress%2C0.1.6%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bseo%2C18.1.0%2CN%3Blanding%2C18.4.21%2CN%3Biblock%2C17.6.8%2CN%3Bhighloadblock%2C17.5.1%2CN%3Bb24connector%2C18.0.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bsupport%2C16.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN%3Bsocialservices%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN&reqm=dev2fun.imagecompress&lim=Y&SUPD_SRS=RU&SUPD_CMP=Y
+2019-03-23 20:25:33 -  - exec CUpdateClientPartner::GetHTTPPage
+2019-03-23 20:25:33 -  - TIME LoadModulesUpdates(request) 0.277 sec
+2019-03-23 20:25:33 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:25:33 - S - STEP
+2019-03-23 20:25:33 - LMU01 - LoadModulesUpdates-Step
+2019-03-23 20:25:33 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2019-03-23 20:25:33 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:25:33 -  - loadFile
+2019-03-23 20:25:33 - U - RETURN
+2019-03-23 20:25:33 -  - exec CUpdateClientPartner::UnGzipArchive
+2019-03-23 20:25:33 -  - TIME UnGzipArchive 0.002 sec
+2019-03-23 20:25:33 - CSURUS1 - Run updater '/bitrix/updates/update_m1553361933/dev2fun.imagecompress/updater0.1.7.php'
+2019-03-23 20:25:33 -  - TIME UpdateStepModules 0.004 sec
+2019-03-23 20:25:33 - UPD_SUCCESS - Updated: dev2fun.imagecompress (0.1.7)<br>- улучшена поддержка multiple<br> - добавленна поддержка progressive jpeg<br> - добавленна поддержка запрета уменьшения качества<br>
+2019-03-23 20:25:33 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2019-03-23 20:25:33 -  - exec CUpdateClientPartner::__CollectRequestData
+2019-03-23 20:25:33 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=24&TYPENC=E&CLIENT_PHPVER=7.1.21&NGINX=Y&dbv=5.7.21&instm=main%2C18.0.4%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Basd.tplvars%2C1.5.1%2CN%3Bmessageservice%2C18.0.0%2CN%3Bsearch%2C17.6.0%2CN%3Bcompression%2C16.0.0%2CN%3Bclouds%2C18.0.0%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Bartrix.imageoptimizer%2C1.0.7%2CN%3Brest%2C18.0.4%2CN%3Bdev2fun.imagecompress%2C0.1.7%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bseo%2C18.1.0%2CN%3Blanding%2C18.4.21%2CN%3Biblock%2C17.6.8%2CN%3Bhighloadblock%2C17.5.1%2CN%3Bb24connector%2C18.0.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bsupport%2C16.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN%3Bsocialservices%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN&reqm=dev2fun.imagecompress&lim=Y&SUPD_SRS=RU&SUPD_CMP=Y
+2019-03-23 20:25:33 -  - exec CUpdateClientPartner::GetHTTPPage
+2019-03-23 20:25:33 -  - TIME LoadModulesUpdates(request) 0.262 sec
+2019-03-23 20:25:33 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:25:33 - S - STEP
+2019-03-23 20:25:33 - LMU01 - LoadModulesUpdates-Step
+2019-03-23 20:25:34 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2019-03-23 20:25:34 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:25:34 -  - loadFile
+2019-03-23 20:25:34 - U - RETURN
+2019-03-23 20:25:34 -  - exec CUpdateClientPartner::UnGzipArchive
+2019-03-23 20:25:34 -  - TIME UnGzipArchive 0.003 sec
+2019-03-23 20:25:34 - CSURUS1 - Run updater '/bitrix/updates/update_m1553361934/dev2fun.imagecompress/updater0.1.8.php'
+2019-03-23 20:25:34 -  - TIME UpdateStepModules 0.006 sec
+2019-03-23 20:25:34 - UPD_SUCCESS - Updated: dev2fun.imagecompress (0.1.8)<br>- улучшена поддержка php5.3<br> - добавлена проверка на наличие картинке на диске<br> - добавлен запрет сжатия при отсутствии картинки на диске<br> - теперь при установке автоматически включается прогрессивное сжатие<br> - теперь при установке у optipng автоматически устанавливается степень сжатия 5
+2019-03-23 20:25:34 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2019-03-23 20:25:34 -  - exec CUpdateClientPartner::__CollectRequestData
+2019-03-23 20:25:34 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=24&TYPENC=E&CLIENT_PHPVER=7.1.21&NGINX=Y&dbv=5.7.21&instm=main%2C18.0.4%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Basd.tplvars%2C1.5.1%2CN%3Bmessageservice%2C18.0.0%2CN%3Bsearch%2C17.6.0%2CN%3Bcompression%2C16.0.0%2CN%3Bclouds%2C18.0.0%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Bartrix.imageoptimizer%2C1.0.7%2CN%3Brest%2C18.0.4%2CN%3Bdev2fun.imagecompress%2C0.1.8%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bseo%2C18.1.0%2CN%3Blanding%2C18.4.21%2CN%3Biblock%2C17.6.8%2CN%3Bhighloadblock%2C17.5.1%2CN%3Bb24connector%2C18.0.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bsupport%2C16.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN%3Bsocialservices%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN&reqm=dev2fun.imagecompress&lim=Y&SUPD_SRS=RU&SUPD_CMP=Y
+2019-03-23 20:25:34 -  - exec CUpdateClientPartner::GetHTTPPage
+2019-03-23 20:25:34 -  - TIME LoadModulesUpdates(request) 0.299 sec
+2019-03-23 20:25:34 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:25:34 - S - STEP
+2019-03-23 20:25:34 - LMU01 - LoadModulesUpdates-Step
+2019-03-23 20:25:34 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2019-03-23 20:25:34 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:25:34 -  - loadFile
+2019-03-23 20:25:34 - U - RETURN
+2019-03-23 20:25:34 -  - exec CUpdateClientPartner::UnGzipArchive
+2019-03-23 20:25:34 -  - TIME UnGzipArchive 0.002 sec
+2019-03-23 20:25:34 - CSURUS1 - Run updater '/bitrix/updates/update_m1553361934/dev2fun.imagecompress/updater0.1.9.php'
+2019-03-23 20:25:34 -  - TIME UpdateStepModules 0.006 sec
+2019-03-23 20:25:34 - UPD_SUCCESS - Updated: dev2fun.imagecompress (0.1.9)<br>- улучшена множественная обработка картинок<br>
+2019-03-23 20:25:34 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2019-03-23 20:25:34 -  - exec CUpdateClientPartner::__CollectRequestData
+2019-03-23 20:25:34 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=24&TYPENC=E&CLIENT_PHPVER=7.1.21&NGINX=Y&dbv=5.7.21&instm=main%2C18.0.4%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Basd.tplvars%2C1.5.1%2CN%3Bmessageservice%2C18.0.0%2CN%3Bsearch%2C17.6.0%2CN%3Bcompression%2C16.0.0%2CN%3Bclouds%2C18.0.0%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Bartrix.imageoptimizer%2C1.0.7%2CN%3Brest%2C18.0.4%2CN%3Bdev2fun.imagecompress%2C0.1.9%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bseo%2C18.1.0%2CN%3Blanding%2C18.4.21%2CN%3Biblock%2C17.6.8%2CN%3Bhighloadblock%2C17.5.1%2CN%3Bb24connector%2C18.0.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bsupport%2C16.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN%3Bsocialservices%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN&reqm=dev2fun.imagecompress&lim=Y&SUPD_SRS=RU&SUPD_CMP=Y
+2019-03-23 20:25:34 -  - exec CUpdateClientPartner::GetHTTPPage
+2019-03-23 20:25:35 -  - TIME LoadModulesUpdates(request) 0.268 sec
+2019-03-23 20:25:35 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:25:35 - S - STEP
+2019-03-23 20:25:35 - LMU01 - LoadModulesUpdates-Step
+2019-03-23 20:25:35 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2019-03-23 20:25:35 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:25:35 -  - loadFile
+2019-03-23 20:25:35 - U - RETURN
+2019-03-23 20:25:35 -  - exec CUpdateClientPartner::UnGzipArchive
+2019-03-23 20:25:35 -  - TIME UnGzipArchive 0.001 sec
+2019-03-23 20:25:35 - CSURUS1 - Run updater '/bitrix/updates/update_m1553361935/dev2fun.imagecompress/updater0.1.10.php'
+2019-03-23 20:25:35 -  - TIME UpdateStepModules 0.003 sec
+2019-03-23 20:25:35 - UPD_SUCCESS - Updated: dev2fun.imagecompress (0.1.10)<br>- улучшен вывод счетчика, при множественной обработке
+2019-03-23 20:25:35 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2019-03-23 20:25:35 -  - exec CUpdateClientPartner::__CollectRequestData
+2019-03-23 20:25:35 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=24&TYPENC=E&CLIENT_PHPVER=7.1.21&NGINX=Y&dbv=5.7.21&instm=main%2C18.0.4%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Basd.tplvars%2C1.5.1%2CN%3Bmessageservice%2C18.0.0%2CN%3Bsearch%2C17.6.0%2CN%3Bcompression%2C16.0.0%2CN%3Bclouds%2C18.0.0%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Bartrix.imageoptimizer%2C1.0.7%2CN%3Brest%2C18.0.4%2CN%3Bdev2fun.imagecompress%2C0.1.10%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bseo%2C18.1.0%2CN%3Blanding%2C18.4.21%2CN%3Biblock%2C17.6.8%2CN%3Bhighloadblock%2C17.5.1%2CN%3Bb24connector%2C18.0.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bsupport%2C16.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN%3Bsocialservices%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN&reqm=dev2fun.imagecompress&lim=Y&SUPD_SRS=RU&SUPD_CMP=Y
+2019-03-23 20:25:35 -  - exec CUpdateClientPartner::GetHTTPPage
+2019-03-23 20:25:35 -  - TIME LoadModulesUpdates(request) 0.289 sec
+2019-03-23 20:25:35 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:25:35 - S - STEP
+2019-03-23 20:25:35 - LMU01 - LoadModulesUpdates-Step
+2019-03-23 20:25:35 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2019-03-23 20:25:35 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:25:35 -  - loadFile
+2019-03-23 20:25:35 - U - RETURN
+2019-03-23 20:25:35 -  - exec CUpdateClientPartner::UnGzipArchive
+2019-03-23 20:25:35 -  - TIME UnGzipArchive 0.002 sec
+2019-03-23 20:25:35 - CSURUS1 - Run updater '/bitrix/updates/update_m1553361935/dev2fun.imagecompress/updater0.1.11.php'
+2019-03-23 20:25:35 -  - TIME UpdateStepModules 0.003 sec
+2019-03-23 20:25:35 - UPD_SUCCESS - Updated: dev2fun.imagecompress (0.1.11)<br>- техническое обновление
+2019-03-23 20:25:36 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2019-03-23 20:25:36 -  - exec CUpdateClientPartner::__CollectRequestData
+2019-03-23 20:25:36 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=24&TYPENC=E&CLIENT_PHPVER=7.1.21&NGINX=Y&dbv=5.7.21&instm=main%2C18.0.4%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Basd.tplvars%2C1.5.1%2CN%3Bmessageservice%2C18.0.0%2CN%3Bsearch%2C17.6.0%2CN%3Bcompression%2C16.0.0%2CN%3Bclouds%2C18.0.0%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Bartrix.imageoptimizer%2C1.0.7%2CN%3Brest%2C18.0.4%2CN%3Bdev2fun.imagecompress%2C0.1.11%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bseo%2C18.1.0%2CN%3Blanding%2C18.4.21%2CN%3Biblock%2C17.6.8%2CN%3Bhighloadblock%2C17.5.1%2CN%3Bb24connector%2C18.0.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bsupport%2C16.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN%3Bsocialservices%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN&reqm=dev2fun.imagecompress&lim=Y&SUPD_SRS=RU&SUPD_CMP=Y
+2019-03-23 20:25:36 -  - exec CUpdateClientPartner::GetHTTPPage
+2019-03-23 20:25:36 -  - TIME LoadModulesUpdates(request) 0.267 sec
+2019-03-23 20:25:36 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:25:36 - S - STEP
+2019-03-23 20:25:36 - LMU01 - LoadModulesUpdates-Step
+2019-03-23 20:25:36 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2019-03-23 20:25:36 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:25:36 -  - loadFile
+2019-03-23 20:25:36 - U - RETURN
+2019-03-23 20:25:36 -  - exec CUpdateClientPartner::UnGzipArchive
+2019-03-23 20:25:36 -  - TIME UnGzipArchive 0.003 sec
+2019-03-23 20:25:36 - CSURUS1 - Run updater '/bitrix/updates/update_m1553361936/dev2fun.imagecompress/updater0.1.12.php'
+2019-03-23 20:25:36 -  - TIME UpdateStepModules 0.018 sec
+2019-03-23 20:25:36 - UPD_SUCCESS - Updated: dev2fun.imagecompress (0.1.12)<br>- исправлен баг с количеством шагов<br> - исправлен баг с подвисанием при отсутствии картинок<br> - добавлен функционал количества картинок за шаг оптимизации
+2019-03-23 20:25:36 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2019-03-23 20:25:36 -  - exec CUpdateClientPartner::__CollectRequestData
+2019-03-23 20:25:36 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=24&TYPENC=E&CLIENT_PHPVER=7.1.21&NGINX=Y&dbv=5.7.21&instm=main%2C18.0.4%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Basd.tplvars%2C1.5.1%2CN%3Bmessageservice%2C18.0.0%2CN%3Bsearch%2C17.6.0%2CN%3Bcompression%2C16.0.0%2CN%3Bclouds%2C18.0.0%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Bartrix.imageoptimizer%2C1.0.7%2CN%3Brest%2C18.0.4%2CN%3Bdev2fun.imagecompress%2C0.1.12%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bseo%2C18.1.0%2CN%3Blanding%2C18.4.21%2CN%3Biblock%2C17.6.8%2CN%3Bhighloadblock%2C17.5.1%2CN%3Bb24connector%2C18.0.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bsupport%2C16.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN%3Bsocialservices%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN&reqm=dev2fun.imagecompress&lim=Y&SUPD_SRS=RU&SUPD_CMP=Y
+2019-03-23 20:25:36 -  - exec CUpdateClientPartner::GetHTTPPage
+2019-03-23 20:25:36 -  - TIME LoadModulesUpdates(request) 0.277 sec
+2019-03-23 20:25:36 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:25:36 - S - STEP
+2019-03-23 20:25:36 - LMU01 - LoadModulesUpdates-Step
+2019-03-23 20:25:37 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2019-03-23 20:25:37 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:25:37 -  - loadFile
+2019-03-23 20:25:37 - U - RETURN
+2019-03-23 20:25:37 -  - exec CUpdateClientPartner::UnGzipArchive
+2019-03-23 20:25:37 -  - TIME UnGzipArchive 0.008 sec
+2019-03-23 20:25:37 - CSURUS1 - Run updater '/bitrix/updates/update_m1553361937/dev2fun.imagecompress/updater0.2.1.php'
+2019-03-23 20:25:37 -  - TIME UpdateStepModules 0.027 sec
+2019-03-23 20:25:37 - UPD_SUCCESS - Updated: dev2fun.imagecompress (0.2.1)<br>- Улучшен алгоритм \"Сжать все\"<br> - Добавлена поддержка выбора алгоритмов оптимизации. Задел на будущее<br> - Добален шаг с сохранением таблиц оптимизированных картинок при удалении модуля<br> - Улучшена обработка ошибок<br> - Добавлен скрипт для оптимизации из консоли /bitrix/modules/dev2fun.imagecompress/console/optimize.php подробности на странице модуля<br> - Поддерживаемая версия PHP 5.5+<br> - Улучшена поддержка PHP7.2
+2019-03-23 20:25:37 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2019-03-23 20:25:37 -  - exec CUpdateClientPartner::__CollectRequestData
+2019-03-23 20:25:37 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=24&TYPENC=E&CLIENT_PHPVER=7.1.21&NGINX=Y&dbv=5.7.21&instm=main%2C18.0.4%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Basd.tplvars%2C1.5.1%2CN%3Bmessageservice%2C18.0.0%2CN%3Bsearch%2C17.6.0%2CN%3Bcompression%2C16.0.0%2CN%3Bclouds%2C18.0.0%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Bartrix.imageoptimizer%2C1.0.7%2CN%3Brest%2C18.0.4%2CN%3Bdev2fun.imagecompress%2C0.2.1%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bseo%2C18.1.0%2CN%3Blanding%2C18.4.21%2CN%3Biblock%2C17.6.8%2CN%3Bhighloadblock%2C17.5.1%2CN%3Bb24connector%2C18.0.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bsupport%2C16.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN%3Bsocialservices%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN&reqm=dev2fun.imagecompress&lim=Y&SUPD_SRS=RU&SUPD_CMP=Y
+2019-03-23 20:25:37 -  - exec CUpdateClientPartner::GetHTTPPage
+2019-03-23 20:25:37 -  - TIME LoadModulesUpdates(request) 0.288 sec
+2019-03-23 20:25:37 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:25:37 - S - STEP
+2019-03-23 20:25:37 - LMU01 - LoadModulesUpdates-Step
+2019-03-23 20:25:37 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2019-03-23 20:25:37 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:25:37 -  - loadFile
+2019-03-23 20:25:37 - U - RETURN
+2019-03-23 20:25:37 -  - exec CUpdateClientPartner::UnGzipArchive
+2019-03-23 20:25:37 -  - TIME UnGzipArchive 0.002 sec
+2019-03-23 20:25:37 - CSURUS1 - Run updater '/bitrix/updates/update_m1553361937/dev2fun.imagecompress/updater0.2.2.php'
+2019-03-23 20:25:37 -  - TIME UpdateStepModules 0.005 sec
+2019-03-23 20:25:37 - UPD_SUCCESS - Updated: dev2fun.imagecompress (0.2.2)<br>- Улучшена поддержка PHP5.6<br> - <b>Внимание!</b> Ветка 0.2.X последняя для PHP5. С версии модуля 0.3+ будет поддерживаться только PHP7+.<br> <b>Пожалуйста обновите версию PHP заранее!</b>
+2019-03-23 20:25:37 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2019-03-23 20:25:37 -  - exec CUpdateClientPartner::__CollectRequestData
+2019-03-23 20:25:37 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=24&TYPENC=E&CLIENT_PHPVER=7.1.21&NGINX=Y&dbv=5.7.21&instm=main%2C18.0.4%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Basd.tplvars%2C1.5.1%2CN%3Bmessageservice%2C18.0.0%2CN%3Bsearch%2C17.6.0%2CN%3Bcompression%2C16.0.0%2CN%3Bclouds%2C18.0.0%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Bartrix.imageoptimizer%2C1.0.7%2CN%3Brest%2C18.0.4%2CN%3Bdev2fun.imagecompress%2C0.2.2%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bseo%2C18.1.0%2CN%3Blanding%2C18.4.21%2CN%3Biblock%2C17.6.8%2CN%3Bhighloadblock%2C17.5.1%2CN%3Bb24connector%2C18.0.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bsupport%2C16.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN%3Bsocialservices%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN&reqm=dev2fun.imagecompress&lim=Y&SUPD_SRS=RU&SUPD_CMP=Y
+2019-03-23 20:25:37 -  - exec CUpdateClientPartner::GetHTTPPage
+2019-03-23 20:25:38 -  - TIME LoadModulesUpdates(request) 0.452 sec
+2019-03-23 20:25:38 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:25:38 - S - STEP
+2019-03-23 20:25:38 - LMU01 - LoadModulesUpdates-Step
+2019-03-23 20:25:38 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2019-03-23 20:25:38 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:25:38 -  - loadFile
+2019-03-23 20:25:38 - U - RETURN
+2019-03-23 20:25:38 -  - exec CUpdateClientPartner::UnGzipArchive
+2019-03-23 20:25:38 -  - TIME UnGzipArchive 0.003 sec
+2019-03-23 20:25:38 - CSURUS1 - Run updater '/bitrix/updates/update_m1553361938/dev2fun.imagecompress/updater0.2.3.php'
+2019-03-23 20:25:38 -  - TIME UpdateStepModules 0.013 sec
+2019-03-23 20:25:38 - UPD_SUCCESS - Updated: dev2fun.imagecompress (0.2.3)<br>- добавлены события<br> - добавлен функционал возможности ресайза картинок перед оптимизацией
+2019-03-23 20:25:38 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2019-03-23 20:25:38 -  - exec CUpdateClientPartner::__CollectRequestData
+2019-03-23 20:25:38 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=24&TYPENC=E&CLIENT_PHPVER=7.1.21&NGINX=Y&dbv=5.7.21&instm=main%2C18.0.4%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Basd.tplvars%2C1.5.1%2CN%3Bmessageservice%2C18.0.0%2CN%3Bsearch%2C17.6.0%2CN%3Bcompression%2C16.0.0%2CN%3Bclouds%2C18.0.0%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Bartrix.imageoptimizer%2C1.0.7%2CN%3Brest%2C18.0.4%2CN%3Bdev2fun.imagecompress%2C0.2.3%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bseo%2C18.1.0%2CN%3Blanding%2C18.4.21%2CN%3Biblock%2C17.6.8%2CN%3Bhighloadblock%2C17.5.1%2CN%3Bb24connector%2C18.0.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bsupport%2C16.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN%3Bsocialservices%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN&reqm=dev2fun.imagecompress&lim=Y&SUPD_SRS=RU&SUPD_CMP=Y
+2019-03-23 20:25:38 -  - exec CUpdateClientPartner::GetHTTPPage
+2019-03-23 20:25:38 -  - TIME LoadModulesUpdates(request) 0.283 sec
+2019-03-23 20:25:38 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:25:38 - S - STEP
+2019-03-23 20:25:38 - LMU01 - LoadModulesUpdates-Step
+2019-03-23 20:25:39 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2019-03-23 20:25:39 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:25:39 -  - loadFile
+2019-03-23 20:25:39 - U - RETURN
+2019-03-23 20:25:39 -  - exec CUpdateClientPartner::UnGzipArchive
+2019-03-23 20:25:39 -  - TIME UnGzipArchive 0.002 sec
+2019-03-23 20:25:39 - CSURUS1 - Run updater '/bitrix/updates/update_m1553361939/dev2fun.imagecompress/updater0.2.4.php'
+2019-03-23 20:25:39 -  - TIME UpdateStepModules 0.011 sec
+2019-03-23 20:25:39 - UPD_SUCCESS - Updated: dev2fun.imagecompress (0.2.4)<br>- Улучшена обработка старых версий optipng<br> - Добавлена возможность повторной оптимизации<br> - Улучшен поиск по имени файла<br> <b>Коллеги, готовим минорный релиз с функционалом заменой дублирующих картинок символьными ссылками. <i></i></b><br> <b><i>Поддержите нас донатом, спасибо!</i></b>
+2019-03-23 20:25:39 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2019-03-23 20:25:39 -  - exec CUpdateClientPartner::__CollectRequestData
+2019-03-23 20:25:39 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=24&TYPENC=E&CLIENT_PHPVER=7.1.21&NGINX=Y&dbv=5.7.21&instm=main%2C18.0.4%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Basd.tplvars%2C1.5.1%2CN%3Bmessageservice%2C18.0.0%2CN%3Bsearch%2C17.6.0%2CN%3Bcompression%2C16.0.0%2CN%3Bclouds%2C18.0.0%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Bartrix.imageoptimizer%2C1.0.7%2CN%3Brest%2C18.0.4%2CN%3Bdev2fun.imagecompress%2C0.2.4%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bseo%2C18.1.0%2CN%3Blanding%2C18.4.21%2CN%3Biblock%2C17.6.8%2CN%3Bhighloadblock%2C17.5.1%2CN%3Bb24connector%2C18.0.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bsupport%2C16.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN%3Bsocialservices%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN&reqm=dev2fun.imagecompress&lim=Y&SUPD_SRS=RU&SUPD_CMP=Y
+2019-03-23 20:25:39 -  - exec CUpdateClientPartner::GetHTTPPage
+2019-03-23 20:25:39 -  - TIME LoadModulesUpdates(request) 0.275 sec
+2019-03-23 20:25:39 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:25:39 - STEP - Finish - NOUPDATES
+2019-03-23 20:25:39 - STEP - Finish - NOUPDATES
+2019-03-23 20:25:42 -  - exec CUpdateClientPartner::GetUpdatesList
+2019-03-23 20:25:42 -  - exec CUpdateClientPartner::__CollectRequestData
+2019-03-23 20:25:42 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=24&TYPENC=E&CLIENT_PHPVER=7.1.21&NGINX=Y&dbv=5.7.21&instm=main%2C18.0.4%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Basd.tplvars%2C1.5.1%2CN%3Bmessageservice%2C18.0.0%2CN%3Bsearch%2C17.6.0%2CN%3Bcompression%2C16.0.0%2CN%3Bclouds%2C18.0.0%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Bartrix.imageoptimizer%2C1.0.7%2CN%3Brest%2C18.0.4%2CN%3Bdev2fun.imagecompress%2C0.2.4%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bseo%2C18.1.0%2CN%3Blanding%2C18.4.21%2CN%3Biblock%2C17.6.8%2CN%3Bhighloadblock%2C17.5.1%2CN%3Bb24connector%2C18.0.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bsupport%2C16.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN%3Bsocialservices%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN&reqm=sotbit.seometa%2Casd.tplvars%2Cthebrainstech.copyiblock%2Cartrix.imageoptimizer%2Cdev2fun.imagecompress%2Csection.city&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=Y
+2019-03-23 20:25:42 -  - exec CUpdateClientPartner::GetHTTPPage
+2019-03-23 20:25:42 -  - TIME GetUpdatesList(request) 0.278 sec
+2019-03-23 20:25:42 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:26:03 -  - exec CUpdateClientPartner::GetUpdatesList
+2019-03-23 20:26:03 -  - exec CUpdateClientPartner::__CollectRequestData
+2019-03-23 20:26:03 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=24&TYPENC=E&CLIENT_PHPVER=7.1.21&NGINX=Y&dbv=5.7.21&instm=main%2C18.0.4%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Basd.tplvars%2C1.5.1%2CN%3Bmessageservice%2C18.0.0%2CN%3Bsearch%2C17.6.0%2CN%3Bcompression%2C16.0.0%2CN%3Bclouds%2C18.0.0%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Bartrix.imageoptimizer%2C1.0.7%2CN%3Brest%2C18.0.4%2CN%3Bdev2fun.imagecompress%2C0.2.4%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bseo%2C18.1.0%2CN%3Blanding%2C18.4.21%2CN%3Biblock%2C17.6.8%2CN%3Bhighloadblock%2C17.5.1%2CN%3Bb24connector%2C18.0.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bsupport%2C16.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN%3Bsocialservices%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN&reqm=sotbit.seometa%2Casd.tplvars%2Cthebrainstech.copyiblock%2Cartrix.imageoptimizer%2Cdev2fun.imagecompress%2Csection.city&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=Y
+2019-03-23 20:26:03 -  - exec CUpdateClientPartner::GetHTTPPage
+2019-03-23 20:26:03 -  - TIME GetUpdatesList(request) 0.294 sec
+2019-03-23 20:26:03 -  - exec CUpdateClientPartner::ParseServerData
+2019-03-23 20:26:58 -  - exec CUpdateClientPartner::GetUpdatesList
+2019-03-23 20:26:58 -  - exec CUpdateClientPartner::__CollectRequestData
+2019-03-23 20:26:58 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=24&TYPENC=E&CLIENT_PHPVER=7.1.21&NGINX=Y&dbv=5.7.21&instm=main%2C18.0.4%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Basd.tplvars%2C1.5.1%2CN%3Bmessageservice%2C18.0.0%2CN%3Bsearch%2C17.6.0%2CN%3Bcompression%2C16.0.0%2CN%3Bclouds%2C18.0.0%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Bartrix.imageoptimizer%2C1.0.7%2CN%3Brest%2C18.0.4%2CN%3Bdev2fun.imagecompress%2C0.2.4%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bseo%2C18.1.0%2CN%3Blanding%2C18.4.21%2CN%3Biblock%2C17.6.8%2CN%3Bhighloadblock%2C17.5.1%2CN%3Bb24connector%2C18.0.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bsupport%2C16.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN%3Bsocialservices%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN&reqm=sotbit.seometa%2Casd.tplvars%2Cthebrainstech.copyiblock%2Cartrix.imageoptimizer%2Cdev2fun.imagecompress%2Csection.city&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=Y
+2019-03-23 20:26:58 -  - exec CUpdateClientPartner::GetHTTPPage
+2019-03-23 20:26:58 -  - TIME GetUpdatesList(request) 0.29 sec
+2019-03-23 20:26:58 -  - exec CUpdateClientPartner::ParseServerData
