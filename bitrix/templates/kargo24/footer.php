@@ -174,7 +174,7 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 	</div>
 	<!-- end form-complain-popup -->
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script>
 		window.jQuery || document.write('<script src="<?=SITE_TEMPLATE_PATH?>/js/jquery.min.js"><\/script>')
 	</script>
