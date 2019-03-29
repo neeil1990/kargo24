@@ -50,7 +50,7 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 						<div class="head-switch-lang mobile">
 							<div class="sort">
 								<div class="current-sort mod">
-									<span class="line"><img src="img/static/flag/01.jpg" alt="alt"></span>
+									<span class="line"><img src="<?=SITE_TEMPLATE_PATH?>/img/static/flag/01.jpg" alt="alt"></span>
 									<span class="icon"></span>
 									<ul class="current-list">
 										<li class="text">Выберите страну</li>
