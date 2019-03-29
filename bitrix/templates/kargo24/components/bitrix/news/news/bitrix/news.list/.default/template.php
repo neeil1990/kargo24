@@ -54,10 +54,10 @@ $this->setFrameMode(true);
 			<div class="col-sm-3">
 				<div class="sidebar-product-item">
 					<div class="logo">
-						<img src="img/static/ad-unit-logo.png" alt="alt">
+						<img src="<?=SITE_TEMPLATE_PATH?>/img/static/ad-unit-logo.png" alt="alt">
 					</div>
 					<div class="product-img">
-						<a href=""><img src="img/static/construction-machinery/01.png" alt="alt"></a>
+						<a href=""><img src="<?=SITE_TEMPLATE_PATH?>/img/static/construction-machinery/01.png" alt="alt"></a>
 					</div>
 					<div class="product-desc">
 						<h3 class="title">Бульдозер</h3>
@@ -73,56 +73,6 @@ $this->setFrameMode(true);
 							<tr>
 								<td>Контакты: </td>
 								<td>7 950 111 11 11 (Алексей)</td>
-							</tr>
-							</tbody></table>
-					</div>
-				</div>
-				<div class="sidebar-product-item">
-					<div class="logo">
-						<img src="img/static/ad-unit-logo.png" alt="alt">
-					</div>
-					<div class="product-img">
-						<a href=""><img src="img/static/construction-machinery/02.png" alt="alt"></a>
-					</div>
-					<div class="product-desc">
-						<h3 class="title">Автогрейдер</h3>
-						<table class="desc-info">
-							<tbody><tr>
-								<td>Город:</td>
-								<td>Челябинск</td>
-							</tr>
-							<tr>
-								<td>Цена:</td>
-								<td>2 300 000 руб.</td>
-							</tr>
-							<tr>
-								<td>Контакты: </td>
-								<td>89080660033 (Руслан)</td>
-							</tr>
-							</tbody></table>
-					</div>
-				</div>
-				<div class="sidebar-product-item">
-					<div class="logo">
-						<img src="img/static/ad-unit-logo.png" alt="alt">
-					</div>
-					<div class="product-img">
-						<a href=""><img src="img/static/construction-machinery/03.png" alt="alt"></a>
-					</div>
-					<div class="product-desc">
-						<h3 class="title">мини-погрузчик</h3>
-						<table class="desc-info">
-							<tbody><tr>
-								<td>Город:</td>
-								<td>Уфа</td>
-							</tr>
-							<tr>
-								<td>Цена:</td>
-								<td>3 400 000 руб.</td>
-							</tr>
-							<tr>
-								<td>Контакты: </td>
-								<td>89080934871 (Алек)</td>
 							</tr>
 							</tbody></table>
 					</div>
