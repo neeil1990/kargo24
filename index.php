@@ -47,12 +47,12 @@ $APPLICATION->SetTitle("Kargo24.su - портал объявлений от ча
                     <div class="unified-ad-unit">
                         <div class="ad-unit-head">
                             <div class="logo">
-                                <img src="img/static/ad-unit-logo.png" alt="alt">
+                                <img src="<?=SITE_TEMPLATE_PATH?>/img/static/ad-unit-logo.png" alt="alt">
                             </div>
                             <span class="logo-text">Диспетчерский интернет-сервис</span>
                         </div>
                         <div class="ad-unit-img">
-                            <img src="img/static/ad.png" alt="alt">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/img/static/ad.png" alt="alt">
                         </div>
                         <div class="ad-init-footer">
                             <span class="title">Узнайте как разместить рекламу</span>
@@ -115,10 +115,10 @@ $APPLICATION->SetTitle("Kargo24.su - портал объявлений от ча
                 <div class="col-sm-3">
                     <div class="sidebar-product-item">
                         <div class="logo">
-                            <img src="img/static/ad-unit-logo.png" alt="alt">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/img/static/ad-unit-logo.png" alt="alt">
                         </div>
                         <div class="product-img">
-                            <a href=""><img src="img/static/construction-machinery/01.png" alt="alt"></a>
+                            <a href=""><img src="<?=SITE_TEMPLATE_PATH?>/img/static/construction-machinery/01.png" alt="alt"></a>
                         </div>
                         <div class="product-desc">
                             <h3 class="title">Бульдозер</h3>
@@ -140,10 +140,10 @@ $APPLICATION->SetTitle("Kargo24.su - портал объявлений от ча
                     </div>
                     <div class="sidebar-product-item desktop">
                         <div class="logo">
-                            <img src="img/static/ad-unit-logo.png" alt="alt">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/img/static/ad-unit-logo.png" alt="alt">
                         </div>
                         <div class="product-img">
-                            <a href=""><img src="img/static/construction-machinery/02.png" alt="alt"></a>
+                            <a href=""><img src="<?=SITE_TEMPLATE_PATH?>/img/static/construction-machinery/02.png" alt="alt"></a>
                         </div>
                         <div class="product-desc">
                             <h3 class="title">Автогрейдер</h3>
@@ -316,10 +316,10 @@ $APPLICATION->SetTitle("Kargo24.su - портал объявлений от ча
                     <div class="col-sm-9">
                         <div class="sidebar-product-item mobile">
                             <div class="logo">
-                                <img src="img/static/ad-unit-logo.png" alt="alt">
+                                <img src="<?=SITE_TEMPLATE_PATH?>/img/static/ad-unit-logo.png" alt="alt">
                             </div>
                             <div class="product-img">
-                                <a href=""><img src="img/static/construction-machinery/03.png" alt="alt"></a>
+                                <a href=""><img src="<?=SITE_TEMPLATE_PATH?>/img/static/construction-machinery/03.png" alt="alt"></a>
                             </div>
                             <div class="product-desc">
                                 <h3 class="title">мини-погрузчик</h3>
@@ -385,10 +385,10 @@ $APPLICATION->SetTitle("Kargo24.su - портал объявлений от ча
                     <div class="col-sm-3">
                         <div class="sidebar-product-item desktop">
                             <div class="logo">
-                                <img src="img/static/ad-unit-logo.png" alt="alt">
+                                <img src="<?=SITE_TEMPLATE_PATH?>/img/static/ad-unit-logo.png" alt="alt">
                             </div>
                             <div class="product-img">
-                                <a href=""><img src="img/static/construction-machinery/03.png" alt="alt"></a>
+                                <a href=""><img src="<?=SITE_TEMPLATE_PATH?>/img/static/construction-machinery/03.png" alt="alt"></a>
                             </div>
                             <div class="product-desc">
                                 <h3 class="title">мини-погрузчик</h3>
@@ -427,6 +427,7 @@ $APPLICATION->SetTitle("Kargo24.su - портал объявлений от ча
             </div>
         </section>
         <!-- end service-section -->
+        <!--
         <section class="top-companies-section">
             <div class="container">
                 <div class="section-title white">Топ-10 компаний нашего сервиса</div>
@@ -435,169 +436,7 @@ $APPLICATION->SetTitle("Kargo24.su - портал объявлений от ча
                         <div class="top-companie-item">
                             <a href="">
                                 <div class="item-img">
-                                    <img src="img/static/top-companie/01.png" alt="alt">
-                                </div>
-                                <div class="item-desc">
-                                    <h3 class="title">Мастер-СтройМеталл</h3>
-                                    <p class="text">
-                                        Специализация:
-                                        <span class="color">Аренда спецтехники</span>
-                                        Участвует в сервисе:
-                                        <span class="color">2 года 7 месяцев</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 column">
-                        <div class="top-companie-item">
-                            <a href="">
-                                <div class="item-img">
                                     <img src="img/static/top-companie/your-logo.png" alt="alt">
-                                </div>
-                                <div class="item-desc">
-                                    <h3 class="title">Мастер-СтройМеталл</h3>
-                                    <p class="text">
-                                        Специализация:
-                                        <span class="color">Аренда спецтехники</span>
-                                        Участвует в сервисе:
-                                        <span class="color">2 года 7 месяцев</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 column">
-                        <div class="top-companie-item">
-                            <a href="">
-                                <div class="item-img">
-                                    <img src="img/static/top-companie/error.png" alt="alt">
-                                </div>
-                                <div class="item-desc">
-                                    <h3 class="title">Мастер-СтройМеталл</h3>
-                                    <p class="text">
-                                        Специализация:
-                                        <span class="color">Аренда спецтехники</span>
-                                        Участвует в сервисе:
-                                        <span class="color">2 года 7 месяцев</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 column">
-                        <div class="top-companie-item">
-                            <a href="">
-                                <div class="item-img">
-                                    <img src="img/static/top-companie/01.png" alt="alt">
-                                </div>
-                                <div class="item-desc">
-                                    <h3 class="title">Мастер-СтройМеталл</h3>
-                                    <p class="text">
-                                        Специализация:
-                                        <span class="color">Аренда спецтехники</span>
-                                        Участвует в сервисе:
-                                        <span class="color">2 года 7 месяцев</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 column">
-                        <div class="top-companie-item">
-                            <a href="">
-                                <div class="item-img">
-                                    <img src="img/static/top-companie/your-logo.png" alt="alt">
-                                </div>
-                                <div class="item-desc">
-                                    <h3 class="title">Мастер-СтройМеталл</h3>
-                                    <p class="text">
-                                        Специализация:
-                                        <span class="color">Аренда спецтехники</span>
-                                        Участвует в сервисе:
-                                        <span class="color">2 года 7 месяцев</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 column">
-                        <div class="top-companie-item">
-                            <a href="">
-                                <div class="item-img">
-                                    <img src="img/static/top-companie/error.png" alt="alt">
-                                </div>
-                                <div class="item-desc">
-                                    <h3 class="title">Мастер-СтройМеталл</h3>
-                                    <p class="text">
-                                        Специализация:
-                                        <span class="color">Аренда спецтехники</span>
-                                        Участвует в сервисе:
-                                        <span class="color">2 года 7 месяцев</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 column">
-                        <div class="top-companie-item">
-                            <a href="">
-                                <div class="item-img">
-                                    <img src="img/static/top-companie/01.png" alt="alt">
-                                </div>
-                                <div class="item-desc">
-                                    <h3 class="title">Мастер-СтройМеталл</h3>
-                                    <p class="text">
-                                        Специализация:
-                                        <span class="color">Аренда спецтехники</span>
-                                        Участвует в сервисе:
-                                        <span class="color">2 года 7 месяцев</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 column">
-                        <div class="top-companie-item">
-                            <a href="">
-                                <div class="item-img">
-                                    <img src="img/static/top-companie/your-logo.png" alt="alt">
-                                </div>
-                                <div class="item-desc">
-                                    <h3 class="title">Мастер-СтройМеталл</h3>
-                                    <p class="text">
-                                        Специализация:
-                                        <span class="color">Аренда спецтехники</span>
-                                        Участвует в сервисе:
-                                        <span class="color">2 года 7 месяцев</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 column">
-                        <div class="top-companie-item">
-                            <a href="">
-                                <div class="item-img">
-                                    <img src="img/static/top-companie/error.png" alt="alt">
-                                </div>
-                                <div class="item-desc">
-                                    <h3 class="title">Мастер-СтройМеталл</h3>
-                                    <p class="text">
-                                        Специализация:
-                                        <span class="color">Аренда спецтехники</span>
-                                        Участвует в сервисе:
-                                        <span class="color">2 года 7 месяцев</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 column">
-                        <div class="top-companie-item">
-                            <a href="">
-                                <div class="item-img">
-                                    <img src="img/static/top-companie/01.png" alt="alt">
                                 </div>
                                 <div class="item-desc">
                                     <h3 class="title">Мастер-СтройМеталл</h3>
@@ -617,6 +456,7 @@ $APPLICATION->SetTitle("Kargo24.su - портал объявлений от ча
                 </div>
             </div>
         </section>
+        -->
         <!-- end top-companies-section -->
         <?$APPLICATION->IncludeComponent("bitrix:news.list", "news.list.home", Array(
             "ACTIVE_DATE_FORMAT" => "d.m.Y",	// Формат показа даты
