@@ -10,9 +10,7 @@
                             <img src="<?=$arSection['PICTURE'] ?>" alt="<?=$arSection['UF_NAME']?>">
                         </div>
                         <div class="item-desc">
-                            <h3 class="title">
-                                <?=$arSection['UF_NAME']?>
-                            </h3>
+                            <h3 class="title"><?=$arSection['UF_NAME']?></h3>
                         </div>
                     </a>
                 </div>
@@ -29,9 +27,7 @@
                                 <img src="<?=$block['IMG']?>" alt="<?=$block['NAME']?>">
                             </div>
                             <div class="item-desc">
-                                <h3 class="title">
-                                    <?=$block['NAME']?>
-                                </h3>
+                                <h3 class="title"><?=$block['NAME']?></h3>
                             </div>
                         </a>
                     </div>

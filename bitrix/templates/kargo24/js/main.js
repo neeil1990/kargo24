@@ -511,4 +511,12 @@ $(function() {
     return false;
   });
 
+
+  $('.unified-unit-service .title').hideAndPeek(
+    {
+      length: 25,
+      indicator: "..."
+    }
+  );
+
 });

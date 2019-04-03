@@ -12,9 +12,7 @@
                         <img src="<?=$arItem['PICTURE'] ?>" alt="<?=$arItem['UF_NAME']?>">
                     </div>
                     <div class="item-desc">
-                        <h3 class="title">
-                            <?=TruncateText($arItem['UF_NAME'], 25);?>
-                        </h3>
+                        <h3 class="title"><?=$arItem['UF_NAME'];?></h3>
                     </div>
                 </a>
             </div>

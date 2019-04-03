@@ -119,7 +119,7 @@ if(count($arResult["ITEMS"]) > 0): ?>
                 <div class="row">
 
                     <div class="col-md-3">
-                        <a href="" class="add-announcement-btn up-ads" up-price="<?=($up_percent = addPrecent($arItem['IBLOCK_ID'],$arItem['ID'],UP_ADS_PAY)) ? $up_percent : UP_ADS_PAY?>">поднять объявление</a>
+                        <a href="" class="limed-spruce-btn go-over-btn up-ads" up-price="<?=($up_percent = addPrecent($arItem['IBLOCK_ID'],$arItem['ID'],UP_ADS_PAY)) ? $up_percent : UP_ADS_PAY?>">поднять<span class="arrow"></span></a>
                     </div>
                     <div class="col-md-3">
                         <a href="" class="limed-spruce-btn go-over-btn">Перейти<span class="arrow"></span></a>

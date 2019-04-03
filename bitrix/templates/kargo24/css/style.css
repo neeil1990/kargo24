@@ -193,9 +193,7 @@ button, select, textarea {
   color: #fff;
   background: #222c31;
 }
-.limed-spruce-btn:focus {
-  color: #fff;
-}
+
 
 @font-face {
   font-family: "icomoon";
@@ -3412,7 +3410,6 @@ h3 {
 
 .unified-transport-unit {
   position: relative;
-  opacity: 0.5;
   display: table;
   background: #f2f2f2;
   padding: 1.875em 1.875em 1.55em;
@@ -3421,7 +3418,10 @@ h3 {
   -webkit-transition: box-shadow 0.3s;
           transition: box-shadow 0.3s;
 }
-.ready-made-ads-item:not(.active) .unified-transport-unit:before {
+.personal-area-section .unified-transport-unit{
+  opacity: 0.5;
+}
+.personal-area-section .ready-made-ads-item:not(.active) .unified-transport-unit:before {
   display: block;
   content: "";
   position: absolute;

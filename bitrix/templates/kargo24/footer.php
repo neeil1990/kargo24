@@ -187,6 +187,7 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 	<script src="<?=SITE_TEMPLATE_PATH?>/js/easySearch/dist/jquery.easysearch.js"></script>
 	<script src="<?=SITE_TEMPLATE_PATH?>/js/jquery-ui-1.12.1.js"></script>
 	<script src="<?=SITE_TEMPLATE_PATH?>/js/alertifyjs/alertify.js"></script>
+	<script src="<?=SITE_TEMPLATE_PATH?>/js/hideAndPeek.js"></script>
 	<script src="<?=SITE_TEMPLATE_PATH?>/js/main.js"></script>
 
 </body>
