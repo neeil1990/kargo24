@@ -464,4 +464,9 @@ if (!empty($arResult['ITEMS']))
 	}
 }
 
+global $USER;
+foreach($arResult['ITEMS'] as &$arItem){
+		$arItem['COMPLAIN'] = ($arItem['CREATED_BY'] == $USER->GetID()) ? false : true;
+}
+
 ?>

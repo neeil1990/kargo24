@@ -41,10 +41,12 @@ if($arResult['ITEMS']):?>
 							<?=$value?>
 						</li>
 						<? endforeach; ?>
+						<? if($arItem['COMPLAIN']):?>
 						<li>
 							<span class="icon icon-danger"></span>
 							<a href="#form-complain-popup" data-toggle="modal" class="complain">Пожаловаться</a>
 						</li>
+						<? endif; ?>
 					</ul>
 					<?
 					$arOtions = array();
