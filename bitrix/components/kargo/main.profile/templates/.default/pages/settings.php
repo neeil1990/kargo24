@@ -7,6 +7,15 @@
 if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
     die();
 ?>
+
+<?
+if ($arResult['DATA_SAVED'] == 'Y'):
+?>
+    <div class="alert alert-success alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <strong><?=GetMessage('PROFILE_DATA_SAVED'); ?></strong>
+    </div>
+<? endif;?>
 <form method="post" class="personal-area-settings-form unified-form"  name="form1" action="<?=$arResult["FORM_TARGET"]?>" temp="<?=$templateFolder?>" enctype="multipart/form-data">
     <?=$arResult["BX_SESSION_CHECK"]?>
     <input type="hidden" name="lang" value="<?=LANG?>" />

@@ -9,10 +9,6 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
 ?>
 
 <?ShowError($arResult["strProfileError"]);?>
-<?
-if ($arResult['DATA_SAVED'] == 'Y')
-	ShowNote(GetMessage('PROFILE_DATA_SAVED'));
-?>
 
 <script type="text/javascript">
 	<!--
