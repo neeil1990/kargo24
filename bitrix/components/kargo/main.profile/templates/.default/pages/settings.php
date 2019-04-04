@@ -44,10 +44,6 @@ if ($arResult['DATA_SAVED'] == 'Y'):
                 </div>
             </div>
             <?endif?>
-            <div class="wrapper-submit-btn mod limed-spruce-btn">
-                <span class="arrow"></span>
-                <input type="submit" class="submit-btn" name="save" value="<?=(($arResult["ID"]>0) ? GetMessage("MAIN_SAVE") : GetMessage("MAIN_ADD"))?>">
-            </div>
         </div>
     </div>
 </div>
@@ -112,6 +108,12 @@ if ($arResult['DATA_SAVED'] == 'Y'):
         </label>
     </div>
 </div>
+
+<div class="wrapper-submit-btn mod limed-spruce-btn">
+    <span class="arrow"></span>
+    <input type="submit" class="submit-btn" name="save" value="<?=(($arResult["ID"]>0) ? GetMessage("MAIN_SAVE") : GetMessage("MAIN_ADD"))?>">
+</div>
+
 
 </form>
 <!-- end uniefed-form -->
