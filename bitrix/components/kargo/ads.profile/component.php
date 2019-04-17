@@ -82,12 +82,11 @@ if($_SERVER["REQUEST_METHOD"]=="POST" && ($_REQUEST["ads_save"] <> '' || $_REQUE
 		$arResult['REGION'] = $region;
 	}
 
-
 	if($arCity = $_REQUEST['city']){
 		$arCityId = array();
 		foreach($arCity as $city){
 			if($city){
-				$arCityId[] = $this->getSectionIDByName($arResult['IBLOCK_ID'],$city);
+				$arCityId[] = $this->getSectionIDByName($arResult['IBLOCK_ID'], $city, $arResult['REGION']);
 			}
 		}
 		$arResult['IBLOCK_SECTION_NAME'] = implode(', ',$arCity);
