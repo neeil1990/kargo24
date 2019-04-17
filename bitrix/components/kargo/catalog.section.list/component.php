@@ -189,6 +189,20 @@ if($this->startResultCache(false, ($arParams["CACHE_GROUPS"]==="N"? false: $USER
 		$arSection["EDIT_LINK"] = $arButtons["edit"]["edit_section"]["ACTION_URL"];
 		$arSection["DELETE_LINK"] = $arButtons["edit"]["delete_section"]["ACTION_URL"];
 
+        $arFilter = Array(
+            "IBLOCK_ID" => $arSection["IBLOCK_ID"],
+            "SECTION_ID" => $arSection["ID"],
+            "ACTIVE" => "Y",
+            "INCLUDE_SUBSECTIONS" => "Y",
+            "!PROPERTY_HIDDEN_VALUE"=> "Y",
+            "PROPERTY_TYPE" => str_replace("type-is-","",$arParams['SMART_FILTER_PATH']),
+        );
+        $res = CIBlockElement::GetList(false, $arFilter, array("PROPERTY_HIDDEN"));
+        if($ar_fields = $res->GetNext())
+            $arSection['ELEMENT_CNT'] = $ar_fields["CNT"];
+        else
+            $arSection['ELEMENT_CNT'] = 0;
+
 		$arResult["SECTIONS"][]=$arSection;
 	}
 
