@@ -47,12 +47,12 @@ $APPLICATION->SetTitle("Kargo24.su - портал объявлений от ча
                     <div class="unified-ad-unit">
                         <div class="ad-unit-head">
                             <div class="logo">
-                                <img src="<?=SITE_TEMPLATE_PATH?>/img/static/ad-unit-logo.png" alt="alt">
+                                <img src="<?=SITE_TEMPLATE_PATH?>/img/static/adsin-unit-logo.png" alt="alt">
                             </div>
                             <span class="logo-text">Диспетчерский интернет-сервис</span>
                         </div>
                         <div class="ad-unit-img">
-                            <img src="<?=SITE_TEMPLATE_PATH?>/img/static/ad.png" alt="alt">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/img/static/adsin.png" alt="alt">
                         </div>
                         <div class="ad-init-footer">
                             <span class="title">Узнайте как разместить рекламу</span>
@@ -115,7 +115,7 @@ $APPLICATION->SetTitle("Kargo24.su - портал объявлений от ча
                 <div class="col-sm-3">
                     <div class="sidebar-product-item">
                         <div class="logo">
-                            <img src="<?=SITE_TEMPLATE_PATH?>/img/static/ad-unit-logo.png" alt="alt">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/img/static/adsin-unit-logo.png" alt="alt">
                         </div>
                         <div class="product-img">
                             <a href=""><img src="<?=SITE_TEMPLATE_PATH?>/img/static/construction-machinery/01.png" alt="alt"></a>
@@ -140,7 +140,7 @@ $APPLICATION->SetTitle("Kargo24.su - портал объявлений от ча
                     </div>
                     <div class="sidebar-product-item desktop">
                         <div class="logo">
-                            <img src="<?=SITE_TEMPLATE_PATH?>/img/static/ad-unit-logo.png" alt="alt">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/img/static/adsin-unit-logo.png" alt="alt">
                         </div>
                         <div class="product-img">
                             <a href=""><img src="<?=SITE_TEMPLATE_PATH?>/img/static/construction-machinery/02.png" alt="alt"></a>
@@ -316,7 +316,7 @@ $APPLICATION->SetTitle("Kargo24.su - портал объявлений от ча
                     <div class="col-sm-9">
                         <div class="sidebar-product-item mobile">
                             <div class="logo">
-                                <img src="<?=SITE_TEMPLATE_PATH?>/img/static/ad-unit-logo.png" alt="alt">
+                                <img src="<?=SITE_TEMPLATE_PATH?>/img/static/adsin-unit-logo.png" alt="alt">
                             </div>
                             <div class="product-img">
                                 <a href=""><img src="<?=SITE_TEMPLATE_PATH?>/img/static/construction-machinery/03.png" alt="alt"></a>
@@ -411,7 +411,7 @@ $APPLICATION->SetTitle("Kargo24.su - портал объявлений от ча
                     <div class="col-sm-3">
                         <div class="sidebar-product-item desktop">
                             <div class="logo">
-                                <img src="<?=SITE_TEMPLATE_PATH?>/img/static/ad-unit-logo.png" alt="alt">
+                                <img src="<?=SITE_TEMPLATE_PATH?>/img/static/adsin-unit-logo.png" alt="alt">
                             </div>
                             <div class="product-img">
                                 <a href=""><img src="<?=SITE_TEMPLATE_PATH?>/img/static/construction-machinery/03.png" alt="alt"></a>
