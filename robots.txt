@@ -1,5 +1,11 @@
 User-Agent: *
 Disallow: /
-
+Disallow: /?*
+# glavnaja
+Allow: /index.php
+# stranicy
+Allow: /about/
+# razdely
+Allow: /arenda-spetstekhniki/*
 Host: https://kargo24.su
 Sitemap: https://kargo24.su/sitemap.xml

@@ -1,6 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("О СЕРВИСЕ");
+$APPLICATION->SetPageProperty("title", "Title");
+$APPLICATION->SetTitle("О сервисе Kargo24.Su");
 ?><section class="title-section company">
 <div class="container">
 	<h1 class="title">О сервисе</h1>
