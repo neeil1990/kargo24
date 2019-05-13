@@ -27,7 +27,7 @@ if($arResult['ITEMS']):?>
 				<div class="item-desc">
 					<div class="title-and-number">
 						<span class="number">№ <?=$arItem['ID']?></span>
-						<h3 class="title"><?=$arItem['NAME']?></h3>
+                        <h3 class="title"><a href="<?=$arItem['DETAIL_PAGE_URL'];?>"><?=$arItem['NAME']?></a></h3>
 					</div>
 					<p class="text">
 						<?=$arItem['PREVIEW_TEXT']?>

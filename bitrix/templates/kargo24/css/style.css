@@ -3468,6 +3468,9 @@ h3 {
   width: calc(100% - 100px);
   float: left;
 }
+.unified-transport-unit .title a{
+  color: #262b2e;
+}
 .unified-transport-unit .number {
   color: #808080;
   font-size: 12px;
@@ -5357,19 +5360,19 @@ h3 {
   line-height: 1.25em;
 }
 
-.ad-section-head {
+.ads-section-head {
   padding: 1.875em 1.875em 1.3em;
   background: #e2eaee;
   margin-bottom: 3.3em;
 }
-.ad-section-head:after {
+.ads-section-head:after {
   content: "";
   display: table;
   height: 0;
   clear: both;
 }
 
-.ad-section-head-img {
+.ads-section-head-img {
   float: left;
   width: 55%;
 }
@@ -5406,19 +5409,19 @@ h3 {
   height: auto;
 }
 
-.ad-section-head-desc {
+.ads-section-head-desc {
   float: left;
   width: 45%;
   padding-left: 2.5%;
 }
-.ad-section-head-desc .title {
+.ads-section-head-desc .title {
   font-size: 16px;
   margin-bottom: 0.9em;
 }
-.ad-section-head-desc .desc-table {
+.ads-section-head-desc .desc-table {
   margin-bottom: 1.3em;
 }
-.ad-section-head-desc .desc-table td {
+.ads-section-head-desc .desc-table td {
   padding: 5px 2px;
   font-size: 15px;
   line-height: 1.35em;
@@ -5426,11 +5429,11 @@ h3 {
   width: 50%;
   vertical-align: top;
 }
-.ad-section-head-desc .desc-table td:last-child {
+.ads-section-head-desc .desc-table td:last-child {
   color: #262b2e;
   padding-left: 20px;
 }
-.ad-section-head-desc .rental-info li {
+.ads-section-head-desc .rental-info li {
   display: inline-block;
   margin-bottom: 18px;
   font-size: 14px;
@@ -5439,48 +5442,48 @@ h3 {
   position: relative;
   vertical-align: top;
 }
-.ad-section-head-desc .rental-info li.last {
+.ads-section-head-desc .rental-info li.last {
   display: block;
   margin-right: 0;
 }
-.ad-section-head-desc .rental-info .icon {
+.ads-section-head-desc .rental-info .icon {
   position: absolute;
   top: 0;
   font-size: 17px;
   color: #37474f;
   left: 0;
 }
-.ad-section-head-desc .rental-info .icon-shopping-list {
+.ads-section-head-desc .rental-info .icon-shopping-list {
   color: #6d96ab;
   font-size: 21px;
 }
-.ad-section-head-desc .rental-info .icon-danger {
+.ads-section-head-desc .rental-info .icon-danger {
   color: #ea3232;
   font-size: 17px;
   top: 2px;
 }
-.ad-section-head-desc .rental-info .complain {
+.ads-section-head-desc .rental-info .complain {
   color: #ea3232;
   font-size: 14px;
   border-bottom: 1px solid #ea3232;
   -webkit-transition: color 0.3s;
           transition: color 0.3s;
 }
-.ad-section-head-desc .rental-info .complain:hover {
+.ads-section-head-desc .rental-info .complain:hover {
   border-bottom-color: transparent;
 }
-.ad-section-head-desc .rental-info a {
+.ads-section-head-desc .rental-info a {
   -webkit-transition: color 0.3s;
           transition: color 0.3s;
 }
-.ad-section-head-desc .rental-info a:hover {
+.ads-section-head-desc .rental-info a:hover {
   border-bottom-color: transparent;
 }
-.ad-section-head-desc .rental-info .all-add-btn {
+.ads-section-head-desc .rental-info .all-add-btn {
   color: #6d96ab;
   border-bottom: 1px solid #6d96ab;
 }
-.ad-section-head-desc .rental-info .complain-btn {
+.ads-section-head-desc .rental-info .complain-btn {
   color: #ea3232;
   border-bottom: 1px solid #ea3232;
 }
@@ -5855,7 +5858,7 @@ h3 {
     margin-top: 0;
   }
 
-  .ad-section-head {
+  .ads-section-head {
     padding: 0.6em;
     margin-bottom: 2.5em;
   }
@@ -5864,27 +5867,27 @@ h3 {
     padding: 1.9em 0 1.3em;
   }
 
-  .ad-section-head-img {
+  .ads-section-head-img {
     width: 41%;
   }
 
-  .ad-section-head-desc {
+  .ads-section-head-desc {
     width: 59%;
     padding-left: 1.5%;
   }
-  .ad-section-head-desc .desc-table {
+  .ads-section-head-desc .desc-table {
     margin-bottom: 0.8em;
   }
-  .ad-section-head-desc .desc-table td {
+  .ads-section-head-desc .desc-table td {
     font-size: 13px;
     line-height: 1.2em;
     padding: 1px 5px;
   }
-  .ad-section-head-desc .title {
+  .ads-section-head-desc .title {
     font-size: 14px;
     margin-top: 10px;
   }
-  .ad-section-head-desc .rental-info li {
+  .ads-section-head-desc .rental-info li {
     font-size: 13px;
     margin-bottom: 9px;
   }
@@ -5957,7 +5960,7 @@ h3 {
     line-height: 227px;
   }
 
-  .ad-section-head {
+  .ads-section-head {
     padding: 0.6em;
     margin-bottom: 0.9em;
   }
@@ -5966,18 +5969,18 @@ h3 {
     padding: 1.3em 0 1.3em;
   }
 
-  .ad-section-head-img {
+  .ads-section-head-img {
     width: 100%;
   }
 
-  .ad-section-head-desc {
+  .ads-section-head-desc {
     width: 100%;
     padding-left: 1.5%;
   }
-  .ad-section-head-desc .desc-table {
+  .ads-section-head-desc .desc-table {
     margin-bottom: 0.8em;
   }
-  .ad-section-head-desc .desc-table td {
+  .ads-section-head-desc .desc-table td {
     line-height: 1.25em;
     padding: 2px 5px;
   }

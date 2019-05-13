@@ -220,7 +220,7 @@ while($arItem = $items->GetNext())
 	$arResult['LOCATIONS'][] = $arItem['NAME'];
 }
 
-$arSelect = Array("ID", "IBLOCK_ID","ACTIVE", "NAME","PREVIEW_PICTURE","PREVIEW_TEXT", "TIMESTAMP_X","DATE_CREATE", "DATE_ACTIVE_FROM","DATE_ACTIVE_TO","PROPERTY_*");
+$arSelect = Array("ID", "IBLOCK_ID", "DETAIL_PAGE_URL", "ACTIVE", "NAME","PREVIEW_PICTURE","PREVIEW_TEXT", "TIMESTAMP_X","DATE_CREATE", "DATE_ACTIVE_FROM","DATE_ACTIVE_TO","PROPERTY_*");
 $arFilter = Array("IBLOCK_ID" => $iBlock_id,"IBLOCK_TYPE" => $iBlock_type,"CREATED_BY" => $USER->GetID());
 if($arParams['ELEMENT_CODE']){
 	$arFilter['ID'] = $arParams['ELEMENT_CODE'];
