@@ -20,13 +20,26 @@ $this->setFrameMode(true);
                 <div class="item-img">
                     <img  src="<?=$arResult['PREVIEW_PICTURE']['SRC']?>" alt="<?=$arResult['NAME']?>" />
                 </div>
-
+                <? if(count($arResult["PROPERTIES"]["GALLERY"]["VALUE"]) > 0): ?>
+                    <? foreach ($arResult["PROPERTIES"]["GALLERY"]["VALUE"] as $gallery):?>
+                        <div class="item-img">
+                            <img  src="<?=CFile::GetPath($gallery)?>" alt="<?=$arResult['NAME']?>" />
+                        </div>
+                    <? endforeach;?>
+                <?endif;?>
             </div>
             <!-- end container-large-img -->
             <ul class="slider-ad-small-img js-miniature-pictures">
                 <li>
                     <img src="<?=$arResult['PREVIEW_PICTURE']['SRC']?>" alt="<?=$arResult['NAME']?>" />
                 </li>
+                <? if(count($arResult["PROPERTIES"]["GALLERY"]["VALUE"]) > 0): ?>
+                    <? foreach ($arResult["PROPERTIES"]["GALLERY"]["VALUE"] as $gallery):?>
+                        <li>
+                            <img src="<?=CFile::GetPath($gallery)?>" alt="<?=$arResult['NAME']?>" />
+                        </li>
+                    <? endforeach;?>
+                <?endif;?>
             </ul>
             <!-- end container-small-img -->
         </div>

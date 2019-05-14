@@ -161,7 +161,7 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
     <div class="form-box form-box-pad mod">
         <div class="row">
             <div class="col-md-12 col-sm-12">
-                <h3 class="form-title">Добавить фото<sup>*</sup></h3>
+                <h3 class="form-title">Добавить основное фото<sup>*</sup></h3>
                 <input type="hidden" name="image" value="<?=$arResult['ITEMS']['PREVIEW_PICTURE'];?>">
                 <p class="text file-input-text">
                     Поддерживаемые форматы: jpg, png. Размеры фото 300*175 px. Вес до 5 МБ.
@@ -175,11 +175,35 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
                 </div>
             </div>
             <?if($arResult['ITEMS']['PREVIEW_PICTURE']):?>
-            <div class="col-md-12 col-sm-12">
+            <div class="col-md-12 col-sm-12 margin-b-20">
                 <h3 class="form-title">Фото объявления</h3>
                 <img src="<?=CFile::GetPath($arResult['ITEMS']['PREVIEW_PICTURE']);?>" width="300">
             </div>
             <?endif;?>
+            <div class="col-md-12 col-sm-12">
+                <h3 class="form-title">Добавить галерею</h3>
+                <p></p>
+                <div class="row">
+                    <div class="col-md-7 col-sm-12">
+                        <label class="input-file input-file-mod">
+                            <div class="button"><input type="file" name="gallery[]" multiple="" onchange="this.parentNode.nextSibling.value = ArrToString(this.files);">Обзор</div><input type="text" class="text-input" readonly placeholder="Загрузите фото с компьютера">
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <? if(count($arResult['ITEMS']['PROPERTIES']['GALLERY']['VALUE']) > 0): ?>
+            <div class="col-md-12 col-sm-12 margin-b-20">
+                <h3 class="form-title">Галерея</h3>
+                <div class="edit-gallery-block">
+                    <? foreach ($arResult['ITEMS']['PROPERTIES']['GALLERY']['VALUE'] as  $key => $gallery):?>
+                        <div class="edit-gallery-items">
+                            <span class="delete-img-gallery" data-element="<?=$arResult['ITEMS']['ID']?>" data-id="<?=$arResult['ITEMS']['PROPERTIES']['GALLERY']['PROPERTY_VALUE_ID'][$key]?>" aria-hidden="true">×</span>
+                            <img src="<?=CFile::GetPath($gallery);?>" width="80" height="80">
+                        </div>
+                    <?endforeach;;?>
+                </div>
+            </div>
+            <? endif;?>
         </div>
     </div>
 

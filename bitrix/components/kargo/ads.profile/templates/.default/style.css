@@ -4,3 +4,24 @@
 {
     display: none;
 }
+
+.edit-gallery-block{
+    margin-bottom: 20px;
+}
+.edit-gallery-items{
+    display: inline-block;
+    position: relative;
+}
+.edit-gallery-block .delete-img-gallery{
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    background: #808080;
+    color: white;
+    padding: 0px 5px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.margin-b-20{
+    margin-bottom: 20px;
+}

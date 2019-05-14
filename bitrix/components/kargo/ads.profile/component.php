@@ -67,6 +67,14 @@ if($_SERVER["REQUEST_METHOD"]=="POST" && ($_REQUEST["ads_save"] <> '' || $_REQUE
 
 	}
 
+    $arFileGallery = $_FILES['gallery'];
+	if(isset($arFileGallery['name'][0])){
+        $is_image_gallery = CFile::IsImage($arFileGallery['name'][0], $arFileGallery["type"][0]);
+        if($is_image_gallery){
+            $arResult['GALLERY'] = $this->reArrayFiles($arFileGallery);
+        }
+    }
+
 	foreach($_REQUEST['options_value'][$arResult['IBLOCK_ID']][$arResult['TYPE']] as $key => $option){
 		if($option){
 			$prefix = $_REQUEST['prefix'][$arResult['IBLOCK_ID']][$arResult['TYPE']][$key];
@@ -109,6 +117,8 @@ if($_SERVER["REQUEST_METHOD"]=="POST" && ($_REQUEST["ads_save"] <> '' || $_REQUE
 	$PROP['TYPE'] = Array("VALUE" => $arResult['TYPE']);
 	$PROP['OPTIONS'] = $arResult['OPTIONS'];
 	$PROP['RENTAL_INFO'] = $arResult['RENTAL_INFO'];
+	$PROP['GALLERY'] = $arResult['GALLERY'];
+
 
 	$arLoadProductArray = Array(
 		"MODIFIED_BY" => $USER->GetID(), // элемент изменен текущим пользователем

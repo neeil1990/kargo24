@@ -396,6 +396,49 @@ $(function() {
     return false;
   });
 
+  $('span.delete-img-gallery').click(function(){
+    $self = $(this);
+    $ELEMENT_ID = $self.attr('data-element');
+    $ID = $self.attr('data-id');
+    $delete_path = "/ajax/delete_gallery.php";
+
+    if($ID && $ELEMENT_ID){
+
+      alertify.confirm(
+          "Удаление изображения!",
+          "Вы уверены что хотите удалить изображение?",
+          function(){
+            $.ajax({
+              url: $delete_path,
+              type: 'POST',
+              dataType: 'json',
+              data: {
+                ELEMENT_ID : $ELEMENT_ID,
+                ID : $ID,
+              },
+              success: function(obj) {
+                if(obj.status){
+                  $self.closest('.edit-gallery-items').hide("slow");
+                  alertify.success("Изображение удалено!");
+                }else{
+                  alertify.success("Ошибка удаления.");
+                }
+              }
+            });
+          },
+          function(){
+            alertify.success('Удаление отменено!');
+          }).set({
+        transition:'zoom',
+        labels:{
+          ok:'Да',
+          cancel:'Нет'
+        }
+      });
+    }
+    return false;
+  });
+
 
   $('input[name="ads_save"]').click(function(){
     $(this).hide();
