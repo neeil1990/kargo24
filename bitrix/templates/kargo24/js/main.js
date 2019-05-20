@@ -302,6 +302,29 @@ $(function() {
     return false;
   });
 
+  $('form.bill-form').submit(function(){
+    $self = $(this);
+    $url = $self.attr('action');
+
+    $.ajax({
+      url: $url,
+      type: 'POST',
+      dataType: 'json',
+      data: $self.serialize(),
+      success: function(obj) {
+        if(obj.data.BILL_ID){
+          alertify.success("Счет создан!");
+          setTimeout(function () {
+            window.open("/personal/bill/?BILL_ID=" + obj.data.BILL_ID)
+          }, 1000);
+        }else{
+          alertify.error('Ох! Что то пошло не так!');
+        }
+      }
+    });
+    return false;
+  });
+
   $("#update-phone").on("click",".remove-btn.phone",function(){
     $phone = $(this).parent().find('.phone-number').text();
     $path = $('form.personal-area-settings-form').attr('temp');
@@ -453,6 +476,7 @@ $(function() {
   });
 
   $("#pmOpenAmount").inputmask("9{1,5}");
+  $('input[name="price"]').inputmask("9{1,5}");
 
   $(".pmwidget .pm-item").click(function(e){
     $payNum = $(this).closest('.add-balance-form').attr('pay-number');

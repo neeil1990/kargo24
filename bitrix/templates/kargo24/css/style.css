@@ -7821,11 +7821,10 @@ h3 {
 .select-payment-method-content {
   margin: 0 -15px;
   font-size: 0;
-  text-align: center;
 }
 .select-payment-method-content li {
   display: inline-block;
-  width: 16.6667%;
+  width: 25%;
   padding: 0 15px;
   vertical-align: top;
 }

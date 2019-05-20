@@ -14,6 +14,24 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
             <div class="row form-group">
                 <div class="col-md-12">
                     <script type='text/javascript' src='https://paymaster.ru/ru-RU/widget/Basic/1?LMI_MERCHANT_ID=<?=$arResult['IN_VOICE_ID']?>&LMI_PAYMENT_AMOUNT=100&LMI_PAYMENT_DESC=Test+payment&LMI_CURRENCY=RUB&LMI_PAYMENT_NO=<?=$arResult['PAYMENT_NUMBER']?>'></script>
+
+
+                        <ul class="select-payment-method-content">
+                            <li>
+                                <a href="/personal/bill/">
+									<span class="select-payment-method-item">
+										<span class="text">
+										Безнали<span class="dash">-</span><span class="max">чный расчет</span>
+										</span>
+										<span class="item-icon">
+											<img src="<?=SITE_TEMPLATE_PATH;?>/img/icons/payment/15.png" alt="alt">
+										</span>
+									</span>
+                                </a>
+                            </li>
+                        </ul>
+
+
                 </div>
             </div>
         </div>
