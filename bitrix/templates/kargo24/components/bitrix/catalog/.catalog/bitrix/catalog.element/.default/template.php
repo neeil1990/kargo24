@@ -75,7 +75,7 @@ $this->setFrameMode(true);
     </div>
     <!-- end ad-section-head -->
     <div class="ads-section-body">
-        <h2 class="section-title">Описание</h2>
+        <div class="section-title">Описание</div>
         <p class="text"><?=$arResult['PREVIEW_TEXT']?></p>
     </div>
 </div>
