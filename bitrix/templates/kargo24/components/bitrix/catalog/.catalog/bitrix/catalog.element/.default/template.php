@@ -45,7 +45,7 @@ $this->setFrameMode(true);
         </div>
         <!-- end ad-section-head-img -->
         <div class="ads-section-head-desc">
-            <h2 class="title"><?=$arResult["NAME"]?></h2>
+            <!--<h2 class="title"><?/*=$arResult["NAME"]*/?></h2>-->
             <? if(count($arResult["PROPERTIES"]["OPTIONS"]["VALUE"]) > 0 && is_array($arResult["PROPERTIES"]["OPTIONS"]["VALUE"])):?>
             <table class="desc-table">
                 <? foreach ($arResult["PROPERTIES"]["OPTIONS"]["VALUE"] as $name => $option):?>

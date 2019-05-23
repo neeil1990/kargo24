@@ -123,7 +123,7 @@ if(count($arResult["ITEMS"]) > 0): ?>
                     </div>
                     <div class="col-md-3">
                     <?if($arItem["ACTIVE"] == "Y"): ?>
-                        <a href="<?=$arItem['DETAIL_PAGE_URL']?>" target="_blank" class="limed-spruce-btn go-over-btn">Перейти<span class="arrow"></span></a>
+                        <a href="<?=$arItem['DETAIL_PAGE_URL']?>" target="_blank" class="limed-spruce-btn go-over-btn">Посмотреть<span class="arrow"></span></a>
                     <?endif;?>
                     </div>
 
