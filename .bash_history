@@ -285,3 +285,22 @@ git add .
 git push
 git status
 git pull
+ды
+ls
+git status
+git add .
+git commit -a -m 'sitemap'
+git push
+git status
+git status
+ды
+ls
+git status
+git pull
+ls
+git status
+git pull
+ls
+git status
+git pull 
+git pull 

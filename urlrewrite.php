@@ -32,7 +32,7 @@ $arUrlRewrite=array (
     'PATH' => '/zapchasti-i-remont/index.php',
     'SORT' => 100,
   ),
-  15 => 
+  19 => 
   array (
     'CONDITION' => '#^/gruzovye-perevozki/#',
     'RULE' => '',

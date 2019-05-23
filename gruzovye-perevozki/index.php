@@ -1,7 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetPageProperty("title", "Грузовые перевозки по России");
-$APPLICATION->SetTitle("Грузовые перевозки по России");
+$APPLICATION->SetPageProperty("title", "Грузовые перевозки в России");
+$APPLICATION->SetTitle("Грузоперевозки в России заказать недорого | Услуги транспортной диспетчерской с ценами от частных лиц и компаний на портале kargo24.su");
 catalog_header(2);
 ?>
     <section class="category-section">
