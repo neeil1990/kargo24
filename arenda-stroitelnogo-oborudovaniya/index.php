@@ -1,7 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetPageProperty("title", "Аренда строительного оборудования в России");
-$APPLICATION->SetTitle("Аренда строительного оборудования в России");
+$APPLICATION->SetTitle("Аренда строительного оборудования и инструмента в России | Объявления на доске kargo24.su");
 
 catalog_header(3);
 ?>

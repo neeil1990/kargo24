@@ -37,5 +37,10 @@ Allow: /bitrix/cache/
 Allow: /bitrix/js/
 Allow: /bitrix/templates/
 Allow: /bitrix/panel/
+#правки от нас
+#запрещаем сервис, главную категорию
+Disallow: /services/
+#на разрешаем сервис по направлениям на регионы
+Allow: /services/*/filter/*
 Host: https://kargo24.su
 Sitemap: https://kargo24.su/sitemap.xml

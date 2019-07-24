@@ -1,6 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("ПАССАЖИРСКИЕ ПЕРЕВОЗКИ");
+$APPLICATION->SetPageProperty("title", "Пассажирские перевозки в России");
+$APPLICATION->SetTitle("Пассажирские перевозки (межгород, частные микроавтобусы) в России | Объявления на доске kargo24.su");
 
 catalog_header(7);
 ?>
