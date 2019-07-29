@@ -47,7 +47,7 @@ elseif($arResult["USE_EMAIL_CONFIRMATION"] === "Y"):
 	endif;
 	?>
 
-	<h3 class="form-title">Еще нет аккаунта? Пройтиде быструю регистрацию!</h3>
+	<h3 class="form-title">Еще нет аккаунта? Пройдите быструю регистрацию!</h3>
 	<div class="row">
 		<div class="col-sm-6">
 			<div class="form-group">
