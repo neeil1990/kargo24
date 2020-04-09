@@ -1,6 +1,6 @@
 <?php
 $arUrlRewrite=array (
-  21 => 
+  26 => 
   array (
     'CONDITION' => '#^/arenda-stroitelnogo-oborudovaniya/#',
     'RULE' => '',
@@ -40,7 +40,7 @@ $arUrlRewrite=array (
     'PATH' => '/gruzovye-perevozki/index.php',
     'SORT' => 100,
   ),
-  7 => 
+  24 => 
   array (
     'CONDITION' => '#^/materials/#',
     'RULE' => '',
@@ -48,7 +48,7 @@ $arUrlRewrite=array (
     'PATH' => '/materials/index.php',
     'SORT' => 100,
   ),
-  20 => 
+  25 => 
   array (
     'CONDITION' => '#^/passenger/#',
     'RULE' => '',
@@ -80,7 +80,7 @@ $arUrlRewrite=array (
     'PATH' => '/bitrix/services/rest/index.php',
     'SORT' => 100,
   ),
-  4 => 
+  23 => 
   array (
     'CONDITION' => '#^/news/#',
     'RULE' => '',

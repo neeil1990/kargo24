@@ -311,3 +311,16 @@ git commit -a -m 'srv'
 git push
 git status
 git pull
+ды
+ls
+git status
+git add .
+git commit -a -m 'srv'
+git push
+git status
+ды
+ls
+git status
+git pull
+зцв
+pwd

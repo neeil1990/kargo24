@@ -1,6 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("СТРОИТЕЛЬНЫЕ МАТЕРИАЛЫ С ДОСТАВКОЙ");
+$APPLICATION->SetPageProperty("title", "Продажа и доставка строительных материалов в России");
+$APPLICATION->SetTitle("Строительные материалы доставка, цена, заказать в России | Объявления на доске kargo24.su");
 catalog_header(8);
 ?>
 

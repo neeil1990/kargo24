@@ -4,9 +4,7 @@ $APPLICATION->SetPageProperty("title", "Пассажирские перевоз�
 $APPLICATION->SetTitle("Пассажирские перевозки (межгород, частные микроавтобусы) в России | Объявления на доске kargo24.su");
 
 catalog_header(7);
-?>
-
-    <section class="category-section">
+?>    <section class="category-section">
         <div class="container">
             <div class="row">
 
