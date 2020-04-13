@@ -12,20 +12,15 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
         <div class="col-md-7 col-sm-9">
             <h3 class="form-title">Ваш баланс на данный момент: <span class="price"><?=$arParams["BALANCE"]?> руб</span></h3>
             <div class="row form-group">
+                <? if(ROBOKASSA_LOGIN && ROBOKASSA_PWD1): ?>
                 <div class="col-sm-12">
                     <?
-                    /*
-                     * TEST
-                     * pwd_1 - IFKc97pFpyZV6FfZG9D5
-                     * pwd_2 - fR0X08kDgXeZQ5Hg1GKY
-                     * */
-                    $mrh_login = "kargo24";
-                    $mrh_pass1 = "IFKc97pFpyZV6FfZG9D5";
-                    $mrh_pass2 = "fR0X08kDgXeZQ5Hg1GKY";
-                    $inv_id = 1;
+                    $mrh_login = ROBOKASSA_LOGIN;
+                    $mrh_pass1 = ROBOKASSA_PWD1;
+                    $inv_id = 0;
                     $inv_desc = "ROBOKASSA";
                     $def_sum = "100";
-                    $IsTest = 1;
+                    $IsTest = ROBOKASSA_TEST;
                     $crc = md5("$mrh_login::$inv_id:$mrh_pass1");
                     print "<script language=JavaScript ".
                         "src='https://auth.robokassa.ru/Merchant/PaymentForm/FormFLS.js?".
@@ -33,6 +28,7 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
                         "&Description=$inv_desc&SignatureValue=$crc&IsTest=$IsTest'></script>";
                     ?>
                 </div>
+                <? endif; ?>
             </div>
         </div>
     </div>
