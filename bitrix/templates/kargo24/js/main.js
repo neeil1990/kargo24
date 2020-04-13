@@ -476,21 +476,8 @@ $(function() {
   });
 
   $("#pmOpenAmount").inputmask("9{1,5}");
-  $('input[name="price"]').inputmask("9{1,5}");
 
-  $(".pmwidget .pm-item").click(function(e){
-    $payNum = $(this).closest('.add-balance-form').attr('pay-number');
-    $url = $(this).closest('.add-balance-form').attr('temp');
-    $.ajax({
-      url: $url + "/ajax.php",
-      async: false,
-      type: 'POST',
-      data: {pay_number : $payNum},
-      success: function(obj) {
-        console.log(obj);
-      }
-    });
-  });
+  $('input[name="price"]').inputmask("9{1,5}");
 
   $("select[name='pay_ads']").change(function(){
     $self = $(this);

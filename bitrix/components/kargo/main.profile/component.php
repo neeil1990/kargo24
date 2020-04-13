@@ -472,61 +472,16 @@ if(!CMain::IsHTTPS() && COption::GetOptionString('main', 'use_encrypted_auth', '
 //socialservices
 $arResult["SOCSERV_ENABLED"] = IsModuleInstalled("socialservices");
 
-
-$arResult['IN_VOICE_ID'] = "a12fdaab-4942-4fe9-a6b0-3192332c5b24";
-$arResult['LOGIN'] = "api@mail.ru";
-$arResult['PASSWORD'] = "237e5aaddc582c6acfabca3d55372d23";
-
-CModule::IncludeModule("iblock");
-$arSelect = Array("ID", "IBLOCK_ID", "PROPERTY_*");
-$arFilter = Array("IBLOCK_ID" => IntVal(19), "ACTIVE"=>"N" ,"MODIFIED_BY" => $USER->GetID());
-$res = CIBlockElement::GetList(Array(), $arFilter, false, false, $arSelect);
-while($ob = $res->GetNextElement()){
-	$arFields = $ob->GetFields();
-	$arProps = $ob->GetProperties();
-	$pay_number = $arProps[PAY_NUMBER][VALUE];
-	$nonce = $arFields[ID].time();
-	$arHash = array($arResult['LOGIN'],$arResult['PASSWORD'],$nonce,$pay_number,$arResult['IN_VOICE_ID']);
-	$arResult['HASH'] = base64_encode(sha1(implode(";",$arHash), true));
-	$paymaster = file_get_contents("https://paymaster.ru/partners/rest/getPaymentByInvoiceID?login=$arResult[LOGIN]&nonce=$nonce&hash=$arResult[HASH]&invoiceid=$pay_number&siteAlias=$arResult[IN_VOICE_ID]");
-	$arPay = json_decode($paymaster);
-	if(!$arPay->ErrorCode && $arPay->Payment->State == "COMPLETE"){
-
-		$el = new CIBlockElement;
-		$PROP = array();
-		$PROP["PRICE"] = $arPay->Payment->PaymentAmount;
-		$PROP["PAY_NUMBER"] = $pay_number;
-		$arLoadProductArray = Array(
-			"MODIFIED_BY"    => $USER->GetID(),
-			"IBLOCK_SECTION" => false,
-			"PROPERTY_VALUES"=> $PROP,
-			"ACTIVE"         => "Y",
-		);
-		$el->Update($arFields['ID'], $arLoadProductArray);
-
-		$user = new CUser;
-		$rsUser = CUser::GetByID($USER->GetID());
-		$arUser = $rsUser->Fetch();
-		$arUser["UF_BALANCE"] += $PROP["PRICE"];
-		$fields = Array(
-			"UF_BALANCE" => $arUser["UF_BALANCE"],
-		);
-		$user->Update($USER->GetID(), $fields);
-
-	}else{
-		//CIBlockElement::Delete($arFields[ID]);
-	}
-}
 $rsUser = CUser::GetByID($USER->GetID());
 $arUser = $rsUser->Fetch();
 $arResult["BALANCE"] = $arUser["UF_BALANCE"];
 
 CModule::IncludeModule('support');
-$by = "s_id";    // обязательно используем переменные,
-$order = "asc"; // т.к. константы в параметрах работать не будут
+$by = "s_id";
+$order = "asc";
 
 $arFilter = array(
-	"CLOSE" => "N", // незакрытые обращения
+	"CLOSE" => "N",
 );
 $rs = CTicket::GetList($by, $order, $arFilter,$isFiltered);
 while($ar = $rs->GetNext())
