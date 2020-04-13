@@ -26,7 +26,7 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
                     print "<script language=JavaScript ".
                         "src='https://auth.robokassa.ru/Merchant/PaymentForm/FormFLS.js?".
                         "MerchantLogin=$mrh_login&DefaultSum=$def_sum&InvoiceID=$inv_id".
-                        "&Description=$inv_desc&SignatureValue=$crc&IsTest=$IsTest'></script>";
+                        "&Description=$inv_desc&Shp_id=$Shp_id&SignatureValue=$crc&IsTest=$IsTest'></script>";
                     ?>
                 </div>
                 <? endif; ?>
