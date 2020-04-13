@@ -335,3 +335,15 @@ git push
 git push
 git status
 git status
+pwd
+ls
+git status
+git add .
+git commit -a -m 'srv'
+git push
+git status
+git status
+pwd
+ls
+zip -r upload.zip ./upload/
+git status

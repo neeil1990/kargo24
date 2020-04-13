@@ -1,0 +1,100 @@
+Host: kargo24.su
+Date: 2020-04-13 12:31:20
+Module: ROBOKASSA
+array (
+  'out_summ' => '56',
+  'OutSum' => '56',
+  'inv_id' => '1',
+  'InvId' => '1',
+  'crc' => '4CF7D8286027CFC2DE0656E60896026F',
+  'SignatureValue' => '4CF7D8286027CFC2DE0656E60896026F',
+  'PaymentMethod' => 'BankCard',
+  'IncSum' => '56',
+  'IncCurrLabel' => 'BankCardPSR',
+  'IsTest' => '1',
+  'EMail' => '',
+  'Fee' => '0.0',
+)
+    AddMessage2Log
+	/home/b/bziksv/kargo24.su/public_html/test/result.php:28
+----------
+Host: kargo24.su
+Date: 2020-04-13 12:32:21
+Module: ROBOKASSA
+array (
+  'out_summ' => '56',
+  'OutSum' => '56',
+  'inv_id' => '1',
+  'InvId' => '1',
+  'crc' => '4CF7D8286027CFC2DE0656E60896026F',
+  'SignatureValue' => '4CF7D8286027CFC2DE0656E60896026F',
+  'PaymentMethod' => 'BankCard',
+  'IncSum' => '56',
+  'IncCurrLabel' => 'BankCardPSR',
+  'IsTest' => '1',
+  'EMail' => '',
+  'Fee' => '0.0',
+)
+    AddMessage2Log
+	/home/b/bziksv/kargo24.su/public_html/test/result.php:28
+----------
+Host: kargo24.su
+Date: 2020-04-13 12:33:22
+Module: ROBOKASSA
+array (
+  'out_summ' => '56',
+  'OutSum' => '56',
+  'inv_id' => '1',
+  'InvId' => '1',
+  'crc' => '4CF7D8286027CFC2DE0656E60896026F',
+  'SignatureValue' => '4CF7D8286027CFC2DE0656E60896026F',
+  'PaymentMethod' => 'BankCard',
+  'IncSum' => '56',
+  'IncCurrLabel' => 'BankCardPSR',
+  'IsTest' => '1',
+  'EMail' => '',
+  'Fee' => '0.0',
+)
+    AddMessage2Log
+	/home/b/bziksv/kargo24.su/public_html/test/result.php:28
+----------
+Host: kargo24.su
+Date: 2020-04-13 12:34:21
+Module: ROBOKASSA
+array (
+  'out_summ' => '56',
+  'OutSum' => '56',
+  'inv_id' => '1',
+  'InvId' => '1',
+  'crc' => '4CF7D8286027CFC2DE0656E60896026F',
+  'SignatureValue' => '4CF7D8286027CFC2DE0656E60896026F',
+  'PaymentMethod' => 'BankCard',
+  'IncSum' => '56',
+  'IncCurrLabel' => 'BankCardPSR',
+  'IsTest' => '1',
+  'EMail' => '',
+  'Fee' => '0.0',
+)
+    AddMessage2Log
+	/home/b/bziksv/kargo24.su/public_html/test/result.php:28
+----------
+Host: kargo24.su
+Date: 2020-04-13 12:53:04
+Module: ROBOKASSA
+array (
+  'out_summ' => '19',
+  'OutSum' => '19',
+  'inv_id' => '1',
+  'InvId' => '1',
+  'crc' => '3D700B08D35CB442F6A04AFAFD9ADACA',
+  'SignatureValue' => '3D700B08D35CB442F6A04AFAFD9ADACA',
+  'PaymentMethod' => 'BankCard',
+  'IncSum' => '19',
+  'IncCurrLabel' => 'BankCardPSR',
+  'IsTest' => '1',
+  'EMail' => '',
+  'Fee' => '0.0',
+)
+    AddMessage2Log
+	/home/b/bziksv/kargo24.su/public_html/test/result.php:28
+----------
