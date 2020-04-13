@@ -82,13 +82,37 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 					<div class="footer-counter-and-info">
 						<div class="footer-counter">
 							<ul class="footer-counter-list">
-								<li><a href=""><img src="<?=SITE_TEMPLATE_PATH?>/img/static/counter/01.png" alt="alt"></a></li>
-								<li><a href=""><img src="<?=SITE_TEMPLATE_PATH?>/img/static/counter/02.png" alt="alt"></a></li>
+								<li>
+<!-- Yandex.Metrika informer -->
+<a href="https://metrika.yandex.ru/stat/?id=53368480&amp;from=informer"
+target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/53368480/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
+style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="53368480" data-lang="ru" /></a>
+<!-- /Yandex.Metrika informer -->
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(53368480, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/53368480" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</li>
+								<li>
+
+</li>
 							</ul>
 						</div>
 						<div class="footer-bottom-info">
 							<div class="copyright">
-								&#169;Портал “KarGo24” 2019 г.
+								&#169;Портал “KarGo24” 2019-2020 г.
 							</div>
 							<p class="text">
 								Диспетчерский интернет сервис по поиску спецтехники и грузовиков.

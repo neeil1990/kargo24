@@ -324,3 +324,14 @@ git status
 git pull
 зцв
 pwd
+ls
+ls
+pwd
+git status
+git add .
+git commit -a -m 'srv'
+git push
+git push
+git push
+git status
+git status
