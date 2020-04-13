@@ -3,16 +3,16 @@ define("NO_KEEP_STATISTIC", true); // Не собираем стату по де
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_before.php");
 $arResult = [];
 CModule::IncludeModule("iblock");
-global $USER;
-$arResult["ID"] = intval($USER->GetID());
 
-if(ROBOKASSA_PWD2 && $arResult["ID"]){
+if(ROBOKASSA_PWD2){
+
     // registration info (password #2)
     $mrh_pass2 = ROBOKASSA_PWD2;
 
     // read parameters
     $out_summ = $_REQUEST["OutSum"];
     $inv_id = $_REQUEST["InvId"];
+    $arResult["ID"] = $_REQUEST["Shp_id"];
     $crc = strtoupper($_REQUEST["SignatureValue"]);
 
     $my_crc = strtoupper(md5("$out_summ:$inv_id:$mrh_pass2"));
@@ -23,7 +23,7 @@ if(ROBOKASSA_PWD2 && $arResult["ID"]){
         echo "bad sign\n";
         exit();
     }else{
-        if($out_summ && $inv_id){
+        if($out_summ && $inv_id && $arResult["ID"]){
 
             $el = new CIBlockElement;
             $PROP = [];
@@ -51,7 +51,7 @@ if(ROBOKASSA_PWD2 && $arResult["ID"]){
         }
     }
 }else{
-    AddMessage2Log("bad passwd\n", "ROBOKASSA");
+    AddMessage2Log($_REQUEST, "ROBOKASSA");
     exit();
 }
 ?>
