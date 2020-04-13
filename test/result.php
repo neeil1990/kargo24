@@ -34,8 +34,9 @@ echo "OK$inv_id\n";
 
 // запись в файл информации о проведенной операции
 // save order info to file
-$f=@fopen("order.txt","a+") or
-          die("error");
+$root = $_SERVER['DOCUMENT_ROOT'];
+
+$f = @fopen("$root/order.txt","a+") or die("error");
 fputs($f,"order_num :$inv_id;Summ :$out_summ;Date :$date\n");
 fclose($f);
 
