@@ -12,10 +12,11 @@ if(ROBOKASSA_PWD2){
     // read parameters
     $out_summ = $_REQUEST["OutSum"];
     $inv_id = $_REQUEST["InvId"];
-    $arResult["ID"] = $_REQUEST["Shp_id"];
+    $Shp_id = $_REQUEST["Shp_id"];
     $crc = strtoupper($_REQUEST["SignatureValue"]);
 
-    $my_crc = strtoupper(md5("$out_summ:$inv_id:$mrh_pass2"));
+    $my_crc = strtoupper(md5("$out_summ:$inv_id:$mrh_pass2:Shp_id=$Shp_id"));
+    $arResult["ID"] = $Shp_id;
 
     // check signature
     if ($my_crc != $crc)

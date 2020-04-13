@@ -22,11 +22,11 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
                     $inv_desc = "ROBOKASSA";
                     $def_sum = "100";
                     $IsTest = ROBOKASSA_TEST;
-                    $crc = md5("$mrh_login::$inv_id:$mrh_pass1");
+                    $crc = md5("$mrh_login::$inv_id:$mrh_pass1:Shp_id=$Shp_id");
                     print "<script language=JavaScript ".
                         "src='https://auth.robokassa.ru/Merchant/PaymentForm/FormFLS.js?".
                         "MerchantLogin=$mrh_login&DefaultSum=$def_sum&InvoiceID=$inv_id".
-                        "&Description=$inv_desc&SignatureValue=$crc&IsTest=$IsTest&Shp_id=$Shp_id'></script>";
+                        "&Description=$inv_desc&SignatureValue=$crc&IsTest=$IsTest'></script>";
                     ?>
                 </div>
                 <? endif; ?>
