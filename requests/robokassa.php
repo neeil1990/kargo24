@@ -52,7 +52,7 @@ if(ROBOKASSA_PWD2){
         }
     }
 }else{
-    AddMessage2Log($_REQUEST, "ROBOKASSA");
+    AddMessage2Log("bad password\n", "ROBOKASSA");
     exit();
 }
 ?>
