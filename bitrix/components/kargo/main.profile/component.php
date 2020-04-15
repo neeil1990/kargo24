@@ -113,7 +113,10 @@ if($_SERVER["REQUEST_METHOD"]=="POST" && !$_REQUEST["support_edit"] && ($_REQUES
 			}
 		}
 
-		if(isset($_REQUEST["AUTO_TIME_ZONE"]))
+
+
+
+        if(isset($_REQUEST["AUTO_TIME_ZONE"]))
 		{
 			$arFields["AUTO_TIME_ZONE"] = ($_REQUEST["AUTO_TIME_ZONE"] == "Y" || $_REQUEST["AUTO_TIME_ZONE"] == "N"? $_REQUEST["AUTO_TIME_ZONE"] : "");
 		}
@@ -139,8 +142,6 @@ if($_SERVER["REQUEST_METHOD"]=="POST" && !$_REQUEST["support_edit"] && ($_REQUES
 				$arFields['EXTERNAL_AUTH_ID'] = $arUser['EXTERNAL_AUTH_ID'];
 			}
 		}
-
-		$USER_FIELD_MANAGER->EditFormAddFields("USER", $arFields);
 
 		if(!$obUser->Update($arResult["ID"], $arFields))
 			$strError .= $obUser->LAST_ERROR;
