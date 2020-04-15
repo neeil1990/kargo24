@@ -1,0 +1,120 @@
+Host: kargo24.su
+Date: 2020-04-13 18:19:16
+Module: ROBOKASSA
+bad passwd
+
+    AddMessage2Log
+	/home/b/bziksv/kargo24.su/public_html/requests/robokassa.php:54
+----------
+Host: kargo24.su
+Date: 2020-04-13 18:20:16
+Module: ROBOKASSA
+bad passwd
+
+    AddMessage2Log
+	/home/b/bziksv/kargo24.su/public_html/requests/robokassa.php:54
+----------
+Host: kargo24.su
+Date: 2020-04-13 18:21:17
+Module: ROBOKASSA
+bad passwd
+
+    AddMessage2Log
+	/home/b/bziksv/kargo24.su/public_html/requests/robokassa.php:54
+----------
+Host: kargo24.su
+Date: 2020-04-13 18:21:18
+Module: ROBOKASSA
+bad passwd
+
+    AddMessage2Log
+	/home/b/bziksv/kargo24.su/public_html/requests/robokassa.php:54
+----------
+Host: kargo24.su
+Date: 2020-04-13 18:22:17
+Module: ROBOKASSA
+bad passwd
+
+    AddMessage2Log
+	/home/b/bziksv/kargo24.su/public_html/requests/robokassa.php:54
+----------
+Host: kargo24.su
+Date: 2020-04-13 18:22:18
+Module: ROBOKASSA
+bad passwd
+
+    AddMessage2Log
+	/home/b/bziksv/kargo24.su/public_html/requests/robokassa.php:54
+----------
+Host: kargo24.su
+Date: 2020-04-13 18:23:19
+Module: ROBOKASSA
+bad passwd
+
+    AddMessage2Log
+	/home/b/bziksv/kargo24.su/public_html/requests/robokassa.php:54
+----------
+Host: kargo24.su
+Date: 2020-04-13 18:24:19
+Module: ROBOKASSA
+bad passwd
+
+    AddMessage2Log
+	/home/b/bziksv/kargo24.su/public_html/requests/robokassa.php:54
+----------
+Host: kargo24.su
+Date: 2020-04-13 18:28:47
+Module: ROBOKASSA
+/home/b/bziksv/kargo24.su/public_html
+    AddMessage2Log
+	/home/b/bziksv/kargo24.su/public_html/requests/robokassa.php:54
+----------
+Host: kargo24.su
+Date: 2020-04-13 18:29:48
+Module: ROBOKASSA
+/home/b/bziksv/kargo24.su/public_html
+    AddMessage2Log
+	/home/b/bziksv/kargo24.su/public_html/requests/robokassa.php:54
+----------
+Host: kargo24.su
+Date: 2020-04-13 18:30:49
+Module: ROBOKASSA
+fR0X08kDgXeZQ5Hg1GKY
+    AddMessage2Log
+	/home/b/bziksv/kargo24.su/public_html/requests/robokassa.php:54
+----------
+Host: kargo24.su
+Date: 2020-04-13 18:31:02
+Module: ROBOKASSA
+fR0X08kDgXeZQ5Hg1GKY
+    AddMessage2Log
+	/home/b/bziksv/kargo24.su/public_html/requests/robokassa.php:54
+----------
+Host: kargo24.su
+Date: 2020-04-13 18:31:49
+Module: ROBOKASSA
+fR0X08kDgXeZQ5Hg1GKY
+    AddMessage2Log
+	/home/b/bziksv/kargo24.su/public_html/requests/robokassa.php:54
+----------
+Host: kargo24.su
+Date: 2020-04-13 18:32:03
+Module: ROBOKASSA
+fR0X08kDgXeZQ5Hg1GKY
+    AddMessage2Log
+	/home/b/bziksv/kargo24.su/public_html/requests/robokassa.php:54
+----------
+Host: kargo24.su
+Date: 2020-04-13 18:33:04
+Module: ROBOKASSA
+fR0X08kDgXeZQ5Hg1GKY
+    AddMessage2Log
+	/home/b/bziksv/kargo24.su/public_html/requests/robokassa.php:54
+----------
+Host: kargo24.su
+Date: 2020-04-13 18:34:04
+Module: ROBOKASSA
+fR0X08kDgXeZQ5Hg1GKY
+    AddMessage2Log
+	/home/b/bziksv/kargo24.su/public_html/requests/robokassa.php:54
+----------

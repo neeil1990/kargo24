@@ -347,3 +347,29 @@ pwd
 ls
 zip -r upload.zip ./upload/
 git status
+ls
+git pull
+git status
+git status
+git status
+git pull
+git status
+git status
+git add .
+git commit -a -m 'srv'
+git push
+git status
+git status
+git checkout log.txt
+git status
+git pull
+git status
+git status
+git checkout requests/robokassa.php
+git status
+git status
+git pull
+git pull
+git status
+git status
+git pull
