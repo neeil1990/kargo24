@@ -15,6 +15,7 @@ $PROP_VALUE_ID = $arIds[1];
 $rsUser = CUser::GetByID($USER->GetID());
 $arUser = $rsUser->Fetch();
 $balance = (int)$arUser["UF_BALANCE"];
+$bonus = (int)$arUser["UF_BONUS"];
 if($balance > 0){
 
     if($IBLOCK_ID && $PROP_VALUE_ID && $elem_id){
@@ -25,13 +26,10 @@ if($balance > 0){
             if($percent = addPrecent($IBLOCK_ID,$elem_id,(int)$enum_fields['XML_ID']))
                 (int)$enum_fields['XML_ID'] = $percent;
 
-            if($balance >= (int)$enum_fields['XML_ID']){
-                $balance -= (int)$enum_fields['XML_ID'];
+            if($bonus >= (int)$enum_fields['XML_ID']){
+                $bonus -= (int)$enum_fields['XML_ID'];
                 $user = new CUser;
-                $fields = Array(
-                    "UF_BALANCE" => $balance,
-                );
-                $user->Update($USER->GetID(), $fields);
+                $user->Update($USER->GetID(), ["UF_BONUS" => $bonus]);
 
                 CIBlockElement::SetPropertyValuesEx($elem_id, $IBLOCK_ID, array("TARIFF" => array("VALUE" => $PROP_VALUE_ID)));
 
@@ -44,7 +42,24 @@ if($balance > 0){
                 CEvent::Send("ADS_MOD", SITE_ID, $arEventFields);
 
             }else{
-                $arResult['ERROR'] = "Недостаточно средств пополните персональный баланс";
+                if($balance >= (int)$enum_fields['XML_ID']){
+                    $balance -= (int)$enum_fields['XML_ID'];
+                    $user = new CUser;
+                    $user->Update($USER->GetID(), ["UF_BALANCE" => $balance]);
+
+                    CIBlockElement::SetPropertyValuesEx($elem_id, $IBLOCK_ID, array("TARIFF" => array("VALUE" => $PROP_VALUE_ID)));
+
+                    $arEventFields = array(
+                        "LOGIN" => $arUser["LOGIN"],
+                        "NAME_USER" => $arUser["NAME"],
+                        "LAST_NAME_USER" => $arUser["LAST_NAME"],
+                        "LINK_ADS" => "/bitrix/admin/iblock_element_edit.php?IBLOCK_ID=$IBLOCK_ID&type=content&ID=$elem_id&lang=ru",
+                    );
+                    CEvent::Send("ADS_MOD", SITE_ID, $arEventFields);
+
+                }else{
+                    $arResult['ERROR'] = "Недостаточно средств пополните персональный баланс";
+                }
             }
         }
     }else{

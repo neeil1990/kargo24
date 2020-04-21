@@ -183,7 +183,7 @@ $(function() {
     }, 500);
     return false;
   });
-  
+
   /*************FIELD VALIDATION*************/
   $('input[type=tel]').inputmask("+7 (999) 999 99 99", {
     "clearIncomplete": true
@@ -358,7 +358,7 @@ $(function() {
           }
         });
   });
-  
+
   if($("select").is('.js-select.ads[name="phone"]') && $('.js-select.ads[name="phone"] option').size() < 1){
     alertify.confirm(
         "Важное сообщение!",
@@ -547,7 +547,7 @@ $(function() {
                 if(obj.status){
                   alertify.success("Объявление обновлено!");
                 }else{
-                  alertify.success("Ошибка.");
+                  alertify.error("Пополните баланс.");
                 }
               }
             });
