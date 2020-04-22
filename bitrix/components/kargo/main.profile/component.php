@@ -476,6 +476,7 @@ $arResult["SOCSERV_ENABLED"] = IsModuleInstalled("socialservices");
 $rsUser = CUser::GetByID($USER->GetID());
 $arUser = $rsUser->Fetch();
 $arResult["BALANCE"] = $arUser["UF_BALANCE"];
+$arResult["BONUS"] = $arUser["UF_BONUS"];
 
 CModule::IncludeModule('support');
 $by = "s_id";

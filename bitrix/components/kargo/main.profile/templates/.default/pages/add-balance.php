@@ -5,6 +5,7 @@ $APPLICATION->IncludeComponent(
 	Array(
 		"IBLOCK_ID" => array(""),
 		"IBLOCK_TYPE" => "content",
-		"BALANCE" => $arResult["BALANCE"]
+		"BALANCE" => $arResult["BALANCE"],
+		"BONUS" => $arResult["BONUS"]
 	)
 );?>

@@ -10,7 +10,7 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
 <form action="#" method="post" class="add-balance-form unified-form" temp="<?=$templateFolder?>">
     <div class="row form-box">
         <div class="col-md-7 col-sm-9">
-            <h3 class="form-title">Ваш баланс на данный момент: <span class="price"><?=$arParams["BALANCE"]?> руб</span></h3>
+            <h3 class="form-title">Ваш баланс на данный момент: <span class="price"><?=$arParams["BALANCE"]?> &#8381; <?=$arParams["BONUS"]?></span></h3>
             <div class="row form-group">
                 <? if(ROBOKASSA_LOGIN && ROBOKASSA_PWD1): ?>
                 <div class="col-sm-12">

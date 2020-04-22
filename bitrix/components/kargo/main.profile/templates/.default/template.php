@@ -39,8 +39,9 @@ else
 
 <?
 $arResult[BALANCE] = ($arResult[BALANCE]) ? $arResult[BALANCE] : 0;
+$arResult[BONUS] = ($arResult[BONUS]) ? ' + ('.$arResult[BONUS].' &#8381; бонусы)' : null;
 
-$arMenu = account_menu(": $arResult[BALANCE] руб");
+$arMenu = account_menu(": $arResult[BALANCE] &#8381; $arResult[BONUS]");
 ?>
 <section class="personal-area-section">
 	<div class="container">
