@@ -87,6 +87,7 @@ Class user_bonus extends CModule
         $errors = false;
         $this->InstallDB();
         RegisterModule($this->MODULE_ID);
+        RegisterModuleDependences('main', 'OnAfterUserAdd', $this->MODULE_ID, 'UserBonus','add_bonus_reg');
         $APPLICATION->IncludeAdminFile(GetMessage("MOD_INST_OK"), $_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/".$this->MODULE_ID."/install/step.php");
     }
 
@@ -95,6 +96,7 @@ Class user_bonus extends CModule
         global $APPLICATION, $DB, $errors, $step;
         $this->UnInstallDB();
         UnRegisterModule($this->MODULE_ID);
+        UnRegisterModuleDependences('main', 'OnAfterUserAdd', $this->MODULE_ID, 'UserBonus','add_bonus_reg');
         $APPLICATION->IncludeAdminFile(GetMessage("MOD_UNINST_OK"), $_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/".$this->MODULE_ID."/install/unstep.php");
     }
 

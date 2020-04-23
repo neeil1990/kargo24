@@ -4,13 +4,14 @@ IncludeModuleLangFile(__FILE__);
 class UserBonus {
 
     private $db = 'b_user_bonus';
+    public $id_module = 'user.bonus';
 
     function add($id, $name, $bonus){
         if(!$id)
             return false;
 
         global $DB;
-        return $DB->Insert($this->db, [
+        return $DB->Insert('b_user_bonus', [
             'DATE_CREATE' => $DB->GetNowFunction(),
             'USER_ID' => "'".trim($id)."'",
             'USER_NAME' => "'".trim($name)."'",
@@ -47,6 +48,22 @@ class UserBonus {
         global $DB;
         $sql = "DELETE FROM $this->db";
         return $DB->Query($sql, true);
+    }
+
+    function add_bonus_reg(&$arFields){
+        if($arFields["ID"] > 0){
+            $bonus_reg = COption::GetOptionString('user.bonus', "bonus_reg", "N");
+            if($bonus_reg == 'Y'){
+                $bonus_from = COption::GetOptionString('user.bonus', "bonus_from", null);
+                $bonus_to = COption::GetOptionString('user.bonus', "bonus_to", null);
+                $bonus = rand($bonus_from, $bonus_to);
+
+                $user = new CUser;
+                if($user->Update($arFields["ID"], ["UF_BONUS" => $bonus])){
+                    self::add($arFields["ID"], $arFields["NAME"], $bonus);
+                }
+            }
+        }
     }
 
 }
