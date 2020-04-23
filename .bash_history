@@ -382,3 +382,15 @@ git status
 pwd
 git status
 git pull
+ls
+pwd
+git status
+git add .
+git commit -a -m 'srv'
+git push
+git status
+ls
+pwd
+git status
+git pull
+git pull

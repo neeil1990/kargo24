@@ -1445,3 +1445,21 @@
 2020-02-03 17:21:53 -  - exec CUpdateClientPartner::GetHTTPPage
 2020-02-03 17:21:53 -  - TIME GetUpdatesList(request) 0.286 sec
 2020-02-03 17:21:53 -  - exec CUpdateClientPartner::ParseServerData
+2020-04-21 16:09:27 -  - exec CUpdateClientPartner::GetUpdatesList
+2020-04-21 16:09:27 -  - exec CUpdateClientPartner::__CollectRequestData
+2020-04-21 16:09:27 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=50&TYPENC=E&CLIENT_PHPVER=7.1.33&NGINX=Y&dbv=5.7.21&instm=main%2C18.0.4%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Basd.tplvars%2C1.5.1%2CN%3Bmessageservice%2C18.0.0%2CN%3Bsearch%2C17.6.0%2CN%3Bcompression%2C16.0.0%2CN%3Bclouds%2C18.0.0%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Bartrix.imageoptimizer%2C1.0.7%2CN%3Brest%2C18.0.4%2CN%3Bdev2fun.imagecompress%2C0.2.4%2CN%3Buser.bonus%2C1.0.0%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bseo%2C18.1.0%2CN%3Blanding%2C18.4.21%2CN%3Biblock%2C17.6.8%2CN%3Bhighloadblock%2C17.5.1%2CN%3Bb24connector%2C18.0.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bsupport%2C16.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN%3Bsocialservices%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN&reqm=sotbit.seometa%2Casd.tplvars%2Cthebrainstech.copyiblock%2Cartrix.imageoptimizer%2Cdev2fun.imagecompress%2Cuser.bonus%2Csection.city&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2020-04-21 16:09:27 -  - exec CUpdateClientPartner::GetHTTPPage
+2020-04-21 16:09:27 -  - TIME GetUpdatesList(request) 0.289 sec
+2020-04-21 16:09:27 -  - exec CUpdateClientPartner::ParseServerData
+2020-04-21 16:09:33 -  - exec CUpdateClientPartner::GetUpdatesList
+2020-04-21 16:09:33 -  - exec CUpdateClientPartner::__CollectRequestData
+2020-04-21 16:09:33 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=50&TYPENC=E&CLIENT_PHPVER=7.1.33&NGINX=Y&dbv=5.7.21&instm=main%2C18.0.4%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Basd.tplvars%2C1.5.1%2CN%3Bmessageservice%2C18.0.0%2CN%3Bsearch%2C17.6.0%2CN%3Bcompression%2C16.0.0%2CN%3Bclouds%2C18.0.0%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Bartrix.imageoptimizer%2C1.0.7%2CN%3Brest%2C18.0.4%2CN%3Bdev2fun.imagecompress%2C0.2.4%2CN%3Buser.bonus%2C1.0.0%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bseo%2C18.1.0%2CN%3Blanding%2C18.4.21%2CN%3Biblock%2C17.6.8%2CN%3Bhighloadblock%2C17.5.1%2CN%3Bb24connector%2C18.0.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bsupport%2C16.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN%3Bsocialservices%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN&reqm=sotbit.seometa%2Casd.tplvars%2Cthebrainstech.copyiblock%2Cartrix.imageoptimizer%2Cdev2fun.imagecompress%2Cuser.bonus%2Csection.city&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2020-04-21 16:09:33 -  - exec CUpdateClientPartner::GetHTTPPage
+2020-04-21 16:09:33 -  - TIME GetUpdatesList(request) 0.175 sec
+2020-04-21 16:09:33 -  - exec CUpdateClientPartner::ParseServerData
+2020-04-21 16:09:34 -  - exec CUpdateClientPartner::GetUpdatesList
+2020-04-21 16:09:34 -  - exec CUpdateClientPartner::__CollectRequestData
+2020-04-21 16:09:34 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=kargo24.su&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=50&TYPENC=E&CLIENT_PHPVER=7.1.33&NGINX=Y&dbv=5.7.21&instm=main%2C18.0.4%2CN%3Bsotbit.seometa%2C1.4.4%2CN%3Basd.tplvars%2C1.5.1%2CN%3Bmessageservice%2C18.0.0%2CN%3Bsearch%2C17.6.0%2CN%3Bcompression%2C16.0.0%2CN%3Bclouds%2C18.0.0%2CN%3Bthebrainstech.copyiblock%2C1.1.0%2CN%3Bartrix.imageoptimizer%2C1.0.7%2CN%3Brest%2C18.0.4%2CN%3Bdev2fun.imagecompress%2C0.2.4%2CN%3Buser.bonus%2C1.0.0%2CN%3Bbitrixcloud%2C17.5.0%2CN%3Bseo%2C18.1.0%2CN%3Blanding%2C18.4.21%2CN%3Biblock%2C17.6.8%2CN%3Bhighloadblock%2C17.5.1%2CN%3Bb24connector%2C18.0.0%2CN%3Bsection.city%2C1.0.0%2CN%3Bsupport%2C16.0.0%2CN%3Bfileman%2C18.0.2%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.6.4%2CN%3Bsocialservices%2C18.0.0%2CN%3Bperfmon%2C17.0.1%2CN&reqm=sotbit.seometa%2Casd.tplvars%2Cthebrainstech.copyiblock%2Cartrix.imageoptimizer%2Cdev2fun.imagecompress%2Cuser.bonus%2Csection.city&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2020-04-21 16:09:34 -  - exec CUpdateClientPartner::GetHTTPPage
+2020-04-21 16:09:35 -  - TIME GetUpdatesList(request) 0.169 sec
+2020-04-21 16:09:35 -  - exec CUpdateClientPartner::ParseServerData
