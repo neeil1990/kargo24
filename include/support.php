@@ -36,6 +36,6 @@
 </div>
 <div class="col-sm-5 col-mod-left">
     <div class="map-container">
-        <img src="img/static/adversting/map.jpg" alt="alt">
+        <img src="/html/img/static/adversting/map.jpg" alt="alt">
     </div>
 </div>
