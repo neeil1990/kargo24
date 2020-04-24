@@ -10,4 +10,5 @@ access/*
 bitrix/html_pages/*
 bitrix/backup/*
 vrn-ehk/*
+.cache/*
 
