@@ -4,18 +4,13 @@
         <li>
             <span class="icon icon-old-phone"></span>
             <strong>Телефон:</strong>
-            +7 (495) 920-77-37
+ <a href="tel:+79601340303">+7 (960) 134-03-03</a>
         </li>
-        <li>
-            <span class="icon icon-phone"></span>
-            <strong>Моб.телефоны: </strong>
-            <a href="tel:+79166705523">+7 (916) 670-55-23</a> (Валерий Агафонов) <br>
-            <a href="tel:+79166705523">+7 (926) 230-10-84</a> (Кирилл Макаров)
-        </li>
+
         <li>
             <span class="icon icon-phone"></span>
             <strong>Бухгалтер:</strong>
-            <a href="tel:+79166705523">+7 (916) 670-55-23</a> (Валерий Агафонов)
+            <a href="tel:+79515675777">+7 (951) 567-5-777</a> (Юлия)
         </li>
         <li>
             <span class="icon icon-calendar"></span>
@@ -25,17 +20,21 @@
         <li>
             <span class="icon icon-mail"></span>
             <strong>Email:</strong>
-            <a href="mailto:gruz@perevozka24.ru">gruz@perevozka24.ru</a>
+            <a href="mailto:info@kargo24.su">info@kargo24.su</a>
         </li>
+<!-- тут адрес офиса   
         <li>
             <span class="icon icon-pin"></span>
             <strong>Адрес офиса: </strong>
-            Московская область, город Долгопрудный, ул. Заводская, д. 7, №8
+            Воронежская
         </li>
+-->
     </ul>
 </div>
 <div class="col-sm-5 col-mod-left">
-    <div class="map-container">
+<!-- тут карта офиса   
+ <div class="map-container">
         <img src="/html/img/static/adversting/map.jpg" alt="alt">
     </div>
+-->
 </div>
