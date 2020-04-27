@@ -46,8 +46,13 @@ if(ROBOKASSA_PWD2){
                 $fields = Array(
                     "UF_BALANCE" => $arUser["UF_BALANCE"],
                 );
-                if($user->Update($arResult["ID"], $fields))
+                if($user->Update($arResult["ID"], $fields)){
+                    CEvent::SendImmediate("ADD_BALANCE", SITE_ID, [
+                        "NAME" => $arUser['NAME'],
+                        "BALANCE" => $out_summ
+                    ]);
                     echo "OK$inv_id\n";
+                }
             }
         }
     }
