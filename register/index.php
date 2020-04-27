@@ -15,7 +15,7 @@ $APPLICATION->SetTitle("Регистрация");
 
                 <div class="col-sm-4">
                     <?$APPLICATION->IncludeComponent("bitrix:system.auth.form", ".auth.form", Array(
-                        "FORGOT_PASSWORD_URL" => "",	// Страница забытого пароля
+                        "FORGOT_PASSWORD_URL" => "/forgot-password/",	// Страница забытого пароля
                         "PROFILE_URL" => "/personal/",	// Страница профиля
                         "REGISTER_URL" => "/register/",	// Страница регистрации
                         "SHOW_ERRORS" => "Y",	// Показывать ошибки

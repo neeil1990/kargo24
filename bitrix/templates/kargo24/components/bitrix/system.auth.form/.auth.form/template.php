@@ -40,6 +40,9 @@ if ($arResult['SHOW_ERRORS'] == 'Y' && $arResult['ERROR'])
 	<div class="form-group">
 		<input type="password" class="text-input" name="USER_PASSWORD"  placeholder="<?=GetMessage("AUTH_PASSWORD")?>">
 	</div>
+    <p class="forgot">
+        <a href="<?=$arParams['FORGOT_PASSWORD_URL']?>">Забыли пароль?</a>
+    </p>
 	<div class="wrapper-submit-btn limed-spruce-btn">
 		<span class="arrow"></span>
 		<input type="submit" class="submit-btn" name="Login" value="<?=GetMessage("AUTH_LOGIN_BUTTON")?>" />
