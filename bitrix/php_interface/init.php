@@ -285,4 +285,23 @@ function morph($n, $f1, $f2, $f5) {
     return $f5;
 }
 
+AddEventHandler("main", "OnAfterUserAdd", "OnAfterUserRegisterHandler");
+function OnAfterUserRegisterHandler(&$arFields)
+{
+    if (intval($arFields["ID"]) > 0)
+    {
+        $toSend = Array();
+        $toSend["PASSWORD"] = $arFields["CONFIRM_PASSWORD"];
+        $toSend["EMAIL"] = $arFields["EMAIL"];
+        $toSend["USER_ID"] = $arFields["ID"];
+        $toSend["USER_IP"] = $arFields["USER_IP"];
+        $toSend["USER_HOST"] = $arFields["USER_HOST"];
+        $toSend["LOGIN"] = $arFields["LOGIN"];
+        $toSend["NAME"] = (trim ($arFields["NAME"]) == "")? $toSend["NAME"] = htmlspecialchars('<Не указано>'): $arFields["NAME"];
+        $toSend["LAST_NAME"] = (trim ($arFields["LAST_NAME"]) == "")? $toSend["LAST_NAME"] = htmlspecialchars('<Не указано>'): $arFields["LAST_NAME"];
+        CEvent::SendImmediate("NEW_USER_PWD", SITE_ID, $toSend);
+    }
+    return $arFields;
+}
+
 
