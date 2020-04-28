@@ -34,6 +34,7 @@ if($balance > 0){
                 CIBlockElement::SetPropertyValuesEx($elem_id, $IBLOCK_ID, array("TARIFF" => array("VALUE" => $PROP_VALUE_ID)));
 
                 $arEventFields = array(
+                    "EMAIL" => $arUser["EMAIL"],
                     "LOGIN" => $arUser["LOGIN"],
                     "NAME_USER" => $arUser["NAME"],
                     "LAST_NAME_USER" => $arUser["LAST_NAME"],
@@ -50,6 +51,7 @@ if($balance > 0){
                     CIBlockElement::SetPropertyValuesEx($elem_id, $IBLOCK_ID, array("TARIFF" => array("VALUE" => $PROP_VALUE_ID)));
 
                     $arEventFields = array(
+                        "EMAIL" => $arUser["EMAIL"],
                         "LOGIN" => $arUser["LOGIN"],
                         "NAME_USER" => $arUser["NAME"],
                         "LAST_NAME_USER" => $arUser["LAST_NAME"],
