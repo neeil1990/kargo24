@@ -24,7 +24,8 @@ for($index = 0; $index < $itemSize; $index++)
 	if($arResult[$index]["LINK"] <> "" && $index != $itemSize-1)
 	{
         if(preg_match("/filter\\/(.*)\\/apply\\//", $APPLICATION->GetCurPage(),$filter_url)){
-            $arResult[$index]["LINK"] .= ($filter_url[0]) ? $filter_url[0] : null;
+            if($index)
+                $arResult[$index]["LINK"] .= ($filter_url[0]) ? $filter_url[0] : null;
         }
 		$strReturn .= '<li><a href="'.$arResult[$index]["LINK"].'">'.strtolower($title).' </a></li>';
 	}
