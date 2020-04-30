@@ -29,14 +29,15 @@ if(ROBOKASSA_PWD2){
             $el = new CIBlockElement;
             $PROP = [];
             $PROP["PAY_NUMBER"] = $inv_id;
-            $PROP["PRICE"] = $out_summ;
+            $PROP["PRICE"] = round($out_summ, 2);
             $arLoadProductArray = Array(
+                "CREATED_BY"    => $arResult["ID"],
                 "MODIFIED_BY"    => $arResult["ID"],
                 "IBLOCK_SECTION_ID" => false,
                 "IBLOCK_ID"      => 19,
                 "PROPERTY_VALUES"=> $PROP,
                 "NAME"           => $inv_id,
-                "ACTIVE"         => "N",
+                "ACTIVE"         => "Y",
             );
             if($el->Add($arLoadProductArray)){
                 $user = new CUser;
