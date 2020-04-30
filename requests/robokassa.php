@@ -2,6 +2,7 @@
 define("NO_KEEP_STATISTIC", true); // Не собираем стату по действиям AJAX
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_before.php");
 $arResult = [];
+$IBLOCK_ID = 19;
 CModule::IncludeModule("iblock");
 
 if(ROBOKASSA_PWD2){
@@ -24,6 +25,12 @@ if(ROBOKASSA_PWD2){
         echo "bad sign\n";
         exit();
     }else{
+        $pay_count = CIBlockElement::GetList(Array(), ["IBLOCK_ID" => $IBLOCK_ID, "PROPERTY_PAY_NUMBER" => $inv_id], false, false, ["ID", "NAME"]);
+        if(intval($pay_count->SelectedRowsCount()) > 0){
+            echo "OK$inv_id\n";
+            exit();
+        }
+
         if($out_summ && $inv_id && $arResult["ID"]){
 
             $el = new CIBlockElement;
@@ -34,7 +41,7 @@ if(ROBOKASSA_PWD2){
                 "CREATED_BY"    => $arResult["ID"],
                 "MODIFIED_BY"    => $arResult["ID"],
                 "IBLOCK_SECTION_ID" => false,
-                "IBLOCK_ID"      => 19,
+                "IBLOCK_ID"      => $IBLOCK_ID,
                 "PROPERTY_VALUES"=> $PROP,
                 "NAME"           => $inv_id,
                 "ACTIVE"         => "Y",
