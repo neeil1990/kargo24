@@ -10,52 +10,99 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 				<div class="content-footer-left">
 					<div class="footer-column">
 						<div class="footer-inner-column">
-							<h3 class="footer-title">услуги на нашем <br>сервисе:</h3>
-							<ul class="footer-menu">
-								<li><a href="">Грузовые перевозки</a></li>
-								<li><a href="">Попутный транспорт</a></li>
-								<li><a href="">Поиск грузов</a></li>
-								<li><a href="">Расчёт пути</a></li>
-								<li><a href="">Продажа спецтехники</a></li>
-								<li><a href="">Запчасти и ремонт</a></li>
-							</ul>
+							<h3 class="footer-title"><?= tplvar('service_footer', true);?></h3>
+                            <?$APPLICATION->IncludeComponent("bitrix:menu", "footer.menu", Array(
+                                "ALLOW_MULTI_SELECT" => "N",	// Разрешить несколько активных пунктов одновременно
+                                "CHILD_MENU_TYPE" => "",	// Тип меню для остальных уровней
+                                "DELAY" => "N",	// Откладывать выполнение шаблона меню
+                                "MAX_LEVEL" => "1",	// Уровень вложенности меню
+                                "MENU_CACHE_GET_VARS" => array(	// Значимые переменные запроса
+                                    0 => "",
+                                ),
+                                "MENU_CACHE_TIME" => "3600",	// Время кеширования (сек.)
+                                "MENU_CACHE_TYPE" => "N",	// Тип кеширования
+                                "MENU_CACHE_USE_GROUPS" => "N",	// Учитывать права доступа
+                                "ROOT_MENU_TYPE" => "service_col_1_footer",	// Тип меню для первого уровня
+                                "USE_EXT" => "N",	// Подключать файлы с именами вида .тип_меню.menu_ext.php
+                            ),
+                                false
+                            );?>
 						</div>
 						<div class="footer-inner-column">
-							<ul class="footer-menu">
-								<li><a href="">Аренда спецтехника</a></li>
-								<li><a href="">Сопутствующие услуги</a></li>
-								<li><a href="">Аренда строительного оборудования</a></li>
-								<li><a href="">Пассажирские перевозки</a></li>
-								<li><a href="">Строительные материалы с  доставкой</a></li>
-							</ul>
+                            <?$APPLICATION->IncludeComponent("bitrix:menu", "footer.menu", Array(
+                                "ALLOW_MULTI_SELECT" => "N",	// Разрешить несколько активных пунктов одновременно
+                                "CHILD_MENU_TYPE" => "",	// Тип меню для остальных уровней
+                                "DELAY" => "N",	// Откладывать выполнение шаблона меню
+                                "MAX_LEVEL" => "1",	// Уровень вложенности меню
+                                "MENU_CACHE_GET_VARS" => array(	// Значимые переменные запроса
+                                    0 => "",
+                                ),
+                                "MENU_CACHE_TIME" => "3600",	// Время кеширования (сек.)
+                                "MENU_CACHE_TYPE" => "N",	// Тип кеширования
+                                "MENU_CACHE_USE_GROUPS" => "N",	// Учитывать права доступа
+                                "ROOT_MENU_TYPE" => "service_col_2_footer",	// Тип меню для первого уровня
+                                "USE_EXT" => "N",	// Подключать файлы с именами вида .тип_меню.menu_ext.php
+                            ),
+                                false
+                            );?>
 						</div>
 					</div>
 					<div class="footer-column">
-						<h3 class="footer-title">Полезное:</h3>
-						<ul class="footer-menu">
-							<li><a href="">О сервисе</a></li>
-							<li><a href="">Заказы от клиентов</a></li>
-							<li><a href="">Реклама на сайте</a></li>
-							<li><a href="">Партнерская программа</a></li>
-							<li><a href="">Пользовательское <br>соглашение</a></li>
-							<li><a href="">Техподдержка сайта</a></li>
-						</ul>
+						<h3 class="footer-title"><?= tplvar('usefull_footer', true);?></h3>
+                        <?$APPLICATION->IncludeComponent("bitrix:menu", "footer.menu", Array(
+                            "ALLOW_MULTI_SELECT" => "N",	// Разрешить несколько активных пунктов одновременно
+                            "CHILD_MENU_TYPE" => "",	// Тип меню для остальных уровней
+                            "DELAY" => "N",	// Откладывать выполнение шаблона меню
+                            "MAX_LEVEL" => "1",	// Уровень вложенности меню
+                            "MENU_CACHE_GET_VARS" => array(	// Значимые переменные запроса
+                                0 => "",
+                            ),
+                            "MENU_CACHE_TIME" => "3600",	// Время кеширования (сек.)
+                            "MENU_CACHE_TYPE" => "N",	// Тип кеширования
+                            "MENU_CACHE_USE_GROUPS" => "N",	// Учитывать права доступа
+                            "ROOT_MENU_TYPE" => "usefull_footer",	// Тип меню для первого уровня
+                            "USE_EXT" => "N",	// Подключать файлы с именами вида .тип_меню.menu_ext.php
+                        ),
+                            false
+                        );?>
 						<div class="top-panel mobile">
 							<div class="top-panel-column">
-								<h3 class="footer-title">Для заказчиков</h3>
-								<ul class="footer-menu">
-									<li>
-										<a href="">Оставить заказ</a>
-									</li>
-								</ul>
+								<h3 class="footer-title"><?= tplvar('for_users_footer', true);?></h3>
+                                <?$APPLICATION->IncludeComponent("bitrix:menu", "footer.menu", Array(
+                                    "ALLOW_MULTI_SELECT" => "N",	// Разрешить несколько активных пунктов одновременно
+                                    "CHILD_MENU_TYPE" => "",	// Тип меню для остальных уровней
+                                    "DELAY" => "N",	// Откладывать выполнение шаблона меню
+                                    "MAX_LEVEL" => "1",	// Уровень вложенности меню
+                                    "MENU_CACHE_GET_VARS" => array(	// Значимые переменные запроса
+                                        0 => "",
+                                    ),
+                                    "MENU_CACHE_TIME" => "3600",	// Время кеширования (сек.)
+                                    "MENU_CACHE_TYPE" => "N",	// Тип кеширования
+                                    "MENU_CACHE_USE_GROUPS" => "N",	// Учитывать права доступа
+                                    "ROOT_MENU_TYPE" => "for_users_footer",	// Тип меню для первого уровня
+                                    "USE_EXT" => "N",	// Подключать файлы с именами вида .тип_меню.menu_ext.php
+                                ),
+                                    false
+                                );?>
 							</div>
 							<div class="top-panel-column">
-								<h3 class="footer-title">Для владельцев:</h3>
-								<ul class="footer-menu">
-									<li>
-										<a href="">Добавить объявление</a>
-									</li>
-								</ul>
+								<h3 class="footer-title"><?= tplvar('for_business_footer', true);?></h3>
+                                <?$APPLICATION->IncludeComponent("bitrix:menu", "footer.menu", Array(
+                                    "ALLOW_MULTI_SELECT" => "N",	// Разрешить несколько активных пунктов одновременно
+                                    "CHILD_MENU_TYPE" => "",	// Тип меню для остальных уровней
+                                    "DELAY" => "N",	// Откладывать выполнение шаблона меню
+                                    "MAX_LEVEL" => "1",	// Уровень вложенности меню
+                                    "MENU_CACHE_GET_VARS" => array(	// Значимые переменные запроса
+                                        0 => "",
+                                    ),
+                                    "MENU_CACHE_TIME" => "3600",	// Время кеширования (сек.)
+                                    "MENU_CACHE_TYPE" => "N",	// Тип кеширования
+                                    "MENU_CACHE_USE_GROUPS" => "N",	// Учитывать права доступа
+                                    "ROOT_MENU_TYPE" => "for_business_footer",	// Тип меню для первого уровня
+                                    "USE_EXT" => "N",	// Подключать файлы с именами вида .тип_меню.menu_ext.php
+                                ),
+                                    false
+                                );?>
 							</div>
 						</div>
 					</div>
@@ -63,20 +110,42 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 				<div class="content-footer-right">
 					<div class="top-panel desktop">
 						<div class="top-panel-column">
-							<h3 class="footer-title">Для заказчиков</h3>
-							<ul class="footer-menu">
-								<li>
-									<a href="">Оставить заказ</a>
-								</li>
-							</ul>
+							<h3 class="footer-title"><?= tplvar('for_users_footer', true);?></h3>
+                            <?$APPLICATION->IncludeComponent("bitrix:menu", "footer.menu", Array(
+                                "ALLOW_MULTI_SELECT" => "N",	// Разрешить несколько активных пунктов одновременно
+                                "CHILD_MENU_TYPE" => "",	// Тип меню для остальных уровней
+                                "DELAY" => "N",	// Откладывать выполнение шаблона меню
+                                "MAX_LEVEL" => "1",	// Уровень вложенности меню
+                                "MENU_CACHE_GET_VARS" => array(	// Значимые переменные запроса
+                                    0 => "",
+                                ),
+                                "MENU_CACHE_TIME" => "3600",	// Время кеширования (сек.)
+                                "MENU_CACHE_TYPE" => "N",	// Тип кеширования
+                                "MENU_CACHE_USE_GROUPS" => "N",	// Учитывать права доступа
+                                "ROOT_MENU_TYPE" => "for_users_footer",	// Тип меню для первого уровня
+                                "USE_EXT" => "N",	// Подключать файлы с именами вида .тип_меню.menu_ext.php
+                            ),
+                                false
+                            );?>
 						</div>
 						<div class="top-panel-column">
-							<h3 class="footer-title">Для владельцев:</h3>
-							<ul class="footer-menu">
-								<li>
-									<a href="">Добавить объявление</a>
-								</li>
-							</ul>
+							<h3 class="footer-title"><?= tplvar('for_business_footer', true);?></h3>
+                            <?$APPLICATION->IncludeComponent("bitrix:menu", "footer.menu", Array(
+                                "ALLOW_MULTI_SELECT" => "N",	// Разрешить несколько активных пунктов одновременно
+                                "CHILD_MENU_TYPE" => "",	// Тип меню для остальных уровней
+                                "DELAY" => "N",	// Откладывать выполнение шаблона меню
+                                "MAX_LEVEL" => "1",	// Уровень вложенности меню
+                                "MENU_CACHE_GET_VARS" => array(	// Значимые переменные запроса
+                                    0 => "",
+                                ),
+                                "MENU_CACHE_TIME" => "3600",	// Время кеширования (сек.)
+                                "MENU_CACHE_TYPE" => "N",	// Тип кеширования
+                                "MENU_CACHE_USE_GROUPS" => "N",	// Учитывать права доступа
+                                "ROOT_MENU_TYPE" => "for_business_footer",	// Тип меню для первого уровня
+                                "USE_EXT" => "N",	// Подключать файлы с именами вида .тип_меню.menu_ext.php
+                            ),
+                                false
+                            );?>
 						</div>
 					</div>
 					<div class="footer-counter-and-info">
@@ -111,15 +180,9 @@ style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" tit
 							</ul>
 						</div>
 						<div class="footer-bottom-info">
-							<div class="copyright">
-								&#169;Портал “KarGo24” 2019-2020 г.
-							</div>
-							<p class="text">
-								Диспетчерский интернет сервис по поиску спецтехники и грузовиков.
-							</p>
-							<p class="text">
-								
-							</p>
+							<div class="copyright"><?= tplvar('copyright_footer', true);?></div>
+							<p class="text"><?= tplvar('text_footer', true);?></p>
+							<p class="text"></p>
 						</div>
 					</div>
 				</div>
