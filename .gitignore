@@ -12,5 +12,6 @@ bitrix/backup/*
 vrn-ehk/*
 .cache/*
 *.log
+*.menu.php
 .bash_history
 
