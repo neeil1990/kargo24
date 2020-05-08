@@ -190,6 +190,10 @@ function deactivationAgent()
             );
             $PRODUCT_ID = $arFields['ID'];
             CIBlockElement::SetPropertyValues($PRODUCT_ID, $arFields['IBLOCK_ID'], false, "TARIFF");
+
+            if($property_status = CIBlockPropertyEnum::GetList(false, Array("IBLOCK_ID" => $arFields['IBLOCK_ID'], "CODE" => "STATUS", "XML_ID" => "N"))->GetNext())
+                CIBlockElement::SetPropertyValuesEx($PRODUCT_ID, $arFields['IBLOCK_ID'], array($property_status['PROPERTY_CODE'] => array("VALUE" => $property_status['ID'])));
+
             $el->Update($PRODUCT_ID, $arLoadProductArray);
         }
     }
@@ -310,27 +314,29 @@ class MyClass
     // создаем обработчик события "OnBeforeIBlockElementUpdate"
     function OnBeforeIBlockElementUpdateHandler(&$arFields)
     {
-        $db_props = CIBlockElement::GetProperty($arFields['IBLOCK_ID'], $arFields['ID'], array("sort" => "asc"), Array("CODE" => "SEND_NOTIFICATION"));
-        if($ar_props = $db_props->Fetch()){
-            foreach($arFields['PROPERTY_VALUES'][$ar_props['ID']] as &$value){
-                if($value['VALUE']){
-                    $arList = CIBlockPropertyEnum::GetByID($value['VALUE']);
-                    $event = $arList['XML_ID'];
-                    if($event){
-                        $res = CIBlockElement::GetByID($arFields['ID']);
-                        if($ar_res = $res->GetNext()){
-                            $arUser = CUser::GetByID($ar_res['CREATED_BY'])->Fetch();
+        if(count($arFields['PROPERTY_VALUES'])){
+            $db_props = CIBlockElement::GetProperty($arFields['IBLOCK_ID'], $arFields['ID'], array("sort" => "asc"), Array("CODE" => "SEND_NOTIFICATION"));
+            if($ar_props = $db_props->Fetch()){
+                foreach($arFields['PROPERTY_VALUES'][$ar_props['ID']] as &$value){
+                    if($value['VALUE']){
+                        $arList = CIBlockPropertyEnum::GetByID($value['VALUE']);
+                        $event = $arList['XML_ID'];
+                        if($event){
+                            $res = CIBlockElement::GetByID($arFields['ID']);
+                            if($ar_res = $res->GetNext()){
+                                $arUser = CUser::GetByID($ar_res['CREATED_BY'])->Fetch();
 
-                            CEvent::SendImmediate($event, "s1", [
-                                'ID' => $arFields['ID'],
-                                'NAME' => $arUser['NAME'],
-                                'EMAIL' => $arUser['EMAIL']
-                            ]);
+                                CEvent::SendImmediate($event, "s1", [
+                                    'ID' => $arFields['ID'],
+                                    'NAME' => $arUser['NAME'],
+                                    'EMAIL' => $arUser['EMAIL']
+                                ]);
+                            }
                         }
+                        $value['VALUE'] = 0;
                     }
-                    $value['VALUE'] = 0;
+                    break;
                 }
-                break;
             }
         }
     }

@@ -24,26 +24,38 @@ if(count($arResult["ITEMS"]) > 0): ?>
                     </div>
                     <div class="cell">
                         <h4 class="title">Статус:</h4>
-                        <?if($arItem["ACTIVE"] == "Y"): ?>
-                        <span class="published">
-                            <span class="icon-check">
-                                <span class="path1"></span><span class="path2"></span>
-                             </span>
-                            Опубликовано
-                        </span>
-                        <? elseif($arItem['PROPERTIES']['TARIFF']['VALUE']): ?>
-                        <span class="published">
-                            <span class="icon-check">
-                                <span class="path1"></span><span class="path2"></span>
-                             </span>
-                            На модерации
-                        </span>
-                        <? else: ?>
-                        <span class="not-published">
-                            <span class="icon-prohibited"></span>
-                            Не показывается
-                        </span>
-                        <? endif; ?>
+                        <?php
+                        switch ($arItem['PROPERTIES']['STATUS']['VALUE_XML_ID']) {
+                            case "P":?>
+                                <span class="published">
+                                    <span class="icon-check">
+                                        <span class="path1"></span><span class="path2"></span>
+                                     </span>
+                                    <?if($arItem["ACTIVE"] == "Y"): ?>Опубликовано<?else:?>Опубликовано, но не активно<?endif;?>
+                                </span>
+                                <? break;
+                            case "M":?>
+                                <span class="published">
+                                    <span class="icon-check">
+                                        <span class="path1"></span><span class="path2"></span>
+                                     </span>
+                                    На модерации
+                                </span>
+                                <? break;
+                            case "N":?>
+                                <span class="not-published">
+                                    <span class="icon-prohibited"></span>
+                                    Не показывается
+                                </span>
+                                <? break;
+                            case "O":?>
+                                <span class="not-published">
+                                    <span class="icon-prohibited"></span>
+                                    Отклонено
+                                </span>
+                                <? break;
+                        }
+                        ?>
                     </div>
                     <div class="cell">
                         <h4 class="title">Дата:</h4>
@@ -60,10 +72,7 @@ if(count($arResult["ITEMS"]) > 0): ?>
                 </div>
             </div>
             <div class="col-lg-4">
-                <? if(
-                    ($arItem['PROPERTIES']['TARIFF']['VALUE'] && $arItem["ACTIVE"] == "Y") ||
-                    (!$arItem['PROPERTIES']['TARIFF']['VALUE'] && $arItem["ACTIVE"] == "N")
-                ):?>
+                <? if($arItem['PROPERTIES']['STATUS']['VALUE_XML_ID'] != 'M'):?>
                 <div class="ads-btn">
                     <a href="/personal/ads/<?=$arItem['ID']?>/" class="edit-btn">Редактировать</a>
                     <a href="" class="delete-btn delete-ads" data-id="<?=$arItem['ID']?>" temp-path="<?=$templateFolder?>">Удалить</a>

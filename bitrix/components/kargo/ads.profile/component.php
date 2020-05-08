@@ -143,11 +143,18 @@ if($_SERVER["REQUEST_METHOD"]=="POST" && ($_REQUEST["ads_save"] <> '' || $_REQUE
 			$arLoadProductArray["PROPERTY_VALUES"]["TARIFF"] = array("VALUE" => $ar_props_tarif['VALUE']);
 		}
 
+        if($property_status = CIBlockPropertyEnum::GetList(false, Array("IBLOCK_ID" => $_REQUEST['IBLOCK_ID'], "CODE" => "STATUS", "XML_ID" => "N"))->GetNext())
+            $arLoadProductArray["PROPERTY_VALUES"][$property_status['PROPERTY_CODE']] = array("VALUE" => $property_status['ID']);
+
 		$res = $el->Update($id_element, $arLoadProductArray, false, true, true, true);
 		if(!$res){
 			echo "Error: ".$el->LAST_ERROR;
 		}else{
 			if($arLoadProductArray["PROPERTY_VALUES"]["TARIFF"]["VALUE"]){
+
+                if($property_status = CIBlockPropertyEnum::GetList(false, Array("IBLOCK_ID" => $arResult['IBLOCK_ID'], "CODE" => "STATUS", "XML_ID" => "M"))->GetNext())
+                    CIBlockElement::SetPropertyValuesEx($id_element, $IBLOCK_ID, array($property_status['PROPERTY_CODE'] => array("VALUE" => $property_status['ID'])));
+
 				$arEventFields = array(
 					"LINK_ADS" => "/bitrix/admin/iblock_element_edit.php?IBLOCK_ID=$arResult[IBLOCK_ID]&type=content&ID=$id_element&lang=ru",
 				);
@@ -188,6 +195,9 @@ if($_SERVER["REQUEST_METHOD"]=="POST" && ($_REQUEST["ads_save"] <> '' || $_REQUE
 				$check_update = true;
 			}
 		}
+
+        if($property_status = CIBlockPropertyEnum::GetList(false, Array("IBLOCK_ID" => $arResult['IBLOCK_ID'], "CODE" => "STATUS", "XML_ID" => "N"))->GetNext())
+            $arLoadProductArray["PROPERTY_VALUES"][$property_status['PROPERTY_CODE']] = array("VALUE" => $property_status['ID']);
 
 		if($PRODUCT_ID = $el->Add($arLoadProductArray, false, true, true)){
 			if(file_exists($_SERVER['DOCUMENT_ROOT'].$id_new_image)){

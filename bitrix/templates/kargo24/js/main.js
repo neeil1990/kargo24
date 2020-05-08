@@ -501,8 +501,8 @@ $(function() {
                   alertify.error(obj.ERROR);
                 }else{
                   $self.closest('.ready-made-ads-item').find('.ads-btn').remove();
-                  $self.closest('.ready-made-ads-item').find('.cell:first-child span').remove();
-                  $self.closest('.ready-made-ads-item').find('.cell:first-child').append('<span class="published"><span class="icon-check"><span class="path1"></span><span class="path2"></span></span>На модерации</span>');
+                  $self.closest('.ready-made-ads-item').find('.cell:nth-child(2) span').remove();
+                  $self.closest('.ready-made-ads-item').find('.cell:nth-child(2)').append('<span class="published"><span class="icon-check"><span class="path1"></span><span class="path2"></span></span>На модерации</span>');
                   $self.closest('.ready-made-ads-item').find('.delete-pay').remove();
                   $self.closest('.col-md-3').addClass('col-md-6').removeClass('col-md-3').html('<a class="add-announcement-btn">' + $selected.text() + '</a>');
                   alertify.success(obj.RESPONSE);

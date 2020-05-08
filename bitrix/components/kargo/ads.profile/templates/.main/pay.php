@@ -33,6 +33,9 @@ if($balance > 0){
 
                 CIBlockElement::SetPropertyValuesEx($elem_id, $IBLOCK_ID, array("TARIFF" => array("VALUE" => $PROP_VALUE_ID)));
 
+                if($property_status = CIBlockPropertyEnum::GetList(false, Array("IBLOCK_ID" => $IBLOCK_ID, "CODE" => "STATUS", "XML_ID" => "M"))->GetNext())
+                    CIBlockElement::SetPropertyValuesEx($elem_id, $IBLOCK_ID, array($property_status['PROPERTY_CODE'] => array("VALUE" => $property_status['ID'])));
+
                 $arEventFields = array(
                     "ID" => $elem_id,
                     "EMAIL" => $arUser["EMAIL"],
@@ -50,6 +53,9 @@ if($balance > 0){
                     $user->Update($USER->GetID(), ["UF_BALANCE" => $balance]);
 
                     CIBlockElement::SetPropertyValuesEx($elem_id, $IBLOCK_ID, array("TARIFF" => array("VALUE" => $PROP_VALUE_ID)));
+
+                    if($property_status = CIBlockPropertyEnum::GetList(false, Array("IBLOCK_ID" => $IBLOCK_ID, "CODE" => "STATUS", "XML_ID" => "M"))->GetNext())
+                        CIBlockElement::SetPropertyValuesEx($elem_id, $IBLOCK_ID, array($property_status['PROPERTY_CODE'] => array("VALUE" => $property_status['ID'])));
 
                     $arEventFields = array(
                         "ID" => $elem_id,
