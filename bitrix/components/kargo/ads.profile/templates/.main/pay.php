@@ -16,7 +16,7 @@ $rsUser = CUser::GetByID($USER->GetID());
 $arUser = $rsUser->Fetch();
 $balance = (int)$arUser["UF_BALANCE"];
 $bonus = (int)$arUser["UF_BONUS"];
-if($balance > 0){
+if($balance > 0 || $bonus > 0){
 
     if($IBLOCK_ID && $PROP_VALUE_ID && $elem_id){
 
