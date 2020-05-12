@@ -3,7 +3,6 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 $APPLICATION->SetPageProperty("title", "Title");
 $APPLICATION->SetTitle("Kargo24.su - портал объявлений от частных лиц и компаний в сфере спецтехники и грузоперевозок");
 ?>
-
         <section class="main-section">
             <div class="container">
                 <div class="row">
@@ -15,7 +14,7 @@ $APPLICATION->SetTitle("Kargo24.su - портал объявлений от ча
                             Диспетчерский сервис <span class="bold">«Kargo24»</span> объединил в себе владельцев спецтехники и даёт возможность клиентам самостоятельно найти технику в нужном городе. При этом, обращаясь к владельцу техники напрямую без диспетчера, можно рассчитывать на снижение стоимости услуг до 10%.
                         </p>
                         <div class="service-btn">
-                            <a href="" class="limed-spruce-btn">О сервисе<span class="arrow"></span></a>
+                            <a href="/about/" class="limed-spruce-btn">О сервисе<span class="arrow"></span></a>
                         </div>
                     </div>
                 </div>

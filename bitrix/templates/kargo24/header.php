@@ -61,9 +61,10 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 					<div class="col-sm-4 col-xs-3">
 						<ul class="head-switch-lang desktop">
 							<li class="active"><a href=""><img src="<?=SITE_TEMPLATE_PATH?>/img/static/flag/01.jpg" alt="alt"></a></li>
-							<li><a href=""><img src="<?=SITE_TEMPLATE_PATH?>/img/static/flag/02.jpg" alt="alt"></a></li>
+							<!-- <li><a href=""><img src="<?=SITE_TEMPLATE_PATH?>/img/static/flag/02.jpg" alt="alt"></a></li>
 							<li><a href=""><img src="<?=SITE_TEMPLATE_PATH?>/img/static/flag/03.jpg" alt="alt"></a></li>
 							<li><a href=""><img src="<?=SITE_TEMPLATE_PATH?>/img/static/flag/04.jpg" alt="alt"></a></li>
+							-->
 						</ul>
 						<div class="head-switch-lang mobile">
 							<div class="sort">
