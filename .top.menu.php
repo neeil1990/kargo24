@@ -22,22 +22,15 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
-		"заказы от клиентов", 
-		"", 
+		"Разместить объявление", 
+		"/personal/ads/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Предоставить услугу", 
-		"", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
-		"получить услугу", 
-		"", 
+		"Личный кабинет", 
+		"/personal/main/", 
 		Array(), 
 		Array(), 
 		"" 
