@@ -8,6 +8,10 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
     die();
 if(count($arResult["ITEMS"]) > 0): ?>
 
+    <div class="add-advert-btn border_btn">
+        <a href="/personal/ads/" class="limed-spruce-btn">Добавить объявление<span class="arrow"></span></a>
+    </div>
+
     <? foreach($arResult["ITEMS"] as $arItem):
         if($arItem['PROPERTIES']['HIDDEN']['VALUE'] == "Y")
             continue;
