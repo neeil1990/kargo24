@@ -41,6 +41,7 @@ Allow: /bitrix/panel/
 #запрещаем сервис, главную категорию
 Disallow: /services/
 #на разрешаем сервис по направлениям на регионы
-Allow: /services/*/filter/*
+Allow: */services/filter/*
+Allow: */services/*/filter/*
 Host: https://kargo24.su
 Sitemap: https://kargo24.su/sitemap.xml

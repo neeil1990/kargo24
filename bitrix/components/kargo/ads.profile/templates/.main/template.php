@@ -284,7 +284,7 @@ if(count($arResult["ITEMS"]) > 0): ?>
 <div class="unified-ad-unit mobile">
     <div class="ad-unit-head">
         <div class="logo">
-            <img src="img/static/ad-unit-logo.png" alt="alt">
+            <img src="/bitrix/templates/kargo24/img/static/adsin-unit-logo.png" alt="alt">
         </div>
         <span class="logo-text">Диспетчерский интернет-сервис</span>
     </div>
