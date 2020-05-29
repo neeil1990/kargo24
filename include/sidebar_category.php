@@ -10,7 +10,7 @@
 </div>
 <!-- end sidebar-category -->
 
-<?$APPLICATION->IncludeComponent(
+<? $APPLICATION->IncludeComponent(
     "kargo:main.banner",
     ".banner.frontend",
     [
@@ -18,8 +18,8 @@
             "IBLOCK_ID" => "22",
             "ACTIVE" => "Y",
             "?PROPERTY_IBLOCK_ID" => $arParams['BLOCK_ID'],
-            "?PROPERTY_SECTION_ID" => $arParams['SECTION_ID'],
-            "?PROPERTY_TYPE_XML_ID" => $arParams['TYPE_XML_ID'],
+			"?PROPERTY_SECTION_ID" => ($arParams['SECTION_ID']) ?: '0',
+			"?PROPERTY_TYPE_XML_ID" => ($arParams['TYPE_XML_ID']) ?: '0',
         ]
     ]
 );?>
