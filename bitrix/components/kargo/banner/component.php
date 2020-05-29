@@ -48,7 +48,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && ($_REQUEST["banner_save"] <> '' || $_
                 $arLoadProductArray["PROPERTY_VALUES"][$property_status['PROPERTY_CODE']] = array("VALUE" => $property_status['ID']);
 
             $arEventFields = array(
-                "LINK_ADS" => "/bitrix/admin/iblock_element_edit.php?IBLOCK_ID=$arResult[IBLOCK_ID]&type=content&ID=$ID&lang=ru",
+                "LINK_ADS" => "/bitrix/admin/iblock_element_edit.php?IBLOCK_ID=$arLoadProductArray[IBLOCK_ID]&type=content&ID=$arParams[ELEMENT_CODE]&lang=ru",
             );
             CEvent::Send("BANNER_MOD_UPDATE", SITE_ID, $arEventFields);
         }
