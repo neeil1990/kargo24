@@ -53,6 +53,10 @@
                         <span class="date"><?=$arItem['ACTIVE_FROM']?> - <?=$arItem['ACTIVE_TO']?></span>
                     </div>
                     <?endif;?>
+                    <div class="column">
+                        <h4 class="title">№ Баннера</h4>
+                        <span class="date"><?=$arItem['ID']?></span>
+                    </div>
                 </div>
 
                 <? if($arItem['PROPERTIES']['STATUS']['VALUE_XML_ID'] != 'M'): ?>
