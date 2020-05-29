@@ -9,6 +9,21 @@
     </ul>
 </div>
 <!-- end sidebar-category -->
+
+<?$APPLICATION->IncludeComponent(
+    "kargo:main.banner",
+    ".banner.frontend",
+    [
+        'FILTER' => [
+            "IBLOCK_ID" => "22",
+            "ACTIVE" => "Y",
+            "?PROPERTY_IBLOCK_ID" => $arParams['BLOCK_ID'],
+            "?PROPERTY_SECTION_ID" => $arParams['SECTION_ID'],
+            "?PROPERTY_TYPE_XML_ID" => $arParams['TYPE_XML_ID'],
+        ]
+    ]
+);?>
+
 <div class="unified-ad-unit">
     <div class="ad-unit-head">
         <div class="logo">

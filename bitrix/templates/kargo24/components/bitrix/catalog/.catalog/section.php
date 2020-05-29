@@ -127,8 +127,6 @@ global $APPLICATION;
 			}
 		}
 
-
-
 		$APPLICATION->IncludeComponent(
 			"kargo:catalog.section.list",
 			"",
@@ -211,7 +209,8 @@ global $APPLICATION;
 
 
 	<?
-	$GLOBALS['CATALOG_CURRENT_SECTION_ID'] = $intSectionID;
+	$GLOBALS['CATALOG_CURRENT_SECTION_ID'] = ($intSectionID) ?: "0";
+	$GLOBALS['SMART_FILTER_PATH_TYPE'] = (str_replace('type-is-', '', $arResult["VARIABLES"]["SMART_FILTER_PATH"])) ?: "0";
 	?>
 
 </div>

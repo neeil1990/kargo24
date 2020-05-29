@@ -184,7 +184,11 @@ catalog_header(2);
 
                 <div class="col-sm-3">
                     <?
-                    $APPLICATION->IncludeFile("/include/sidebar_category.php", Array(), Array(
+                    $APPLICATION->IncludeFile("/include/sidebar_category.php", [
+                        "BLOCK_ID" => "2",
+                        "SECTION_ID" => $GLOBALS['CATALOG_CURRENT_SECTION_ID'],
+                        "TYPE_XML_ID" => $GLOBALS['SMART_FILTER_PATH_TYPE'],
+                    ], Array(
                         "MODE"      => "html",
                         "NAME"      => "Редактирование включаемой области раздела"
                     ));

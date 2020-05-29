@@ -170,7 +170,7 @@ function deactivationAgent()
     CModule::IncludeModule("iblock");
     $arSelect = Array("ID", "IBLOCK_ID", "NAME", "DATE_ACTIVE_FROM" ,"PROPERTY_*");
     $arFilter = Array(
-        "IBLOCK_ID" => array(1,2,3,10,9,8,6,7),
+        "IBLOCK_ID" => array(1,2,3,10,9,8,6,7,22),
         "ACTIVE"=>"Y",
         "<=DATE_ACTIVE_TO"   => array(false, ConvertTimeStamp(false, "FULL")),
         "!=PROPERTY_HIDDEN_VALUE" => "Y",
@@ -328,6 +328,7 @@ class MyClass
 
                                 CEvent::SendImmediate($event, "s1", [
                                     'ID' => $arFields['ID'],
+                                    'TITLE' => $arFields['NAME'],
                                     'NAME' => $arUser['NAME'],
                                     'EMAIL' => $arUser['EMAIL']
                                 ]);

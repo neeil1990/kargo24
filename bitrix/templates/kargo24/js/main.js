@@ -226,6 +226,21 @@ $(function() {
     },
   });
 
+  $('.js-select-banner').selectric({
+    maxHeight: 200,
+    disableOnMobile: false,
+    nativeOnMobile: false,
+    onChange: function(element) {
+      var iBlockId = $(element).val();
+      var temp = $('.add-banner-form').attr('temp') + '/ajax.php';
+      $.get( temp, {SELECT_IBLOCK : iBlockId}, function( data ) {
+
+        $( '.replace-form' ).replaceWith( $(data).find('.replace-form') );
+        $('.js-select').selectric('refresh');
+      }, "html");
+    },
+  });
+
   $('.js-select-type').selectric({
     maxHeight: 200,
     disableOnMobile: false,
@@ -419,6 +434,47 @@ $(function() {
     return false;
   });
 
+  $('a.delete-banner').click(function(){
+    $self = $(this);
+    $id_banner = $self.attr('data-id');
+    $temp_path = $self.attr('temp-path');
+    $delete_path = $temp_path + "/ajax.php";
+
+    if($id_banner && $delete_path){
+
+      alertify.confirm(
+          "Удаление баннера",
+          "Вы уверены что хотите удалить баннер?",
+          function(){
+            $.ajax({
+              url: $delete_path,
+              type: 'POST',
+              dataType: 'json',
+              data: {id : $id_banner},
+              success: function(obj) {
+                if(obj.status){
+                  $self.closest('.my-banners-item').hide("slow");
+                  alertify.success("Баннер удален!");
+                }else{
+                  alertify.success("Ошибка удаления.");
+                }
+              }
+            });
+          },
+          function(){
+            alertify.success('Удаление отменено!');
+          }).set({
+        transition:'zoom',
+        labels:{
+          ok:'Да',
+          cancel:'Нет'
+        }
+      });
+    }
+
+    return false;
+  });
+
   $('span.delete-img-gallery').click(function(){
     $self = $(this);
     $ELEMENT_ID = $self.attr('data-element');
@@ -519,6 +575,54 @@ $(function() {
               cancel:'Нет'
             }
           });
+    }
+
+  });
+
+  $("select[name='pay_banner']").change(function(){
+    $self = $(this);
+    $id_banner = $self.attr('data-id');
+    $temp_path = $self.attr('temp-path');
+    $path = $temp_path + "/pay.php";
+    $selected = $self.find("option:selected");
+
+    if($selected.val()){
+      alertify.confirm(
+          "Подтвердить оплату с баланса личного кабинета",
+          "Оплатить: " + $selected.text() + "?",
+          function(){
+            $.ajax({
+              url: $path,
+              type: 'POST',
+              dataType: 'json',
+              data: {id : $selected.val(), elem_id : $id_banner},
+              success: function(obj) {
+                if(obj.ERROR){
+                  alertify.error(obj.ERROR);
+                }else{
+                  $item = $self.closest('.my-banners-item');
+
+                  $item.find('.edit-btn').remove();
+                  $item.find('.pays').remove();
+                  $item.find('.delete-btn').remove();
+                  $item.find('.not-published').remove();
+                  $item.find('.exten-publication-btn').html('Оплачен: ' + $selected.text());
+                  $item.find('.column:nth-child(1)').append('<span class="published"><span class="icon-check"><span class="path1"></span><span class="path2"></span></span>На модерации</span>');
+
+                  alertify.success(obj.RESPONSE);
+                }
+              }
+            });
+          },
+          function(){
+            alertify.success("Оплата отменена");
+          }).set({
+        transition:'zoom',
+        labels:{
+          ok:'Да',
+          cancel:'Нет'
+        }
+      });
     }
 
   });

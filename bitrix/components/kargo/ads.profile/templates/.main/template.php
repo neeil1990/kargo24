@@ -154,7 +154,7 @@ if(count($arResult["ITEMS"]) > 0): ?>
                             <a href="" class="add-announcement-btn">Оплатить объявление</a>
                         </div>
                         <div class="col-md-3">
-                            <select class="js-select pay-ads" name="pay_ads" data-id="<?=$arItem['ID']?>" temp-path="<?=$templateFolder?>">
+                            <select class="js-select pay-ads pays" name="pay_ads" data-id="<?=$arItem['ID']?>" temp-path="<?=$templateFolder?>">
                                 <option value="">Выберите тариф</option>
                                 <? foreach($arItem['PROPERTIES']['TARIFF']['ENUMS'] as $k => $arEnum):?>
                                     <?

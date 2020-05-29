@@ -152,6 +152,7 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 						<div class="footer-counter">
 							<ul class="footer-counter-list">
 								<li>
+ <? if(!$DBDebug): ?>
 <!-- Yandex.Metrika informer -->
 <a href="https://metrika.yandex.ru/stat/?id=53368480&amp;from=informer"
 target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/53368480/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
@@ -173,6 +174,7 @@ style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" tit
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/53368480" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
+<? endif; ?>
 </li>
 								<li>
 

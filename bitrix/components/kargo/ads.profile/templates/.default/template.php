@@ -5,7 +5,7 @@
  * @var array $arResult
  */
 if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true || $arResult['ITEMS']['PROPERTIES']['STATUS']['VALUE_XML_ID'] == 'M')
-    die('no, no, no mr. sir...');
+    die('no, no, no mr. ser...');
 ?>
 
 <form method="post" autocomplete="off" class="order-form unified-form" action="<?=$arResult["FORM_TARGET"]?>" temp="<?=$templateFolder?>" enctype="multipart/form-data">

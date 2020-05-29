@@ -27,9 +27,10 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 	Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/css/reset.css');
 	Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/css/style.css');
 	?>
-	
+
 </head>
 <body>
+<? if(!$DBDebug): ?>
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -45,6 +46,7 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/53368480" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
+<? endif; ?>
 
 
 <div id="panel"><?$APPLICATION->ShowPanel();?></div>
@@ -178,5 +180,4 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 
 
 
-	
-						
+

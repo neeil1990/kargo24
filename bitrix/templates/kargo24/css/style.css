@@ -13205,16 +13205,16 @@ h3 {
   cursor: pointer;
 }
 
-.selectricWrapper.js-select.pay-ads {
+.selectricWrapper.js-select.pays {
   border: 2px solid #ea3232;
   border-radius: 3px;
 }
 
-.selectricWrapper.js-select.pay-ads .selectric{
+.selectricWrapper.js-select.pays .selectric{
   background: white;
 }
 
-.selectricWrapper.js-select.pay-ads .selectric .label{
+.selectricWrapper.js-select.pays .selectric .label{
   color: #ea3232;
   font-size: 18px;
   font-family: "OpenSans-Semibold";
@@ -13223,11 +13223,11 @@ h3 {
   margin: 0 45px 0 0;
 }
 
-.selectricWrapper.js-select.pay-ads .selectric .button{
+.selectricWrapper.js-select.pays .selectric .button{
   width: 46px;
   background: #ea3232;
 }
-.selectricWrapper.js-select.pay-ads .selectric .button:after{
+.selectricWrapper.js-select.pays .selectric .button:after{
   border: none;
   width: 13px;
   height: 13px;
