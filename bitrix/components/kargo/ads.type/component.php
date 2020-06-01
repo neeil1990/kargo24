@@ -19,7 +19,7 @@ if($arParams['IBLOCK_ID'] && $arParams['IBLOCK_TYPE']){
         $result = $hlDataClass::getList(array(
             "select" => array("*"), // Поля для выборки
             "order" => array("UF_SORT" => "ASC"),
-            "filter" => array(),
+            "filter" => array("!UF_TITLE" => ""),
         ));
 
         while ($res = $result->fetch()) {
