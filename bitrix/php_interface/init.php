@@ -28,7 +28,7 @@ function getTypeAdsText($ID,$type){
     if($ar_res = $res->GetNext())
     $HighloadblockId = (int)str_replace("b_hlbd_h","",$ar_res['USER_TYPE_SETTINGS']['TABLE_NAME']);
 
-    $type = explode('-',$type);
+    $type = explode('-',$type, 3);
     $hldata = Bitrix\Highloadblock\HighloadBlockTable::getById($HighloadblockId)->fetch();
     $hlentity = Bitrix\Highloadblock\HighloadBlockTable::compileEntity($hldata);
     $hlDataClass = $hldata["NAME"] . "Table";
@@ -67,7 +67,7 @@ function catalog_header($ID){
     }
 
 
-    if(!$filter && count($codes) === 4){
+    if(!$filter && count($codes) === 4){ 
 
         $APPLICATION->IncludeComponent("bitrix:news.detail", ".header.detail", Array(
             "ACTIVE_DATE_FORMAT" => "d.m.Y",	// Формат показа даты
@@ -126,7 +126,7 @@ function catalog_header($ID){
             false
         );
 
-    }else{
+    }else{ 
 
         $APPLICATION->IncludeComponent("bitrix:catalog.section.list", ".header.catalog", Array(
             "ADD_SECTIONS_CHAIN" => "N",	// Включать раздел в цепочку навигации
