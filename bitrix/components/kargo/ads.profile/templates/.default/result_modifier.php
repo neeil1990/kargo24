@@ -9,8 +9,6 @@ if($arParams['IBLOCK_ID']){
     }
 }
 
-
-
 if($region = $arResult['ITEMS']['PROPERTIES']['RENTAL_INFO']['VALUE'][array_flip(($arResult['ITEMS']['PROPERTIES']['RENTAL_INFO']['DESCRIPTION']))['location']]){
     $arResult['ITEMS']['REGION'] = $region;
 }

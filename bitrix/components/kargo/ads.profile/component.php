@@ -87,18 +87,19 @@ if($_SERVER["REQUEST_METHOD"]=="POST" && ($_REQUEST["ads_save"] <> '' || $_REQUE
 	}
 
 	if($region = trim(strip_tags($_REQUEST['region']))){
-		$arResult['REGION'] = $region;
+        $region = CIBlockSection::GetByID($region)->GetNext();
+		$arResult['REGION'] = $region['NAME'];
 	}
 
-	if($arCity = $_REQUEST['city']){
-		$arCityId = array();
-		foreach($arCity as $city){
-			if($city){
-				$arCityId[] = $this->getSectionIDByName($arResult['IBLOCK_ID'], $city, $arResult['REGION']);
-			}
-		}
-		$arResult['IBLOCK_SECTION_NAME'] = implode(', ',$arCity);
-		$arResult['IBLOCK_SECTION_ID'] = $arCityId;
+	if($_REQUEST['city']){
+		foreach($_REQUEST['city'] as $city){
+            $cityResult = CIBlockSection::GetByID($city)->GetNext();
+            $arResult['CITY']['ID'][] = $cityResult['ID'];
+            $arResult['CITY']['NAME'][] = $cityResult['NAME'];
+        }
+
+		$arResult['IBLOCK_SECTION_NAME'] = implode(', ',$arResult['CITY']['NAME']);
+		$arResult['IBLOCK_SECTION_ID'] = $arResult['CITY']['ID'];
 	}
 
 	$arResult['RENTAL_INFO'] = array(
@@ -232,14 +233,6 @@ foreach($iBlock_id as $id){
 	$arResult['HIGHLOAD_IBLOCK'][$id] = $this->getHighloadblock($id);
 }
 
-
-//Получение городов
-$items = GetIBlockSectionList($iBlock_id[0], false, Array("name" => "asc"),false, array("DEPTH_LEVEL" => 1));
-while($arItem = $items->GetNext())
-{
-	$arResult['LOCATIONS'][] = $arItem['NAME'];
-}
-
 $arSelect = Array("ID", "IBLOCK_ID", "DETAIL_PAGE_URL", "ACTIVE", "NAME","PREVIEW_PICTURE","PREVIEW_TEXT", "TIMESTAMP_X","DATE_CREATE", "DATE_ACTIVE_FROM","DATE_ACTIVE_TO","PROPERTY_*");
 $arFilter = Array("IBLOCK_ID" => $iBlock_id,"IBLOCK_TYPE" => $iBlock_type,"CREATED_BY" => $USER->GetID());
 if($arParams['ELEMENT_CODE']){
@@ -249,6 +242,15 @@ $res = CIBlockElement::GetList(Array("desc" => "timestamp_x"), $arFilter, false,
 while($ob = $res->GetNextElement()){
 	$arFields = $ob->GetFields();
 	$arProps = $ob->GetProperties();
+
+    $db_old_groups = CIBlockElement::GetElementGroups($arFields['ID'], true);
+    while($ar_group = $db_old_groups->Fetch()){
+        $arFields['SECTIONS_ID'][] = $ar_group['ID'];
+        $arFields['REGION_ID'] = $ar_group['IBLOCK_SECTION_ID'];
+    }
+
+    $arFields['SECTIONS'] = implode(',', $arFields['SECTIONS_ID']);
+
 	$arResult["ITEMS"][$arFields["ID"]] = $arFields;
 	$arResult["ITEMS"][$arFields["ID"]]["PROPERTIES"] = $arProps;
 }

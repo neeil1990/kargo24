@@ -82,23 +82,6 @@ class AdsProfileComponent extends CBitrixComponent
         return $arResult;
     }
 
-    public function getSectionIDByName($IBLOCK_ID, $name, $region){
-
-            $arFilter = Array('IBLOCK_ID' => $IBLOCK_ID, 'ACTIVE'=>'Y', 'NAME' => $region);
-            $db_list = CIBlockSection::GetList(Array("asc" => "name"), $arFilter, true);
-            if($ar_result = $db_list->GetNext())
-            {
-                $arFilterCity = Array('IBLOCK_ID' => $IBLOCK_ID, 'ACTIVE'=>'Y', 'SECTION_ID' => $ar_result['ID'], 'NAME' => $name);
-                $db_listCity = CIBlockSection::GetList(Array("asc" => "name"), $arFilterCity, true);
-                if($ar_resultCity = $db_listCity->GetNext())
-                {
-                    return $ar_resultCity['ID'];
-                }
-                return false;
-            }
-        return false;
-    }
-
     function reArrayFiles(&$file_post) {
 
         $file_ary = array();

@@ -121,28 +121,27 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true || $arResult['ITE
                 </div>
             </div>
 
-            <h3 class="form-title">где находятся ваши услуги</h3>
-            <div class="row form-group">
-                <div class="col-sm-5">
-                    <span class="input-title">Регион<sup>*</sup></span>
-                </div>
-                <div class="col-sm-7">
-                    <select class="js-select location" name="region" required>
-                        <? foreach($arResult['LOCATIONS'] as $region):?>
-                            <option value="<?=$region?>" <?=($arResult['ITEMS']['REGION'] == $region) ? "selected" : ""?>><?=$region?></option>
-                        <? endforeach; ?>
-                    </select>
-                    <input type="hidden" value="<?=$arResult['ITEMS']['CITY']?>" id="getCity">
-                </div>
-            </div>
+            <location>
 
-            <div class="row">
-                <div class="col-md-12">
-                    <p class="text text-city">Показ объявления в городах (Выберите до 15 ближайших городов, в которых могут оказываться Ваши услуги) <sup>*</sup></p>
-                    <div class="show-ads-cities desktop category-unified-wrapper-column"></div>
-                    <!-- end show-ads-cities desktop -->
+                <h3 class="form-title">где находятся ваши услуги</h3>
+                <div class="row form-group">
+                    <div class="col-sm-5">
+                        <span class="input-title">Регион<sup>*</sup></span>
+                    </div>
+                    <div class="col-sm-7">
+                        <select class="js-select-location" name="region" selected-id="<?=$arResult['ITEMS']['REGION_ID']?>" required></select>
+                        <input type="hidden" value="<?=$arResult['ITEMS']['SECTIONS']?>" id="getSelectedCities">
+                    </div>
                 </div>
-            </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text text-city">Показ объявления в городах (Выберите до 15 ближайших городов, в которых могут оказываться Ваши услуги) <sup>*</sup></p>
+                        <div class="show-ads-cities desktop category-unified-wrapper-column"></div>
+                        <!-- end show-ads-cities desktop -->
+                    </div>
+                </div>
+            </location>
 
             <div class="row form-group">
                 <div class="col-sm-5">

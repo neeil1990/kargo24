@@ -145,17 +145,6 @@ $(function() {
   });
 
 
-
-
-  $(".js-select.location li").on( "click", function() {
-    $path = $(this).closest("form").attr("temp");
-    $.get($path + "/ajax.php", { region: $(this).text(), selectCity: $(this).closest("form").find("#getCity").val()}).done(function(data) {
-          $('.show-ads-cities').html(data);
-    });
-  });
-
-  $(".js-select.location li.selected").trigger("click");
-
   $('.add-another-photo-btn').on('click', function() {
     $('.hidden-input-file').slideDown(100)
   });
@@ -202,10 +191,70 @@ $(function() {
     }
   });
 
-  var id_iblockChange = $('.js-select-ads').change().val();
+  const adsEditOptions = {
 
-  $('.form-group.type[data-type-id="'+ id_iblockChange +'"]').show();
-  $('.form-group.options[data-type="'+ id_iblockChange +'_'+ $('.form-group.type[data-type-id="'+ id_iblockChange +'"]').find("select").val() +'"]').show();
+    init: function(id){
+
+      this.option(id);
+      this.location(id);
+    },
+    option: function (id) {
+
+      $('.form-group.type[data-type-id="'+ id +'"]').show( "slow" );
+
+      let type = $('.form-group.type[data-type-id="'+ id +'"] select').change().val();
+      if(type){
+
+        $('.form-group.options').hide();
+        $('.form-group.options[data-type="'+ id +'_'+ type +'"]').show( "slow" );
+      }
+    },
+    location: function (id) {
+
+      let form = $('.order-form');
+      let temp = form.attr('temp') + '/ajax.php';
+      let select = $('select.js-select-location', form);
+
+      $.get( temp, {SELECT_IBLOCK : id}, function( data ) {
+
+        $('option', select).remove();
+        $.each(data.LOCATIONS, function(key, value) {
+
+          select.append($("<option></option>")
+              .attr("value", value.ID)
+              .text(value.NAME));
+        });
+
+        let selected = $('option[value="'+ select.attr('selected-id') +'"]', select);
+        if(selected.length)
+          selected.prop('selected', true);
+        else
+          $('option:first', select).prop('selected', true);
+
+        adsEditOptions.city(data.IBLOCK_ID, select.find(':selected').val());
+
+        $('.js-select-location').selectric('refresh');
+      }, "json");
+    },
+    city: function (id, sectionID) {
+
+      console.log(id, sectionID);
+
+      let form = $('.order-form');
+      let temp = form.attr('temp') + '/ajax.php';
+
+      $.get( temp, {
+            SELECT_IBLOCK : id,
+            SECTION_ID : sectionID,
+            SECTION_SELECTED: $('#getSelectedCities').val()
+          }, function( data ) {
+
+        $('.show-ads-cities', form).html(data.HTML);
+      }, "json");
+    }
+  };
+
+  adsEditOptions.init($('.js-select-ads').val());
 
   $('.js-select-ads').selectric({
     maxHeight: 200,
@@ -213,16 +262,20 @@ $(function() {
     nativeOnMobile: false,
     onChange: function(element) {
       $('.form-group.type').hide();
-      var id_iblock = $(element).change().val();
-      if(id_iblock > 0){
-        $('.form-group.type[data-type-id="'+id_iblock+'"]').show( "slow" );
+      var blockID = $(element).change().val();
+      adsEditOptions.init(blockID);
+    },
+  });
 
-        var selectType = $('.form-group.type[data-type-id="'+id_iblock+'"] select').change().val();
-        if(selectType){
-          $('.form-group.options').hide();
-          $('.form-group.options[data-type="'+ id_iblock +'_'+ selectType +'"]').show( "slow" );
-        }
-      }
+  $('.js-select-location').selectric({
+    maxHeight: 200,
+    disableOnMobile: false,
+    nativeOnMobile: false,
+    onChange: function(element) {
+      let sectionId = $(element).val();
+      let id = $('select.js-select-ads').val();
+
+      adsEditOptions.city(id, sectionId);
     },
   });
 
