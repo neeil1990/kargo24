@@ -7,6 +7,12 @@
 if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true || $arResult['ITEMS']['PROPERTIES']['STATUS']['VALUE_XML_ID'] == 'M')
     die('no, no, no mr. ser...');
 ?>
+<div id="progress">
+    <h2>Данные объявления.</h2>
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped active" role="progressbar" style="width: 0%;">Загрузка 0%</div>
+    </div>
+</div>
 
 <form method="post" autocomplete="off" class="order-form unified-form" action="<?=$arResult["FORM_TARGET"]?>" temp="<?=$templateFolder?>" enctype="multipart/form-data">
     <?=$arResult["BX_SESSION_CHECK"]?>

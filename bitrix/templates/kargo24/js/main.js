@@ -283,6 +283,26 @@ $(function() {
     },
   });
 
+  let orderFormEdit = $( '.order-form' );
+  let progressBar = $('#progress');
+  let progress = 5;
+  progressBar.find('.progress-bar').css('width', `${progress}%`);
+  progressBar.find('.progress-bar').text(`Загрузка ${progress}%`);
+  orderFormEdit.ready(function() {
+    let timerId = setInterval(() => {
+
+      progress = Math.floor(Math.random() * (100 - progress + 1) + progress);
+
+      progressBar.find('.progress-bar').css('width', `${progress}%`);
+      progressBar.find('.progress-bar').text(`Загрузка ${progress}%`);
+      if(progress > 99){
+        progressBar.remove();
+        orderFormEdit.show('slow');
+        clearInterval(timerId);
+      }
+    }, 400);
+  });
+
   $('.js-select-banner').selectric({
     maxHeight: 200,
     disableOnMobile: false,

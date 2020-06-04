@@ -62,21 +62,13 @@ $arMenu = account_menu(": $arResult[BALANCE] &#8381; $arResult[BONUS]");
 					<li><a href="/?logout=yes"><span class="menu-text">Выйти из личного кабинета</span></a></li>
 				</ul>
 				<!-- end personal-area-sidebar-menu -->
-				<div class="unified-ad-unit desktop">
-					<div class="ad-unit-head">
-						<div class="logo">
-							<img src="img/static/ad-unit-logo.png" alt="alt">
-						</div>
-						<span class="logo-text">Диспетчерский интернет-сервис</span>
-					</div>
-					<div class="ad-unit-img">
-						<img src="img/static/ad.png" alt="alt">
-					</div>
-					<div class="ad-init-footer">
-						<span class="title">Узнайте как разместить рекламу</span>
-						<a href="" class="limed-spruce-btn white more-info-btn"><span class="text">подробнее</span><span class="arrow"></span></a>
-					</div>
-				</div>
+
+                <?
+                $APPLICATION->IncludeFile("/include/usefull_ads.php", [], Array(
+                    "MODE"      => "html",
+                    "NAME"      => "Редактирование включаемой области раздела"
+                ));
+                ?>
 			</div>
 			<div class="col-sm-9">
 					<? if($arResult['TICKET']): ?>
