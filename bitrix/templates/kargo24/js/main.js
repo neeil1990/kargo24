@@ -258,7 +258,9 @@ $(function() {
     }
   };
 
-  adsEditOptions.init($('.js-select-ads').val());
+  let jsSelectAds = $('.js-select-ads').val();
+  if(jsSelectAds.length)
+    adsEditOptions.init(jsSelectAds);
 
   $('.js-select-ads').selectric({
     maxHeight: 200,
