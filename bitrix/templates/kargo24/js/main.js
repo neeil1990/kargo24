@@ -238,7 +238,10 @@ $(function() {
     },
     city: function (id, sectionID) {
 
-      console.log(id, sectionID);
+      let resolution = $( window ).width();
+      let column = (resolution > 1440) ? 3 : 1;
+
+      console.log(id, sectionID, resolution);
 
       let form = $('.order-form');
       let temp = form.attr('temp') + '/ajax.php';
@@ -246,6 +249,7 @@ $(function() {
       $.get( temp, {
             SELECT_IBLOCK : id,
             SECTION_ID : sectionID,
+            COLUMN : column,
             SECTION_SELECTED: $('#getSelectedCities').val()
           }, function( data ) {
 

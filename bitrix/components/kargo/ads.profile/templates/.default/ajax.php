@@ -12,6 +12,7 @@ if($_REQUEST['SELECT_IBLOCK'])
 if($_REQUEST['SECTION_ID'])
     $arResult['SECTION_ID'] = $_REQUEST['SECTION_ID'];
 
+$arResult['COLUMN'] = ($_REQUEST['COLUMN']) ?: 3;
 
 //Получение городов
 $items = GetIBlockSectionList($arResult['IBLOCK_ID'], false, Array("NAME" => "asc"),false, array("DEPTH_LEVEL" => 1));
@@ -39,7 +40,7 @@ if($arResult['SECTION_ID']){
             $arResult['CITY_SLICE'][$i][$sign] = $c;
 
             $i++;
-            if($i > 3)
+            if($i > $arResult['COLUMN'])
                 $i = 0;
         }
         $arCitySize = count($arResult['CITY_SLICE']);
