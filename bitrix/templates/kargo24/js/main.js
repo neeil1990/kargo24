@@ -299,7 +299,7 @@ $(function() {
       progressBar.find('.progress-bar').text(`Загрузка ${progress}%`);
       if(progress > 99){
         progressBar.remove();
-        orderFormEdit.show('slow');
+        orderFormEdit.show();
         clearInterval(timerId);
       }
     }, 400);
