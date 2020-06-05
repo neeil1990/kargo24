@@ -10,7 +10,7 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true || $arResult['ITE
 <div id="progress">
     <h2>Данные объявления.</h2>
     <div class="progress">
-        <div class="progress-bar progress-bar-striped active" role="progressbar" style="width: 0%;">Загрузка 0%</div>
+        <div class="progress-bar progress-bar-striped active" role="progressbar" style="width: 20%;">Загрузка 20%</div>
     </div>
 </div>
 

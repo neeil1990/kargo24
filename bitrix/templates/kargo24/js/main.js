@@ -287,7 +287,7 @@ $(function() {
 
   let orderFormEdit = $( '.order-form' );
   let progressBar = $('#progress');
-  let progress = 5;
+  let progress = 20;
   progressBar.find('.progress-bar').css('width', `${progress}%`);
   progressBar.find('.progress-bar').text(`Загрузка ${progress}%`);
   orderFormEdit.ready(function() {
