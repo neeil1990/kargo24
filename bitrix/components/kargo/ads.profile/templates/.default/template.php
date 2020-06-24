@@ -166,26 +166,6 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true || $arResult['ITE
     <div class="form-box form-box-pad mod">
         <div class="row">
             <div class="col-md-12 col-sm-12">
-                <h3 class="form-title">Добавить основное фото<sup>*</sup></h3>
-                <input type="hidden" name="image" value="<?=$arResult['ITEMS']['PREVIEW_PICTURE'];?>">
-                <p class="text file-input-text">
-                    Поддерживаемые форматы: jpg, png. Размеры фото 300*175 px. Вес до 5 МБ.
-                </p>
-                <div class="row">
-                    <div class="col-md-7 col-sm-12">
-                        <label class="input-file input-file-mod">
-                            <div class="button"><input type="file" name="file" multiple="" onchange="this.parentNode.nextSibling.value = this.value">Обзор</div><input type="text" class="text-input" readonly placeholder="Загрузите фото с компьютера">
-                        </label>
-                    </div>
-                </div>
-            </div>
-            <?if($arResult['ITEMS']['PREVIEW_PICTURE']):?>
-            <div class="col-md-12 col-sm-12 margin-b-20">
-                <h3 class="form-title">Фото объявления</h3>
-                <img src="<?=CFile::GetPath($arResult['ITEMS']['PREVIEW_PICTURE']);?>" width="300">
-            </div>
-            <?endif;?>
-            <div class="col-md-12 col-sm-12">
                 <h3 class="form-title">Добавить галерею</h3>
                 <p></p>
                 <div class="row">

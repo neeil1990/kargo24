@@ -234,7 +234,10 @@ style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" tit
 	<!-- end input-form-popup -->
 	<div id="form-complain-popup" class="modal fade in" role="dialog">
 		<div class="modal-dialog">
-			<form action="#" class="unified-pop-up-form form-complain">
+			<form action="/ajax/form_complain.php" class="unified-pop-up-form form-complain">
+                <input type="hidden" name="IBLOCK_ID" value="">
+                <input type="hidden" name="ID" value="">
+
 				<h3 class="form-title">
 					Пожаловаться
 				</h3>
@@ -248,7 +251,7 @@ style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" tit
 					<input type="email" name="email" class="text-input" placeholder="E-mail" required="">
 				</div>
 				<div class="form-group">
-					<textarea class="text-area" placeholder="Причина жалобы" reguired=""></textarea>
+					<textarea class="text-area" name="desc" placeholder="Причина жалобы" reguired=""></textarea>
 				</div>
 				<div class="wrapper-form-btn limed-spruce-btn">
 					<span class="arrow"></span>

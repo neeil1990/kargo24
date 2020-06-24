@@ -17,9 +17,6 @@ $this->setFrameMode(true);
     <div class="ads-section-head">
         <div class="ads-section-head-img">
             <div class="slider-ad-large-img js-big-slider-img">
-                <div class="item-img">
-                    <img  src="<?=$arResult['PREVIEW_PICTURE']['SRC']?>" alt="<?=$arResult['NAME']?>" />
-                </div>
                 <? if(count($arResult["PROPERTIES"]["GALLERY"]["VALUE"]) > 0): ?>
                     <? foreach ($arResult["PROPERTIES"]["GALLERY"]["VALUE"] as $gallery):?>
                         <div class="item-img">
@@ -30,9 +27,6 @@ $this->setFrameMode(true);
             </div>
             <!-- end container-large-img -->
             <ul class="slider-ad-small-img js-miniature-pictures">
-                <li>
-                    <img src="<?=$arResult['PREVIEW_PICTURE']['SRC']?>" alt="<?=$arResult['NAME']?>" />
-                </li>
                 <? if(count($arResult["PROPERTIES"]["GALLERY"]["VALUE"]) > 0): ?>
                     <? foreach ($arResult["PROPERTIES"]["GALLERY"]["VALUE"] as $gallery):?>
                         <li>
@@ -65,10 +59,10 @@ $this->setFrameMode(true);
                         <?=$value?>
                     </li>
                 <? endforeach; ?>
-                <!--<li class="last"><span class="icon icon-shopping-list"></span><a href="" class="all-add-btn">Все объявления этого пользователя</a></li>
+                <!--<li class="last"><span class="icon icon-shopping-list"></span><a href="" class="all-add-btn">Все объявления этого пользователя</a></li>-->
                 <li class="last"><span class="icon icon-danger"></span>
-                    <a href="#form-complain-popup" data-toggle="modal" class="complain-btn">Пожаловаться</a>
-                </li>-->
+                    <a href="#form-complain-popup" data-toggle="modal" class="complain-btn" data-iblock="<?=$arResult['IBLOCK_ID']?>" data-element="<?=$arResult['ID']?>">Пожаловаться</a>
+                </li>
             </ul>
 
         </div>

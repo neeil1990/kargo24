@@ -419,6 +419,37 @@ $(function() {
     return false;
   });
 
+  $('form.form-complain').submit(function(){
+    $self = $(this);
+    $url = $self.attr('action');
+
+    $.ajax({
+      url: $url,
+      type: 'POST',
+      dataType: 'json',
+      data: $self.serialize(),
+      success: function(obj) {
+        if(obj.STATUS){
+          $('#form-complain-popup').modal('hide');
+          alertify.success("Форма отправлена!");
+        }else{
+          alertify.error('Ошибка!');
+        }
+      }
+    });
+    return false;
+  });
+
+  $('#form-complain-popup').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget);
+    var iblock = button.data('iblock');
+    var element = button.data('element');
+
+    var modal = $(this);
+    modal.find('input[name="IBLOCK_ID"]').val(iblock);
+    modal.find('input[name="ID"]').val(element);
+  });
+
   $("#update-phone").on("click",".remove-btn.phone",function(){
     $phone = $(this).parent().find('.phone-number').text();
     $path = $('form.personal-area-settings-form').attr('temp');

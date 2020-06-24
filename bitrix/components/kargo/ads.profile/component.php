@@ -45,28 +45,6 @@ if($_SERVER["REQUEST_METHOD"]=="POST" && ($_REQUEST["ads_save"] <> '' || $_REQUE
 		$arResult['PREVIEW_TEXT'] = $description;
 	}
 
-	$arFile = $_FILES['file'];
-	$is_image = CFile::IsImage($arFile['name'], $arFile["type"]);
-	if($is_image){
-		$arResult['IMAGES'] = $arFile;
-	}else{
-		if($_REQUEST['image']){
-			$id_new_image = CFile::CopyFile((int)$_REQUEST['image'],false,'buffering/'.$_REQUEST['image'].'.jpg');
-			$arResult['IMAGES'] = CFile::MakeFileArray($id_new_image);
-		}else{
-			$photo_bank_path = "/upload/bank/$arResult[IBLOCK_ID]/$arResult[TYPE]/";
-			$photo_bank_name = rand(1,5).".jpg";
-			if(!file_exists($_SERVER['DOCUMENT_ROOT'].$photo_bank_path)){
-				mkdir($_SERVER['DOCUMENT_ROOT'].$photo_bank_path, 0755,true);
-			}
-			if(file_exists($_SERVER['DOCUMENT_ROOT'].$photo_bank_path.$photo_bank_name)){
-				$arResult['IMAGES'] = CFile::MakeFileArray($photo_bank_path.$photo_bank_name);
-			}
-		}
-
-
-	}
-
     $arFileGallery = $_FILES['gallery'];
 	if(isset($arFileGallery['name'][0])){
         $is_image_gallery = CFile::IsImage($arFileGallery['name'][0], $arFileGallery["type"][0]);
@@ -130,7 +108,6 @@ if($_SERVER["REQUEST_METHOD"]=="POST" && ($_REQUEST["ads_save"] <> '' || $_REQUE
 		"NAME"           => $arResult['NAME'],
 		"ACTIVE"         => "N",            // активен
 		"PREVIEW_TEXT"   => $arResult['PREVIEW_TEXT'],
-		"PREVIEW_PICTURE" => $arResult['IMAGES']
 	);
 
 	if(is_numeric($_REQUEST['ID']) && ($_REQUEST['IBLOCK_ID'] == $arResult['IBLOCK_ID'])){

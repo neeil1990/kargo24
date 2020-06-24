@@ -86,8 +86,8 @@ if(count($arResult["ITEMS"]) > 0): ?>
         </div>
         <!-- end top-panel -->
         <div class="unified-transport-unit">
-            <div class="item-img <?=(!$arItem['PREVIEW_PICTURE'])?"no-photo":""?>">
-                <?if($image = $arItem['PREVIEW_PICTURE']):?>
+            <div class="item-img <?=(!$arItem['PROPERTIES']['GALLERY']['VALUE'][0])?"no-photo":""?>">
+                <?if($image = $arItem['PROPERTIES']['GALLERY']['VALUE'][0]):?>
                     <img src="<?=CFile::GetPath($image);?>" alt="<?=$arItem['NAME']?>">
                 <? else: ?>
                     <p class="no-photo-text">Фотография подставляется из общей базы, рекомендуем залить своё изображение для повышения доверия к объявлению.</p>

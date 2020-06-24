@@ -22,7 +22,7 @@ if($arResult['ITEMS']):?>
 			?>
 			 <div class="unified-transport-unit">
 				<div class="item-img">
-					<img src="<?=$arItem['PREVIEW_PICTURE']['SRC']?>" alt="alt">
+					<img src="<?=CFile::GetPath($arItem['PROPERTIES']['GALLERY']['VALUE'][0])?>" alt="alt">
 				</div>
 				<div class="item-desc">
 					<div class="title-and-number">
@@ -41,12 +41,12 @@ if($arResult['ITEMS']):?>
 							<?=$value?>
 						</li>
 						<? endforeach; ?>
-						<? if($arItem['COMPLAIN']):?>
+						<?// if($arItem['COMPLAIN']):?>
 						<li>
 							<span class="icon icon-danger"></span>
-							<a href="#form-complain-popup" data-toggle="modal" class="complain">Пожаловаться</a>
+							<a href="#form-complain-popup" data-toggle="modal" class="complain" data-iblock="<?=$arItem['IBLOCK_ID']?>" data-element="<?=$arItem['ID']?>">Пожаловаться</a>
 						</li>
-						<? endif; ?>
+						<?// endif; ?>
 					</ul>
 					<?
 					$arOtions = array();
