@@ -33,4 +33,14 @@ BX.ready(BX.defer(function(){
 }));
 </script><?
 }
+
+if(count($arResult['SECTION']['PATH'])){
+
+    foreach ($arResult['SECTION']['PATH'] as $section){
+
+        $APPLICATION->AddChainItem($section['NAME'], $section['SECTION_PAGE_URL']);
+    }
+
+    $APPLICATION->AddChainItem($arResult['NAME']);
+}
 ?>
