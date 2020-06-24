@@ -19,7 +19,7 @@ switch ($_REQUEST['step']) {
             $text = "Код подтверждения: $confirm_phone_code";
 
             $data["login"] = "z1542789679327";
-            $data["password"] = "791503";
+            $data["password"] = "5PH4Dolujrbc";
             $data["messages"][] = array(
                 "phone" => $phone,
                 "text" => $text,
