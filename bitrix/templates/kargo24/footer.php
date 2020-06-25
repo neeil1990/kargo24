@@ -253,10 +253,19 @@ style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" tit
 				<div class="form-group">
 					<textarea class="text-area" name="desc" placeholder="Причина жалобы" reguired=""></textarea>
 				</div>
+
+                <div class="form-group">
+                    <div class="g-recaptcha" data-sitekey="6LfwPakZAAAAAG1PGoj-OyuM0XdppOpwTG2JbeJ8"></div>
+                </div>
+
 				<div class="wrapper-form-btn limed-spruce-btn">
 					<span class="arrow"></span>
 					<input type="submit" value="Отправить" class="submit-btn">
 				</div>
+
+                <div class="form-group">
+                    <small class="rules">Нажимая кнопку отправить вы соглашаетесь с <a href="/politika.pdf">политика конфиденциальности</a> и даете <a href="/personal.pdf">согласие на обработку персональных данных</a>.</small>
+                </div>
 
 				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
 					<span class="icon-close"></span>

@@ -28,6 +28,7 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 	Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/css/style.css');
 	?>
 
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
 <? if(!$DBDebug): ?>

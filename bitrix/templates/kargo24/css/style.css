@@ -12236,6 +12236,7 @@ h3 {
 }
 .unified-pop-up-form.form-complain .wrapper-form-btn {
   margin-top: 5px;
+  margin-bottom: 15px;
 }
 .unified-pop-up-form.login-form .form-footer {
   padding-top: 29px;
@@ -13464,3 +13465,12 @@ h3 {
   border-color: #6d96ab;
 }
 
+#g-recaptcha-response {
+  display: block !important;
+  position: absolute;
+  margin: -78px 0 0 0 !important;
+  width: 302px !important;
+  height: 76px !important;
+  z-index: -999999;
+  opacity: 0;
+}
