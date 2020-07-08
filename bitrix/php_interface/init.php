@@ -67,7 +67,7 @@ function catalog_header($ID){
     }
 
 
-    if(!$filter && count($codes) === 4){ 
+    if(!$filter && count($codes) === 4){
 
         $APPLICATION->IncludeComponent("bitrix:news.detail", ".header.detail", Array(
             "ACTIVE_DATE_FORMAT" => "d.m.Y",	// Формат показа даты
@@ -126,7 +126,7 @@ function catalog_header($ID){
             false
         );
 
-    }else{ 
+    }else{
 
         $APPLICATION->IncludeComponent("bitrix:catalog.section.list", ".header.catalog", Array(
             "ADD_SECTIONS_CHAIN" => "N",	// Включать раздел в цепочку навигации
@@ -184,9 +184,7 @@ function deactivationAgent()
         if($arFields['ID']){
             $el = new CIBlockElement;
             $arLoadProductArray = Array(
-                "ACTIVE" => "N",
-                "DATE_ACTIVE_FROM" => false,
-                "DATE_ACTIVE_TO" => false
+                "ACTIVE" => "N"
             );
             $PRODUCT_ID = $arFields['ID'];
             CIBlockElement::SetPropertyValues($PRODUCT_ID, $arFields['IBLOCK_ID'], false, "TARIFF");
