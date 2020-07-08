@@ -34,7 +34,7 @@ class Send
 
             $date = DateTime::createFromFormat('d.m.Y', FormatDate("d.m.Y", MakeTimeStamp($arFields['ACTIVE_TO'])));
             $now = new DateTime();
-            $dayDiff = $date->diff($now)->format('%a');
+            $dayDiff = $now->diff($date)->format('%R%a');
 
             if($dayDiff == $arFields['DAY']){
 
