@@ -30,13 +30,13 @@ class Send
             $arFields['USER_NAME'] = $arUser['NAME'];
             $arFields['USER_LAST_NAME'] = $arUser['LAST_NAME'];
             $arFields['USER_EMAIL'] = $arUser['EMAIL'];
-            $arFields['DAY'] = $this->days;
+            $arFields['DAY'] = str_replace(['-', '+'], '', $this->days);
 
             $date = DateTime::createFromFormat('d.m.Y', FormatDate("d.m.Y", MakeTimeStamp($arFields['ACTIVE_TO'])));
             $now = new DateTime();
             $dayDiff = $now->diff($date)->format('%R%a');
 
-            if($dayDiff == $arFields['DAY']){
+            if($dayDiff == $this->days){
 
                 $property_notify = CIBlockPropertyEnum::GetList(false, Array("IBLOCK_ID" => $arFields['IBLOCK_ID'], "CODE" => $this->code, "XML_ID" => "Y"))->GetNext();
 
