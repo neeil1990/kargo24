@@ -34,8 +34,8 @@ class Send
 
             $date = DateTime::createFromFormat('d.m.Y', FormatDate("d.m.Y", MakeTimeStamp($arFields['ACTIVE_TO'])));
             $now = new DateTime();
-            $dayDiff = $now->diff($date)->format('%R%a');
-
+            $dayDiff = $date->diff($now)->format('%R%a');
+            
             if($dayDiff == $this->days){
 
                 $property_notify = CIBlockPropertyEnum::GetList(false, Array("IBLOCK_ID" => $arFields['IBLOCK_ID'], "CODE" => $this->code, "XML_ID" => "Y"))->GetNext();
