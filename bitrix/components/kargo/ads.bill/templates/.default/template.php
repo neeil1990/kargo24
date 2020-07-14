@@ -21,11 +21,20 @@
         <ul class="discount-bonus-list">
             <? foreach ($arResult['ITEMS'] as $arItem): ?>
             <li>
-                <span class="icon-check">
-                    <span class="path1"></span><span class="path2"></span>
-                </span>
+                <? if($arItem['PROPERTIES']['PAY_BILL']['VALUE'] == "Y"): ?>
+                    <span class="icon-check" title="Оплачен">
+                        <span class="path1"></span><span class="path2"></span>
+                    </span>
+                <? else: ?>
+                    <span class="icon-check" title="Ждёт оплаты">
+                        <span class="path1"></span>
+                    </span>
+                <? endif; ?>
                 Счет №<?=$arItem['ID']?> от <?=$arItem['DATE_CREATE']?>
-                <a href="?BILL_ID=<?=$arItem['ID']?>" target="_blank">Распечатать</a>
+                <a href="?BILL_ID=<?=$arItem['ID']?>" target="_blank">Распечатать</a>.
+                <? if($arItem['PROPERTIES']['ACTS_BILL']['VALUE']): ?>
+                    <?=$arItem['PROPERTIES']['ACTS_BILL']['NAME']?>: <?=implode(", ", $arItem['PROPERTIES']['ACTS_BILL']['LINK'])?>
+                <?endif;?>
             </li>
             <?endforeach;?>
         </ul>

@@ -202,7 +202,7 @@ if(empty($arResult) && $USER->GetID() != $arResult['CREATED_BY'])
             <div class="item-title">
                 <div class="title-line-title">
                     <div class="item-title-line-title">Счет:</div>
-                    <div class="item-title-line-title inline_edit"  >№  <?=$arResult['ID'];?> от <?=$arResult['DATE']?></div>
+                    <div class="item-title-line-title inline_edit"  >№  K-<?=$arResult['ID'];?> от <?=$arResult['DATE']?></div>
                 </div>
             </div>
             <div class="item-title">
@@ -255,7 +255,7 @@ if(empty($arResult) && $USER->GetID() != $arResult['CREATED_BY'])
 
                 <td class="inline_edit" ><?=number_format($arResult['PROPERTIES']['PRICE']['VALUE'], 2, '.', ' ');?></td>
             </tr>
-            
+
             </tbody>
             <!---------------------------------------------->
             <tbody class="RowAdd_1343"></tbody>
