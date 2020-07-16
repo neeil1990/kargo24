@@ -342,3 +342,40 @@ class MyClass
 }
 
 
+function getRandBanners($arFilter = [], $count = 3){
+
+    $arResult = [];
+    $arSelect = Array("ID", "IBLOCK_ID", "NAME", "DATE_ACTIVE_FROM", "ACTIVE", "ACTIVE_FROM", "ACTIVE_TO", "PREVIEW_PICTURE", "PROPERTY_*");
+    $element = CIBlockElement::GetList(Array("RAND" => "ASC"), $arFilter, false, array("nTopCount" => $count), $arSelect);
+    while($ob = $element->GetNextElement()) {
+        $arFields = $ob->GetFields();
+        $arProps = $ob->GetProperties();
+
+        $arFields['PROPERTIES'] = $arProps;
+
+        if($arFields['PROPERTIES']['SECTION_ID']['VALUE'])
+            $section = CIBlockSection::GetByID($arFields['PROPERTIES']['SECTION_ID']['VALUE'])->GetNext();
+
+        $res = CIBlockProperty::GetByID("TYPE", $arFields['PROPERTIES']['IBLOCK_ID']['VALUE'], 'content');
+        if($ar_res = $res->GetNext())
+            $HighloadblockId = (int)str_replace("b_hlbd_h","",$ar_res['USER_TYPE_SETTINGS']['TABLE_NAME']);
+
+        $hldata = Bitrix\Highloadblock\HighloadBlockTable::getById($HighloadblockId)->fetch();
+        $hlentity = Bitrix\Highloadblock\HighloadBlockTable::compileEntity($hldata);
+        $hlDataClass = $hldata['NAME'].'Table';
+
+        $result = $hlDataClass::getList([
+            'select' => array('*'),
+            'filter' => array('UF_XML_ID' => $arFields['PROPERTIES']['TYPE_XML_ID']['VALUE'])
+        ]);
+        if($highload = $result->Fetch())
+            $arFields['TITLE'] = $highload['UF_NAME'];
+
+        $arFields['CITY'] = $section['NAME'];
+        $arResult[$arFields['ID']] = $arFields;
+    }
+
+    return $arResult;
+}
+
+

@@ -1,5 +1,11 @@
 <? if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die(); ?>
 
+<? if(isset($arResult['IBLOCK']['DESCRIPTION'])): ?>
+<div class="my-banners-description">
+    <?=$arResult['IBLOCK']['DESCRIPTION'];?>
+</div>
+<? endif; ?>
+
 <? foreach ($arResult['ITEMS'] as $arItem): ?>
 <div class="my-banners-item">
     <div class="my-banners-item-content">

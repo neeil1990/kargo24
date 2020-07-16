@@ -187,7 +187,6 @@ global $APPLICATION;
 		<?
 	}
 
-
 	?>
 	<div class="unified-text-block-category">
 		<?$APPLICATION->ShowViewContent('sotbit_seometa_bottom_desc');?>
@@ -209,7 +208,7 @@ global $APPLICATION;
 
 
 	<?
-	$GLOBALS['CATALOG_CURRENT_SECTION_ID'] = ($intSectionID) ?: "0";
+	$GLOBALS['CATALOG_CURRENT_SECTION_ID'] = ($intSectionID) ?: $arResult["VARIABLES"]["SECTION_ID"];
 	$GLOBALS['SMART_FILTER_PATH_TYPE'] = (str_replace('type-is-', '', $arResult["VARIABLES"]["SMART_FILTER_PATH"])) ?: "0";
 	?>
 

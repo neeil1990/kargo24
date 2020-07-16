@@ -103,56 +103,16 @@ $APPLICATION->SetTitle("Kargo24.su - портал объявлений от ча
         <div class="container">
             <div class="row">
                 <div class="col-sm-3">
-                    <div class="sidebar-product-item">
-                        <div class="logo">
-                            <img src="<?=SITE_TEMPLATE_PATH?>/img/static/adsin-unit-logo.png" alt="alt">
-                        </div>
-                        <div class="product-img">
-                            <a href=""><img src="<?=SITE_TEMPLATE_PATH?>/img/static/construction-machinery/01.png" alt="alt"></a>
-                        </div>
-                        <div class="product-desc">
-                            <h3 class="title">Бульдозер</h3>
-                            <table class="desc-info">
-                                <tr>
-                                    <td>Город:</td>
-                                    <td>Москва</td>
-                                </tr>
-                                <tr>
-                                    <td>Цена:</td>
-                                    <td>720 000 руб.</td>
-                                </tr>
-                                <tr>
-                                    <td>Контакты: </td>
-                                    <td>7 950 111 11 11 (Алексей)</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="sidebar-product-item desktop">
-                        <div class="logo">
-                            <img src="<?=SITE_TEMPLATE_PATH?>/img/static/adsin-unit-logo.png" alt="alt">
-                        </div>
-                        <div class="product-img">
-                            <a href=""><img src="<?=SITE_TEMPLATE_PATH?>/img/static/construction-machinery/02.png" alt="alt"></a>
-                        </div>
-                        <div class="product-desc">
-                            <h3 class="title">Автогрейдер</h3>
-                            <table class="desc-info">
-                                <tr>
-                                    <td>Город:</td>
-                                    <td>Челябинск</td>
-                                </tr>
-                                <tr>
-                                    <td>Цена:</td>
-                                    <td>2 300 000 руб.</td>
-                                </tr>
-                                <tr>
-                                    <td>Контакты: </td>
-                                    <td>89080660033 (Руслан)</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
+                    <? $arRandBanners = getRandBanners(["IBLOCK_ID" => 22, "ACTIVE" => "Y"], 3);
+
+                    if(count($arRandBanners) == 3)
+                        $arRandLastBanner = array_pop($arRandBanners);
+                    ?>
+
+                    <?
+                    foreach ($arRandBanners as $arItem)
+                        $APPLICATION->IncludeFile("/include/banner_templates.php", $arItem);
+                    ?>
                 </div>
                 <div class="col-sm-9">
                     <div class="section-title">
@@ -304,31 +264,7 @@ $APPLICATION->SetTitle("Kargo24.su - портал объявлений от ча
             <div class="container">
                 <div class="row">
                     <div class="col-sm-9">
-                        <div class="sidebar-product-item mobile">
-                            <div class="logo">
-                                <img src="<?=SITE_TEMPLATE_PATH?>/img/static/adsin-unit-logo.png" alt="alt">
-                            </div>
-                            <div class="product-img">
-                                <a href=""><img src="<?=SITE_TEMPLATE_PATH?>/img/static/construction-machinery/03.png" alt="alt"></a>
-                            </div>
-                            <div class="product-desc">
-                                <h3 class="title">мини-погрузчик</h3>
-                                <table class="desc-info">
-                                    <tr>
-                                        <td>Город:</td>
-                                        <td>Уфа</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Цена:</td>
-                                        <td>3 400 000 руб.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Контакты: </td>
-                                        <td>89080934871 (Алек)</td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
+
                         <div class="section-title">О сервисе kARGO24</div>
                         <div class="service-text-item">
                             <h3 class="title">Заказ любого вида транспорта без диспетчера</h3>
@@ -399,31 +335,10 @@ $APPLICATION->SetTitle("Kargo24.su - портал объявлений от ча
                         </div>
                     </div>
                     <div class="col-sm-3">
-                        <div class="sidebar-product-item desktop">
-                            <div class="logo">
-                                <img src="<?=SITE_TEMPLATE_PATH?>/img/static/adsin-unit-logo.png" alt="alt">
-                            </div>
-                            <div class="product-img">
-                                <a href=""><img src="<?=SITE_TEMPLATE_PATH?>/img/static/construction-machinery/03.png" alt="alt"></a>
-                            </div>
-                            <div class="product-desc">
-                                <h3 class="title">мини-погрузчик</h3>
-                                <table class="desc-info">
-                                    <tr>
-                                        <td>Город:</td>
-                                        <td>Уфа</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Цена:</td>
-                                        <td>3 400 000 руб.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Контакты: </td>
-                                        <td>89080934871 (Алек)</td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
+                        <?
+                        if($arRandLastBanner)
+                            $APPLICATION->IncludeFile("/include/banner_templates.php", $arRandLastBanner);
+                        ?>
                         <div class="sidebar-social-network">
                             <h3 class="title">Нравится сервис? <br>Посоветуйте друзьям!</h3>
                             <ul class="social-network">

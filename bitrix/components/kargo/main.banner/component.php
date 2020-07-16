@@ -11,8 +11,14 @@ else{
         exit();
 }
 
+if(!$arParams['COUNT'])
+    $arParams['COUNT'] = false;
+
+if(!$arParams['RANDOM'])
+    $arParams['RANDOM'] = [];
+
 $arSelect = Array("ID", "IBLOCK_ID", "NAME", "DATE_ACTIVE_FROM", "ACTIVE", "ACTIVE_FROM", "ACTIVE_TO", "PREVIEW_PICTURE", "PROPERTY_*");
-$element = CIBlockElement::GetList(Array(), $arFilter, false, false, $arSelect);
+$element = CIBlockElement::GetList($arParams['RANDOM'], $arFilter, false, $arParams['COUNT'], $arSelect);
 while($ob = $element->GetNextElement()){
     $arFields = $ob->GetFields();
     $arProps = $ob->GetProperties();

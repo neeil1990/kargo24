@@ -137,13 +137,12 @@ $(function() {
   $('.js-select').selectric({
     maxHeight: 200,
     disableOnMobile: false,
-    nativeOnMobile: false,
+    nativeOnMobile: false
   });
   $('.selectricItems li').on("click", function() {
     $(this).parents('.selectricWrapper').find('.label').addClass('active');
     $(this).parents('.selectricWrapper').find('.button').addClass('active');
   });
-
 
   $('.add-another-photo-btn').on('click', function() {
     $('.hidden-input-file').slideDown(100)
@@ -316,8 +315,15 @@ $(function() {
 
         $( '.replace-form' ).replaceWith( $(data).find('.replace-form') );
         $('.js-select').selectric('refresh');
+        $('.js-select-search').selectric('refresh');
       }, "html");
     },
+  });
+
+  $('.js-select-search').selectric({
+    maxHeight: 200,
+    disableOnMobile: false,
+    nativeOnMobile: false
   });
 
   $('.js-select-type').selectric({

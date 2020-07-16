@@ -1,4 +1,6 @@
 <?php
+$arResult['IBLOCK'] = CIBlock::GetByID($arParams['IBLOCK_ID'])->GetNext();
+
 foreach($arResult['ITEMS'] as &$arItem){
     if(is_array($arItem['PROPERTIES']['TARIFF'])){
         $property_enums = CIBlockPropertyEnum::GetList(Array("SORT"=>"ASC"), Array("IBLOCK_ID" => $arItem['PROPERTIES']['TARIFF']['IBLOCK_ID'], "CODE" => $arItem['PROPERTIES']['TARIFF']['CODE']));

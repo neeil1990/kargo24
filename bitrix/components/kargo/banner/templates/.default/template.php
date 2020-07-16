@@ -40,7 +40,7 @@
                         <span class="input-title">Город<sup>*</sup></span>
                     </div>
                     <div class="col-sm-7">
-                        <select class="js-select" name="SECTION_ID">
+                        <select class="js-select-search" name="SECTION_ID">
                             <? foreach ($arResult['CITY'] as $id => $name): ?>
                                 <option value="<?=$id?>" <? if($arResult['SECTION_ID'] == $id):?>selected<?endif;?>><?=$name?></option>
                             <? endforeach;?>
