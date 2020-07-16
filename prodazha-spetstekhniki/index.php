@@ -1,5 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetPageProperty("description", "Description22");
+$APPLICATION->SetPageProperty("keywords", "Keywords22");
 $APPLICATION->SetPageProperty("title", "Продажа спецтехники в России");
 $APPLICATION->SetTitle("Продажа спецтехники бу и новой в России - доска объявлений от частных лиц и компаний на портале kargo24.su");
 

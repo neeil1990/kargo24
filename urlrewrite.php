@@ -8,7 +8,7 @@ $arUrlRewrite=array (
     'PATH' => '/arenda-stroitelnogo-oborudovaniya/index.php',
     'SORT' => 100,
   ),
-  18 => 
+  29 => 
   array (
     'CONDITION' => '#^/prodazha-spetstekhniki/#',
     'RULE' => '',
