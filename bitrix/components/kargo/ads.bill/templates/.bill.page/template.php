@@ -156,9 +156,9 @@ if(empty($arResult) && $USER->GetID() != $arResult['CREATED_BY'])
                 </p><p>
                     Внимание! Счет действителен 5 календарных дней.
                 </p><p style="margin-left: 180px;">
-                    Оплата данного счета означает согласие с условиями поставки товара.</p><p>
-                    Товар отпускается по факту прихода денег на р/с Поставщика.</p><p>
-                    ИП Новикова Л.П. применяет УСН, счет-фактура не предоставляется.</p>
+                    Оплата данного счета означает согласие с условиями предоставления сервиса.</p>
+
+                   <p> ИП Виленская Ю.А.применяет УСН, счет-фактура не предоставляется.</p>
                 <p style="margin-left: 180px;"><br></p><p style="margin-left: 180px;"><br>
                 </p><p style="margin-left: 180px;">
                     <span></span>
@@ -170,7 +170,7 @@ if(empty($arResult) && $USER->GetID() != $arResult['CREATED_BY'])
     <div class="hend-bottom">
         <div class="top-one">
             <div class="top-item-one">
-                <div>ИНН:</div><div class="inline_edit"  >362903114143</div>
+                <div>ИНН:</div><div class="inline_edit"  >362903774541</div>
                 <div>КПП:</div><div class="inline_edit"  ></div>
             </div>
             <div class="top-item-one"></div>
@@ -182,9 +182,9 @@ if(empty($arResult) && $USER->GetID() != $arResult['CREATED_BY'])
             <div class="top-item-two"></div>
         </div>
         <div class="top-three">
-            <div class="top-item-three inline_edit"  >Индивидуальный Предприниматель Новикова Людмила Петровна</div>
+            <div class="top-item-three inline_edit"  >Индивидуальный Предприниматель Виленская Юлия Андреевна</div>
             <div class="top-item-three">Р/счет</div>
-            <div class="top-item-three inline_edit"  >40802810200000495887</div>
+            <div class="top-item-three inline_edit"  >40802810300000019189</div>
         </div>
         <div class="top-four">
             <div class="top-item-four">Банк получателя</div>
@@ -208,7 +208,7 @@ if(empty($arResult) && $USER->GetID() != $arResult['CREATED_BY'])
             <div class="item-title">
                 <div class="line-title">
                     <div class="item-line-title">Поставщик:</div>
-                    <div class="item-line-title inline_edit"  >Индивидуальный Предприниматель Новикова Людмила Петровна, 394030 г.Воронеж, ул. Революции 1905 года, 31Е-174,ИНН: 362903114143 , тел: 8-800-100-37-97 , info@kargo24.su</div>
+                    <div class="item-line-title inline_edit"  >Индивидуальный Предприниматель Виленская Юлия Андреевна, 394030 г.Воронеж, ул. Революции 1905 года, 31Е-174, ИНН: 362903774541 , тел: +7-473-203-01-24 , info@kargo24.su</div>
                 </div>
             </div>
 
@@ -300,9 +300,9 @@ if(empty($arResult) && $USER->GetID() != $arResult['CREATED_BY'])
     </div>
     <div class="bottom">
         <div class="block-bottom">
-            <div class="item-bottom">Генеральный директор</div>
+            <div class="item-bottom">Руководитель</div>
             <div class="item-bottom inline_edit"  ></div>
-            <div class="item-bottom inline_edit"  >Новикова Людмила Петровна</div>
+            <div class="item-bottom inline_edit"  >Виленская Юлия Андреевна</div>
         </div>
         <div class="block-bottom">
             <div class="item-bottom"></div>

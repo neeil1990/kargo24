@@ -8,7 +8,7 @@
     <ul class="contact-list">
         <li>
             <span class="icon icon-phone"></span>
-            <a href="tel:+8-800-100-37-97">8-800-100-37-97</a>
+            <a href="tel:+8-800-100-37-97">+7-473-203-01-24</a>
         </li>
         <li>
             <span class="icon icon-mail"></span>
@@ -31,14 +31,18 @@
                     </span>
                 <? endif; ?>
                 Счет №<?=$arItem['ID']?> от <?=$arItem['DATE_CREATE']?>
-                <a href="?BILL_ID=<?=$arItem['ID']?>" target="_blank">Распечатать</a>.
+                <a href="?BILL_ID=<?=$arItem['ID']?>" target="_blank">Распечатать*</a>.
                 <? if($arItem['PROPERTIES']['ACTS_BILL']['VALUE']): ?>
                     <?=$arItem['PROPERTIES']['ACTS_BILL']['NAME']?>: <?=implode(", ", $arItem['PROPERTIES']['ACTS_BILL']['LINK'])?>
                 <?endif;?>
             </li>
             <?endforeach;?>
+    *Если Вам требуется счет с печатью, сформируйте его и напишите нам на
+    <span class="icon icon-mail"></span> <a href="mailto:info@kargo24.su">info@kargo24.su</a>
+    <b>Номер счета</b>, мы вышлем его Вам. Все оригиналы отправляются 20 числа каждого месяца, содержат оригиналы: счетов и актов за прошлый месяц. 
         </ul>
     <?endif;?>
+ 
 </div>
 
 
