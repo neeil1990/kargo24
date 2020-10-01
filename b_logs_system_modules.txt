@@ -138,3 +138,23 @@ Module: main
 	/home/b/bziksv/kargo24.su/public_html/bitrix/modules/main/include/prolog_before.php:14
 	/home/b/bziksv/kargo24.su/public_html/bitrix/modules/main/include/prolog.php:10
 ----------
+Host: kargo24.su
+Date: 2020-09-20 03:49:59
+Module: main
+ MySql Query Error: 
+			SELECT 'x'
+			FROM b_agent
+			WHERE
+				ACTIVE = 'Y'
+				AND NEXT_EXEC <= now()
+				AND (DATE_CHECK IS NULL OR DATE_CHECK <= now())
+				
+			LIMIT 1
+		 [[] ]
+    CDatabaseMysql::Query < CAgent::ExecuteAgents < CAgent::CheckAgents < require_once < require_once
+	/home/b/bziksv/kargo24.su/public_html/bitrix/modules/main/classes/mysql/agent.php:75
+	/home/b/bziksv/kargo24.su/public_html/bitrix/modules/main/classes/mysql/agent.php:40
+	/home/b/bziksv/kargo24.su/public_html/bitrix/modules/main/include.php:264
+	/home/b/bziksv/kargo24.su/public_html/bitrix/modules/main/include/prolog_before.php:14
+	/home/b/bziksv/kargo24.su/public_html/bitrix/modules/main/include/prolog.php:10
+----------
