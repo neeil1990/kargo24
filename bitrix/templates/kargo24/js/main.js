@@ -591,6 +591,48 @@ $(function() {
     return false;
   });
 
+  $('a.delete-company').click(function(){
+    $self = $(this);
+    $id_banner = $self.attr('data-id');
+    $temp_path = $self.attr('temp-path');
+    $delete_path = $temp_path + "/ajax.php";
+
+    if($id_banner && $delete_path){
+
+      alertify.confirm(
+          "Удаление компании",
+          "Вы уверены что хотите удалить компанию?",
+          function(){
+            $.ajax({
+              url: $delete_path,
+              type: 'POST',
+              dataType: 'json',
+              data: {id : $id_banner},
+              success: function(obj) {
+                if(obj.status){
+                  $self.closest('.my-company-content').hide("slow");
+                  alertify.success("Компания удалена!");
+                  document.location.reload();
+                }else{
+                  alertify.success("Ошибка удаления.");
+                }
+              }
+            });
+          },
+          function(){
+            alertify.success('Удаление отменено!');
+          }).set({
+        transition:'zoom',
+        labels:{
+          ok:'Да',
+          cancel:'Нет'
+        }
+      });
+    }
+
+    return false;
+  });
+
   $('span.delete-img-gallery').click(function(){
     $self = $(this);
     $ELEMENT_ID = $self.attr('data-element');
