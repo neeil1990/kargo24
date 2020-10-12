@@ -66,7 +66,8 @@ $arMenu = account_menu(": $arResult[BALANCE] &#8381; $arResult[BONUS]");
                 <?
                 $APPLICATION->IncludeFile("/include/usefull_ads.php", [], Array(
                     "MODE"      => "html",
-                    "NAME"      => "Редактирование включаемой области раздела"
+                    "NAME"      => "Редактирование включаемой области раздела",
+                    "SHOW_BORDER" => false
                 ));
                 ?>
 			</div>
@@ -87,6 +88,14 @@ $arMenu = account_menu(": $arResult[BALANCE] &#8381; $arResult[BONUS]");
 							</ul>
 						</div>
 					<? endif; ?>
+
+                    <?
+                    $APPLICATION->IncludeFile("/include/personal_info.php", Array(), Array(
+                        "MODE"      => "html",
+                        "NAME"      => "основной текстовый блок",
+                        "TEMPLATE"  => ""
+                    ));
+                    ?>
 
 					<?
 					$filename = $_SERVER["DOCUMENT_ROOT"].$templateFolder."/pages/".$arResult['SECTION_CODE'].'.php';
