@@ -89,17 +89,20 @@ $arMenu = account_menu(": $arResult[BALANCE] &#8381; $arResult[BONUS]");
 						</div>
 					<? endif; ?>
 
-                    <?
-                    $APPLICATION->IncludeFile("/include/personal_info.php", Array(), Array(
-                        "MODE"      => "html",
-                        "NAME"      => "основной текстовый блок",
-                        "TEMPLATE"  => ""
-                    ));
-                    ?>
-
 					<?
 					$filename = $_SERVER["DOCUMENT_ROOT"].$templateFolder."/pages/".$arResult['SECTION_CODE'].'.php';
 					if (file_exists($filename)) {
+
+					    $description_path = $_SERVER["DOCUMENT_ROOT"]."/include/$arResult[SECTION_CODE]_desc.php";
+                        if(file_exists($description_path)){
+
+                            $APPLICATION->IncludeFile("/include/$arResult[SECTION_CODE]_desc.php", Array(), Array(
+                                "MODE"      => "html",
+                                "NAME"      => "страницу $arResult[SECTION_CODE]",
+                                "TEMPLATE"  => ""
+                            ));
+                        }
+
 						include_once $filename;
 					} else {
 						echo "Страница $arResult[SECTION_CODE] не существует";
