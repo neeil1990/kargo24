@@ -14,8 +14,9 @@ $arEventFields = array(
     "LINK" => ($_REQUEST['ID']) ? "/bitrix/admin/iblock_element_edit.php?IBLOCK_ID=$_REQUEST[IBLOCK_ID]&type=content&ID=$_REQUEST[ID]&lang=ru" : null,
 );
 
-if($recaptcha = $_REQUEST['g-recaptcha-response']){
+if($_REQUEST['g-recaptcha-response'] && $_REQUEST['ID']){
 
+	$recaptcha = $_REQUEST['g-recaptcha-response'];
     $google_url = "https://www.google.com/recaptcha/api/siteverify";
     $secret = '6LfwPakZAAAAANjtFRSGMa1fRL6Y16EkYlQrLR9A';
     $ip = $_SERVER['REMOTE_ADDR'];
